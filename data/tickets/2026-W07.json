@@ -1,43 +1,5 @@
-{
-  "period": "2026-02-09 ~ 2026-02-15",
-  "alerts": [
-    { "product": "Spark", "type": "volume_spike", "message": "Spark tickets up 45% vs last week (128 vs 88)" }
-  ],
-  "kpi": { "totalTickets": 342, "topProduct": "Spark", "refunds": 14, "productCount": 8 },
-  "dailyTrend": [
-    { "day": "Mon", "count": 52 }, { "day": "Tue", "count": 48 },
-    { "day": "Wed", "count": 55 }, { "day": "Thu", "count": 47 },
-    { "day": "Fri", "count": 62 }, { "day": "Sat", "count": 42 },
-    { "day": "Sun", "count": 36 }
-  ],
-  "productBreakdown": [
-    { "product": "Spark", "count": 128, "pct": 37.4, "delta": 12, "topIssues": [
-      { "tally": "No sound output", "count": 18, "tickets": [{"id": 576284, "subject": "Spark 40 no sound after update"}] },
-      { "tally": "Bluetooth disconnection", "count": 14, "tickets": [{"id": 576310, "subject": "BT keeps dropping"}] }
-    ]},
-    { "product": "BIAS FX", "count": 65, "pct": 19.0, "delta": -3, "topIssues": [
-      { "tally": "License activation failed", "count": 12, "tickets": [{"id": 576400, "subject": "Cannot activate BIAS FX 2"}] }
-    ]},
-    { "product": "Spark LIVE", "count": 42, "pct": 12.3, "delta": 5, "topIssues": [] },
-    { "product": "Spark GO", "count": 35, "pct": 10.2, "delta": -1, "topIssues": [] },
-    { "product": "Spark CAB", "count": 22, "pct": 6.4, "delta": 2, "topIssues": [] },
-    { "product": "BIAS Amp", "count": 18, "pct": 5.3, "delta": 0, "topIssues": [] },
-    { "product": "Riff", "count": 17, "pct": 5.0, "delta": -2, "topIssues": [] },
-    { "product": "Other", "count": 15, "pct": 4.4, "delta": 1, "topIssues": [] }
-  ],
-  "ticketTypes": [
-    { "type": "Technical Issue", "count": 145, "pct": 42.4, "delta": 8 },
-    { "type": "How-to Question", "count": 72, "pct": 21.1, "delta": -2 },
-    { "type": "Refund Request", "count": 38, "pct": 11.1, "delta": 3 },
-    { "type": "Warranty/RMA", "count": 30, "pct": 8.8, "delta": 1 },
-    { "type": "Feature Request", "count": 22, "pct": 6.4, "delta": -1 },
-    { "type": "Order Issue", "count": 18, "pct": 5.3, "delta": 0 },
-    { "type": "Account Issue", "count": 10, "pct": 2.9, "delta": -1 },
-    { "type": "Other", "count": 7, "pct": 2.0, "delta": 0 }
-  ],
-  "stfs": [
-    { "key": "STFS-892", "summary": "Spark 40 no sound after FW 3.2.1", "ticketCount": 18 },
-    { "key": "STFS-885", "summary": "Spark app crash on iOS 18.3", "ticketCount": 11 },
-    { "key": "STFS-878", "summary": "BIAS FX 2 activation server timeout", "ticketCount": 12 }
-  ]
-}
+=== Weekly Ticket Report: 02/02 - 02/08 ===
+  Current:  2026-02-02 ~ 2026-02-08
+  Previous: 2026-01-26 ~ 2026-02-01
+  Fetching ticket data...
+  No ticket data found.

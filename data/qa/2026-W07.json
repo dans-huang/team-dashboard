@@ -1,39 +1,308 @@
+============================================================
+QA TEAM PULSE REPORT
+============================================================
+Date: 2026-02-15 15:49
+Period: Rolling 90 days
+
+Querying QA bugs (Dev Jira)...
+Querying customer bugs (STFS, Bug type only)...
+BCR: 0.0% (QA: 0, Customer: 0)
+  Spark: 0.0%
+  BIAS X: 0.0%
+
+Fetching Qase test runs...
+  Spark: 6 runs
+  BIAS X: 8 runs
+  Reactor: 9 runs
+
+TEST EXECUTION:
+  Spark: pass_rate=84.0%, velocity=23.4 cases/day
+  BIAS X: pass_rate=95.5%, velocity=31.9 cases/day
+  Reactor: pass_rate=85.4%, velocity=40.8 cases/day
+
+EFFORT SIGNALS: 9
+  [warning] Spark EDGE 2.9.1.80 Full Regression test (SE): 19% blocked/skipped (15/78)
+  [warning] Spark EDGE 2.9.1.80 Full Regression test (SE): in progress for 82 days
+  [warning] Spark Live 2.8.4.205 Full Regression test (SL): 18% blocked/skipped (14/80)
+  [warning] MIDI/Automation Test run 2025/11/26 (BX): in progress for 81 days
+  [info] MIDI/Automation Test run 2025/11/26 (BX): 100% untested (39/39)
+  [warning] 1.1.0.51204 Full Regression (MacOS14 Studio One 7) (BX): in progress for 69 days
+  [warning] Reactor Firmware (100W) 0.1.2.209 Function Test (RA): 22% blocked/skipped (23/103)
+  [info] [iOS] 2/22 MKT/KOL Build Function Test (RAPP): 44% untested (86/194)
+  [info] [Android] 2/22 MKT/KOL Build Function Test (RAPP): 99% untested (192/194)
+
 {
-  "period": "2026-02-09 ~ 2026-02-15",
-  "bcr": { "overall": 82.5, "status": "on_track", "target": 80 },
+  "period": "2025-11-17 ~ 2026-02-15",
+  "daysCount": 90,
+  "reportDate": "2026-02-15",
+  "bcr": {
+    "overall": 0.0,
+    "status": "below_target",
+    "target": 80,
+    "qaCount": 0,
+    "customerCount": 0
+  },
   "bcrByProduct": [
-    { "product": "Spark", "qaBugs": 22, "customerBugs": 5, "rate": 81.5 },
-    { "product": "BIAS X", "qaBugs": 8, "customerBugs": 1, "rate": 88.9 }
+    {
+      "product": "Spark",
+      "qaBugs": 0,
+      "customerBugs": 0,
+      "total": 0,
+      "rate": 0.0
+    },
+    {
+      "product": "BIAS X",
+      "qaBugs": 0,
+      "customerBugs": 0,
+      "total": 0,
+      "rate": 0.0
+    }
   ],
-  "bcrWeeklyTrend": [
-    { "week": "W03", "qaBugs": 18, "customerBugs": 6 },
-    { "week": "W04", "qaBugs": 20, "customerBugs": 4 },
-    { "week": "W05", "qaBugs": 25, "customerBugs": 5 },
-    { "week": "W06", "qaBugs": 22, "customerBugs": 7 },
-    { "week": "W07", "qaBugs": 30, "customerBugs": 6 }
-  ],
-  "testExecution": { "totalRuns": 14, "passRate": 0.915, "velocity": 168, "blockedPct": 0.035 },
-  "regressionTrend": [
-    { "product": "Spark", "passRate": 0.945, "delta": 0.015 },
-    { "product": "BIAS X", "passRate": 0.972, "delta": -0.008 }
-  ],
-  "latestFunctionTest": [
-    { "product": "Spark", "passed": 82, "failed": 6, "blocked": 3, "untested": 9 },
-    { "product": "BIAS X", "passed": 45, "failed": 2, "blocked": 1, "untested": 12 }
-  ],
-  "effortSignals": { "staleRuns": 2, "highBlocked": false, "untestedBacklog": 45 },
-  "recentBugs": {
-    "qa": [
-      { "key": "SA-2845", "summary": "Spark 40: preset save fails when name > 32 chars" },
-      { "key": "SA-2841", "summary": "Spark Mini: volume knob unresponsive after sleep" },
-      { "key": "BIASONE-512", "summary": "BIAS FX: delay pedal causes audio glitch at 96kHz" },
-      { "key": "FWP-1203", "summary": "Spark firmware: BLE disconnect during tone transfer" },
-      { "key": "SA-2838", "summary": "Spark app: tuner shows wrong frequency on drop D" }
+  "bcrWeeklyTrend": [],
+  "testExecution": {
+    "Spark": {
+      "completedRuns": 5,
+      "totalRuns": 6,
+      "totalCases": 687,
+      "totalPassed": 577,
+      "totalFailed": 69,
+      "totalBlocked": 7,
+      "totalSkipped": 34,
+      "passRate": 84.0,
+      "avgVelocity": 23.4,
+      "blockedRate": 6.0
+    },
+    "BIAS X": {
+      "completedRuns": 6,
+      "totalRuns": 8,
+      "totalCases": 1433,
+      "totalPassed": 1368,
+      "totalFailed": 17,
+      "totalBlocked": 0,
+      "totalSkipped": 43,
+      "passRate": 95.5,
+      "avgVelocity": 31.9,
+      "blockedRate": 3.0
+    },
+    "Reactor": {
+      "completedRuns": 7,
+      "totalRuns": 9,
+      "totalCases": 669,
+      "totalPassed": 571,
+      "totalFailed": 54,
+      "totalBlocked": 16,
+      "totalSkipped": 28,
+      "passRate": 85.4,
+      "avgVelocity": 40.8,
+      "blockedRate": 6.6
+    }
+  },
+  "regressionTrend": {
+    "Spark": [
+      {
+        "title": "Spark Live 2.8.4.205 Full Regression test",
+        "date": "2025-11-25",
+        "passed": 65,
+        "failed": 1,
+        "skipped": 14,
+        "blocked": 0,
+        "total": 80,
+        "rate": 81.2,
+        "delta": 0
+      }
     ],
-    "customer": [
-      { "key": "STFS-892", "summary": "Spark 40 no sound after FW 3.2.1 update" },
-      { "key": "STFS-885", "summary": "Spark app crash on iOS 18.3" },
-      { "key": "STFS-878", "summary": "BIAS FX 2 activation server timeout" }
+    "BIAS X": [
+      {
+        "title": "1.1.0.51204 Full Regression (Win11 Reaper7)",
+        "date": "2025-12-08",
+        "passed": 269,
+        "failed": 5,
+        "skipped": 8,
+        "blocked": 0,
+        "total": 282,
+        "rate": 95.4,
+        "delta": 0
+      },
+      {
+        "title": "1.2.0 Full Regression (MacOS14 Logic Pro X) Test run",
+        "date": "2025-12-23",
+        "passed": 291,
+        "failed": 2,
+        "skipped": 7,
+        "blocked": 0,
+        "total": 301,
+        "rate": 96.7,
+        "delta": 1.3
+      },
+      {
+        "title": "1.2.0 Full Regression (Win11 Studio One6)",
+        "date": "2026-01-05",
+        "passed": 233,
+        "failed": 5,
+        "skipped": 9,
+        "blocked": 0,
+        "total": 247,
+        "rate": 94.3,
+        "delta": -2.3
+      },
+      {
+        "title": "1.2.0 Full Regression (macOS 26 Standalone)",
+        "date": "2026-01-20",
+        "passed": 244,
+        "failed": 2,
+        "skipped": 5,
+        "blocked": 0,
+        "total": 251,
+        "rate": 97.2,
+        "delta": 2.9
+      }
+    ],
+    "Reactor": [
+      {
+        "title": "Reactor MCU 0.1.3.255 Regression Test",
+        "date": "2025-12-31",
+        "passed": 103,
+        "failed": 5,
+        "skipped": 5,
+        "blocked": 0,
+        "total": 113,
+        "rate": 91.2,
+        "delta": 0
+      },
+      {
+        "title": "Reactor 50w MCU 0.1.4.51 Regression Test",
+        "date": "2026-01-08",
+        "passed": 96,
+        "failed": 5,
+        "skipped": 4,
+        "blocked": 0,
+        "total": 105,
+        "rate": 91.4,
+        "delta": 0.3
+      },
+      {
+        "title": "Reactor 100w MCU 0.1.4.51 Regression Test",
+        "date": "2026-01-09",
+        "passed": 101,
+        "failed": 2,
+        "skipped": 2,
+        "blocked": 0,
+        "total": 105,
+        "rate": 96.2,
+        "delta": 4.8
+      },
+      {
+        "title": "Reactor 50w MCU 0.1.4.103 Regression Test",
+        "date": "2026-02-02",
+        "passed": 105,
+        "failed": 0,
+        "skipped": 0,
+        "blocked": 0,
+        "total": 105,
+        "rate": 100.0,
+        "delta": 3.8
+      }
     ]
+  },
+  "latestFunctionTest": [
+    {
+      "product": "Spark",
+      "title": "Spark Pedal 2.2.0.221 Standalone Function Test",
+      "projectCode": "SP",
+      "status": "completed",
+      "startDate": "2026-01-27",
+      "passed": 129,
+      "failed": 21,
+      "blocked": 6,
+      "skipped": 8,
+      "untested": 0,
+      "total": 164
+    },
+    {
+      "product": "BIAS X",
+      "title": "1.2.1 Core Function Test (macOS26 Fender Studio Pro8)",
+      "projectCode": "BX",
+      "status": "completed",
+      "startDate": "2026-02-05",
+      "passed": 162,
+      "failed": 2,
+      "blocked": 0,
+      "skipped": 7,
+      "untested": 0,
+      "total": 175
+    },
+    {
+      "product": "Reactor",
+      "title": "[Android] 2/22 MKT/KOL Build Function Test",
+      "projectCode": "RAPP",
+      "status": "in_progress",
+      "startDate": "2026-02-10",
+      "passed": 1,
+      "failed": 1,
+      "blocked": 0,
+      "skipped": 0,
+      "untested": 192,
+      "total": 194
+    }
+  ],
+  "effortSignals": [
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "Spark EDGE 2.9.1.80 Full Regression test (SE): 19% blocked/skipped (15/78)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "Spark EDGE 2.9.1.80 Full Regression test (SE): in progress for 82 days"
+    },
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "Spark Live 2.8.4.205 Full Regression test (SL): 18% blocked/skipped (14/80)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "BIAS X",
+      "message": "MIDI/Automation Test run 2025/11/26 (BX): in progress for 81 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "BIAS X",
+      "message": "MIDI/Automation Test run 2025/11/26 (BX): 100% untested (39/39)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "BIAS X",
+      "message": "1.1.0.51204 Full Regression (MacOS14 Studio One 7) (BX): in progress for 69 days"
+    },
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "Reactor Firmware (100W) 0.1.2.209 Function Test (RA): 22% blocked/skipped (23/103)"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Reactor",
+      "message": "[iOS] 2/22 MKT/KOL Build Function Test (RAPP): 44% untested (86/194)"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Reactor",
+      "message": "[Android] 2/22 MKT/KOL Build Function Test (RAPP): 99% untested (192/194)"
+    }
+  ],
+  "recentBugs": {
+    "qa": [],
+    "customer": []
   }
 }
