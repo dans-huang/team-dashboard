@@ -1,0 +1,41 @@
+{
+  "period": "2026-02-02 ~ 2026-02-08",
+  "alerts": [],
+  "kpi": { "totalTickets": 298, "topProduct": "Spark", "refunds": 11, "productCount": 8 },
+  "dailyTrend": [
+    { "day": "Mon", "count": 45 }, { "day": "Tue", "count": 42 },
+    { "day": "Wed", "count": 48 }, { "day": "Thu", "count": 40 },
+    { "day": "Fri", "count": 50 }, { "day": "Sat", "count": 38 },
+    { "day": "Sun", "count": 35 }
+  ],
+  "productBreakdown": [
+    { "product": "Spark", "count": 88, "pct": 29.5, "delta": -2, "topIssues": [
+      { "tally": "Bluetooth disconnection", "count": 12, "tickets": [{"id": 575900, "subject": "Spark 40 BT drops every 5 min"}] },
+      { "tally": "App crash on launch", "count": 9, "tickets": [{"id": 575920, "subject": "Spark app crashes on Android 14"}] }
+    ]},
+    { "product": "BIAS FX", "count": 62, "pct": 20.8, "delta": 1, "topIssues": [
+      { "tally": "License activation failed", "count": 10, "tickets": [{"id": 575950, "subject": "BIAS FX 2 license error on new PC"}] }
+    ]},
+    { "product": "Spark LIVE", "count": 38, "pct": 12.8, "delta": 3, "topIssues": [] },
+    { "product": "Spark GO", "count": 34, "pct": 11.4, "delta": 0, "topIssues": [] },
+    { "product": "Spark CAB", "count": 20, "pct": 6.7, "delta": -1, "topIssues": [] },
+    { "product": "BIAS Amp", "count": 18, "pct": 6.0, "delta": 1, "topIssues": [] },
+    { "product": "Riff", "count": 20, "pct": 6.7, "delta": 2, "topIssues": [] },
+    { "product": "Other", "count": 18, "pct": 6.0, "delta": -1, "topIssues": [] }
+  ],
+  "ticketTypes": [
+    { "type": "Technical Issue", "count": 120, "pct": 40.3, "delta": -3 },
+    { "type": "How-to Question", "count": 68, "pct": 22.8, "delta": 1 },
+    { "type": "Refund Request", "count": 32, "pct": 10.7, "delta": -1 },
+    { "type": "Warranty/RMA", "count": 28, "pct": 9.4, "delta": 0 },
+    { "type": "Feature Request", "count": 20, "pct": 6.7, "delta": 2 },
+    { "type": "Order Issue", "count": 15, "pct": 5.0, "delta": -1 },
+    { "type": "Account Issue", "count": 9, "pct": 3.0, "delta": 0 },
+    { "type": "Other", "count": 6, "pct": 2.0, "delta": 1 }
+  ],
+  "stfs": [
+    { "key": "STFS-878", "summary": "BIAS FX 2 activation server timeout", "ticketCount": 10 },
+    { "key": "STFS-870", "summary": "Spark LIVE firmware update failure", "ticketCount": 7 },
+    { "key": "STFS-865", "summary": "Spark app crash on Android 14", "ticketCount": 9 }
+  ]
+}

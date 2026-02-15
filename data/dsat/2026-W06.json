@@ -1,0 +1,22 @@
+{
+  "period": "2026-02-02 ~ 2026-02-08",
+  "totalBadRatings": 220,
+  "withComments": 158,
+  "aiNegative": 38,
+  "aiNegativeRate": 0.24,
+  "topReasons": [
+    { "reason": "Long wait time", "count": 16 },
+    { "reason": "AI response quality", "count": 14 },
+    { "reason": "Issue not resolved", "count": 11 },
+    { "reason": "Product defect", "count": 9 },
+    { "reason": "Wrong information given", "count": 7 },
+    { "reason": "Rude/unhelpful agent", "count": 5 },
+    { "reason": "Too many transfers", "count": 4 }
+  ],
+  "samples": [
+    { "ticketId": 575800, "comment": "Waited 3 days for a response. When I finally got one, it was a generic template that didn't address my issue at all.", "product": "Spark" },
+    { "ticketId": 575850, "comment": "The AI suggested I update my firmware but the firmware update is exactly what caused my problem. Circular logic.", "product": "Spark LIVE" },
+    { "ticketId": 575880, "comment": "My BIAS FX license disappeared after upgrading my PC. Support says they can't verify my purchase from 2023.", "product": "BIAS FX" },
+    { "ticketId": 575890, "comment": "Good agent but could not help because this is a known bug. Why isn't it fixed yet?", "product": "Spark" }
+  ]
+}

@@ -1,0 +1,90 @@
+name: Update Dashboard Data
+
+on:
+  schedule:
+    # Monday 09:30 TPE (01:30 UTC)
+    - cron: '30 1 * * 1'
+  workflow_dispatch:
+    inputs:
+      week:
+        description: 'Week to generate (e.g. 2026-W07). Leave empty for current week.'
+        required: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout dashboard repo
+        uses: actions/checkout@v4
+
+      - name: Checkout claude workspace
+        uses: actions/checkout@v4
+        with:
+          repository: dans-huang/CC
+          token: ${{ secrets.CLAUDE_REPO_PAT }}
+          path: claude-workspace
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+
+      - name: Setup Google credentials
+        run: |
+          echo '${{ secrets.GOOGLE_TOKENS_JSON }}' > ~/.google-tokens.json
+
+      - name: Generate dashboard data
+        env:
+          ZENDESK_EMAIL: ${{ secrets.ZENDESK_EMAIL }}
+          ZENDESK_TOKEN: ${{ secrets.ZENDESK_TOKEN }}
+          JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+          JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
+          QASE_TOKEN: ${{ secrets.QASE_TOKEN }}
+          CLAUDE_DIR: claude-workspace
+        run: |
+          WEEK="${{ github.event.inputs.week || '' }}"
+          if [ -z "$WEEK" ]; then
+            WEEK=$(date -u +%G-W%V)
+          fi
+          bash scripts/generate-dashboard-data.sh "$WEEK"
+
+      - name: Commit and push data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "data: update dashboard for $(date -u +%G-W%V)"
+          git push
+
+  deploy:
+    needs: update-data
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

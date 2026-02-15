@@ -1,0 +1,23 @@
+{
+  "period": "2026-02-09 ~ 2026-02-15",
+  "totalBadRatings": 248,
+  "withComments": 176,
+  "aiNegative": 44,
+  "aiNegativeRate": 0.25,
+  "topReasons": [
+    { "reason": "AI response quality", "count": 18 },
+    { "reason": "Long wait time", "count": 15 },
+    { "reason": "Issue not resolved", "count": 12 },
+    { "reason": "Product defect", "count": 10 },
+    { "reason": "Rude/unhelpful agent", "count": 8 },
+    { "reason": "Wrong information given", "count": 6 },
+    { "reason": "Too many transfers", "count": 5 }
+  ],
+  "samples": [
+    { "ticketId": 576100, "comment": "The AI bot kept giving me irrelevant answers about Spark when I asked about BIAS FX. Had to wait 2 days to get a human agent.", "product": "BIAS FX" },
+    { "ticketId": 576150, "comment": "Terrible experience. My Spark 40 has no sound and the support just told me to factory reset which I already did 3 times.", "product": "Spark" },
+    { "ticketId": 576200, "comment": "Asked for a refund and got passed around between 3 different agents over a week. Still no resolution.", "product": "Spark GO" },
+    { "ticketId": 576250, "comment": "The automated response was completely off topic. I asked about firmware update and got an answer about warranty.", "product": "Spark LIVE" },
+    { "ticketId": 576300, "comment": "Support agent was helpful but the issue is clearly a known bug that should have been fixed months ago.", "product": "Spark" }
+  ]
+}

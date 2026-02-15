@@ -1,0 +1,39 @@
+{
+  "period": "2026-02-09 ~ 2026-02-15",
+  "bcr": { "overall": 82.5, "status": "on_track", "target": 80 },
+  "bcrByProduct": [
+    { "product": "Spark", "qaBugs": 22, "customerBugs": 5, "rate": 81.5 },
+    { "product": "BIAS X", "qaBugs": 8, "customerBugs": 1, "rate": 88.9 }
+  ],
+  "bcrWeeklyTrend": [
+    { "week": "W03", "qaBugs": 18, "customerBugs": 6 },
+    { "week": "W04", "qaBugs": 20, "customerBugs": 4 },
+    { "week": "W05", "qaBugs": 25, "customerBugs": 5 },
+    { "week": "W06", "qaBugs": 22, "customerBugs": 7 },
+    { "week": "W07", "qaBugs": 30, "customerBugs": 6 }
+  ],
+  "testExecution": { "totalRuns": 14, "passRate": 0.915, "velocity": 168, "blockedPct": 0.035 },
+  "regressionTrend": [
+    { "product": "Spark", "passRate": 0.945, "delta": 0.015 },
+    { "product": "BIAS X", "passRate": 0.972, "delta": -0.008 }
+  ],
+  "latestFunctionTest": [
+    { "product": "Spark", "passed": 82, "failed": 6, "blocked": 3, "untested": 9 },
+    { "product": "BIAS X", "passed": 45, "failed": 2, "blocked": 1, "untested": 12 }
+  ],
+  "effortSignals": { "staleRuns": 2, "highBlocked": false, "untestedBacklog": 45 },
+  "recentBugs": {
+    "qa": [
+      { "key": "SA-2845", "summary": "Spark 40: preset save fails when name > 32 chars" },
+      { "key": "SA-2841", "summary": "Spark Mini: volume knob unresponsive after sleep" },
+      { "key": "BIASONE-512", "summary": "BIAS FX: delay pedal causes audio glitch at 96kHz" },
+      { "key": "FWP-1203", "summary": "Spark firmware: BLE disconnect during tone transfer" },
+      { "key": "SA-2838", "summary": "Spark app: tuner shows wrong frequency on drop D" }
+    ],
+    "customer": [
+      { "key": "STFS-892", "summary": "Spark 40 no sound after FW 3.2.1 update" },
+      { "key": "STFS-885", "summary": "Spark app crash on iOS 18.3" },
+      { "key": "STFS-878", "summary": "BIAS FX 2 activation server timeout" }
+    ]
+  }
+}

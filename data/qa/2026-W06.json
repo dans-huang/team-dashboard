@@ -1,0 +1,39 @@
+{
+  "period": "2026-02-02 ~ 2026-02-08",
+  "bcr": { "overall": 79.8, "status": "below_target", "target": 80 },
+  "bcrByProduct": [
+    { "product": "Spark", "qaBugs": 18, "customerBugs": 6, "rate": 75.0 },
+    { "product": "BIAS X", "qaBugs": 4, "customerBugs": 1, "rate": 80.0 }
+  ],
+  "bcrWeeklyTrend": [
+    { "week": "W02", "qaBugs": 15, "customerBugs": 5 },
+    { "week": "W03", "qaBugs": 18, "customerBugs": 6 },
+    { "week": "W04", "qaBugs": 20, "customerBugs": 4 },
+    { "week": "W05", "qaBugs": 25, "customerBugs": 5 },
+    { "week": "W06", "qaBugs": 22, "customerBugs": 7 }
+  ],
+  "testExecution": { "totalRuns": 12, "passRate": 0.895, "velocity": 144, "blockedPct": 0.045 },
+  "regressionTrend": [
+    { "product": "Spark", "passRate": 0.930, "delta": -0.010 },
+    { "product": "BIAS X", "passRate": 0.980, "delta": 0.005 }
+  ],
+  "latestFunctionTest": [
+    { "product": "Spark", "passed": 78, "failed": 8, "blocked": 4, "untested": 10 },
+    { "product": "BIAS X", "passed": 42, "failed": 3, "blocked": 2, "untested": 13 }
+  ],
+  "effortSignals": { "staleRuns": 3, "highBlocked": true, "untestedBacklog": 52 },
+  "recentBugs": {
+    "qa": [
+      { "key": "SA-2830", "summary": "Spark 40: tone import corrupts preset bank" },
+      { "key": "SA-2827", "summary": "Spark Mini: LED indicator wrong color in standby" },
+      { "key": "BIASONE-508", "summary": "BIAS FX: reverb tail cut off on bypass" },
+      { "key": "FWP-1198", "summary": "Spark firmware: OTA fails on battery below 30%" }
+    ],
+    "customer": [
+      { "key": "STFS-878", "summary": "BIAS FX 2 activation server timeout" },
+      { "key": "STFS-870", "summary": "Spark LIVE firmware update failure" },
+      { "key": "STFS-865", "summary": "Spark app crash on Android 14" },
+      { "key": "STFS-860", "summary": "Spark GO charging issues in cold weather" }
+    ]
+  }
+}

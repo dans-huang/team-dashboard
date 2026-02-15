@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSAT Analysis — Team Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+  <nav class="nav">
+    <a class="nav-brand" href="index.html">Team Dashboard</a>
+    <ul class="nav-tabs">
+      <li><a href="pulse.html">Pulse</a></li>
+      <li><a href="qa.html">QA</a></li>
+      <li><a href="tickets.html">Tickets</a></li>
+      <li><a href="dsat.html">DSAT</a></li>
+    </ul>
+    <div class="nav-right">
+      <label>Week:</label>
+      <select id="week-select"></select>
+    </div>
+  </nav>
+  <div class="container">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px">
+      <p class="period-label" id="period" style="margin:0"></p>
+      <button class="compare-toggle" id="compare-btn">Compare &#x25B8;</button>
+    </div>
+    <main id="content">
+      <div class="section" id="dsat-hero"></div>
+      <div class="section">
+        <h2 class="section-title">AI Negativity Breakdown</h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+          <div class="chart-container" style="height:250px"><canvas id="ai-pie-chart"></canvas></div>
+          <div class="kpi-grid" style="grid-template-columns:1fr" id="dsat-kpis"></div>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Top DSAT Reasons</h2>
+        <div class="chart-container"><canvas id="reasons-chart"></canvas></div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Sample Tickets</h2>
+        <div class="table-wrap" id="sample-table"></div>
+      </div>
+    </main>
+  </div>
+  <script src="js/dashboard.js"></script>
+  <script src="js/dsat.js"></script>
+</body>
+</html>
