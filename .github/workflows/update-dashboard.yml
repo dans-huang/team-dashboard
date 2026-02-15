@@ -40,15 +40,21 @@ jobs:
 
       - name: Setup Google credentials
         run: |
+          # Scripts expect token at hardcoded path /Users/nativepg/Claude/.google-tokens.json
+          # Create the directory structure and place token there
+          sudo mkdir -p /Users/nativepg/Claude
+          echo '${{ secrets.GOOGLE_TOKENS_JSON }}' | sudo tee /Users/nativepg/Claude/.google-tokens.json > /dev/null
+          # Also place at home for any scripts that check there
           echo '${{ secrets.GOOGLE_TOKENS_JSON }}' > ~/.google-tokens.json
 
       - name: Generate dashboard data
         env:
+          ZENDESK_SUBDOMAIN: positivegrid
           ZENDESK_EMAIL: ${{ secrets.ZENDESK_EMAIL }}
-          ZENDESK_TOKEN: ${{ secrets.ZENDESK_TOKEN }}
+          ZENDESK_API_TOKEN: ${{ secrets.ZENDESK_TOKEN }}
           JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
-          JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
-          QASE_TOKEN: ${{ secrets.QASE_TOKEN }}
+          JIRA_API_TOKEN: ${{ secrets.JIRA_TOKEN }}
+          QASE_API_TOKEN: ${{ secrets.QASE_TOKEN }}
           CLAUDE_DIR: claude-workspace
         run: |
           WEEK="${{ github.event.inputs.week || '' }}"
