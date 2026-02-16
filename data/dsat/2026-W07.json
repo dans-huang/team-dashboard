@@ -1,11 +1,11 @@
 {
-  "period": "2025-11-17 ~ 2026-02-15",
+  "period": "2025-11-18 ~ 2026-02-16",
   "daysCount": 90,
-  "totalBadRatings": 361,
-  "withComments": 304,
+  "totalBadRatings": 357,
+  "withComments": 301,
   "aiNegative": 177,
-  "aiNegativeRateOfComments": 58.22,
-  "aiNegativeRateOfAll": 49.03,
+  "aiNegativeRateOfComments": 58.8,
+  "aiNegativeRateOfAll": 49.58,
   "samples": [
     {
       "ticketId": 16243939216525,
@@ -129,24 +129,6 @@
     }
   ],
   "allComments": [
-    {
-      "ticketId": 16243939216525,
-      "comment": "hardware issue, item replaced, thank you very much, new Spark Edge firmware issue, takes too long to get a response. I do not feel confortable going out gigging or basking as is not reliable and feel it can can let medown half way through the set. Shame because the concept is good.  ",
-      "createdAt": "2025-11-17T18:58:53Z",
-      "isAiNegative": false
-    },
-    {
-      "ticketId": 21491403881485,
-      "comment": "You don\u2019t want to know what I think won\u2019t be good ",
-      "createdAt": "2025-11-18T02:53:09Z",
-      "isAiNegative": false
-    },
-    {
-      "ticketId": 396201035592,
-      "comment": "My product Is covered by warranty but support request payment to replace my Spark neo transmitter",
-      "createdAt": "2025-11-18T07:27:15Z",
-      "isAiNegative": false
-    },
     {
       "ticketId": 16243939216525,
       "comment": "I was hoping for a response from a real person. An AI response was not nice. AI doesn't buy amps from you my friends.",
@@ -427,6 +409,24 @@
       "ticketId": 21491403881485,
       "comment": "I've had issues with my Link for a long time. I was told, because it's under warranty, I could get it replaced. But I've had to email several times to see the status and I'm still waiting for the replacement. It's getting frustrating. Other than this issue I've loved Positive Grid products.",
       "createdAt": "2025-11-30T19:51:10Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "There could have been other steps taken to solve problem. But, I understand the time it takes and the effort, to the company, is just not worth it.",
+      "createdAt": "2025-12-01T12:17:42Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I don\u2019t think the person who responded really read my email. I felt completely unappreciated as a customer.  Feel like a complete fool for even making a second order (which I have).  Getting a $20 discount code instead of the $70 difference between my purchase (which WAS described as your \u201cBlack Friday special\u201d. - a \u201ccarry bag\u201d?  WhoTF needs that?) and the price offered 2 days later feels like the LOWEST effort possible.  I was (and still am) SOOOO tempted to just return the whole thing and buy it again at the Black Friday price.  Whatever. ",
+      "createdAt": "2025-12-02T00:08:42Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I notified you folks immediately upon receiving confirmation that I had placed two orders for the same thing in error.  Zero effort was made on your part to cancel one order even though I provided order numbers for the one to cancel and the one to process.  The order was shipped three days later so the excuse that these orders get processed quickly is bogus.  Instead I was told to refuse the order at the door or send it back for a refund.  Awful customer service.  I will be returning both for a full refund.",
+      "createdAt": "2025-12-02T01:32:22Z",
       "isAiNegative": true
     }
   ]

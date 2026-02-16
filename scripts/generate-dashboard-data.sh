@@ -24,6 +24,23 @@ d = datetime.strptime('$WEEK_START', '%Y-%m-%d')
 print((d + timedelta(days=6)).strftime('%Y-%m-%d'))
 ")
 
+# Source Zendesk credentials if available (DSAT script needs ZENDESK_TOKEN)
+ZD_ENV="$CLAUDE_DIR/scripts/automation/.env.zendesk"
+if [ -f "$ZD_ENV" ]; then
+  # shellcheck disable=SC1090
+  source "$ZD_ENV"
+  # .env.zendesk uses ZENDESK_API_TOKEN; DSAT script expects ZENDESK_TOKEN
+  export ZENDESK_TOKEN="${ZENDESK_TOKEN:-$ZENDESK_API_TOKEN}"
+fi
+
+# Refresh Google OAuth token (expires every hour)
+REFRESH_SCRIPT="$CLAUDE_DIR/scripts/automation/refresh-google-oauth.py"
+if [ -f "$REFRESH_SCRIPT" ]; then
+  echo "→ Refreshing Google OAuth token..."
+  python3 "$REFRESH_SCRIPT" 2>/dev/null && echo "  ✓ Token refreshed" || echo "  ⚠ Token refresh failed — continuing with existing token"
+  echo ""
+fi
+
 echo "=== Team Dashboard Data Generator ==="
 echo "Week: $WEEK ($WEEK_START ~ $WEEK_END)"
 echo "Dashboard: $DASHBOARD_DIR"

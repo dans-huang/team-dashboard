@@ -630,16 +630,16 @@
     }
   ],
   "aiOps": {
-    "aiResolutionRate": 31.6,
+    "aiResolutionRate": 31.4,
     "devinClosed": 185,
-    "allClosed": 586,
+    "allClosed": 590,
     "aiCsat": 82.6,
     "aiGood": 38,
     "aiBad": 8,
     "humanCsat": 89.5,
     "humanGood": 77,
     "humanBad": 9,
-    "handoffRate": 68.4
+    "handoffRate": 68.6
   },
   "aiOpportunities": [
     {

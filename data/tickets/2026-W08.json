@@ -6,44 +6,42 @@
   "alerts": [
     {
       "severity": "medium",
-      "message": "SPARK accounts for 50% of all tickets",
-      "type": "dominant_product"
-    },
-    {
-      "severity": "medium",
-      "message": "SPARK 2 accounts for 30% of all tickets",
+      "message": "SPARK accounts for 40% of all tickets",
       "type": "dominant_product"
     }
   ],
   "kpi": {
-    "totalTickets": 10,
-    "refunds": 1,
-    "productCount": 4
+    "totalTickets": 20,
+    "refunds": 4,
+    "productCount": 5
   },
   "dailyTrend": [
     {
       "date": "2026-02-16",
       "day": "Mon",
-      "count": 10
+      "count": 20
     }
   ],
   "productBreakdown": [
     {
       "product": "SPARK",
-      "count": 5,
-      "pct": 50.0,
-      "delta": -92.06349206349206,
+      "count": 8,
+      "pct": 40.0,
+      "delta": -87.3015873015873,
       "direction": "down",
       "topIssues": [
         {
           "tally": "Troubleshooting  Software   App  Unlisted Issue Report",
-          "count": 2,
+          "count": 3,
           "tickets": [
             {
               "id": "578308"
             },
             {
               "id": "578311"
+            },
+            {
+              "id": "578336"
             }
           ]
         },
@@ -72,9 +70,9 @@
     },
     {
       "product": "SPARK 2",
-      "count": 3,
-      "pct": 30.0,
-      "delta": -97.14285714285714,
+      "count": 5,
+      "pct": 25.0,
+      "delta": -95.23809523809523,
       "direction": "down",
       "topIssues": [
         {
@@ -107,28 +105,10 @@
       ]
     },
     {
-      "product": "SPARK MINI",
-      "count": 1,
-      "pct": 10.0,
-      "delta": -97.22222222222221,
-      "direction": "down",
-      "topIssues": [
-        {
-          "tally": "Troubleshooting  Bluetooth / Wireless  Cannot Connect To My Device  App",
-          "count": 1,
-          "tickets": [
-            {
-              "id": "578307"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "product": "SPARK LIVE",
-      "count": 1,
-      "pct": 10.0,
-      "delta": -93.75,
+      "count": 3,
+      "pct": 15.0,
+      "delta": -81.25,
       "direction": "down",
       "topIssues": [
         {
@@ -139,6 +119,69 @@
               "id": "578309"
             }
           ]
+        },
+        {
+          "tally": "Troubleshooting  Sound  Hum Noise",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578328"
+            }
+          ]
+        },
+        {
+          "tally": "Post-Sales  Return   Refund Request  Refund Request",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578330"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK MINI",
+      "count": 2,
+      "pct": 10.0,
+      "delta": -94.44444444444444,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Bluetooth / Wireless  Cannot Connect To My Device  App",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578307"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Hardware  Physical Controls / Parts",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578332"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK GO",
+      "count": 1,
+      "pct": 5.0,
+      "delta": -98.0392156862745,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Hardware  Usb Cannot Be Detected",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578335"
+            }
+          ]
         }
       ]
     }
@@ -146,23 +189,44 @@
   "ticketTypes": [
     {
       "type": "Troubleshooting",
-      "count": 8,
-      "pct": 80.0,
-      "delta": -96.63865546218487,
+      "count": 12,
+      "pct": 60.0,
+      "delta": -94.9579831932773,
+      "direction": "down"
+    },
+    {
+      "type": "Request For Refund/Replacement",
+      "count": 4,
+      "pct": 20.0,
+      "delta": -91.48936170212765,
       "direction": "down"
     },
     {
       "type": "Product Spec",
       "count": 1,
-      "pct": 10.0,
+      "pct": 5.0,
       "delta": -96.15384615384616,
       "direction": "down"
     },
     {
-      "type": "Request For Refund/Replacement",
+      "type": "Order Related",
       "count": 1,
-      "pct": 10.0,
-      "delta": -97.87234042553192,
+      "pct": 5.0,
+      "delta": -97.82608695652173,
+      "direction": "down"
+    },
+    {
+      "type": "Product Registration",
+      "count": 1,
+      "pct": 5.0,
+      "delta": -96.15384615384616,
+      "direction": "down"
+    },
+    {
+      "type": "Edit Address   Contact Information",
+      "count": 1,
+      "pct": 5.0,
+      "delta": -88.88888888888889,
       "direction": "down"
     }
   ],
@@ -172,7 +236,7 @@
       "summary": "Spark app 4.5.1 - Spark GO: Incorrect Latest Firmware Version Detected",
       "status": "To Do",
       "product": "Spark",
-      "ticketCount": 5,
+      "ticketCount": 8,
       "followUp": true
     },
     {
@@ -180,7 +244,7 @@
       "summary": "Spark app 4.5.1  - Spark NEO: Incorrect Redirect for Firmware Update Instructions (iOS Only)",
       "status": "To Do",
       "product": "Spark",
-      "ticketCount": 5,
+      "ticketCount": 8,
       "followUp": true
     },
     {
@@ -188,7 +252,7 @@
       "summary": "Spark app 4.5.1 \u2013 Frozen After Connecting to Spark Amp via In-App Features (iOS Only)",
       "status": "In Review",
       "product": "Spark",
-      "ticketCount": 5,
+      "ticketCount": 8,
       "followUp": false
     },
     {
@@ -196,7 +260,7 @@
       "summary": "Spark app 4.5.1 - UI Issue (Overlapping in the Music page)",
       "status": "To Do",
       "product": "Spark",
-      "ticketCount": 5,
+      "ticketCount": 8,
       "followUp": true
     },
     {
@@ -204,7 +268,7 @@
       "summary": "Spark app 4.5.1 \u2013 ToneCloud Listing Issue (Android)",
       "status": "To Do",
       "product": "Spark",
-      "ticketCount": 5,
+      "ticketCount": 8,
       "followUp": true
     },
     {
@@ -212,7 +276,7 @@
       "summary": "Spark app - UI Issue (Voice Guide)",
       "status": "To Do",
       "product": "Spark",
-      "ticketCount": 5,
+      "ticketCount": 8,
       "followUp": true
     },
     {
@@ -220,7 +284,7 @@
       "summary": "Spark app - Voice Guide Doesn't Work Properly (iOS only)",
       "status": "To Do",
       "product": "Spark",
-      "ticketCount": 5,
+      "ticketCount": 8,
       "followUp": true
     },
     {
@@ -228,7 +292,7 @@
       "summary": "Spark app - UI Issue (Tab text disappears when selected)",
       "status": "To Do",
       "product": "Spark",
-      "ticketCount": 5,
+      "ticketCount": 8,
       "followUp": true
     }
   ]

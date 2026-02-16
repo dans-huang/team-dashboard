@@ -1,11 +1,11 @@
 {
   "period": "2025-11-18 ~ 2026-02-16",
   "daysCount": 90,
-  "totalBadRatings": 358,
-  "withComments": 302,
+  "totalBadRatings": 357,
+  "withComments": 301,
   "aiNegative": 177,
-  "aiNegativeRateOfComments": 58.61,
-  "aiNegativeRateOfAll": 49.44,
+  "aiNegativeRateOfComments": 58.8,
+  "aiNegativeRateOfAll": 49.58,
   "samples": [
     {
       "ticketId": 16243939216525,
@@ -129,12 +129,6 @@
     }
   ],
   "allComments": [
-    {
-      "ticketId": 396201035592,
-      "comment": "My product Is covered by warranty but support request payment to replace my Spark neo transmitter",
-      "createdAt": "2025-11-18T07:27:15Z",
-      "isAiNegative": false
-    },
     {
       "ticketId": 16243939216525,
       "comment": "I was hoping for a response from a real person. An AI response was not nice. AI doesn't buy amps from you my friends.",
@@ -427,6 +421,12 @@
       "ticketId": 21491403881485,
       "comment": "I don\u2019t think the person who responded really read my email. I felt completely unappreciated as a customer.  Feel like a complete fool for even making a second order (which I have).  Getting a $20 discount code instead of the $70 difference between my purchase (which WAS described as your \u201cBlack Friday special\u201d. - a \u201ccarry bag\u201d?  WhoTF needs that?) and the price offered 2 days later feels like the LOWEST effort possible.  I was (and still am) SOOOO tempted to just return the whole thing and buy it again at the Black Friday price.  Whatever. ",
       "createdAt": "2025-12-02T00:08:42Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I notified you folks immediately upon receiving confirmation that I had placed two orders for the same thing in error.  Zero effort was made on your part to cancel one order even though I provided order numbers for the one to cancel and the one to process.  The order was shipped three days later so the excuse that these orders get processed quickly is bogus.  Instead I was told to refuse the order at the door or send it back for a refund.  Awful customer service.  I will be returning both for a full refund.",
+      "createdAt": "2025-12-02T01:32:22Z",
       "isAiNegative": true
     }
   ]

@@ -37,8 +37,15 @@ async function loadWeekData(report, week) {
 // === Nav Setup ===
 function initNav() {
   const currentPage = location.pathname.split('/').pop() || 'index.html';
+  const weekParam = getWeekParam();
   document.querySelectorAll('.nav-tabs a').forEach(a => {
     if (a.getAttribute('href') === currentPage) a.classList.add('active');
+    // Preserve week selection across tabs
+    if (weekParam && weekParam !== 'latest') {
+      const url = new URL(a.href);
+      url.searchParams.set('week', weekParam);
+      a.href = url.toString();
+    }
   });
 
   loadIndex().then(idx => {
