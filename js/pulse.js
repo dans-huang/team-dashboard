@@ -29,7 +29,7 @@ function renderAiOps(ai) {
     el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No AI Ops data</p>';
     return;
   }
-  var resRate = typeof ai.aiResolutionRate === 'number' ? (ai.aiResolutionRate * 100).toFixed(1) + '%' : '-';
+  var resRate = typeof ai.aiResolutionRate === 'number' ? ai.aiResolutionRate.toFixed(1) + '%' : '-';
   var aiCsat = typeof ai.aiCsat === 'number' ? ai.aiCsat.toFixed(1) : '-';
   var humanCsat = typeof ai.humanCsat === 'number' ? ai.humanCsat.toFixed(1) : '-';
 
@@ -52,7 +52,7 @@ function renderAiOpportunities(opps) {
     '</tr></thead><tbody>';
 
   opps.forEach(function(o) {
-    var rate = typeof o.aiResRate === 'number' ? (o.aiResRate * 100).toFixed(1) + '%' : '-';
+    var rate = typeof o.aiResRate === 'number' ? o.aiResRate.toFixed(1) + '%' : '-';
     html += '<tr>' +
       '<td>' + (o.tally || '-') + '</td>' +
       '<td>' + formatNumber(o.count) + '</td>' +
@@ -115,8 +115,8 @@ document.addEventListener('compare-toggled', function(e) {
     var aiCards = aiOpsEl.querySelectorAll('.kpi-card');
     // AI Resolution Rate delta (percentage points)
     if (aiCards[0] && typeof _pulseData.aiOps.aiResolutionRate === 'number' && typeof prevData.aiOps.aiResolutionRate === 'number') {
-      var currRate = (_pulseData.aiOps.aiResolutionRate * 100).toFixed(1);
-      var prevRate = (prevData.aiOps.aiResolutionRate * 100).toFixed(1);
+      var currRate = _pulseData.aiOps.aiResolutionRate;
+      var prevRate = prevData.aiOps.aiResolutionRate;
       var rateDelta = Math.round(currRate - prevRate);
       addKpiDelta(aiCards[0], rateDelta);
     }
