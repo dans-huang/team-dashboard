@@ -15,25 +15,37 @@ echo ""
 
 mkdir -p "$DASHBOARD_DIR/data"/{pulse,qa,tickets,dsat}
 
-echo "→ Weekly Pulse..."
-python3 "$CLAUDE_DIR/skills/weekly-pulse/scripts/generate-pulse.py" --json --last-week \
-  > "$DASHBOARD_DIR/data/pulse/$WEEK.json"
-echo "  ✓ Saved to data/pulse/$WEEK.json"
+# Helper: run a script, validate JSON output, skip on empty/invalid
+generate() {
+  local label="$1" output="$2"; shift 2
+  echo "→ $label..."
+  local tmp
+  tmp=$(mktemp)
+  if "$@" > "$tmp" 2>/dev/null; then
+    if [ -s "$tmp" ] && python3 -m json.tool "$tmp" > /dev/null 2>&1; then
+      mv "$tmp" "$output"
+      echo "  ✓ Saved to $(basename "$(dirname "$output")")/$(basename "$output")"
+    else
+      echo "  ⚠ Script produced empty or invalid JSON — skipped"
+      rm -f "$tmp"
+    fi
+  else
+    echo "  ✗ Script failed — skipped"
+    rm -f "$tmp"
+  fi
+}
 
-echo "→ QA Pulse..."
-python3 "$CLAUDE_DIR/skills/bug-catch-rate/scripts/qa-pulse-report.py" --json --dry-run \
-  > "$DASHBOARD_DIR/data/qa/$WEEK.json"
-echo "  ✓ Saved to data/qa/$WEEK.json"
+generate "Weekly Pulse" "$DASHBOARD_DIR/data/pulse/$WEEK.json" \
+  python3 "$CLAUDE_DIR/skills/weekly-pulse/scripts/generate-pulse.py" --json --last-week
 
-echo "→ Weekly Tickets..."
-python3 "$CLAUDE_DIR/skills/daily-ticket-report/scripts/generate-weekly-report.py" --json --last-week \
-  > "$DASHBOARD_DIR/data/tickets/$WEEK.json"
-echo "  ✓ Saved to data/tickets/$WEEK.json"
+generate "QA Pulse" "$DASHBOARD_DIR/data/qa/$WEEK.json" \
+  python3 "$CLAUDE_DIR/skills/bug-catch-rate/scripts/qa-pulse-report.py" --json --dry-run
 
-echo "→ DSAT..."
-python3 "$CLAUDE_DIR/scripts/analysis/fetch-all-dsat-v3.py" --json \
-  > "$DASHBOARD_DIR/data/dsat/$WEEK.json"
-echo "  ✓ Saved to data/dsat/$WEEK.json"
+generate "Weekly Tickets" "$DASHBOARD_DIR/data/tickets/$WEEK.json" \
+  python3 "$CLAUDE_DIR/skills/daily-ticket-report/scripts/generate-weekly-report.py" --json --last-week
+
+generate "DSAT" "$DASHBOARD_DIR/data/dsat/$WEEK.json" \
+  python3 "$CLAUDE_DIR/scripts/analysis/fetch-all-dsat-v3.py" --json
 
 echo ""
 echo "→ Updating index..."

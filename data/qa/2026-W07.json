@@ -1,36 +1,3 @@
-============================================================
-QA TEAM PULSE REPORT
-============================================================
-Date: 2026-02-15 15:49
-Period: Rolling 90 days
-
-Querying QA bugs (Dev Jira)...
-Querying customer bugs (STFS, Bug type only)...
-BCR: 0.0% (QA: 0, Customer: 0)
-  Spark: 0.0%
-  BIAS X: 0.0%
-
-Fetching Qase test runs...
-  Spark: 6 runs
-  BIAS X: 8 runs
-  Reactor: 9 runs
-
-TEST EXECUTION:
-  Spark: pass_rate=84.0%, velocity=23.4 cases/day
-  BIAS X: pass_rate=95.5%, velocity=31.9 cases/day
-  Reactor: pass_rate=85.4%, velocity=40.8 cases/day
-
-EFFORT SIGNALS: 9
-  [warning] Spark EDGE 2.9.1.80 Full Regression test (SE): 19% blocked/skipped (15/78)
-  [warning] Spark EDGE 2.9.1.80 Full Regression test (SE): in progress for 82 days
-  [warning] Spark Live 2.8.4.205 Full Regression test (SL): 18% blocked/skipped (14/80)
-  [warning] MIDI/Automation Test run 2025/11/26 (BX): in progress for 81 days
-  [info] MIDI/Automation Test run 2025/11/26 (BX): 100% untested (39/39)
-  [warning] 1.1.0.51204 Full Regression (MacOS14 Studio One 7) (BX): in progress for 69 days
-  [warning] Reactor Firmware (100W) 0.1.2.209 Function Test (RA): 22% blocked/skipped (23/103)
-  [info] [iOS] 2/22 MKT/KOL Build Function Test (RAPP): 44% untested (86/194)
-  [info] [Android] 2/22 MKT/KOL Build Function Test (RAPP): 99% untested (192/194)
-
 {
   "period": "2025-11-17 ~ 2026-02-15",
   "daysCount": 90,

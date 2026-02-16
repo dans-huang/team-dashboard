@@ -1,0 +1,14 @@
+{
+  "period": "2026-02-16 ~ 2026-02-22",
+  "alerts": [],
+  "kpi": {
+    "totalTickets": null,
+    "topProduct": null,
+    "refunds": null,
+    "productCount": null
+  },
+  "dailyTrend": [],
+  "productBreakdown": [],
+  "ticketTypes": [],
+  "stfs": []
+}

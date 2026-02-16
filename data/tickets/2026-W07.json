@@ -1,5 +1,14 @@
-=== Weekly Ticket Report: 02/02 - 02/08 ===
-  Current:  2026-02-02 ~ 2026-02-08
-  Previous: 2026-01-26 ~ 2026-02-01
-  Fetching ticket data...
-  No ticket data found.
+{
+  "period": "2026-02-09 ~ 2026-02-15",
+  "alerts": [],
+  "kpi": {
+    "totalTickets": null,
+    "topProduct": null,
+    "refunds": null,
+    "productCount": null
+  },
+  "dailyTrend": [],
+  "productBreakdown": [],
+  "ticketTypes": [],
+  "stfs": []
+}
