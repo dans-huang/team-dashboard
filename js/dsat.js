@@ -198,7 +198,7 @@ document.addEventListener('compare-toggled', function(e) {
       var cls = deltaNum > 0 ? 'down' : (deltaNum < 0 ? 'up' : 'neutral');
       var arrow = deltaNum > 0 ? '\u2191' : (deltaNum < 0 ? '\u2193' : '\u2192');
       heroEl.innerHTML = '<span class="kpi-delta ' + cls + '" style="font-size:18px;">' +
-        arrow + ' ' + Math.abs(deltaNum).toFixed(1) + ' pp vs prev week</span>';
+        arrow + ' ' + Math.abs(deltaNum).toFixed(1) + 'pp</span>';
     } else {
       heroEl.innerHTML = '';
     }
