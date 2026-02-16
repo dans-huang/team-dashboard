@@ -1,11 +1,11 @@
 {
   "period": "2025-11-18 ~ 2026-02-16",
   "daysCount": 90,
-  "totalBadRatings": 360,
-  "withComments": 303,
+  "totalBadRatings": 358,
+  "withComments": 302,
   "aiNegative": 177,
-  "aiNegativeRateOfComments": 58.42,
-  "aiNegativeRateOfAll": 49.17,
+  "aiNegativeRateOfComments": 58.61,
+  "aiNegativeRateOfAll": 49.44,
   "samples": [
     {
       "ticketId": 16243939216525,
@@ -129,12 +129,6 @@
     }
   ],
   "allComments": [
-    {
-      "ticketId": 21491403881485,
-      "comment": "You don\u2019t want to know what I think won\u2019t be good ",
-      "createdAt": "2025-11-18T02:53:09Z",
-      "isAiNegative": false
-    },
     {
       "ticketId": 396201035592,
       "comment": "My product Is covered by warranty but support request payment to replace my Spark neo transmitter",
@@ -428,6 +422,12 @@
       "comment": "There could have been other steps taken to solve problem. But, I understand the time it takes and the effort, to the company, is just not worth it.",
       "createdAt": "2025-12-01T12:17:42Z",
       "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I don\u2019t think the person who responded really read my email. I felt completely unappreciated as a customer.  Feel like a complete fool for even making a second order (which I have).  Getting a $20 discount code instead of the $70 difference between my purchase (which WAS described as your \u201cBlack Friday special\u201d. - a \u201ccarry bag\u201d?  WhoTF needs that?) and the price offered 2 days later feels like the LOWEST effort possible.  I was (and still am) SOOOO tempted to just return the whole thing and buy it again at the Black Friday price.  Whatever. ",
+      "createdAt": "2025-12-02T00:08:42Z",
+      "isAiNegative": true
     }
   ]
 }
