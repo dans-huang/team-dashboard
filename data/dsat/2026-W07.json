@@ -1,18 +1,12 @@
 {
   "period": "2025-11-18 ~ 2026-02-16",
   "daysCount": 90,
-  "totalBadRatings": 357,
-  "withComments": 301,
-  "aiNegative": 177,
-  "aiNegativeRateOfComments": 58.8,
-  "aiNegativeRateOfAll": 49.58,
+  "totalBadRatings": 356,
+  "withComments": 300,
+  "aiNegative": 176,
+  "aiNegativeRateOfComments": 58.67,
+  "aiNegativeRateOfAll": 49.44,
   "samples": [
-    {
-      "ticketId": 16243939216525,
-      "comment": "I was hoping for a response from a real person. An AI response was not nice. AI doesn't buy amps from you my friends.",
-      "createdAt": "2025-11-18T10:04:46Z",
-      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41224858482061.json"
-    },
     {
       "ticketId": 405137182592,
       "comment": "Quick responses which I appreciated. \nHowever there is currently no solution and no timescale provided.\nI have just been told they are aware of the problem and a basic workaround has been provided.\nAs things stand I remain disappointed with the product.",
@@ -126,15 +120,15 @@
       "comment": "As the manufacturer Positive Grid should prioritize recurring customers and offer better prices and discount to them instead letting them go to Amazon. \nExisting customers are the best and easiest to retain, The focus should be on them.",
       "createdAt": "2025-11-27T15:48:57Z",
       "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41474128332301.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Friendly AI bot, but wasting my time. I got multiple emails with lots of text instead of an answer in one sentence: \"Yes, we offer a Black Friday discount on your upgrade, but it's the same price as buying it new.\"\n",
+      "createdAt": "2025-11-27T16:35:12Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41475332338957.json"
     }
   ],
   "allComments": [
-    {
-      "ticketId": 16243939216525,
-      "comment": "I was hoping for a response from a real person. An AI response was not nice. AI doesn't buy amps from you my friends.",
-      "createdAt": "2025-11-18T10:04:46Z",
-      "isAiNegative": true
-    },
     {
       "ticketId": 21491403881485,
       "comment": "Tried to cancel an order about an hour after placing it. Customer service could not reach out to their shipping department in time... Shipped the item using Amazon, I was told to refuse the item. Received 5 different phone numbers with Amazon that no one knew how to track the package. Then was told there will be a shipping label fee...I will really think twice about ordering another product from you. This entire process took over two weeks and hours of my time. Very disappointed. ",
@@ -428,6 +422,12 @@
       "comment": "I notified you folks immediately upon receiving confirmation that I had placed two orders for the same thing in error.  Zero effort was made on your part to cancel one order even though I provided order numbers for the one to cancel and the one to process.  The order was shipped three days later so the excuse that these orders get processed quickly is bogus.  Instead I was told to refuse the order at the door or send it back for a refund.  Awful customer service.  I will be returning both for a full refund.",
       "createdAt": "2025-12-02T01:32:22Z",
       "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "Fast response but no real resolution. I just wanted to change my billing address to match my shipping address. I still don\u2019t know how to do this. I love your products!",
+      "createdAt": "2025-12-02T03:14:22Z",
+      "isAiNegative": false
     }
   ]
 }

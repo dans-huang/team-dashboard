@@ -31,6 +31,7 @@
   ],
   "kpi": {
     "totalTickets": 517,
+    "topProduct": "SPARK 2",
     "dailyAvg": 73.9,
     "refunds": 47,
     "productCount": 22
@@ -630,16 +631,16 @@
     }
   ],
   "aiOps": {
-    "aiResolutionRate": 31.4,
-    "devinClosed": 185,
-    "allClosed": 590,
+    "aiResolutionRate": 31.3,
+    "devinClosed": 186,
+    "allClosed": 594,
     "aiCsat": 82.6,
     "aiGood": 38,
     "aiBad": 8,
     "humanCsat": 89.5,
     "humanGood": 77,
     "humanBad": 9,
-    "handoffRate": 68.6
+    "handoffRate": 68.7
   },
   "aiOpportunities": [
     {

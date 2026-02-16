@@ -4,22 +4,23 @@
   "endDate": "2026-02-22",
   "alerts": [
     {
-      "severity": "medium",
-      "message": "SPARK accounts for 40% of all tickets",
-      "type": "dominant_product"
+      "severity": "high",
+      "message": "SPARK / Troubleshooting  Software   App  Unlisted Issue Report: 1 \u2192 5",
+      "type": "tally_surge"
     }
   ],
   "kpi": {
-    "totalTickets": 20,
-    "dailyAvg": 2.9,
-    "refunds": 4,
-    "productCount": 5
+    "totalTickets": 42,
+    "topProduct": "SPARK",
+    "dailyAvg": 6.0,
+    "refunds": 6,
+    "productCount": 9
   },
   "dailyTrend": [
     {
       "date": "2026-02-16",
       "day": "Mon",
-      "count": 20
+      "count": 42
     },
     {
       "date": "2026-02-17",
@@ -55,14 +56,14 @@
   "productBreakdown": [
     {
       "product": "SPARK",
-      "count": 8,
-      "pct": 40.0,
-      "delta": -87.3015873015873,
+      "count": 10,
+      "pct": 23.8,
+      "delta": -84.12698412698413,
       "direction": "down",
       "topIssues": [
         {
           "tally": "Troubleshooting  Software   App  Unlisted Issue Report",
-          "count": 3,
+          "count": 5,
           "tickets": [
             {
               "id": "578308"
@@ -72,6 +73,12 @@
             },
             {
               "id": "578336"
+            },
+            {
+              "id": "578338"
+            },
+            {
+              "id": "578341"
             }
           ]
         },
@@ -100,11 +107,26 @@
     },
     {
       "product": "SPARK 2",
-      "count": 5,
-      "pct": 25.0,
-      "delta": -95.23809523809523,
+      "count": 10,
+      "pct": 23.8,
+      "delta": -90.47619047619048,
       "direction": "down",
       "topIssues": [
+        {
+          "tally": "Purchase Inquiry  Order   Shipping  Track For Order Status And Eta",
+          "count": 3,
+          "tickets": [
+            {
+              "id": "578362"
+            },
+            {
+              "id": "578365"
+            },
+            {
+              "id": "578366"
+            }
+          ]
+        },
         {
           "tally": "Troubleshooting  Hardware  Physical Controls / Parts",
           "count": 1,
@@ -122,13 +144,40 @@
               "id": "578320"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "product": "SPARK MINI",
+      "count": 6,
+      "pct": 14.3,
+      "delta": -83.33333333333334,
+      "direction": "down",
+      "topIssues": [
         {
-          "tally": "Troubleshooting  Bluetooth / Wireless  Cannot Pair With My Device  Audio",
+          "tally": "Troubleshooting  Bluetooth / Wireless  Cannot Connect To My Device  App",
           "count": 1,
           "tickets": [
             {
-              "id": "578321"
+              "id": "578307"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Hardware  Physical Controls / Parts",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578332"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Bluetooth / Wireless  No Bluetooth Connection  Audio   App",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578346"
             }
           ]
         }
@@ -137,7 +186,7 @@
     {
       "product": "SPARK LIVE",
       "count": 3,
-      "pct": 15.0,
+      "pct": 7.1,
       "delta": -81.25,
       "direction": "down",
       "topIssues": [
@@ -171,37 +220,10 @@
       ]
     },
     {
-      "product": "SPARK MINI",
-      "count": 2,
-      "pct": 10.0,
-      "delta": -94.44444444444444,
-      "direction": "down",
-      "topIssues": [
-        {
-          "tally": "Troubleshooting  Bluetooth / Wireless  Cannot Connect To My Device  App",
-          "count": 1,
-          "tickets": [
-            {
-              "id": "578307"
-            }
-          ]
-        },
-        {
-          "tally": "Troubleshooting  Hardware  Physical Controls / Parts",
-          "count": 1,
-          "tickets": [
-            {
-              "id": "578332"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "product": "SPARK GO",
-      "count": 1,
-      "pct": 5.0,
-      "delta": -98.0392156862745,
+      "count": 3,
+      "pct": 7.1,
+      "delta": -94.11764705882352,
       "direction": "down",
       "topIssues": [
         {
@@ -212,67 +234,168 @@
               "id": "578335"
             }
           ]
+        },
+        {
+          "tally": "Post-Sales  Return   Refund Request  Refund Request",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578340"
+            }
+          ]
+        },
+        {
+          "tally": "Product Inquiry  Specs  Specs  Not Shown ",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578350"
+            }
+          ]
         }
       ]
+    },
+    {
+      "product": "SPARK CAB",
+      "count": 1,
+      "pct": 2.4,
+      "delta": -90.9090909090909,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Post-Sales  Service Parts Request  Others",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578351"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK NEO",
+      "count": 1,
+      "pct": 2.4,
+      "delta": -94.73684210526315,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Power / Battery  Not Powering On",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578353"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK LINK",
+      "count": 1,
+      "pct": 2.4,
+      "delta": -96.42857142857143,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Website  Product Registration  Cannot Register Successfully",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578354"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Other (1 products)",
+      "count": 1,
+      "pct": 2.4,
+      "delta": 0,
+      "direction": "same",
+      "topIssues": []
     }
   ],
   "ticketTypes": [
     {
       "type": "Troubleshooting",
-      "count": 12,
-      "pct": 60.0,
-      "delta": -94.9579831932773,
+      "count": 22,
+      "pct": 52.4,
+      "delta": -90.75630252100841,
       "direction": "down"
     },
     {
       "type": "Request For Refund/Replacement",
-      "count": 4,
-      "pct": 20.0,
-      "delta": -91.48936170212765,
-      "direction": "down"
-    },
-    {
-      "type": "Product Spec",
-      "count": 1,
-      "pct": 5.0,
-      "delta": -96.15384615384616,
+      "count": 6,
+      "pct": 14.3,
+      "delta": -87.2340425531915,
       "direction": "down"
     },
     {
       "type": "Order Related",
-      "count": 1,
-      "pct": 5.0,
-      "delta": -97.82608695652173,
+      "count": 4,
+      "pct": 9.5,
+      "delta": -91.30434782608695,
+      "direction": "down"
+    },
+    {
+      "type": "Product Spec",
+      "count": 3,
+      "pct": 7.1,
+      "delta": -88.46153846153845,
       "direction": "down"
     },
     {
       "type": "Product Registration",
-      "count": 1,
-      "pct": 5.0,
-      "delta": -96.15384615384616,
+      "count": 2,
+      "pct": 4.8,
+      "delta": -92.3076923076923,
+      "direction": "down"
+    },
+    {
+      "type": "Manage My Account",
+      "count": 2,
+      "pct": 4.8,
+      "delta": -90.0,
       "direction": "down"
     },
     {
       "type": "Edit Address   Contact Information",
       "count": 1,
-      "pct": 5.0,
+      "pct": 2.4,
       "delta": -88.88888888888889,
+      "direction": "down"
+    },
+    {
+      "type": "Delete/Migrate Account",
+      "count": 1,
+      "pct": 2.4,
+      "delta": -87.5,
       "direction": "down"
     }
   ],
   "aiOps": {
-    "aiResolutionRate": 60.9,
-    "devinClosed": 14,
-    "allClosed": 23,
+    "aiResolutionRate": 33.3,
+    "devinClosed": 15,
+    "allClosed": 45,
     "aiCsat": 100.0,
     "aiGood": 2,
     "aiBad": 0,
     "humanCsat": 100.0,
-    "humanGood": 5,
+    "humanGood": 7,
     "humanBad": 0,
-    "handoffRate": 39.1
+    "handoffRate": 66.7
   },
-  "aiOpportunities": [],
+  "aiOpportunities": [
+    {
+      "tally": "Troubleshooting  Software   App  Unlisted Issue Report",
+      "count": 5,
+      "aiCount": 1,
+      "aiResRate": 20.0
+    }
+  ],
   "stfs": [
     {
       "key": "STFS-414",
