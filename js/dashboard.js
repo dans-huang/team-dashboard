@@ -89,8 +89,9 @@ function initExpandableRows() {
 // === Formatting Helpers ===
 function formatDelta(value) {
   if (value == null || typeof value !== 'number') return '<span class="kpi-delta neutral">-</span>';
-  if (value > 0) return '<span class="kpi-delta up">\u2191' + value + '%</span>';
-  if (value < 0) return '<span class="kpi-delta down">\u2193' + Math.abs(value) + '%</span>';
+  var v = Math.round(value);
+  if (v > 0) return '<span class="kpi-delta up">\u2191' + v + '%</span>';
+  if (v < 0) return '<span class="kpi-delta down">\u2193' + Math.abs(v) + '%</span>';
   return '<span class="kpi-delta neutral">\u2192 0%</span>';
 }
 
