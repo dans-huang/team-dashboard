@@ -1,0 +1,433 @@
+{
+  "period": "2025-11-18 ~ 2026-02-16",
+  "daysCount": 90,
+  "totalBadRatings": 360,
+  "withComments": 303,
+  "aiNegative": 177,
+  "aiNegativeRateOfComments": 58.42,
+  "aiNegativeRateOfAll": 49.17,
+  "samples": [
+    {
+      "ticketId": 16243939216525,
+      "comment": "I was hoping for a response from a real person. An AI response was not nice. AI doesn't buy amps from you my friends.",
+      "createdAt": "2025-11-18T10:04:46Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41224858482061.json"
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "Quick responses which I appreciated. \nHowever there is currently no solution and no timescale provided.\nI have just been told they are aware of the problem and a basic workaround has been provided.\nAs things stand I remain disappointed with the product.",
+      "createdAt": "2025-11-18T22:49:21Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41249128454413.json"
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "Jai juste demand\u00e9 de changer la couleur de l amplificateur (qui est normal ) J'avais blanc et jai denand\u00e9 noir pour faire changement .... l'agente a pas voulu ",
+      "createdAt": "2025-11-19T02:07:54Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41253091259405.json"
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I don\u2019t like wasting time with AI responses!!",
+      "createdAt": "2025-11-19T12:58:13Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41260155077645.json"
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "For 2 months maybe more we were going back and forth, they did sent me a replacement but it did the same noise as mine, and then instead in the end keep that one too they wanted me to return both and get a refund and 20 $ coupon as a discount.... that is embarrasing...just to jave your customer satisfy just let him keep botj product to not complain after 3 months of frustartion.",
+      "createdAt": "2025-11-19T14:43:21Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41263502573197.json"
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "The compatibility issue with the macOS Tahoe and the iOS 26 with my Spark Mini amp has impacted me in a very negative way. I use the amp as an audio interface to record. This is THE reason I got this product.\n\nThe response I got was: 1) AI-generated and I almost couldn't talk to one of your agents, 2) Unsatisfaying in that the only information I got into when and how this issue is going to be solved was \"we are working on it.\" YOUR LAST UPDATE ON THE FRIMEWARE WAS ON May 13, 2024. It does not look like you are working on it, or that you have any clue whatsoever about how to solve this issue.\n\nI feel disappointed at a brand-name for which I had very high expectations.  ",
+      "createdAt": "2025-11-20T05:08:06Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41286603041805.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The AI response only vaguely answered my question. Maybe I could've been more specific, but when it goes and reiterates points that I've already made in my initial support email, it comes off as redundant and that it's not really \"listening\" or \"reading.\" Doesn't inspire confidence in the company or the product.",
+      "createdAt": "2025-11-20T18:16:36Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41299730015757.json"
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Actually i would be very happy to have elite version of bias fx2. But i got 10$ coupon instead. I did not ask for money\u2026 I was even okey with the permision of buying that license. I really can\u2019t understand how a digital license/application vanishes completely for good. I\u2019m not gonna lie, i\u2019m still waiting for a solution. After getting in touch with you, i tried bias x again and no. It will never be a second bias fx2 for me\u2026",
+      "createdAt": "2025-11-20T22:32:17Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41306267811469.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I received what sounded like an AI response that did not resolve the problem. Why is it that so few Positive Grid products support a decent looper or an expression pedal?? Also, why are Positive Grid products rushed out lacking basic features like MIDI control (Bias X)??",
+      "createdAt": "2025-11-21T09:27:04Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41313024721421.json"
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Despite a return of the product and a shipping of the new one, the same problem of not neing able to update the firmware remains.  I receive the same error.  Without thre update, the x controller is inoperative for the functions I need.  Is it possible to discuss the update problem with a human being or find a place where I might be able to update in case the problems is with my wireless connections? ",
+      "createdAt": "2025-11-21T16:58:02Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41324089654157.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "You only answered my question using AI. And not a real person.",
+      "createdAt": "2025-11-22T10:00:58Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41343052921997.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The AI answering seemed to do its job, I suppose, but I hate the idea that it wasn't human response, so I'm not sure if I can trust it. So I'm a bit put off. It made me second guess ordering for your company. I'm still thinking on it because the product is ki d of cool.",
+      "createdAt": "2025-11-22T17:05:17Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41348804370061.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Certain issues, like not working equipment, have to be dealt much quicker",
+      "createdAt": "2025-11-23T08:39:47Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41356715095053.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "You're AI is terrible and did not even acknowledge what I had asked it. ",
+      "createdAt": "2025-11-24T03:20:16Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41367844992397.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Buying used. The policy of previous owner having to unregister. I could not get in touch with seller. I did find him by chance. There should be a way for you to email the previous register. Failing to respond they should have their registration revoked.",
+      "createdAt": "2025-11-24T21:40:53Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41394511867277.json"
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "The AI didn't respond to my questions and simply reused my words to give me an \"answer\". \n\nI needed a answer from a human.",
+      "createdAt": "2025-11-25T08:59:44Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41405020039181.json"
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I have purchased multiple products from Positive Grid for several years and now find out that the points program doesn't go back as far as when my purchases started. And all that was offered was a $20 discount. At $100 or so, that would be better, but $20 was weak at best. All of it makes me not want to purchase anything else from Positive Grid again and even trade in my current gear for something else.",
+      "createdAt": "2025-11-25T16:44:41Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41416649394317.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I did not get a response for my issue, I have been waiting but no response.",
+      "createdAt": "2025-11-26T02:08:47Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41433576400525.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Unwillness to repair or exchange a faulty product.",
+      "createdAt": "2025-11-27T13:38:43Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41470752873613.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "As the manufacturer Positive Grid should prioritize recurring customers and offer better prices and discount to them instead letting them go to Amazon. \nExisting customers are the best and easiest to retain, The focus should be on them.",
+      "createdAt": "2025-11-27T15:48:57Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41474128332301.json"
+    }
+  ],
+  "allComments": [
+    {
+      "ticketId": 21491403881485,
+      "comment": "You don\u2019t want to know what I think won\u2019t be good ",
+      "createdAt": "2025-11-18T02:53:09Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "My product Is covered by warranty but support request payment to replace my Spark neo transmitter",
+      "createdAt": "2025-11-18T07:27:15Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I was hoping for a response from a real person. An AI response was not nice. AI doesn't buy amps from you my friends.",
+      "createdAt": "2025-11-18T10:04:46Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Tried to cancel an order about an hour after placing it. Customer service could not reach out to their shipping department in time... Shipped the item using Amazon, I was told to refuse the item. Received 5 different phone numbers with Amazon that no one knew how to track the package. Then was told there will be a shipping label fee...I will really think twice about ordering another product from you. This entire process took over two weeks and hours of my time. Very disappointed. ",
+      "createdAt": "2025-11-18T18:53:32Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "Quick responses which I appreciated. \nHowever there is currently no solution and no timescale provided.\nI have just been told they are aware of the problem and a basic workaround has been provided.\nAs things stand I remain disappointed with the product.",
+      "createdAt": "2025-11-18T22:49:21Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "I know the order went unfulfilled for 2 days and I tried to cancel after only one , but was told it was to late. was told to refuse shipment or send back.\n",
+      "createdAt": "2025-11-19T01:15:26Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "Jai juste demand\u00e9 de changer la couleur de l amplificateur (qui est normal ) J'avais blanc et jai denand\u00e9 noir pour faire changement .... l'agente a pas voulu ",
+      "createdAt": "2025-11-19T02:07:54Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The support was great and question answered within a good time,\nBut the question was about delivery to Cyprus, \nobviously you do not deliver to this country, \nWhich was quite upsetting for my son,\nHe's had to pay an extra \u20ac100 to source the product from elsewhere.",
+      "createdAt": "2025-11-19T04:48:16Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "The fact that a major part of the product does not work and I have no timeframe for a fix is dissatisfying ",
+      "createdAt": "2025-11-19T09:05:15Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I don\u2019t like wasting time with AI responses!!",
+      "createdAt": "2025-11-19T12:58:13Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "All of the drop down \"reasons\" apple.  Add \"the inability to speak to a human.\"  MAJOR tech problems (connectivity, inability to recognize devices, interface, inability to update firmware, etc) problems with the products.  Impossible to get timely customer service responses.  Just awful.   For a product that is highly technologically advanced, and very expensive, AND from someone who bought 10 devices, I simply am appalled by the lack of service. ",
+      "createdAt": "2025-11-19T14:30:24Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "For 2 months maybe more we were going back and forth, they did sent me a replacement but it did the same noise as mine, and then instead in the end keep that one too they wanted me to return both and get a refund and 20 $ coupon as a discount.... that is embarrasing...just to jave your customer satisfy just let him keep botj product to not complain after 3 months of frustartion.",
+      "createdAt": "2025-11-19T14:43:21Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "Id just like a refund ",
+      "createdAt": "2025-11-20T00:02:42Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "The compatibility issue with the macOS Tahoe and the iOS 26 with my Spark Mini amp has impacted me in a very negative way. I use the amp as an audio interface to record. This is THE reason I got this product.\n\nThe response I got was: 1) AI-generated and I almost couldn't talk to one of your agents, 2) Unsatisfaying in that the only information I got into when and how this issue is going to be solved was \"we are working on it.\" YOUR LAST UPDATE ON THE FRIMEWARE WAS ON May 13, 2024. It does not look like you are working on it, or that you have any clue whatsoever about how to solve this issue.\n\nI feel disappointed at a brand-name for which I had very high expectations.  ",
+      "createdAt": "2025-11-20T05:08:06Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "The \u201csoluci\u00f3n\u201d was contact Amazon, really?",
+      "createdAt": "2025-11-20T05:12:09Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "The response was fast and concerned to sort out my problem but the solution was no good for me because it required a window/mac computer and I only have android phones and a chromebook so I'm stuck with the faulty Spark Edge firmware update until the bugs are fixed.",
+      "createdAt": "2025-11-20T09:11:22Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The AI response only vaguely answered my question. Maybe I could've been more specific, but when it goes and reiterates points that I've already made in my initial support email, it comes off as redundant and that it's not really \"listening\" or \"reading.\" Doesn't inspire confidence in the company or the product.",
+      "createdAt": "2025-11-20T18:16:36Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Actually i would be very happy to have elite version of bias fx2. But i got 10$ coupon instead. I did not ask for money\u2026 I was even okey with the permision of buying that license. I really can\u2019t understand how a digital license/application vanishes completely for good. I\u2019m not gonna lie, i\u2019m still waiting for a solution. After getting in touch with you, i tried bias x again and no. It will never be a second bias fx2 for me\u2026",
+      "createdAt": "2025-11-20T22:32:17Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "It took several days to receive a first response only to be told to allow a further 48 hours to investigate. Even then, it took 4 more days to get a response",
+      "createdAt": "2025-11-20T22:38:50Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "There is clearly a problem with compatibility, spark mini and Mac os.  I've had 3 different responses.  1-do these changes to fix it (it did not) 2-do these other changes and it will work (it did not) but we know it's a problem it's just not us, it's apple. and 3-we know it's a problem, we can't help NOW and we're working on it.  \"Maybe\" it'll be fixed with next software/firmware update.  Since it's not plug n play compatible as advertised, maybe you all should put A BOLD HIGHLIGHT AND REITERATE that it does not work on Mac OS Tahoe as of yet so we don't spend days trying stuff that doesn't work.  That there's a patch being worked on.  Otherwise the mini is fantastic.  It kills me that this one thing is a problem.  I'm looking forward to getting this worked out.  Maybe a fast track update for Mac users?   Here's to hoping.",
+      "createdAt": "2025-11-20T23:35:12Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I received what sounded like an AI response that did not resolve the problem. Why is it that so few Positive Grid products support a decent looper or an expression pedal?? Also, why are Positive Grid products rushed out lacking basic features like MIDI control (Bias X)??",
+      "createdAt": "2025-11-21T09:27:04Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Despite a return of the product and a shipping of the new one, the same problem of not neing able to update the firmware remains.  I receive the same error.  Without thre update, the x controller is inoperative for the functions I need.  Is it possible to discuss the update problem with a human being or find a place where I might be able to update in case the problems is with my wireless connections? ",
+      "createdAt": "2025-11-21T16:58:02Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I never got a respond",
+      "createdAt": "2025-11-22T03:27:54Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Yes your guys were polite but unfortunately I feel very let down. This is my first guitar amp ever im new. I literally haven't even unboxed your product yet,  I really wanted to get the Spark 2 bag but I can't afford it because getting into guitar is expensive. \nI bought from a respected dealer, did what I was supposed to do and then few weeks later everyone else gets the bag included free. I understand that its your website deal but as I've never even used the amp yet my first Postive Grid experience feels very negative, showing up in my feed about 1 week after receiving shipment I feel bit taken advantage of. Sorry I know its not your fault but looking at my Spark 2 makes me regret buying it. Thank you for listening ",
+      "createdAt": "2025-11-22T05:37:31Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "You only answered my question using AI. And not a real person.",
+      "createdAt": "2025-11-22T10:00:58Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The AI answering seemed to do its job, I suppose, but I hate the idea that it wasn't human response, so I'm not sure if I can trust it. So I'm a bit put off. It made me second guess ordering for your company. I'm still thinking on it because the product is ki d of cool.",
+      "createdAt": "2025-11-22T17:05:17Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Certain issues, like not working equipment, have to be dealt much quicker",
+      "createdAt": "2025-11-23T08:39:47Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "You're AI is terrible and did not even acknowledge what I had asked it. ",
+      "createdAt": "2025-11-24T03:20:16Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Buying used. The policy of previous owner having to unregister. I could not get in touch with seller. I did find him by chance. There should be a way for you to email the previous register. Failing to respond they should have their registration revoked.",
+      "createdAt": "2025-11-24T21:40:53Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "The AI didn't respond to my questions and simply reused my words to give me an \"answer\". \n\nI needed a answer from a human.",
+      "createdAt": "2025-11-25T08:59:44Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I have purchased multiple products from Positive Grid for several years and now find out that the points program doesn't go back as far as when my purchases started. And all that was offered was a $20 discount. At $100 or so, that would be better, but $20 was weak at best. All of it makes me not want to purchase anything else from Positive Grid again and even trade in my current gear for something else.",
+      "createdAt": "2025-11-25T16:44:41Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I did not get a response for my issue, I have been waiting but no response.",
+      "createdAt": "2025-11-26T02:08:47Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "Personel involved was great and professional, but there should be an option to buy parts instead of having to ship the amp.",
+      "createdAt": "2025-11-27T02:03:32Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Unwillness to repair or exchange a faulty product.",
+      "createdAt": "2025-11-27T13:38:43Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "As the manufacturer Positive Grid should prioritize recurring customers and offer better prices and discount to them instead letting them go to Amazon. \nExisting customers are the best and easiest to retain, The focus should be on them.",
+      "createdAt": "2025-11-27T15:48:57Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Friendly AI bot, but wasting my time. I got multiple emails with lots of text instead of an answer in one sentence: \"Yes, we offer a Black Friday discount on your upgrade, but it's the same price as buying it new.\"\n",
+      "createdAt": "2025-11-27T16:35:12Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Your company is certainly not the only one guilty of this. Offering new customers virtually the same price as returning customers are offered for upgrades/loyalty pricing is very much an insult to your existing customer base, many of whom would be eligible for the current upgrade pricing. Why not offer at least a token discount of say, 10-15% off the current upgrade price to keep everyone happy and prevent issues like this from arising. I know not everyone would be satisfied even with that, but you would most certainly have many, many more happy campers out there than you do now. And support not offering anything other than a \"There, there, it will be alright - we really do care about our loyal customers\" is, quite frankly, very irritating.",
+      "createdAt": "2025-11-28T04:34:49Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Yes your guys were polite but unfortunately I feel very let down. This is my first guitar amp ever im new. I literally haven't even unboxed your product yet,  I really wanted to get the Spark 2 bag but I can't afford it because getting into guitar is expensive. \nI bought from a respected dealer, did what I was supposed to do and then few weeks later everyone else gets the bag included free. I understand that its your website deal but as I've never even used the amp yet my first Postive Grid experience feels very negative, showing up in my feed about 1 week after receiving shipment I feel bit taken advantage of. Sorry I know its not your direct fault but looking at my Spark 2 makes me genuinely regret buying it. I haven't used it once its still in the box \nThank you for listening ",
+      "createdAt": "2025-11-28T07:24:26Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Impressive responses considering it is AI generated but these issues should have been easy and quicker to resolve. AI was asking me to do unnecessary steps to resolve",
+      "createdAt": "2025-11-28T08:07:15Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Significant price drop few days after purchase and you don't have a price adjustment policy.\nThat's disappointing.",
+      "createdAt": "2025-11-28T10:11:48Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "It took a month.  A month.  Fella\u2019s, it took a month.  A month.  I want to buy more of your products.  For myself.  For my children, my grandchildren, my students.  But when you forced me to do a firmware update which in itself is a cumbersome request to make of an average joe guitar player guy, but when you forced me to\u2026 and that updated corrupted my device, you took a month to fix it.  A month.  How can I in good confidence buy more of your products when you take a month to support what I\u2019ve already purchased.  Two 40\u2019s, four powered cabs, one Live.  I love them!  Until I have to undo all of my cable management and drag them to my office, download software updaters and drivers onto my personal computer and do firmware updates.  Is this a Cisco aggregate router or a guitar amp?  Okay okay, it\u2019s the future, I\u2019m old, I can concede that point.  But when you take a MONTH to fix the break that you forced me to implement, there was no \u201copt out\u201d of the update option.  When you forced me into a failed state, man.  All of my musical mojo fades away and all that is left is financial regret.  A month fellas.  Are you catching that part?  I want to love, promote and support this platform.  I do.  I want to.  And I\u2019m very glad you finally came through.  I am.  I truly am.  But dang it man.  It\u2019s hard to get over.  It took a month.  ",
+      "createdAt": "2025-11-29T02:18:36Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I was giving this company a second chance after having my \u201cSpark go\u201d amp have a hardware failure after only 2 uses only to be told that I was a couple days past warranty so nothing would be done. Now I order again to give the company another shot and I get screwed again. Within hours of my order being placed you dropped the price by a huge amount and refused to price adjust for me even though my package had not even left the warehouse. I am done with this level of disrespect and I am going to be giving away the spark2 when it arrives as my entire outlook of your company has now made it so I wouldn\u2019t even be able to enjoy using your products or services . Please remove me from mailing lists and do not ask for a product review or I will just post like this publicly next time ",
+      "createdAt": "2025-11-29T12:48:09Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The Support from your AI was fine. The Problem wasn\u2018t solved so I\u2018m Not satisfied. ",
+      "createdAt": "2025-11-29T13:29:00Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "The product was poor and didn\u2019t provide any value. When I tried to return it I was told I was outside the return window by a few days - then I was told you no longer offer returns on software. Not sure why it changed, but regardless an exception could\u2019ve been made. You\u2019ve done it before in the past. ",
+      "createdAt": "2025-11-29T21:45:48Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "Could have easily given me the Spark 2 bag deal that is now available to everyone out of good faith but instead lost me as a customer forever ",
+      "createdAt": "2025-11-29T23:07:33Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "The Devon AI was more compassionate than the humans. ",
+      "createdAt": "2025-11-30T04:20:23Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "Whilst me changing my mind in the item (I found out someone was buying me one before Christmas) the response was just too slow to make it effective. The first response I had was fairly swift and the response was good. \u2018I can see you\u2019d line to cancel the order, it has not been processed or dispatched so I will expedite it quickly to get it cancelled\u2019 or words to that effect. There was then too much time passed between this swift response and the next part of the cancellation to stop the item from being processed and sent. It looks like the responses are mostly AI? Perhaps this is why? We the had to make sure someone was around to refuse the delivery and, well you know the rest. Cost you postage, was a pain for us. All turned out very well so no harm done. Just my feedback. ",
+      "createdAt": "2025-11-30T07:24:13Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Started well with an AI bot then went downhill after that lack of contact and understanding. I asked several times for an update and didn\u2019t get any response. In the end I have had to go back to the retailer to get the issue revolved but have had to wait 4 weeks. I love the Positive Grid products but would definitely think very carefully before I would buy any now due to this. ",
+      "createdAt": "2025-11-30T11:59:55Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I've had issues with my Link for a long time. I was told, because it's under warranty, I could get it replaced. But I've had to email several times to see the status and I'm still waiting for the replacement. It's getting frustrating. Other than this issue I've loved Positive Grid products.",
+      "createdAt": "2025-11-30T19:51:10Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "There could have been other steps taken to solve problem. But, I understand the time it takes and the effort, to the company, is just not worth it.",
+      "createdAt": "2025-12-01T12:17:42Z",
+      "isAiNegative": false
+    }
+  ]
+}
