@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderKpi(data.kpi);
     renderDailyTrend(data.dailyTrend);
     renderProductBreakdown(data.productBreakdown);
+    renderTicketTypes(data.ticketTypes);
     renderAiOps(data.aiOps);
     renderAiOpportunities(data.aiOpportunities);
     renderStfs(data.stfs);
@@ -22,7 +23,30 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 });
 
-// --- AI Operations (Pulse-only) ---
+// --- Ticket Type Breakdown ---
+function renderTicketTypes(types) {
+  var el = document.getElementById('type-table');
+  if (!types || types.length === 0) {
+    el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No ticket type data</p>';
+    return;
+  }
+  var rows = types.map(function(t) {
+    var pct = typeof t.pct === 'number' ? t.pct.toFixed(1) + '%' : '-';
+    return '<tr>' +
+      '<td><strong>' + (t.type || '-') + '</strong></td>' +
+      '<td>' + formatNumber(t.count) + '</td>' +
+      '<td>' + pct + '</td>' +
+      '<td>' + formatDelta(t.delta) + '</td>' +
+    '</tr>';
+  }).join('');
+  el.innerHTML =
+    '<table>' +
+    '<thead><tr><th>Type</th><th>Count</th><th>%</th><th>vs Prev</th></tr></thead>' +
+    '<tbody>' + rows + '</tbody>' +
+    '</table>';
+}
+
+// --- AI Operations ---
 function renderAiOps(ai) {
   var el = document.getElementById('ai-ops');
   if (!ai) {
