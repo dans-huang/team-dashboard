@@ -24,30 +24,39 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // --- AI Operations (Pulse-only) ---
 function renderAiOps(ai) {
-  const el = document.getElementById('ai-ops');
+  var el = document.getElementById('ai-ops');
+  if (!ai) {
+    el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No AI Ops data</p>';
+    return;
+  }
+  var resRate = typeof ai.aiResolutionRate === 'number' ? (ai.aiResolutionRate * 100).toFixed(1) + '%' : '-';
+  var aiCsat = typeof ai.aiCsat === 'number' ? ai.aiCsat.toFixed(1) : '-';
+  var humanCsat = typeof ai.humanCsat === 'number' ? ai.humanCsat.toFixed(1) : '-';
+
   el.innerHTML = [
-    kpiCard('AI Resolution Rate', (ai.aiResolutionRate * 100).toFixed(1) + '%'),
-    kpiCard('AI CSAT', ai.aiCsat.toFixed(1)),
-    kpiCard('Human CSAT', ai.humanCsat.toFixed(1))
+    kpiCard('AI Resolution Rate', resRate),
+    kpiCard('AI CSAT', aiCsat),
+    kpiCard('Human CSAT', humanCsat)
   ].join('');
 }
 
 // --- AI Automation Opportunities (Pulse-only) ---
 function renderAiOpportunities(opps) {
-  const el = document.getElementById('ai-opportunities');
+  var el = document.getElementById('ai-opportunities');
   if (!opps || opps.length === 0) {
     el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No data</p>';
     return;
   }
-  let html = '<table><thead><tr>' +
+  var html = '<table><thead><tr>' +
     '<th>Tally</th><th>Volume</th><th>AI Res Rate</th>' +
     '</tr></thead><tbody>';
 
-  opps.forEach(o => {
+  opps.forEach(function(o) {
+    var rate = typeof o.aiResRate === 'number' ? (o.aiResRate * 100).toFixed(1) + '%' : '-';
     html += '<tr>' +
-      '<td>' + o.tally + '</td>' +
+      '<td>' + (o.tally || '-') + '</td>' +
       '<td>' + formatNumber(o.count) + '</td>' +
-      '<td>' + (o.aiResRate * 100).toFixed(1) + '%</td>' +
+      '<td>' + rate + '</td>' +
       '</tr>';
   });
 
@@ -66,7 +75,7 @@ document.addEventListener('compare-toggled', function(e) {
   var canvas = document.getElementById('daily-trend-chart');
   var chart = Chart.getChart(canvas);
   if (chart) {
-    if (active) {
+    if (active && prevData.dailyTrend && prevData.dailyTrend.length > 0) {
       // Only add if not already added
       if (chart.data.datasets.length < 2) {
         chart.data.datasets.push({
@@ -86,22 +95,26 @@ document.addEventListener('compare-toggled', function(e) {
 
   // --- KPI Deltas ---
   var kpiEl = document.getElementById('kpi-cards');
-  if (active) {
+  if (active && _pulseData.kpi && prevData.kpi) {
     var cards = kpiEl.querySelectorAll('.kpi-card');
     // Total Tickets delta
-    if (cards[0]) addKpiDelta(cards[0], computeDeltaPct(_pulseData.kpi.totalTickets, prevData.kpi.totalTickets));
+    if (cards[0] && typeof _pulseData.kpi.totalTickets === 'number' && typeof prevData.kpi.totalTickets === 'number') {
+      addKpiDelta(cards[0], computeDeltaPct(_pulseData.kpi.totalTickets, prevData.kpi.totalTickets));
+    }
     // Refunds delta
-    if (cards[2]) addKpiDelta(cards[2], computeDeltaPct(_pulseData.kpi.refunds, prevData.kpi.refunds));
+    if (cards[2] && typeof _pulseData.kpi.refunds === 'number' && typeof prevData.kpi.refunds === 'number') {
+      addKpiDelta(cards[2], computeDeltaPct(_pulseData.kpi.refunds, prevData.kpi.refunds));
+    }
   } else {
     removeAllKpiDeltas('kpi-cards');
   }
 
   // --- AI Ops Deltas ---
   var aiOpsEl = document.getElementById('ai-ops');
-  if (active && prevData.aiOps) {
+  if (active && _pulseData.aiOps && prevData.aiOps) {
     var aiCards = aiOpsEl.querySelectorAll('.kpi-card');
     // AI Resolution Rate delta (percentage points)
-    if (aiCards[0]) {
+    if (aiCards[0] && typeof _pulseData.aiOps.aiResolutionRate === 'number' && typeof prevData.aiOps.aiResolutionRate === 'number') {
       var currRate = (_pulseData.aiOps.aiResolutionRate * 100).toFixed(1);
       var prevRate = (prevData.aiOps.aiResolutionRate * 100).toFixed(1);
       var rateDelta = Math.round(currRate - prevRate);

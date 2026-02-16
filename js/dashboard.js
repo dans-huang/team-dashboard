@@ -81,12 +81,14 @@ function initExpandableRows() {
 
 // === Formatting Helpers ===
 function formatDelta(value) {
+  if (value == null || typeof value !== 'number') return '<span class="kpi-delta neutral">-</span>';
   if (value > 0) return '<span class="kpi-delta up">\u2191' + value + '%</span>';
   if (value < 0) return '<span class="kpi-delta down">\u2193' + Math.abs(value) + '%</span>';
   return '<span class="kpi-delta neutral">\u2192 0%</span>';
 }
 
 function formatNumber(n) {
+  if (n == null || typeof n !== 'number') return '-';
   return n.toLocaleString();
 }
 
@@ -107,19 +109,29 @@ function renderAlerts(alerts) {
     return;
   }
   el.innerHTML = '<div class="alert-banner">' +
-    alerts.map(a =>
-      '<div class="alert-item">\u26a0\ufe0f <strong>' + a.product + '</strong>: ' + a.message + '</div>'
-    ).join('') +
+    alerts.map(function(a) {
+      // Handle both formats:
+      //   Legacy: { product, type, message }
+      //   Production: { severity, message } (no product)
+      var prefix = a.product
+        ? '<strong>' + a.product + '</strong>: '
+        : (a.severity ? '<strong>[' + a.severity.toUpperCase() + ']</strong> ' : '');
+      return '<div class="alert-item">\u26a0\ufe0f ' + prefix + (a.message || '') + '</div>';
+    }).join('') +
     '</div>';
 }
 
 function renderKpi(kpi) {
   const el = document.getElementById('kpi-cards');
+  if (!kpi) {
+    el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No KPI data</p>';
+    return;
+  }
   el.innerHTML = [
     kpiCard('Total Tickets', formatNumber(kpi.totalTickets)),
-    kpiCard('#1 Product', kpi.topProduct),
+    kpiCard('#1 Product', kpi.topProduct || '-'),
     kpiCard('Refund Requests', formatNumber(kpi.refunds)),
-    kpiCard('Products', kpi.productCount)
+    kpiCard('Products', kpi.productCount != null ? kpi.productCount : '-')
   ].join('');
 }
 
@@ -131,7 +143,13 @@ function kpiCard(label, value) {
 }
 
 function renderDailyTrend(trend) {
-  const ctx = document.getElementById('daily-trend-chart').getContext('2d');
+  var canvas = document.getElementById('daily-trend-chart');
+  if (!trend || trend.length === 0) {
+    canvas.parentElement.innerHTML =
+      '<p style="padding:16px;color:var(--text-secondary)">No daily trend data</p>';
+    return;
+  }
+  const ctx = canvas.getContext('2d');
   new Chart(ctx, {
     type: 'bar',
     data: {
@@ -165,6 +183,10 @@ function renderDailyTrend(trend) {
 
 function renderProductBreakdown(products) {
   const el = document.getElementById('product-table');
+  if (!products || products.length === 0) {
+    el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No product breakdown data</p>';
+    return;
+  }
   let html = '<table><thead><tr>' +
     '<th>Product</th><th>Tickets</th><th>%</th><th>vs Prev</th>' +
     '</tr></thead><tbody>';
@@ -173,7 +195,7 @@ function renderProductBreakdown(products) {
     html += '<tr class="expandable" data-detail="product-detail-' + i + '">' +
       '<td>' + p.product + '</td>' +
       '<td>' + formatNumber(p.count) + '</td>' +
-      '<td>' + p.pct.toFixed(1) + '%</td>' +
+      '<td>' + (typeof p.pct === 'number' ? p.pct.toFixed(1) + '%' : '-') + '</td>' +
       '<td>' + formatDelta(p.delta) + '</td>' +
       '</tr>';
 
@@ -184,10 +206,13 @@ function renderProductBreakdown(products) {
     if (p.topIssues && p.topIssues.length > 0) {
       html += '<ul>';
       p.topIssues.forEach(issue => {
-        const ticketLinks = issue.tickets.map(t =>
-          '<a class="ticket-link" href="' + zenUrl(t.id) + '" target="_blank">#' + t.id + '</a>'
-        ).join(', ');
-        html += '<li><strong>' + issue.tally + '</strong> (' + issue.count + ') — ' + ticketLinks + '</li>';
+        var ticketLinks = '';
+        if (issue.tickets && issue.tickets.length > 0) {
+          ticketLinks = ' — ' + issue.tickets.map(t =>
+            '<a class="ticket-link" href="' + zenUrl(t.id) + '" target="_blank">#' + t.id + '</a>'
+          ).join(', ');
+        }
+        html += '<li><strong>' + (issue.tally || '-') + '</strong> (' + formatNumber(issue.count) + ')' + ticketLinks + '</li>';
       });
       html += '</ul>';
     } else {

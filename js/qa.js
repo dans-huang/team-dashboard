@@ -23,38 +23,48 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // --- 1. BCR Hero ---
 function renderBcrHero(bcr) {
-  const el = document.getElementById('bcr-hero');
-  const onTrack = bcr.overall >= bcr.target;
-  const valueClass = onTrack ? 'ok' : 'bad';
-  const badgeClass = onTrack ? 'badge-green' : 'badge-red';
-  const statusText = onTrack ? 'On Track' : 'Below Target';
+  var el = document.getElementById('bcr-hero');
+  if (!bcr) {
+    el.innerHTML = '<p style="color:var(--text-secondary)">No BCR data</p>';
+    return;
+  }
+  var overall = typeof bcr.overall === 'number' ? bcr.overall : 0;
+  var target = typeof bcr.target === 'number' ? bcr.target : 80;
+  var onTrack = overall >= target;
+  var valueClass = onTrack ? 'ok' : 'bad';
+  var badgeClass = onTrack ? 'badge-green' : 'badge-red';
+  var statusText = onTrack ? 'On Track' : 'Below Target';
 
   el.innerHTML = '<div class="big-number">' +
-    '<div class="big-number-value ' + valueClass + '">' + bcr.overall.toFixed(1) + '%</div>' +
+    '<div class="big-number-value ' + valueClass + '">' + overall.toFixed(1) + '%</div>' +
     '<div id="bcr-hero-delta" style="margin-top:4px;"></div>' +
     '<div style="margin-top:8px;font-size:16px;">' +
       'Bug Catch Rate — <span class="badge ' + badgeClass + '">' + statusText + '</span>' +
     '</div>' +
     '<div style="margin-top:8px;font-size:13px;color:var(--text-secondary);">' +
-      'Target: ' + bcr.target + '%' +
+      'Target: ' + target + '%' +
     '</div>' +
     '</div>';
 }
 
 // --- 2. BCR by Product ---
 function renderBcrByProduct(products) {
-  const el = document.getElementById('bcr-product-table');
-  let html = '<table><thead><tr>' +
+  var el = document.getElementById('bcr-product-table');
+  if (!products || products.length === 0) {
+    el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No product BCR data</p>';
+    return;
+  }
+  var html = '<table><thead><tr>' +
     '<th>Product</th><th>QA Bugs</th><th>Customer Bugs</th><th>BCR</th>' +
     '</tr></thead><tbody>';
 
-  products.forEach(p => {
-    const badgeClass = p.rate >= 80 ? 'badge-green' : 'badge-red';
+  products.forEach(function(p) {
+    var badgeClass = p.rate >= 80 ? 'badge-green' : 'badge-red';
     html += '<tr>' +
       '<td>' + p.product + '</td>' +
-      '<td>' + formatNumber(p.qaBugs) + '</td>' +
-      '<td>' + formatNumber(p.customerBugs) + '</td>' +
-      '<td><span class="badge ' + badgeClass + '">' + p.rate.toFixed(1) + '%</span></td>' +
+      '<td>' + safeFormatNumber(p.qaBugs) + '</td>' +
+      '<td>' + safeFormatNumber(p.customerBugs) + '</td>' +
+      '<td><span class="badge ' + badgeClass + '">' + safeFixed(p.rate, 1) + '%</span></td>' +
       '</tr>';
   });
 
@@ -64,15 +74,21 @@ function renderBcrByProduct(products) {
 
 // --- 3. BCR Weekly Trend (Stacked Bar Chart) ---
 function renderBcrTrend(trend) {
-  const ctx = document.getElementById('bcr-trend-chart').getContext('2d');
+  var canvas = document.getElementById('bcr-trend-chart');
+  if (!trend || trend.length === 0) {
+    canvas.parentElement.innerHTML =
+      '<p style="padding:16px;color:var(--text-secondary)">No weekly trend data</p>';
+    return;
+  }
+  var ctx = canvas.getContext('2d');
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: trend.map(d => d.week),
+      labels: trend.map(function(d) { return d.week; }),
       datasets: [
         {
           label: 'QA Bugs',
-          data: trend.map(d => d.qaBugs),
+          data: trend.map(function(d) { return d.qaBugs; }),
           backgroundColor: '#2dd4bf88',
           borderColor: '#2dd4bf',
           borderWidth: 1,
@@ -80,7 +96,7 @@ function renderBcrTrend(trend) {
         },
         {
           label: 'Customer Bugs',
-          data: trend.map(d => d.customerBugs),
+          data: trend.map(function(d) { return d.customerBugs; }),
           backgroundColor: '#ef444488',
           borderColor: '#ef4444',
           borderWidth: 1,
@@ -110,27 +126,138 @@ function renderBcrTrend(trend) {
 }
 
 // --- 4. Test Execution Summary ---
+// Handles both formats:
+//   Legacy (flat): { totalRuns, passRate, velocity, blockedPct }
+//   Production (per-product dict): { "Spark": { completedRuns, totalRuns, totalCases, passRate, avgVelocity, blockedRate }, ... }
 function renderTestExecution(te) {
-  const el = document.getElementById('test-exec');
-  el.innerHTML = [
-    kpiCard('Test Runs', formatNumber(te.totalRuns)),
-    kpiCard('Pass Rate', (te.passRate * 100).toFixed(1) + '%'),
-    kpiCard('Cases Executed', formatNumber(te.velocity)),
-    kpiCard('Blocked', (te.blockedPct * 100).toFixed(1) + '%')
-  ].join('');
+  var el = document.getElementById('test-exec');
+  if (!te) {
+    el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No test execution data</p>';
+    return;
+  }
+
+  // Detect format: if te has 'totalRuns' at top level, it's legacy flat format
+  if (typeof te.totalRuns === 'number') {
+    // Legacy flat format — render as KPI cards
+    el.innerHTML = [
+      kpiCard('Test Runs', safeFormatNumber(te.totalRuns)),
+      kpiCard('Pass Rate', safeFixed(te.passRate * 100, 1) + '%'),
+      kpiCard('Cases Executed', safeFormatNumber(te.velocity)),
+      kpiCard('Blocked', safeFixed(te.blockedPct * 100, 1) + '%')
+    ].join('');
+    return;
+  }
+
+  // Production per-product dict format — render as table
+  var products = Object.keys(te);
+  if (products.length === 0) {
+    el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No test execution data</p>';
+    return;
+  }
+
+  var html = '<div class="table-wrap"><table><thead><tr>' +
+    '<th>Product</th><th>Runs</th><th>Cases</th><th>Pass Rate</th><th>Velocity</th><th>Blocked</th>' +
+    '</tr></thead><tbody>';
+
+  products.forEach(function(name) {
+    var p = te[name];
+    var runsLabel = safeFormatNumber(p.completedRuns) + '/' + safeFormatNumber(p.totalRuns);
+    var passRateClass = (p.passRate || 0) >= 80 ? 'badge-green' : 'badge-red';
+    html += '<tr>' +
+      '<td><strong>' + name + '</strong></td>' +
+      '<td>' + runsLabel + '</td>' +
+      '<td>' + safeFormatNumber(p.totalCases) + '</td>' +
+      '<td><span class="badge ' + passRateClass + '">' + safeFixed(p.passRate, 1) + '%</span></td>' +
+      '<td>' + safeFixed(p.avgVelocity, 1) + '</td>' +
+      '<td>' + safeFixed(p.blockedRate, 1) + '%</td>' +
+      '</tr>';
+  });
+
+  html += '</tbody></table></div>';
+  el.innerHTML = html;
 }
 
 // --- 5. Regression Pass Rate ---
-function renderRegressionTrend(products) {
-  const el = document.getElementById('regression-table');
-  let html = '<table><thead><tr>' +
+// Handles both formats:
+//   Legacy (array): [{ product, passRate, delta }, ...]
+//   Production (per-product dict of arrays): { "Spark": [{ title, date, passed, failed, rate, delta }, ...], ... }
+function renderRegressionTrend(data) {
+  var el = document.getElementById('regression-table');
+  if (!data) {
+    el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No regression data</p>';
+    return;
+  }
+
+  // Detect format: if it's an array, use legacy rendering
+  if (Array.isArray(data)) {
+    renderRegressionTrendLegacy(el, data);
+    return;
+  }
+
+  // Production per-product dict format
+  var products = Object.keys(data);
+  if (products.length === 0) {
+    el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No regression data</p>';
+    return;
+  }
+
+  var html = '';
+  products.forEach(function(name) {
+    var runs = data[name];
+    if (!runs || runs.length === 0) return;
+
+    html += '<div style="margin-bottom:16px;">' +
+      '<div style="font-weight:600;font-size:15px;padding:8px 0;border-bottom:1px solid var(--border);">' + name + '</div>' +
+      '<table><thead><tr>' +
+      '<th>Run Title</th><th>Date</th><th>Passed</th><th>Failed</th><th>Pass Rate</th><th>Delta</th>' +
+      '</tr></thead><tbody>';
+
+    runs.forEach(function(r) {
+      var rateClass = (r.rate || 0) >= 80 ? 'badge-green' : 'badge-red';
+      var deltaVal = r.delta || 0;
+      var arrow, badgeClass;
+      if (deltaVal > 0) {
+        arrow = '\u2191';
+        badgeClass = 'badge-green';
+      } else if (deltaVal < 0) {
+        arrow = '\u2193';
+        badgeClass = 'badge-red';
+      } else {
+        arrow = '\u2192';
+        badgeClass = 'badge-green';
+      }
+      var deltaText = arrow + ' ' + Math.abs(deltaVal).toFixed(1) + '%';
+
+      html += '<tr>' +
+        '<td>' + (r.title || '-') + '</td>' +
+        '<td>' + (r.date || '-') + '</td>' +
+        '<td>' + safeFormatNumber(r.passed) + '</td>' +
+        '<td>' + safeFormatNumber(r.failed) + '</td>' +
+        '<td><span class="badge ' + rateClass + '">' + safeFixed(r.rate, 1) + '%</span></td>' +
+        '<td><span class="badge ' + badgeClass + '">' + deltaText + '</span></td>' +
+        '</tr>';
+    });
+
+    html += '</tbody></table></div>';
+  });
+
+  el.innerHTML = html || '<p style="padding:16px;color:var(--text-secondary)">No regression data</p>';
+}
+
+// Legacy array format renderer
+function renderRegressionTrendLegacy(el, products) {
+  if (!products || products.length === 0) {
+    el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No regression data</p>';
+    return;
+  }
+  var html = '<table><thead><tr>' +
     '<th>Product</th><th>Pass Rate</th><th>Delta</th>' +
     '</tr></thead><tbody>';
 
-  products.forEach(p => {
-    const pct = (p.passRate * 100).toFixed(1) + '%';
-    const deltaPct = (p.delta * 100).toFixed(1);
-    let arrow, badgeClass;
+  products.forEach(function(p) {
+    var pct = safeFixed(p.passRate * 100, 1) + '%';
+    var deltaPct = (p.delta * 100).toFixed(1);
+    var arrow, badgeClass;
     if (p.delta > 0) {
       arrow = '\u2191';
       badgeClass = 'badge-green';
@@ -141,7 +268,7 @@ function renderRegressionTrend(products) {
       arrow = '\u2192';
       badgeClass = 'badge-green';
     }
-    const deltaText = arrow + ' ' + Math.abs(deltaPct) + '%';
+    var deltaText = arrow + ' ' + Math.abs(deltaPct) + '%';
 
     html += '<tr>' +
       '<td>' + p.product + '</td>' +
@@ -155,30 +282,42 @@ function renderRegressionTrend(products) {
 }
 
 // --- 6. Latest Function Test ---
+// Handles both legacy (passed, failed, blocked, untested) and production (adds skipped field)
 function renderFunctionTest(tests) {
-  const el = document.getElementById('function-test');
-  let html = '';
+  var el = document.getElementById('function-test');
+  if (!tests || tests.length === 0) {
+    el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No function test data</p>';
+    return;
+  }
+  var html = '';
 
-  tests.forEach(t => {
-    const total = t.passed + t.failed + t.blocked + t.untested;
-    const pPct = (t.passed / total * 100).toFixed(1);
-    const fPct = (t.failed / total * 100).toFixed(1);
-    const bPct = (t.blocked / total * 100).toFixed(1);
-    const uPct = (t.untested / total * 100).toFixed(1);
+  tests.forEach(function(t) {
+    // Combine blocked + skipped into one "blocked" segment (like the original report)
+    var blocked = (t.blocked || 0) + (t.skipped || 0);
+    var total = (t.passed || 0) + (t.failed || 0) + blocked + (t.untested || 0);
+    if (total === 0) total = 1; // avoid divide by zero
+    var pPct = ((t.passed || 0) / total * 100).toFixed(1);
+    var fPct = ((t.failed || 0) / total * 100).toFixed(1);
+    var bPct = (blocked / total * 100).toFixed(1);
+    var uPct = ((t.untested || 0) / total * 100).toFixed(1);
+
+    var blockedLabel = t.skipped
+      ? blocked + ' blocked/skipped'
+      : blocked + ' blocked';
 
     html += '<div style="background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:12px;">' +
       '<div style="font-weight:600;margin-bottom:8px;">' + t.product + '</div>' +
       '<div style="display:flex;height:24px;border-radius:4px;overflow:hidden;">' +
-        '<div style="width:' + pPct + '%;background:var(--green);" title="Passed: ' + t.passed + '"></div>' +
-        '<div style="width:' + fPct + '%;background:var(--red);" title="Failed: ' + t.failed + '"></div>' +
-        '<div style="width:' + bPct + '%;background:var(--orange);" title="Blocked: ' + t.blocked + '"></div>' +
-        '<div style="width:' + uPct + '%;background:var(--border);" title="Untested: ' + t.untested + '"></div>' +
+        '<div style="width:' + pPct + '%;background:var(--green);" title="Passed: ' + (t.passed || 0) + '"></div>' +
+        '<div style="width:' + fPct + '%;background:var(--red);" title="Failed: ' + (t.failed || 0) + '"></div>' +
+        '<div style="width:' + bPct + '%;background:var(--orange);" title="Blocked: ' + blocked + '"></div>' +
+        '<div style="width:' + uPct + '%;background:var(--border);" title="Untested: ' + (t.untested || 0) + '"></div>' +
       '</div>' +
       '<div style="font-size:12px;color:var(--text-secondary);margin-top:6px;">' +
-        '\u2705 ' + t.passed + ' passed \u00b7 ' +
-        '\u274c ' + t.failed + ' failed \u00b7 ' +
-        '\ud83d\udea7 ' + t.blocked + ' blocked \u00b7 ' +
-        '\u2b1c ' + t.untested + ' untested' +
+        '\u2705 ' + (t.passed || 0) + ' passed \u00b7 ' +
+        '\u274c ' + (t.failed || 0) + ' failed \u00b7 ' +
+        '\ud83d\udea7 ' + blockedLabel + ' \u00b7 ' +
+        '\u2b1c ' + (t.untested || 0) + ' untested' +
       '</div>' +
       '</div>';
   });
@@ -188,34 +327,57 @@ function renderFunctionTest(tests) {
 
 // --- 7. Recent Bugs ---
 function renderRecentBugs(bugs) {
-  const el = document.getElementById('recent-bugs');
-  let html = '';
+  var el = document.getElementById('recent-bugs');
+  if (!bugs) {
+    el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No bug data</p>';
+    return;
+  }
+  var html = '';
 
   // QA Catches
-  html += '<div style="padding:12px 16px;font-weight:600;color:var(--green);border-bottom:1px solid var(--border);">' +
-    'QA Catches</div>';
-  html += '<table><thead><tr><th>Key</th><th>Summary</th></tr></thead><tbody>';
-  bugs.qa.forEach(b => {
-    html += '<tr>' +
-      '<td><a class="ticket-link" href="' + jiraUrl(b.key) + '" target="_blank">' + b.key + '</a></td>' +
-      '<td>' + b.summary + '</td>' +
-      '</tr>';
-  });
-  html += '</tbody></table>';
+  if (bugs.qa && bugs.qa.length > 0) {
+    html += '<div style="padding:12px 16px;font-weight:600;color:var(--green);border-bottom:1px solid var(--border);">' +
+      'QA Catches</div>';
+    html += '<table><thead><tr><th>Key</th><th>Summary</th></tr></thead><tbody>';
+    bugs.qa.forEach(function(b) {
+      html += '<tr>' +
+        '<td><a class="ticket-link" href="' + jiraUrl(b.key) + '" target="_blank">' + b.key + '</a></td>' +
+        '<td>' + b.summary + '</td>' +
+        '</tr>';
+    });
+    html += '</tbody></table>';
+  }
 
   // Customer Reports
-  html += '<div style="padding:12px 16px;font-weight:600;color:var(--red);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">' +
-    'Customer Reports (STFS)</div>';
-  html += '<table><thead><tr><th>Key</th><th>Summary</th></tr></thead><tbody>';
-  bugs.customer.forEach(b => {
-    html += '<tr>' +
-      '<td><a class="ticket-link" href="' + jiraUrl(b.key) + '" target="_blank">' + b.key + '</a></td>' +
-      '<td>' + b.summary + '</td>' +
-      '</tr>';
-  });
-  html += '</tbody></table>';
+  if (bugs.customer && bugs.customer.length > 0) {
+    html += '<div style="padding:12px 16px;font-weight:600;color:var(--red);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">' +
+      'Customer Reports (STFS)</div>';
+    html += '<table><thead><tr><th>Key</th><th>Summary</th></tr></thead><tbody>';
+    bugs.customer.forEach(function(b) {
+      html += '<tr>' +
+        '<td><a class="ticket-link" href="' + jiraUrl(b.key) + '" target="_blank">' + b.key + '</a></td>' +
+        '<td>' + b.summary + '</td>' +
+        '</tr>';
+    });
+    html += '</tbody></table>';
+  }
+
+  if (!html) {
+    html = '<p style="padding:16px;color:var(--text-secondary)">No bug data</p>';
+  }
 
   el.innerHTML = html;
+}
+
+// === Safe formatting helpers ===
+function safeFormatNumber(n) {
+  if (n == null || typeof n !== 'number') return '-';
+  return n.toLocaleString();
+}
+
+function safeFixed(n, digits) {
+  if (n == null || typeof n !== 'number') return '-';
+  return n.toFixed(digits);
 }
 
 // === Compare Mode Handler ===
@@ -228,7 +390,7 @@ document.addEventListener('compare-toggled', function(e) {
   // --- BCR Hero Delta ---
   var heroEl = document.getElementById('bcr-hero-delta');
   if (heroEl) {
-    if (active && prevData.bcr) {
+    if (active && prevData.bcr && _qaData.bcr) {
       var bcrDelta = (_qaData.bcr.overall - prevData.bcr.overall).toFixed(1);
       var deltaNum = parseFloat(bcrDelta);
       var cls = deltaNum > 0 ? 'up' : (deltaNum < 0 ? 'down' : 'neutral');
@@ -241,8 +403,9 @@ document.addEventListener('compare-toggled', function(e) {
   }
 
   // --- Test Execution Deltas ---
+  // Only works for legacy flat format; skip for production per-product dict
   var testExecEl = document.getElementById('test-exec');
-  if (active && prevData.testExecution) {
+  if (active && prevData.testExecution && typeof _qaData.testExecution.totalRuns === 'number') {
     var teCards = testExecEl.querySelectorAll('.kpi-card');
     // Test Runs delta
     if (teCards[0]) addKpiDelta(teCards[0], computeDeltaPct(_qaData.testExecution.totalRuns, prevData.testExecution.totalRuns));

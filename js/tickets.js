@@ -23,15 +23,21 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // --- Ticket Type Breakdown (Tickets-only) ---
 function renderTicketTypes(types) {
-  const rows = types.map(t =>
-    '<tr>' +
-      '<td><strong>' + t.type + '</strong></td>' +
-      '<td>' + t.count + '</td>' +
-      '<td>' + t.pct.toFixed(1) + '%</td>' +
+  var el = document.getElementById('type-table');
+  if (!types || types.length === 0) {
+    el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No ticket type data</p>';
+    return;
+  }
+  var rows = types.map(function(t) {
+    var pct = typeof t.pct === 'number' ? t.pct.toFixed(1) + '%' : '-';
+    return '<tr>' +
+      '<td><strong>' + (t.type || '-') + '</strong></td>' +
+      '<td>' + formatNumber(t.count) + '</td>' +
+      '<td>' + pct + '</td>' +
       '<td>' + formatDelta(t.delta) + '</td>' +
-    '</tr>'
-  ).join('');
-  document.getElementById('type-table').innerHTML =
+    '</tr>';
+  }).join('');
+  el.innerHTML =
     '<table>' +
     '<thead><tr><th>Type</th><th>Count</th><th>%</th><th>vs Prev</th></tr></thead>' +
     '<tbody>' + rows + '</tbody>' +
@@ -49,7 +55,7 @@ document.addEventListener('compare-toggled', function(e) {
   var canvas = document.getElementById('daily-trend-chart');
   var chart = Chart.getChart(canvas);
   if (chart) {
-    if (active) {
+    if (active && prevData.dailyTrend && prevData.dailyTrend.length > 0) {
       if (chart.data.datasets.length < 2) {
         chart.data.datasets.push({
           label: 'Previous Week',
@@ -68,12 +74,16 @@ document.addEventListener('compare-toggled', function(e) {
 
   // --- KPI Deltas ---
   var kpiEl = document.getElementById('kpi-cards');
-  if (active) {
+  if (active && _ticketsData.kpi && prevData.kpi) {
     var cards = kpiEl.querySelectorAll('.kpi-card');
     // Total Tickets delta
-    if (cards[0]) addKpiDelta(cards[0], computeDeltaPct(_ticketsData.kpi.totalTickets, prevData.kpi.totalTickets));
+    if (cards[0] && typeof _ticketsData.kpi.totalTickets === 'number' && typeof prevData.kpi.totalTickets === 'number') {
+      addKpiDelta(cards[0], computeDeltaPct(_ticketsData.kpi.totalTickets, prevData.kpi.totalTickets));
+    }
     // Refunds delta
-    if (cards[2]) addKpiDelta(cards[2], computeDeltaPct(_ticketsData.kpi.refunds, prevData.kpi.refunds));
+    if (cards[2] && typeof _ticketsData.kpi.refunds === 'number' && typeof prevData.kpi.refunds === 'number') {
+      addKpiDelta(cards[2], computeDeltaPct(_ticketsData.kpi.refunds, prevData.kpi.refunds));
+    }
   } else {
     removeAllKpiDeltas('kpi-cards');
   }
