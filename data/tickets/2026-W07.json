@@ -1,14 +1,698 @@
 {
-  "period": "2026-02-09 ~ 2026-02-15",
-  "alerts": [],
+  "period": "Week of 02/09 - 02/15",
+  "reportType": "weekly",
+  "startDate": "2026-02-09",
+  "endDate": "2026-02-15",
+  "alerts": [
+    {
+      "severity": "high",
+      "message": "SPARK NEO CORE volume +200% (1 \u2192 3)",
+      "type": "volume_spike"
+    },
+    {
+      "severity": "high",
+      "message": "RIFF volume +50% (2 \u2192 3)",
+      "type": "volume_spike"
+    },
+    {
+      "severity": "high",
+      "message": "BIAS X / Troubleshooting  Software   App  Cannot Login: 2 \u2192 6",
+      "type": "tally_surge"
+    },
+    {
+      "severity": "high",
+      "message": "SPARK / Troubleshooting  Hardware  Firmware Update Failed: 2 \u2192 5",
+      "type": "tally_surge"
+    },
+    {
+      "severity": "high",
+      "message": "SPARK / Troubleshooting  Sound  Hum Noise: 2 \u2192 6",
+      "type": "tally_surge"
+    }
+  ],
   "kpi": {
-    "totalTickets": null,
-    "topProduct": null,
-    "refunds": null,
-    "productCount": null
+    "totalTickets": 517,
+    "refunds": 47,
+    "productCount": 22
   },
-  "dailyTrend": [],
-  "productBreakdown": [],
-  "ticketTypes": [],
-  "stfs": []
+  "dailyTrend": [
+    {
+      "date": "2026-02-09",
+      "day": "Mon",
+      "count": 83
+    },
+    {
+      "date": "2026-02-10",
+      "day": "Tue",
+      "count": 91
+    },
+    {
+      "date": "2026-02-11",
+      "day": "Wed",
+      "count": 87
+    },
+    {
+      "date": "2026-02-12",
+      "day": "Thu",
+      "count": 79
+    },
+    {
+      "date": "2026-02-13",
+      "day": "Fri",
+      "count": 58
+    },
+    {
+      "date": "2026-02-14",
+      "day": "Sat",
+      "count": 60
+    },
+    {
+      "date": "2026-02-15",
+      "day": "Sun",
+      "count": 59
+    }
+  ],
+  "productBreakdown": [
+    {
+      "product": "SPARK 2",
+      "count": 105,
+      "pct": 20.3,
+      "delta": -6.25,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Website  Product Registration  Cannot Register Successfully",
+          "count": 12,
+          "tickets": [
+            {
+              "id": "577697"
+            },
+            {
+              "id": "577770"
+            },
+            {
+              "id": "577824"
+            },
+            {
+              "id": "577845"
+            },
+            {
+              "id": "577938"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Power / Battery  Not Powering On",
+          "count": 12,
+          "tickets": [
+            {
+              "id": "577856"
+            },
+            {
+              "id": "577876"
+            },
+            {
+              "id": "577882"
+            },
+            {
+              "id": "577986"
+            },
+            {
+              "id": "577988"
+            }
+          ]
+        },
+        {
+          "tally": "Purchase Inquiry  Order   Shipping  Track For Order Status And Eta",
+          "count": 5,
+          "tickets": [
+            {
+              "id": "577695"
+            },
+            {
+              "id": "577732"
+            },
+            {
+              "id": "577745"
+            },
+            {
+              "id": "577766"
+            },
+            {
+              "id": "577842"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK",
+      "count": 63,
+      "pct": 12.2,
+      "delta": -17.105263157894736,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Sound  Hum Noise",
+          "count": 6,
+          "tickets": [
+            {
+              "id": "577774"
+            },
+            {
+              "id": "577814"
+            },
+            {
+              "id": "577981"
+            },
+            {
+              "id": "578100"
+            },
+            {
+              "id": "578225"
+            }
+          ]
+        },
+        {
+          "tally": "Purchase Inquiry  Order   Shipping  Track For Order Status And Eta",
+          "count": 6,
+          "tickets": [
+            {
+              "id": "577884"
+            },
+            {
+              "id": "577887"
+            },
+            {
+              "id": "577925"
+            },
+            {
+              "id": "577951"
+            },
+            {
+              "id": "578008"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Hardware  Firmware Update Failed",
+          "count": 5,
+          "tickets": [
+            {
+              "id": "577711"
+            },
+            {
+              "id": "577960"
+            },
+            {
+              "id": "577978"
+            },
+            {
+              "id": "578103"
+            },
+            {
+              "id": "578299"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK GO",
+      "count": 51,
+      "pct": 9.9,
+      "delta": -5.555555555555555,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Purchase Inquiry  Order   Shipping  Track For Order Status And Eta",
+          "count": 7,
+          "tickets": [
+            {
+              "id": "577772"
+            },
+            {
+              "id": "577946"
+            },
+            {
+              "id": "577970"
+            },
+            {
+              "id": "578022"
+            },
+            {
+              "id": "578149"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Hardware  Usb Cannot Be Detected",
+          "count": 6,
+          "tickets": [
+            {
+              "id": "577830"
+            },
+            {
+              "id": "578080"
+            },
+            {
+              "id": "578112"
+            },
+            {
+              "id": "578133"
+            },
+            {
+              "id": "578151"
+            }
+          ]
+        },
+        {
+          "tally": "Post-Sales  Return   Refund Request  Refund Request",
+          "count": 5,
+          "tickets": [
+            {
+              "id": "577725"
+            },
+            {
+              "id": "577742"
+            },
+            {
+              "id": "577922"
+            },
+            {
+              "id": "578193"
+            },
+            {
+              "id": "578262"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK MINI",
+      "count": 36,
+      "pct": 7.0,
+      "delta": 2.857142857142857,
+      "direction": "up",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Power / Battery  Won T Charge Or Charges Slowly",
+          "count": 4,
+          "tickets": [
+            {
+              "id": "577788"
+            },
+            {
+              "id": "577818"
+            },
+            {
+              "id": "577977"
+            },
+            {
+              "id": "578105"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Hardware  Usb Cannot Be Detected",
+          "count": 4,
+          "tickets": [
+            {
+              "id": "577821"
+            },
+            {
+              "id": "578002"
+            },
+            {
+              "id": "578024"
+            },
+            {
+              "id": "578233"
+            }
+          ]
+        },
+        {
+          "tally": "Purchase Inquiry  Order   Shipping  Track For Order Status And Eta",
+          "count": 3,
+          "tickets": [
+            {
+              "id": "577791"
+            },
+            {
+              "id": "577890"
+            },
+            {
+              "id": "578199"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK LINK",
+      "count": 28,
+      "pct": 5.4,
+      "delta": -3.4482758620689653,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Power / Battery  Won T Charge Or Charges Slowly",
+          "count": 5,
+          "tickets": [
+            {
+              "id": "577809"
+            },
+            {
+              "id": "577883"
+            },
+            {
+              "id": "577929"
+            },
+            {
+              "id": "577943"
+            },
+            {
+              "id": "578172"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Power / Battery  Not Powering On",
+          "count": 4,
+          "tickets": [
+            {
+              "id": "577828"
+            },
+            {
+              "id": "577963"
+            },
+            {
+              "id": "578110"
+            },
+            {
+              "id": "578231"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Power / Battery  Draining Fast",
+          "count": 3,
+          "tickets": [
+            {
+              "id": "577848"
+            },
+            {
+              "id": "577966"
+            },
+            {
+              "id": "578045"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "BIAS X",
+      "count": 28,
+      "pct": 5.4,
+      "delta": 7.6923076923076925,
+      "direction": "up",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Software   App  Cannot Login",
+          "count": 6,
+          "tickets": [
+            {
+              "id": "577722"
+            },
+            {
+              "id": "577760"
+            },
+            {
+              "id": "577789"
+            },
+            {
+              "id": "577979"
+            },
+            {
+              "id": "578131"
+            }
+          ]
+        },
+        {
+          "tally": "Post-Sales  Return   Refund Request  Refund Request",
+          "count": 3,
+          "tickets": [
+            {
+              "id": "577990"
+            },
+            {
+              "id": "578018"
+            },
+            {
+              "id": "578288"
+            }
+          ]
+        },
+        {
+          "tally": "Purchase Inquiry  Order   Shipping  Track For Order Status And Eta",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "577947"
+            },
+            {
+              "id": "578227"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK NEO",
+      "count": 19,
+      "pct": 3.7,
+      "delta": -29.629629629629626,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Power / Battery  Won T Charge Or Charges Slowly",
+          "count": 3,
+          "tickets": [
+            {
+              "id": "578009"
+            },
+            {
+              "id": "578030"
+            },
+            {
+              "id": "578296"
+            }
+          ]
+        },
+        {
+          "tally": "Website  Product Registration  Cannot Register Successfully",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "577862"
+            },
+            {
+              "id": "577930"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Sound  No Sound Output",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "577881"
+            },
+            {
+              "id": "578294"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK LIVE",
+      "count": 16,
+      "pct": 3.1,
+      "delta": -48.38709677419355,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Product Inquiry  Specs  Specs  Not Shown ",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "577733"
+            },
+            {
+              "id": "577780"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Hardware  Firmware Update Failed",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "577861"
+            },
+            {
+              "id": "578168"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Sound  No Sound Output",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "577879"
+            },
+            {
+              "id": "578298"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Other (14 products)",
+      "count": 52,
+      "pct": 10.1,
+      "delta": 0,
+      "direction": "same",
+      "topIssues": []
+    }
+  ],
+  "ticketTypes": [
+    {
+      "type": "Troubleshooting",
+      "count": 238,
+      "pct": 46.0,
+      "delta": -8.812260536398467,
+      "direction": "down"
+    },
+    {
+      "type": "Request For Refund/Replacement",
+      "count": 47,
+      "pct": 9.1,
+      "delta": -30.88235294117647,
+      "direction": "down"
+    },
+    {
+      "type": "Order Related",
+      "count": 46,
+      "pct": 8.9,
+      "delta": 35.294117647058826,
+      "direction": "up"
+    },
+    {
+      "type": "Product Spec",
+      "count": 26,
+      "pct": 5.0,
+      "delta": -27.77777777777778,
+      "direction": "down"
+    },
+    {
+      "type": "Product Registration",
+      "count": 26,
+      "pct": 5.0,
+      "delta": -13.333333333333334,
+      "direction": "down"
+    },
+    {
+      "type": "Manage My Account",
+      "count": 20,
+      "pct": 3.9,
+      "delta": 5.263157894736842,
+      "direction": "up"
+    },
+    {
+      "type": "License Related",
+      "count": 13,
+      "pct": 2.5,
+      "delta": 8.333333333333332,
+      "direction": "up"
+    },
+    {
+      "type": "How To Use",
+      "count": 13,
+      "pct": 2.5,
+      "delta": -27.77777777777778,
+      "direction": "down"
+    }
+  ],
+  "stfs": [
+    {
+      "key": "STFS-345",
+      "summary": "Spark app - EQ Scenario Select Issue (Spark MINI Vai)",
+      "status": "To Do",
+      "product": "Spark App",
+      "ticketCount": 68,
+      "followUp": true
+    },
+    {
+      "key": "STFS-342",
+      "summary": "Spark 2 - Firmware OTA: Please Connect to Power",
+      "status": "To Do",
+      "product": "Spark App",
+      "ticketCount": 68,
+      "followUp": true
+    },
+    {
+      "key": "STFS-340",
+      "summary": "Spark app - Spark Control X Music Volume Command Doesn't Work (40/MINI/GO Android Only)",
+      "status": "To Do",
+      "product": "Spark App",
+      "ticketCount": 68,
+      "followUp": true
+    },
+    {
+      "key": "STFS-334",
+      "summary": "Spark app - Looper Issue (Looper Playback Starts Before Count-In Ends)",
+      "status": "To Do",
+      "product": "Spark App",
+      "ticketCount": 68,
+      "followUp": true
+    },
+    {
+      "key": "STFS-333",
+      "summary": "Spark app - UX Issue with Add Device (iOS only)",
+      "status": "In Review",
+      "product": "Spark App",
+      "ticketCount": 68,
+      "followUp": false
+    },
+    {
+      "key": "STFS-445",
+      "summary": "Spark app 4.5.1 - Spark GO: Incorrect Latest Firmware Version Detected",
+      "status": "To Do",
+      "product": "Spark",
+      "ticketCount": 63,
+      "followUp": true
+    },
+    {
+      "key": "STFS-444",
+      "summary": "Spark app 4.5.1  - Spark NEO: Incorrect Redirect for Firmware Update Instructions (iOS Only)",
+      "status": "To Do",
+      "product": "Spark",
+      "ticketCount": 63,
+      "followUp": true
+    },
+    {
+      "key": "STFS-442",
+      "summary": "Spark app 4.5.1 \u2013 Frozen After Connecting to Spark Amp via In-App Features (iOS Only)",
+      "status": "In Review",
+      "product": "Spark",
+      "ticketCount": 63,
+      "followUp": false
+    }
+  ]
 }

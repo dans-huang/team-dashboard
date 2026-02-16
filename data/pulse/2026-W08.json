@@ -1,19 +1,334 @@
 {
-  "period": "2026-02-16 ~ 2026-02-22",
-  "alerts": [],
+  "period": "Week of 02/16 - 02/22",
+  "startDate": "2026-02-16",
+  "endDate": "2026-02-22",
+  "alerts": [
+    {
+      "severity": "medium",
+      "message": "SPARK accounts for 50% of all tickets",
+      "type": "dominant_product"
+    },
+    {
+      "severity": "medium",
+      "message": "SPARK 2 accounts for 30% of all tickets",
+      "type": "dominant_product"
+    }
+  ],
   "kpi": {
-    "totalTickets": null,
-    "topProduct": null,
-    "refunds": null,
-    "productCount": null
+    "totalTickets": 10,
+    "dailyAvg": 1.4,
+    "refunds": 1,
+    "productCount": 4
   },
-  "dailyTrend": [],
-  "productBreakdown": [],
+  "dailyTrend": [
+    {
+      "date": "2026-02-16",
+      "day": "Mon",
+      "count": 10
+    },
+    {
+      "date": "2026-02-17",
+      "day": "Tue",
+      "count": 0
+    },
+    {
+      "date": "2026-02-18",
+      "day": "Wed",
+      "count": 0
+    },
+    {
+      "date": "2026-02-19",
+      "day": "Thu",
+      "count": 0
+    },
+    {
+      "date": "2026-02-20",
+      "day": "Fri",
+      "count": 0
+    },
+    {
+      "date": "2026-02-21",
+      "day": "Sat",
+      "count": 0
+    },
+    {
+      "date": "2026-02-22",
+      "day": "Sun",
+      "count": 0
+    }
+  ],
+  "productBreakdown": [
+    {
+      "product": "SPARK",
+      "count": 5,
+      "pct": 50.0,
+      "delta": -92.06349206349206,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Software   App  Unlisted Issue Report",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "578308"
+            },
+            {
+              "id": "578311"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Power / Battery  Not Powering On",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "578317"
+            },
+            {
+              "id": "578326"
+            }
+          ]
+        },
+        {
+          "tally": "Warranty  Warranty  Warranty Service Followup",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578319"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK 2",
+      "count": 3,
+      "pct": 30.0,
+      "delta": -97.14285714285714,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Hardware  Physical Controls / Parts",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578318"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Bluetooth / Wireless  Inter-Product Connection Issue",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578320"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Bluetooth / Wireless  Cannot Pair With My Device  Audio",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578321"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK MINI",
+      "count": 1,
+      "pct": 10.0,
+      "delta": -97.22222222222221,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Bluetooth / Wireless  Cannot Connect To My Device  App",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578307"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK LIVE",
+      "count": 1,
+      "pct": 10.0,
+      "delta": -93.75,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Product Inquiry  Specs  Specs  Shown ",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578309"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ticketTypes": [
+    {
+      "type": "Troubleshooting",
+      "count": 8,
+      "pct": 80.0,
+      "delta": -96.63865546218487,
+      "direction": "down"
+    },
+    {
+      "type": "Product Spec",
+      "count": 1,
+      "pct": 10.0,
+      "delta": -96.15384615384616,
+      "direction": "down"
+    },
+    {
+      "type": "Request For Refund/Replacement",
+      "count": 1,
+      "pct": 10.0,
+      "delta": -97.87234042553192,
+      "direction": "down"
+    }
+  ],
   "aiOps": {
-    "aiResolutionRate": null,
-    "aiCsat": null,
-    "humanCsat": null
+    "aiResolutionRate": 70.6,
+    "devinClosed": 12,
+    "allClosed": 17,
+    "aiCsat": 100.0,
+    "aiGood": 2,
+    "aiBad": 0,
+    "humanCsat": 100.0,
+    "humanGood": 5,
+    "humanBad": 0,
+    "handoffRate": 29.4
   },
   "aiOpportunities": [],
-  "stfs": []
+  "stfs": [
+    {
+      "key": "STFS-414",
+      "summary": "Spark - USB Compatibility issue with macOS 26",
+      "status": "To Do",
+      "product": "Hardware",
+      "ticketCount": 85,
+      "dsatCount": 0
+    },
+    {
+      "key": "STFS-338",
+      "summary": "Spark NEO - TX Doesn't Automatically Connect to the RX",
+      "status": "To Do",
+      "product": "Hardware",
+      "ticketCount": 36,
+      "dsatCount": 0
+    },
+    {
+      "key": "STFS-421",
+      "summary": "BIAS X 1.0.0 - Plugin Crash Issue (Cubase/Logic Pro/Studio One)",
+      "status": "To Do",
+      "product": "BIAS Desktop",
+      "ticketCount": 25,
+      "dsatCount": 0
+    },
+    {
+      "key": "STFS-270",
+      "summary": "Spark 2 - Can't change tone/preset on Spark 2 via the Spark app",
+      "status": "In Review",
+      "product": "",
+      "ticketCount": 25,
+      "dsatCount": 0
+    },
+    {
+      "key": "STFS-211",
+      "summary": "Spark app - Experience Jimi Hendrix\u2122 tag has disappeared. (iOS Only)",
+      "status": "In Review",
+      "product": "",
+      "ticketCount": 24,
+      "dsatCount": 0
+    },
+    {
+      "key": "STFS-358",
+      "summary": "Spark app - Groove Looper Will be Out of Sync Gradually (Spark 2)",
+      "status": "To Do",
+      "product": "Spark",
+      "ticketCount": 23,
+      "dsatCount": 0
+    },
+    {
+      "key": "STFS-226",
+      "summary": "Spark app - Preset Restore Issue (Cross Platform/Dropbox) ",
+      "status": "To Do",
+      "product": "",
+      "ticketCount": 22,
+      "dsatCount": 0
+    },
+    {
+      "key": "STFS-442",
+      "summary": "Spark app 4.5.1 \u2013 Frozen After Connecting to Spark Amp via In-App Features (iOS Only)",
+      "status": "In Review",
+      "product": "Spark",
+      "ticketCount": 20,
+      "dsatCount": 0
+    },
+    {
+      "key": "STFS-477",
+      "summary": "Spark App 4.5.1 - Dropbox Fail Error (Android Only)",
+      "status": "To Do",
+      "product": "",
+      "ticketCount": 19,
+      "dsatCount": 0
+    },
+    {
+      "key": "STFS-220",
+      "summary": "Spark app - Hardware Preset Saving Issue (Android)",
+      "status": "To Do",
+      "product": "",
+      "ticketCount": 18,
+      "dsatCount": 0
+    },
+    {
+      "key": "STFS-404",
+      "summary": "Spark 2 \u2013 Serial Number Detection Issue (ML IN Manufactured Units)",
+      "status": "To Do",
+      "product": "Hardware/Firmware",
+      "ticketCount": 15,
+      "dsatCount": 0
+    },
+    {
+      "key": "STFS-451",
+      "summary": "Spark app 4.5.1 - IAP License Issue (JH Pack)",
+      "status": "To Do",
+      "product": "Spark",
+      "ticketCount": 13,
+      "dsatCount": 0
+    },
+    {
+      "key": "STFS-390",
+      "summary": "Spark Control X - Choppy Audio",
+      "status": "To Do",
+      "product": "Hardware",
+      "ticketCount": 12,
+      "dsatCount": 0
+    },
+    {
+      "key": "STFS-420",
+      "summary": "BIAS X 1.0.0 - Blank Screen After App Launched (Log Collected)",
+      "status": "To Do",
+      "product": "BIAS Desktop",
+      "ticketCount": 11,
+      "dsatCount": 0
+    },
+    {
+      "key": "STFS-366",
+      "summary": "Spark app - Connecting Tone Control via the Device Card Disconnects Bluetooth Audio (Android Only)",
+      "status": "To Do",
+      "product": "Spark",
+      "ticketCount": 10,
+      "dsatCount": 0
+    }
+  ]
 }

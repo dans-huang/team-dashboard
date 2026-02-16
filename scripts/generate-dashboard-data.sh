@@ -7,8 +7,25 @@ DASHBOARD_DIR="$(dirname "$SCRIPT_DIR")"
 CLAUDE_DIR="${CLAUDE_DIR:-$(dirname "$(dirname "$DASHBOARD_DIR")")}"
 WEEK="${1:-$(date -u +%G-W%V)}"
 
+# Compute Monday (start) and Sunday (end) from ISO week
+# e.g. 2026-W07 → 2026-02-09 ~ 2026-02-15
+WEEK_START=$(python3 -c "
+from datetime import datetime, timedelta
+year, week = '$WEEK'.split('-W')
+# ISO week: Monday of week 1 is the Monday of the week containing Jan 4
+jan4 = datetime(int(year), 1, 4)
+mon_w1 = jan4 - timedelta(days=jan4.weekday())
+monday = mon_w1 + timedelta(weeks=int(week)-1)
+print(monday.strftime('%Y-%m-%d'))
+")
+WEEK_END=$(python3 -c "
+from datetime import datetime, timedelta
+d = datetime.strptime('$WEEK_START', '%Y-%m-%d')
+print((d + timedelta(days=6)).strftime('%Y-%m-%d'))
+")
+
 echo "=== Team Dashboard Data Generator ==="
-echo "Week: $WEEK"
+echo "Week: $WEEK ($WEEK_START ~ $WEEK_END)"
 echo "Dashboard: $DASHBOARD_DIR"
 echo "Claude workspace: $CLAUDE_DIR"
 echo ""
@@ -36,13 +53,13 @@ generate() {
 }
 
 generate "Weekly Pulse" "$DASHBOARD_DIR/data/pulse/$WEEK.json" \
-  python3 "$CLAUDE_DIR/skills/weekly-pulse/scripts/generate-pulse.py" --json --last-week
+  python3 "$CLAUDE_DIR/skills/weekly-pulse/scripts/generate-pulse.py" --json --start "$WEEK_START" --end "$WEEK_END"
 
 generate "QA Pulse" "$DASHBOARD_DIR/data/qa/$WEEK.json" \
   python3 "$CLAUDE_DIR/skills/bug-catch-rate/scripts/qa-pulse-report.py" --json --dry-run
 
 generate "Weekly Tickets" "$DASHBOARD_DIR/data/tickets/$WEEK.json" \
-  python3 "$CLAUDE_DIR/skills/daily-ticket-report/scripts/generate-weekly-report.py" --json --last-week
+  python3 "$CLAUDE_DIR/skills/daily-ticket-report/scripts/generate-weekly-report.py" --json --start "$WEEK_START" --end "$WEEK_END"
 
 generate "DSAT" "$DASHBOARD_DIR/data/dsat/$WEEK.json" \
   python3 "$CLAUDE_DIR/scripts/analysis/fetch-all-dsat-v3.py" --json

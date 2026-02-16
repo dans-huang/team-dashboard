@@ -1,14 +1,235 @@
 {
-  "period": "2026-02-16 ~ 2026-02-22",
-  "alerts": [],
+  "period": "Week of 02/16 - 02/22",
+  "reportType": "weekly",
+  "startDate": "2026-02-16",
+  "endDate": "2026-02-22",
+  "alerts": [
+    {
+      "severity": "medium",
+      "message": "SPARK accounts for 50% of all tickets",
+      "type": "dominant_product"
+    },
+    {
+      "severity": "medium",
+      "message": "SPARK 2 accounts for 30% of all tickets",
+      "type": "dominant_product"
+    }
+  ],
   "kpi": {
-    "totalTickets": null,
-    "topProduct": null,
-    "refunds": null,
-    "productCount": null
+    "totalTickets": 10,
+    "refunds": 1,
+    "productCount": 4
   },
-  "dailyTrend": [],
-  "productBreakdown": [],
-  "ticketTypes": [],
-  "stfs": []
+  "dailyTrend": [
+    {
+      "date": "2026-02-16",
+      "day": "Mon",
+      "count": 10
+    }
+  ],
+  "productBreakdown": [
+    {
+      "product": "SPARK",
+      "count": 5,
+      "pct": 50.0,
+      "delta": -92.06349206349206,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Software   App  Unlisted Issue Report",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "578308"
+            },
+            {
+              "id": "578311"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Power / Battery  Not Powering On",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "578317"
+            },
+            {
+              "id": "578326"
+            }
+          ]
+        },
+        {
+          "tally": "Warranty  Warranty  Warranty Service Followup",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578319"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK 2",
+      "count": 3,
+      "pct": 30.0,
+      "delta": -97.14285714285714,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Hardware  Physical Controls / Parts",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578318"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Bluetooth / Wireless  Inter-Product Connection Issue",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578320"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Bluetooth / Wireless  Cannot Pair With My Device  Audio",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578321"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK MINI",
+      "count": 1,
+      "pct": 10.0,
+      "delta": -97.22222222222221,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Bluetooth / Wireless  Cannot Connect To My Device  App",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578307"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK LIVE",
+      "count": 1,
+      "pct": 10.0,
+      "delta": -93.75,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Product Inquiry  Specs  Specs  Shown ",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578309"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ticketTypes": [
+    {
+      "type": "Troubleshooting",
+      "count": 8,
+      "pct": 80.0,
+      "delta": -96.63865546218487,
+      "direction": "down"
+    },
+    {
+      "type": "Product Spec",
+      "count": 1,
+      "pct": 10.0,
+      "delta": -96.15384615384616,
+      "direction": "down"
+    },
+    {
+      "type": "Request For Refund/Replacement",
+      "count": 1,
+      "pct": 10.0,
+      "delta": -97.87234042553192,
+      "direction": "down"
+    }
+  ],
+  "stfs": [
+    {
+      "key": "STFS-445",
+      "summary": "Spark app 4.5.1 - Spark GO: Incorrect Latest Firmware Version Detected",
+      "status": "To Do",
+      "product": "Spark",
+      "ticketCount": 5,
+      "followUp": true
+    },
+    {
+      "key": "STFS-444",
+      "summary": "Spark app 4.5.1  - Spark NEO: Incorrect Redirect for Firmware Update Instructions (iOS Only)",
+      "status": "To Do",
+      "product": "Spark",
+      "ticketCount": 5,
+      "followUp": true
+    },
+    {
+      "key": "STFS-442",
+      "summary": "Spark app 4.5.1 \u2013 Frozen After Connecting to Spark Amp via In-App Features (iOS Only)",
+      "status": "In Review",
+      "product": "Spark",
+      "ticketCount": 5,
+      "followUp": false
+    },
+    {
+      "key": "STFS-441",
+      "summary": "Spark app 4.5.1 - UI Issue (Overlapping in the Music page)",
+      "status": "To Do",
+      "product": "Spark",
+      "ticketCount": 5,
+      "followUp": true
+    },
+    {
+      "key": "STFS-436",
+      "summary": "Spark app 4.5.1 \u2013 ToneCloud Listing Issue (Android)",
+      "status": "To Do",
+      "product": "Spark",
+      "ticketCount": 5,
+      "followUp": true
+    },
+    {
+      "key": "STFS-432",
+      "summary": "Spark app - UI Issue (Voice Guide)",
+      "status": "To Do",
+      "product": "Spark",
+      "ticketCount": 5,
+      "followUp": true
+    },
+    {
+      "key": "STFS-431",
+      "summary": "Spark app - Voice Guide Doesn't Work Properly (iOS only)",
+      "status": "To Do",
+      "product": "Spark",
+      "ticketCount": 5,
+      "followUp": true
+    },
+    {
+      "key": "STFS-428",
+      "summary": "Spark app - UI Issue (Tab text disappears when selected)",
+      "status": "To Do",
+      "product": "Spark",
+      "ticketCount": 5,
+      "followUp": true
+    }
+  ]
 }
