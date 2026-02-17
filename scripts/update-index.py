@@ -8,7 +8,7 @@ from pathlib import Path
 def main():
     data_dir = Path(__file__).parent.parent / 'data'
     weeks = set()
-    for subdir in ['pulse', 'qa', 'tickets', 'dsat']:
+    for subdir in ['pulse', 'qa', 'tickets', 'dsat', 'daily']:
         dir_path = data_dir / subdir
         if not dir_path.exists():
             continue
