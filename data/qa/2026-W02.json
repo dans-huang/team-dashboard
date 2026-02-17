@@ -1,0 +1,125 @@
+{
+  "period": "2025-10-07 ~ 2026-01-05",
+  "daysCount": 90,
+  "reportDate": "2026-01-05",
+  "bcr": {
+    "overall": 94.7,
+    "status": "on_track",
+    "target": 80,
+    "qaCount": 18,
+    "customerCount": 1
+  },
+  "bcrByProduct": [
+    {
+      "product": "Spark",
+      "qaBugs": 3,
+      "customerBugs": 1,
+      "total": 4,
+      "rate": 75.0
+    },
+    {
+      "product": "BIAS X",
+      "qaBugs": 2,
+      "customerBugs": 1,
+      "total": 3,
+      "rate": 66.7
+    },
+    {
+      "product": "Reactor",
+      "qaBugs": 8,
+      "customerBugs": 1,
+      "total": 9,
+      "rate": 88.9
+    }
+  ],
+  "bcrWeeklyTrend": [
+    {
+      "week": "2026-W02",
+      "qaBugs": 18,
+      "customerBugs": 1,
+      "total": 19,
+      "weekRate": 94.7
+    }
+  ],
+  "testExecution": {
+    "Spark": {
+      "completedRuns": 4,
+      "totalRuns": 8,
+      "totalCases": 265,
+      "totalPassed": 253,
+      "totalFailed": 17,
+      "totalBlocked": 5,
+      "totalSkipped": 0,
+      "passRate": 95.5,
+      "avgVelocity": 30.1,
+      "blockedRate": 1.9
+    },
+    "BIAS X": {
+      "completedRuns": 4,
+      "totalRuns": 6,
+      "totalCases": 228,
+      "totalPassed": 216,
+      "totalFailed": 10,
+      "totalBlocked": 9,
+      "totalSkipped": 0,
+      "passRate": 94.7,
+      "avgVelocity": 24.7,
+      "blockedRate": 3.9
+    },
+    "Reactor": {
+      "completedRuns": 3,
+      "totalRuns": 7,
+      "totalCases": 563,
+      "totalPassed": 473,
+      "totalFailed": 42,
+      "totalBlocked": 9,
+      "totalSkipped": 39,
+      "passRate": 84.0,
+      "avgVelocity": 20.9,
+      "blockedRate": 1.6
+    }
+  },
+  "regressionTrend": {
+    "Spark": [],
+    "BIAS X": [],
+    "Reactor": []
+  },
+  "latestFunctionTest": [],
+  "effortSignals": [],
+  "recentBugs": {
+    "qa": [
+      {
+        "key": "RA-670",
+        "summary": "[Spark] Test issue #81",
+        "project": "RA"
+      },
+      {
+        "key": "BX-757",
+        "summary": "[Reactor] Test issue #12",
+        "project": "BX"
+      },
+      {
+        "key": "RA-764",
+        "summary": "[Spark] Test issue #76",
+        "project": "RA"
+      },
+      {
+        "key": "RA-639",
+        "summary": "[Spark] Test issue #85",
+        "project": "RA"
+      },
+      {
+        "key": "RA-784",
+        "summary": "[Reactor] Test issue #44",
+        "project": "RA"
+      }
+    ],
+    "customer": [
+      {
+        "key": "STFS-472",
+        "summary": "SPARK - Customer reported issue #4",
+        "product": "Spark"
+      }
+    ]
+  }
+}

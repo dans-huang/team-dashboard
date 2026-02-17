@@ -1,0 +1,130 @@
+{
+  "period": "2025-09-16 ~ 2025-12-15",
+  "daysCount": 90,
+  "reportDate": "2025-12-15",
+  "bcr": {
+    "overall": 85.7,
+    "status": "on_track",
+    "target": 80,
+    "qaCount": 12,
+    "customerCount": 2
+  },
+  "bcrByProduct": [
+    {
+      "product": "Spark",
+      "qaBugs": 4,
+      "customerBugs": 1,
+      "total": 5,
+      "rate": 80.0
+    },
+    {
+      "product": "BIAS X",
+      "qaBugs": 4,
+      "customerBugs": 0,
+      "total": 4,
+      "rate": 100.0
+    },
+    {
+      "product": "Reactor",
+      "qaBugs": 7,
+      "customerBugs": 1,
+      "total": 8,
+      "rate": 87.5
+    }
+  ],
+  "bcrWeeklyTrend": [
+    {
+      "week": "2025-W51",
+      "qaBugs": 12,
+      "customerBugs": 2,
+      "total": 14,
+      "weekRate": 85.7
+    }
+  ],
+  "testExecution": {
+    "Spark": {
+      "completedRuns": 5,
+      "totalRuns": 8,
+      "totalCases": 230,
+      "totalPassed": 190,
+      "totalFailed": 2,
+      "totalBlocked": 12,
+      "totalSkipped": 26,
+      "passRate": 82.6,
+      "avgVelocity": 23.6,
+      "blockedRate": 5.2
+    },
+    "BIAS X": {
+      "completedRuns": 4,
+      "totalRuns": 6,
+      "totalCases": 556,
+      "totalPassed": 540,
+      "totalFailed": 44,
+      "totalBlocked": 15,
+      "totalSkipped": 0,
+      "passRate": 97.1,
+      "avgVelocity": 23.9,
+      "blockedRate": 2.7
+    },
+    "Reactor": {
+      "completedRuns": 3,
+      "totalRuns": 5,
+      "totalCases": 229,
+      "totalPassed": 207,
+      "totalFailed": 10,
+      "totalBlocked": 10,
+      "totalSkipped": 2,
+      "passRate": 90.4,
+      "avgVelocity": 32.5,
+      "blockedRate": 4.4
+    }
+  },
+  "regressionTrend": {
+    "Spark": [],
+    "BIAS X": [],
+    "Reactor": []
+  },
+  "latestFunctionTest": [],
+  "effortSignals": [],
+  "recentBugs": {
+    "qa": [
+      {
+        "key": "RA-735",
+        "summary": "[Spark] Test issue #8",
+        "project": "RA"
+      },
+      {
+        "key": "RA-620",
+        "summary": "[Spark] Test issue #9",
+        "project": "RA"
+      },
+      {
+        "key": "RA-617",
+        "summary": "[Reactor] Test issue #31",
+        "project": "RA"
+      },
+      {
+        "key": "BX-630",
+        "summary": "[Reactor] Test issue #32",
+        "project": "BX"
+      },
+      {
+        "key": "RA-752",
+        "summary": "[Spark] Test issue #80",
+        "project": "RA"
+      }
+    ],
+    "customer": [
+      {
+        "key": "STFS-410",
+        "summary": "SPARK NEO - Customer reported issue #85",
+        "product": "Reactor"
+      },
+      {
+        "key": "STFS-472",
+        "summary": "SPARK EDGE - Customer reported issue #41",
+        "product": "BIAS X"
+      }
+    ]
+  }
+}

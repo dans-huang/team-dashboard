@@ -1,0 +1,145 @@
+{
+  "period": "2025-10-14 ~ 2026-01-12",
+  "daysCount": 90,
+  "reportDate": "2026-01-12",
+  "bcr": {
+    "overall": 75.0,
+    "status": "at_risk",
+    "target": 80,
+    "qaCount": 18,
+    "customerCount": 6
+  },
+  "bcrByProduct": [
+    {
+      "product": "Spark",
+      "qaBugs": 3,
+      "customerBugs": 2,
+      "total": 5,
+      "rate": 60.0
+    },
+    {
+      "product": "BIAS X",
+      "qaBugs": 7,
+      "customerBugs": 1,
+      "total": 8,
+      "rate": 87.5
+    },
+    {
+      "product": "Reactor",
+      "qaBugs": 9,
+      "customerBugs": 3,
+      "total": 12,
+      "rate": 75.0
+    }
+  ],
+  "bcrWeeklyTrend": [
+    {
+      "week": "2026-W03",
+      "qaBugs": 18,
+      "customerBugs": 6,
+      "total": 24,
+      "weekRate": 75.0
+    }
+  ],
+  "testExecution": {
+    "Spark": {
+      "completedRuns": 6,
+      "totalRuns": 5,
+      "totalCases": 323,
+      "totalPassed": 307,
+      "totalFailed": 10,
+      "totalBlocked": 4,
+      "totalSkipped": 2,
+      "passRate": 95.0,
+      "avgVelocity": 31.9,
+      "blockedRate": 1.2
+    },
+    "BIAS X": {
+      "completedRuns": 5,
+      "totalRuns": 6,
+      "totalCases": 413,
+      "totalPassed": 371,
+      "totalFailed": 8,
+      "totalBlocked": 7,
+      "totalSkipped": 27,
+      "passRate": 89.8,
+      "avgVelocity": 24.9,
+      "blockedRate": 1.7
+    },
+    "Reactor": {
+      "completedRuns": 7,
+      "totalRuns": 10,
+      "totalCases": 240,
+      "totalPassed": 231,
+      "totalFailed": 16,
+      "totalBlocked": 2,
+      "totalSkipped": 0,
+      "passRate": 96.2,
+      "avgVelocity": 39.9,
+      "blockedRate": 0.8
+    }
+  },
+  "regressionTrend": {
+    "Spark": [],
+    "BIAS X": [],
+    "Reactor": []
+  },
+  "latestFunctionTest": [],
+  "effortSignals": [],
+  "recentBugs": {
+    "qa": [
+      {
+        "key": "FWP-668",
+        "summary": "[BIAS X] Test issue #87",
+        "project": "FWP"
+      },
+      {
+        "key": "RA-754",
+        "summary": "[Spark] Test issue #10",
+        "project": "RA"
+      },
+      {
+        "key": "FWP-794",
+        "summary": "[Reactor] Test issue #93",
+        "project": "FWP"
+      },
+      {
+        "key": "RA-743",
+        "summary": "[Spark] Test issue #62",
+        "project": "RA"
+      },
+      {
+        "key": "FWP-685",
+        "summary": "[BIAS X] Test issue #2",
+        "project": "FWP"
+      }
+    ],
+    "customer": [
+      {
+        "key": "STFS-427",
+        "summary": "SPARK LIVE - Customer reported issue #95",
+        "product": "Spark"
+      },
+      {
+        "key": "STFS-495",
+        "summary": "SPARK LINK - Customer reported issue #32",
+        "product": "Reactor"
+      },
+      {
+        "key": "STFS-477",
+        "summary": "SPARK LIVE - Customer reported issue #51",
+        "product": "Spark"
+      },
+      {
+        "key": "STFS-470",
+        "summary": "SPARK CAB - Customer reported issue #37",
+        "product": "BIAS X"
+      },
+      {
+        "key": "STFS-459",
+        "summary": "SPARK EDGE - Customer reported issue #84",
+        "product": "BIAS X"
+      }
+    ]
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "period": "2025-10-07 ~ 2026-01-05",
+  "daysCount": 90,
+  "totalBadRatings": 29,
+  "withComments": 25,
+  "aiNegative": 15,
+  "aiNegativeRateOfComments": 60.0,
+  "aiNegativeRateOfAll": 51.72,
+  "samples": [
+    {
+      "ticketId": 68628760900980,
+      "comment": "Started well with an AI bot then went downhill after that.",
+      "createdAt": "2026-01-10Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/49597650588187.json"
+    },
+    {
+      "ticketId": 52519990044314,
+      "comment": "Your AI is terrible and did not even acknowledge what I had asked it.",
+      "createdAt": "2026-01-06Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45233014320642.json"
+    },
+    {
+      "ticketId": 20271214761973,
+      "comment": "I don't like wasting time with AI responses!!",
+      "createdAt": "2026-01-06Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/48518705229774.json"
+    },
+    {
+      "ticketId": 38713851137656,
+      "comment": "I received what sounded like an AI response that did not resolve the problem.",
+      "createdAt": "2026-01-09Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45616607600972.json"
+    },
+    {
+      "ticketId": 58609841899473,
+      "comment": "The Support from your AI was fine. The Problem wasn't solved so I'm Not satisfied.",
+      "createdAt": "2026-01-06Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/49880636603627.json"
+    },
+    {
+      "ticketId": 54908634103515,
+      "comment": "The AI didn't respond to my questions and simply reused my words.",
+      "createdAt": "2026-01-08Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47908183574034.json"
+    },
+    {
+      "ticketId": 29826633841838,
+      "comment": "The AI response only vaguely answered my question.",
+      "createdAt": "2026-01-05Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46760043953801.json"
+    },
+    {
+      "ticketId": 96607432112019,
+      "comment": "The Support from your AI was fine. The Problem wasn't solved so I'm Not satisfied.",
+      "createdAt": "2026-01-06Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45763045004679.json"
+    },
+    {
+      "ticketId": 91303446378301,
+      "comment": "I received what sounded like an AI response that did not resolve the problem.",
+      "createdAt": "2026-01-06Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/48214188196299.json"
+    },
+    {
+      "ticketId": 79996407194184,
+      "comment": "I don't like wasting time with AI responses!!",
+      "createdAt": "2026-01-05Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/48042349645548.json"
+    },
+    {
+      "ticketId": 43882853918326,
+      "comment": "The AI didn't respond to my questions and simply reused my words.",
+      "createdAt": "2026-01-09Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/40889267215375.json"
+    },
+    {
+      "ticketId": 79648398088196,
+      "comment": "Started well with an AI bot then went downhill after that.",
+      "createdAt": "2026-01-11Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/48279290433393.json"
+    },
+    {
+      "ticketId": 85532522147423,
+      "comment": "I don't like wasting time with AI responses!!",
+      "createdAt": "2026-01-11Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42355492898893.json"
+    },
+    {
+      "ticketId": 47223976705662,
+      "comment": "I received what sounded like an AI response that did not resolve the problem.",
+      "createdAt": "2026-01-11Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/40796140638721.json"
+    },
+    {
+      "ticketId": 17200085673079,
+      "comment": "Started well with an AI bot then went downhill after that.",
+      "createdAt": "2026-01-09Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/49733952920489.json"
+    },
+    {
+      "ticketId": 20347815750931,
+      "comment": "The Support from your AI was fine. The Problem wasn't solved so I'm Not satisfied.",
+      "createdAt": "2026-01-09Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/49675549441278.json"
+    },
+    {
+      "ticketId": 97716070231135,
+      "comment": "Started well with an AI bot then went downhill after that.",
+      "createdAt": "2026-01-05Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41704994998020.json"
+    },
+    {
+      "ticketId": 62520551899071,
+      "comment": "I received what sounded like an AI response that did not resolve the problem.",
+      "createdAt": "2026-01-09Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42537273255367.json"
+    },
+    {
+      "ticketId": 94787804337424,
+      "comment": "Impressive responses considering it is AI generated but these issues should have been easier.",
+      "createdAt": "2026-01-08Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/40794741843282.json"
+    },
+    {
+      "ticketId": 29284570293253,
+      "comment": "I received what sounded like an AI response that did not resolve the problem.",
+      "createdAt": "2026-01-11Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/48038114327823.json"
+    }
+  ],
+  "allComments": [
+    {
+      "ticketId": 68628760900980,
+      "comment": "Started well with an AI bot then went downhill after that.",
+      "createdAt": "2026-01-10Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 52519990044314,
+      "comment": "Your AI is terrible and did not even acknowledge what I had asked it.",
+      "createdAt": "2026-01-06Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 20271214761973,
+      "comment": "I don't like wasting time with AI responses!!",
+      "createdAt": "2026-01-06Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 38713851137656,
+      "comment": "I received what sounded like an AI response that did not resolve the problem.",
+      "createdAt": "2026-01-09Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 58609841899473,
+      "comment": "The Support from your AI was fine. The Problem wasn't solved so I'm Not satisfied.",
+      "createdAt": "2026-01-06Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 54908634103515,
+      "comment": "The AI didn't respond to my questions and simply reused my words.",
+      "createdAt": "2026-01-08Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 29826633841838,
+      "comment": "The AI response only vaguely answered my question.",
+      "createdAt": "2026-01-05Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 96607432112019,
+      "comment": "The Support from your AI was fine. The Problem wasn't solved so I'm Not satisfied.",
+      "createdAt": "2026-01-06Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 91303446378301,
+      "comment": "I received what sounded like an AI response that did not resolve the problem.",
+      "createdAt": "2026-01-06Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 79996407194184,
+      "comment": "I don't like wasting time with AI responses!!",
+      "createdAt": "2026-01-05Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 43882853918326,
+      "comment": "The AI didn't respond to my questions and simply reused my words.",
+      "createdAt": "2026-01-09Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 79648398088196,
+      "comment": "Started well with an AI bot then went downhill after that.",
+      "createdAt": "2026-01-11Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 85532522147423,
+      "comment": "I don't like wasting time with AI responses!!",
+      "createdAt": "2026-01-11Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 47223976705662,
+      "comment": "I received what sounded like an AI response that did not resolve the problem.",
+      "createdAt": "2026-01-11Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 17200085673079,
+      "comment": "Started well with an AI bot then went downhill after that.",
+      "createdAt": "2026-01-09Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 20347815750931,
+      "comment": "The Support from your AI was fine. The Problem wasn't solved so I'm Not satisfied.",
+      "createdAt": "2026-01-09Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 97716070231135,
+      "comment": "Started well with an AI bot then went downhill after that.",
+      "createdAt": "2026-01-05Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 62520551899071,
+      "comment": "I received what sounded like an AI response that did not resolve the problem.",
+      "createdAt": "2026-01-09Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 94787804337424,
+      "comment": "Impressive responses considering it is AI generated but these issues should have been easier.",
+      "createdAt": "2026-01-08Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 29284570293253,
+      "comment": "I received what sounded like an AI response that did not resolve the problem.",
+      "createdAt": "2026-01-11Z",
+      "isAiNegative": true
+    }
+  ]
+}

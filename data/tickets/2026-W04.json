@@ -1,0 +1,726 @@
+{
+  "period": "Week of 01/19 - 01/25",
+  "reportType": "weekly",
+  "startDate": "2026-01-19",
+  "endDate": "2026-01-25",
+  "alerts": [],
+  "kpi": {
+    "totalTickets": 343,
+    "topProduct": "SPARK 2",
+    "dailyAvg": 49.0,
+    "refunds": 9,
+    "productCount": 10
+  },
+  "dailyTrend": [
+    {
+      "date": "2026-01-19",
+      "day": "Mon",
+      "count": 64
+    }
+  ],
+  "productBreakdown": [
+    {
+      "product": "SPARK 2",
+      "count": 84,
+      "pct": 24.5,
+      "delta": 14.0,
+      "direction": "up",
+      "topIssues": [
+        {
+          "tally": "Post-Sales  Service Parts Request  Others",
+          "count": 26,
+          "tickets": [
+            {
+              "id": "574592"
+            },
+            {
+              "id": "576437"
+            },
+            {
+              "id": "575980"
+            },
+            {
+              "id": "571865"
+            },
+            {
+              "id": "579238"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Hardware  Physical Controls / Parts",
+          "count": 15,
+          "tickets": [
+            {
+              "id": "579703"
+            },
+            {
+              "id": "578939"
+            },
+            {
+              "id": "572947"
+            },
+            {
+              "id": "579012"
+            },
+            {
+              "id": "570440"
+            }
+          ]
+        },
+        {
+          "tally": "Purchase Inquiry  Order   Shipping  Track For Order Status And Eta",
+          "count": 18,
+          "tickets": [
+            {
+              "id": "577563"
+            },
+            {
+              "id": "573434"
+            },
+            {
+              "id": "577183"
+            },
+            {
+              "id": "574773"
+            },
+            {
+              "id": "571133"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK",
+      "count": 77,
+      "pct": 22.4,
+      "delta": -14.8,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Post-Sales  Return   Refund Request  Refund Request",
+          "count": 24,
+          "tickets": [
+            {
+              "id": "575399"
+            },
+            {
+              "id": "577212"
+            },
+            {
+              "id": "575484"
+            },
+            {
+              "id": "577055"
+            },
+            {
+              "id": "579738"
+            }
+          ]
+        },
+        {
+          "tally": "Purchase Inquiry  Order   Shipping  Track For Order Status And Eta",
+          "count": 12,
+          "tickets": [
+            {
+              "id": "574922"
+            },
+            {
+              "id": "575253"
+            },
+            {
+              "id": "579883"
+            },
+            {
+              "id": "573290"
+            },
+            {
+              "id": "577848"
+            }
+          ]
+        },
+        {
+          "tally": "Warranty  Warranty  Warranty Service Followup",
+          "count": 11,
+          "tickets": [
+            {
+              "id": "572910"
+            },
+            {
+              "id": "576524"
+            },
+            {
+              "id": "575228"
+            },
+            {
+              "id": "574775"
+            },
+            {
+              "id": "578044"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK MINI",
+      "count": 50,
+      "pct": 14.6,
+      "delta": 9.6,
+      "direction": "up",
+      "topIssues": [
+        {
+          "tally": "Post-Sales  Service Parts Request  Others",
+          "count": 23,
+          "tickets": [
+            {
+              "id": "572280"
+            },
+            {
+              "id": "574961"
+            },
+            {
+              "id": "573965"
+            },
+            {
+              "id": "574139"
+            },
+            {
+              "id": "572525"
+            }
+          ]
+        },
+        {
+          "tally": "Post-Sales  Return   Refund Request  Refund Request",
+          "count": 10,
+          "tickets": [
+            {
+              "id": "576176"
+            },
+            {
+              "id": "571211"
+            },
+            {
+              "id": "577357"
+            },
+            {
+              "id": "579796"
+            },
+            {
+              "id": "577851"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Bluetooth / Wireless  No Bluetooth Connection  Audio   App",
+          "count": 6,
+          "tickets": [
+            {
+              "id": "576566"
+            },
+            {
+              "id": "578755"
+            },
+            {
+              "id": "578300"
+            },
+            {
+              "id": "576853"
+            },
+            {
+              "id": "578907"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK GO",
+      "count": 37,
+      "pct": 10.8,
+      "delta": -12.0,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Hardware  Physical Controls / Parts",
+          "count": 14,
+          "tickets": [
+            {
+              "id": "579511"
+            },
+            {
+              "id": "579424"
+            },
+            {
+              "id": "573621"
+            },
+            {
+              "id": "577303"
+            },
+            {
+              "id": "576129"
+            }
+          ]
+        },
+        {
+          "tally": "Website  Product Registration  Cannot Register Successfully",
+          "count": 9,
+          "tickets": [
+            {
+              "id": "577586"
+            },
+            {
+              "id": "579643"
+            },
+            {
+              "id": "578199"
+            },
+            {
+              "id": "572469"
+            },
+            {
+              "id": "575651"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Hardware  Usb Cannot Be Detected",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "577909"
+            },
+            {
+              "id": "571712"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK LIVE",
+      "count": 30,
+      "pct": 8.7,
+      "delta": -13.9,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Purchase Inquiry  Order   Shipping  Track For Order Status And Eta",
+          "count": 14,
+          "tickets": [
+            {
+              "id": "571392"
+            },
+            {
+              "id": "571791"
+            },
+            {
+              "id": "574067"
+            },
+            {
+              "id": "575816"
+            },
+            {
+              "id": "572725"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Hardware  Usb Cannot Be Detected",
+          "count": 7,
+          "tickets": [
+            {
+              "id": "570725"
+            },
+            {
+              "id": "579227"
+            },
+            {
+              "id": "576547"
+            },
+            {
+              "id": "575432"
+            },
+            {
+              "id": "577052"
+            }
+          ]
+        },
+        {
+          "tally": "Website  Product Registration  Cannot Register Successfully",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "570172"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK NEO",
+      "count": 20,
+      "pct": 5.8,
+      "delta": -12.1,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Hardware  Usb Cannot Be Detected",
+          "count": 5,
+          "tickets": [
+            {
+              "id": "571100"
+            },
+            {
+              "id": "574919"
+            },
+            {
+              "id": "570732"
+            },
+            {
+              "id": "571885"
+            },
+            {
+              "id": "570370"
+            }
+          ]
+        },
+        {
+          "tally": "Post-Sales  Service Parts Request  Others",
+          "count": 4,
+          "tickets": [
+            {
+              "id": "571791"
+            },
+            {
+              "id": "572692"
+            },
+            {
+              "id": "573996"
+            },
+            {
+              "id": "578454"
+            }
+          ]
+        },
+        {
+          "tally": "Product Inquiry  Specs  Specs  Shown ",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "579042"
+            },
+            {
+              "id": "572623"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "BIAS X",
+      "count": 20,
+      "pct": 5.8,
+      "delta": -9.4,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Purchase Inquiry  Order   Shipping  Track For Order Status And Eta",
+          "count": 3,
+          "tickets": [
+            {
+              "id": "574298"
+            },
+            {
+              "id": "578019"
+            },
+            {
+              "id": "578646"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Hardware  Physical Controls / Parts",
+          "count": 7,
+          "tickets": [
+            {
+              "id": "575134"
+            },
+            {
+              "id": "579780"
+            },
+            {
+              "id": "576367"
+            },
+            {
+              "id": "576431"
+            },
+            {
+              "id": "579617"
+            }
+          ]
+        },
+        {
+          "tally": "Product Inquiry  Specs  Specs  Shown ",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "575700"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK CAB",
+      "count": 10,
+      "pct": 2.9,
+      "delta": -6.1,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Power / Battery  Not Powering On",
+          "count": 3,
+          "tickets": [
+            {
+              "id": "575110"
+            },
+            {
+              "id": "575620"
+            },
+            {
+              "id": "577460"
+            }
+          ]
+        },
+        {
+          "tally": "Post-Sales  Service Parts Request  Others",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578537"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Bluetooth / Wireless  Cannot Connect To My Device  App",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "575706"
+            },
+            {
+              "id": "577801"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK LINK",
+      "count": 7,
+      "pct": 2.0,
+      "delta": -5.1,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Post-Sales  Return   Refund Request  Refund Request",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "573022"
+            },
+            {
+              "id": "573053"
+            }
+          ]
+        },
+        {
+          "tally": "Product Inquiry  Specs  Specs  Shown ",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "576481"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Hardware  Physical Controls / Parts",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "573232"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK EDGE",
+      "count": 7,
+      "pct": 2.0,
+      "delta": -1.5,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Post-Sales  Return   Refund Request  Refund Request",
+          "count": 3,
+          "tickets": [
+            {
+              "id": "573519"
+            },
+            {
+              "id": "573371"
+            },
+            {
+              "id": "574560"
+            }
+          ]
+        },
+        {
+          "tally": "Post-Sales  Service Parts Request  Others",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "579459"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Software   App  Unlisted Issue Report",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "578796"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ticketTypes": [
+    {
+      "type": "Troubleshooting",
+      "count": 173,
+      "pct": 50.4,
+      "delta": -15.3,
+      "direction": "down"
+    },
+    {
+      "type": "Request For Refund/Replacement",
+      "count": 60,
+      "pct": 17.5,
+      "delta": -15.3,
+      "direction": "down"
+    },
+    {
+      "type": "Order Related",
+      "count": 41,
+      "pct": 12.0,
+      "delta": 7.7,
+      "direction": "same"
+    },
+    {
+      "type": "Product Spec",
+      "count": 19,
+      "pct": 5.5,
+      "delta": -4.5,
+      "direction": "same"
+    },
+    {
+      "type": "Product Registration",
+      "count": 19,
+      "pct": 5.5,
+      "delta": -14.5,
+      "direction": "down"
+    },
+    {
+      "type": "Manage My Account",
+      "count": 11,
+      "pct": 3.2,
+      "delta": -3.1,
+      "direction": "down"
+    },
+    {
+      "type": "Delete/Migrate Account",
+      "count": 11,
+      "pct": 3.2,
+      "delta": 16.8,
+      "direction": "up"
+    },
+    {
+      "type": "Edit Address   Contact Information",
+      "count": 8,
+      "pct": 2.3,
+      "delta": 5.4,
+      "direction": "same"
+    }
+  ],
+  "stfs": [
+    {
+      "key": "STFS-477",
+      "summary": "Spark App 4.5.1 - Dropbox Fail Error (Android Only)",
+      "status": "To Do",
+      "product": "",
+      "ticketCount": 14,
+      "followUp": true
+    },
+    {
+      "key": "STFS-270",
+      "summary": "Spark 2 - Can't change tone/preset on Spark 2 via the Spark app",
+      "status": "In Review",
+      "product": "",
+      "ticketCount": 13,
+      "followUp": false
+    },
+    {
+      "key": "STFS-442",
+      "summary": "Spark app 4.5.1 – Frozen After Connecting to Spark Amp via In-App Features (iOS Only)",
+      "status": "To Do",
+      "product": "Spark",
+      "ticketCount": 12,
+      "followUp": false
+    },
+    {
+      "key": "STFS-220",
+      "summary": "Spark app - Hardware Preset Saving Issue (Android)",
+      "status": "To Do",
+      "product": "",
+      "ticketCount": 10,
+      "followUp": true
+    },
+    {
+      "key": "STFS-358",
+      "summary": "Spark app - Groove Looper Will be Out of Sync Gradually (Spark 2)",
+      "status": "To Do",
+      "product": "Spark",
+      "ticketCount": 10,
+      "followUp": false
+    },
+    {
+      "key": "STFS-421",
+      "summary": "BIAS X 1.0.0 - Plugin Crash Issue (Cubase/Logic Pro/Studio One)",
+      "status": "In Review",
+      "product": "BIAS Desktop",
+      "ticketCount": 7,
+      "followUp": true
+    },
+    {
+      "key": "STFS-414",
+      "summary": "Spark - USB Compatibility issue with macOS 26",
+      "status": "In Review",
+      "product": "Hardware",
+      "ticketCount": 6,
+      "followUp": true
+    },
+    {
+      "key": "STFS-211",
+      "summary": "Spark app - Experience Jimi Hendrix™ tag has disappeared. (iOS Only)",
+      "status": "In Review",
+      "product": "",
+      "ticketCount": 5,
+      "followUp": false
+    }
+  ]
+}

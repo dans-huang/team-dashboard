@@ -559,7 +559,7 @@ function updateSubNav() {
 
 var _navigating = false;
 
-async function navigateTo(view, report, skipPush) {
+async function navigateTo(view, report, skipPush, period) {
   if (_navigating) return;
   _navigating = true;
 
@@ -598,6 +598,19 @@ async function navigateTo(view, report, skipPush) {
     // Update period selector
     var idx = await loadIndex();
     populatePeriodSelect(idx);
+
+    // If a specific period was requested (e.g. from [ ] hotkeys), override selection
+    if (period) {
+      var select = document.getElementById('period-select');
+      if (select) {
+        for (var si = 0; si < select.options.length; si++) {
+          if (select.options[si].value === period) {
+            select.selectedIndex = si;
+            break;
+          }
+        }
+      }
+    }
 
     // Update URL
     if (!skipPush) {
@@ -823,8 +836,8 @@ document.addEventListener('keydown', function(e) {
     if (key === '[') i = Math.min(i + 1, select.options.length - 1); // older
     else i = Math.max(i - 1, 0); // newer
     if (i !== select.selectedIndex) {
-      select.selectedIndex = i;
-      navigateTo(currentView, currentReport);
+      var targetPeriod = select.options[i].value;
+      navigateTo(currentView, currentReport, false, targetPeriod);
     }
   }
   // C — toggle compare
