@@ -829,11 +829,14 @@ document.addEventListener('keydown', function(e) {
     if (idx < reports.length) navigateTo(currentView, reports[idx].id);
   }
   // [ / ] — cycle through periods (older / newer)
-  else if (key === '[' || key === ']') {
+  // { / } (shift+[ / shift+]) — jump to oldest / latest
+  else if (key === '[' || key === ']' || key === '{' || key === '}') {
     var select = document.getElementById('period-select');
     if (!select || select.options.length === 0) return;
     var i = select.selectedIndex;
-    if (key === '[') i = Math.min(i + 1, select.options.length - 1); // older
+    if (key === '{') i = select.options.length - 1; // oldest
+    else if (key === '}') i = 0; // latest
+    else if (key === '[') i = Math.min(i + 1, select.options.length - 1); // older
     else i = Math.max(i - 1, 0); // newer
     if (i !== select.selectedIndex) {
       var targetPeriod = select.options[i].value;
