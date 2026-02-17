@@ -2,30 +2,25 @@
 
 var _pulseData = null;
 
-document.addEventListener('DOMContentLoaded', async () => {
-  try {
-    const data = await loadData('pulse');
-    _pulseData = data;
-    document.getElementById('period').textContent = data.period;
-    renderAlerts(data.alerts);
-    renderKpi(data.kpi);
-    renderDailyTrend(data.dailyTrend);
-    renderProductBreakdown(data.productBreakdown);
-    renderTicketTypes(data.ticketTypes);
-    renderAiOps(data.aiOps);
-    renderAiOpportunities(data.aiOpportunities);
-    renderStfs(data.stfs);
-    initExpandableRows();
-    initCompare('pulse');
-  } catch (err) {
-    document.getElementById('content').innerHTML =
-      '<p style="color:var(--red)">Error loading pulse data: ' + err.message + '</p>';
-  }
-});
+function initPulsePage(data) {
+  _pulseData = data;
+  var periodEl = document.getElementById('period');
+  if (periodEl && data.period) periodEl.textContent = data.period;
+  renderAlerts(data.alerts);
+  renderKpi(data.kpi);
+  renderDailyTrend(data.dailyTrend);
+  renderProductBreakdown(data.productBreakdown);
+  renderTicketTypes(data.ticketTypes);
+  renderAiOps(data.aiOps);
+  renderAiOpportunities(data.aiOpportunities);
+  renderStfs(data.stfs);
+  initExpandableRows();
+}
 
 // --- Ticket Type Breakdown ---
 function renderTicketTypes(types) {
   var el = document.getElementById('type-table');
+  if (!el) return;
   if (!types || types.length === 0) {
     el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No ticket type data</p>';
     return;
@@ -49,6 +44,7 @@ function renderTicketTypes(types) {
 // --- AI Operations ---
 function renderAiOps(ai) {
   var el = document.getElementById('ai-ops');
+  if (!el) return;
   if (!ai) {
     el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No AI Ops data</p>';
     return;
@@ -67,6 +63,7 @@ function renderAiOps(ai) {
 // --- AI Automation Opportunities (Pulse-only) ---
 function renderAiOpportunities(opps) {
   var el = document.getElementById('ai-opportunities');
+  if (!el) return;
   if (!opps || opps.length === 0) {
     el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No data</p>';
     return;
@@ -90,61 +87,64 @@ function renderAiOpportunities(opps) {
 
 // === Compare Mode Handler ===
 document.addEventListener('compare-toggled', function(e) {
+  if (!_pulseData) return;
   var detail = e.detail;
   var active = detail.active;
   var prevData = detail.prevData;
-  if (!_pulseData || !prevData) return;
+  if (!prevData) return;
 
   // --- Daily Trend Chart ---
   var canvas = document.getElementById('daily-trend-chart');
-  var chart = Chart.getChart(canvas);
-  if (chart) {
-    if (active && prevData.dailyTrend && prevData.dailyTrend.length > 0) {
-      // Only add if not already added
-      if (chart.data.datasets.length < 2) {
-        chart.data.datasets.push({
-          label: 'Previous Week',
-          data: prevData.dailyTrend.map(function(d) { return d.count; }),
-          backgroundColor: '#8b949e44',
-          borderColor: '#8b949e',
-          borderWidth: 1,
-          borderRadius: 4
-        });
+  if (canvas) {
+    var chart = Chart.getChart(canvas);
+    if (chart) {
+      if (active && prevData.dailyTrend && prevData.dailyTrend.length > 0) {
+        if (chart.data.datasets.length < 2) {
+          chart.data.datasets.push({
+            label: 'Previous Week',
+            data: prevData.dailyTrend.map(function(d) { return d.count; }),
+            backgroundColor: '#8b949e44',
+            borderColor: '#8b949e',
+            borderWidth: 1,
+            borderRadius: 4
+          });
+        }
+      } else {
+        chart.data.datasets = chart.data.datasets.slice(0, 1);
       }
-    } else {
-      chart.data.datasets = chart.data.datasets.slice(0, 1);
+      chart.update();
     }
-    chart.update();
   }
 
   // --- KPI Deltas ---
   var kpiEl = document.getElementById('kpi-cards');
-  if (active && _pulseData.kpi && prevData.kpi) {
-    var cards = kpiEl.querySelectorAll('.kpi-card');
-    // Total Tickets delta
-    if (cards[0] && typeof _pulseData.kpi.totalTickets === 'number' && typeof prevData.kpi.totalTickets === 'number') {
-      addKpiDelta(cards[0], computeDeltaPct(_pulseData.kpi.totalTickets, prevData.kpi.totalTickets));
+  if (kpiEl) {
+    if (active && _pulseData.kpi && prevData.kpi) {
+      var cards = kpiEl.querySelectorAll('.kpi-card');
+      if (cards[0] && typeof _pulseData.kpi.totalTickets === 'number' && typeof prevData.kpi.totalTickets === 'number') {
+        addKpiDelta(cards[0], computeDeltaPct(_pulseData.kpi.totalTickets, prevData.kpi.totalTickets));
+      }
+      if (cards[2] && typeof _pulseData.kpi.refunds === 'number' && typeof prevData.kpi.refunds === 'number') {
+        addKpiDelta(cards[2], computeDeltaPct(_pulseData.kpi.refunds, prevData.kpi.refunds));
+      }
+    } else {
+      removeAllKpiDeltas('kpi-cards');
     }
-    // Refunds delta
-    if (cards[2] && typeof _pulseData.kpi.refunds === 'number' && typeof prevData.kpi.refunds === 'number') {
-      addKpiDelta(cards[2], computeDeltaPct(_pulseData.kpi.refunds, prevData.kpi.refunds));
-    }
-  } else {
-    removeAllKpiDeltas('kpi-cards');
   }
 
   // --- AI Ops Deltas ---
   var aiOpsEl = document.getElementById('ai-ops');
-  if (active && _pulseData.aiOps && prevData.aiOps) {
-    var aiCards = aiOpsEl.querySelectorAll('.kpi-card');
-    // AI Resolution Rate delta (percentage points)
-    if (aiCards[0] && typeof _pulseData.aiOps.aiResolutionRate === 'number' && typeof prevData.aiOps.aiResolutionRate === 'number') {
-      var currRate = _pulseData.aiOps.aiResolutionRate;
-      var prevRate = prevData.aiOps.aiResolutionRate;
-      var rateDelta = Math.round(currRate - prevRate);
-      addKpiDelta(aiCards[0], rateDelta);
+  if (aiOpsEl) {
+    if (active && _pulseData.aiOps && prevData.aiOps) {
+      var aiCards = aiOpsEl.querySelectorAll('.kpi-card');
+      if (aiCards[0] && typeof _pulseData.aiOps.aiResolutionRate === 'number' && typeof prevData.aiOps.aiResolutionRate === 'number') {
+        var currRate = _pulseData.aiOps.aiResolutionRate;
+        var prevRate = prevData.aiOps.aiResolutionRate;
+        var rateDelta = Math.round(currRate - prevRate);
+        addKpiDelta(aiCards[0], rateDelta);
+      }
+    } else {
+      removeAllKpiDeltas('ai-ops');
     }
-  } else {
-    removeAllKpiDeltas('ai-ops');
   }
 });

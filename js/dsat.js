@@ -2,17 +2,26 @@
 
 var _dsatData = null;
 
+function initDsatPage(data) {
+  _dsatData = data;
+  var periodEl = document.getElementById('period');
+  if (periodEl && data.period) periodEl.textContent = data.period;
+  renderDsatHero(data);
+  renderDsatKpis(data);
+  renderAiPie(data);
+  renderTopReasons(data.topReasons);
+  renderSampleTickets(data.samples);
+  initExpandableRows();
+}
+
 function renderDsatHero(data) {
-  // Handle both formats:
-  //   Legacy: aiNegativeRate is a decimal (0.25 = 25%)
-  //   Production: aiNegativeRateOfComments is already a percentage (58.42 = 58.42%)
+  var el = document.getElementById('dsat-hero');
+  if (!el) return;
   var rate, pct;
   if (typeof data.aiNegativeRateOfComments === 'number') {
-    // Production format — already a percentage
     rate = data.aiNegativeRateOfComments;
     pct = rate.toFixed(1);
   } else if (typeof data.aiNegativeRate === 'number') {
-    // Legacy format — decimal, multiply by 100
     rate = data.aiNegativeRate * 100;
     pct = rate.toFixed(1);
   } else {
@@ -24,7 +33,7 @@ function renderDsatHero(data) {
   if (rate > 30) cls = 'bad';
   else if (rate > 20) cls = 'warn';
 
-  document.getElementById('dsat-hero').innerHTML =
+  el.innerHTML =
     '<div class="big-number">' +
       '<div class="big-number-value ' + cls + '">' + pct + '%</div>' +
       '<div id="dsat-hero-delta" style="margin-top:4px;"></div>' +
@@ -33,24 +42,28 @@ function renderDsatHero(data) {
 }
 
 function renderDsatKpis(data) {
-  document.getElementById('dsat-kpis').innerHTML =
+  var el = document.getElementById('dsat-kpis');
+  if (!el) return;
+  el.innerHTML =
     kpiCard('Total Bad Ratings', safeFormatNumber(data.totalBadRatings)) +
     kpiCard('With Comments', safeFormatNumber(data.withComments)) +
     kpiCard('AI-Negative', safeFormatNumber(data.aiNegative));
 }
 
 function renderAiPie(data) {
+  var canvas = document.getElementById('ai-pie-chart');
+  if (!canvas) return;
   var aiNeg = data.aiNegative || 0;
   var withComments = data.withComments || 0;
   var otherDsat = Math.max(0, withComments - aiNeg);
 
   if (aiNeg === 0 && otherDsat === 0) {
-    document.getElementById('ai-pie-chart').parentElement.innerHTML =
+    canvas.parentElement.innerHTML =
       '<p style="padding:16px;color:var(--text-secondary)">No data for pie chart</p>';
     return;
   }
 
-  var ctx = document.getElementById('ai-pie-chart').getContext('2d');
+  var ctx = canvas.getContext('2d');
   new Chart(ctx, {
     type: 'doughnut',
     data: {
@@ -73,6 +86,7 @@ function renderAiPie(data) {
 
 function renderTopReasons(reasons) {
   var canvas = document.getElementById('reasons-chart');
+  if (!canvas) return;
   if (!reasons || reasons.length === 0) {
     canvas.parentElement.innerHTML =
       '<p style="padding:16px;color:var(--text-secondary)">No top reasons data available</p>';
@@ -113,6 +127,7 @@ function renderTopReasons(reasons) {
 
 function renderSampleTickets(samples) {
   var el = document.getElementById('sample-table');
+  if (!el) return;
   if (!samples || samples.length === 0) {
     el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No sample tickets</p>';
     return;
@@ -143,49 +158,24 @@ function renderSampleTickets(samples) {
   el.innerHTML = html;
 }
 
-// === Safe formatting helper (local to dsat.js in case loaded standalone) ===
-function safeFormatNumber(n) {
-  if (n == null || typeof n !== 'number') return '-';
-  return n.toLocaleString();
-}
-
 // === Helpers to get DSAT rate from either format ===
 function getDsatRatePct(data) {
-  // Returns the AI negative rate as a percentage number (e.g., 25.0)
   if (typeof data.aiNegativeRateOfComments === 'number') {
-    return data.aiNegativeRateOfComments; // already a %
+    return data.aiNegativeRateOfComments;
   }
   if (typeof data.aiNegativeRate === 'number') {
-    return data.aiNegativeRate * 100; // convert decimal to %
+    return data.aiNegativeRate * 100;
   }
   return 0;
 }
 
-// === Main ===
-document.addEventListener('DOMContentLoaded', async () => {
-  try {
-    const data = await loadData('dsat');
-    _dsatData = data;
-    document.getElementById('period').textContent = data.period;
-    renderDsatHero(data);
-    renderDsatKpis(data);
-    renderAiPie(data);
-    renderTopReasons(data.topReasons);
-    renderSampleTickets(data.samples);
-    initExpandableRows();
-    initCompare('dsat');
-  } catch (err) {
-    document.getElementById('content').innerHTML =
-      '<p style="color:var(--red)">Error loading DSAT data: ' + err.message + '</p>';
-  }
-});
-
 // === Compare Mode Handler ===
 document.addEventListener('compare-toggled', function(e) {
+  if (!_dsatData) return;
   var detail = e.detail;
   var active = detail.active;
   var prevData = detail.prevData;
-  if (!_dsatData || !prevData) return;
+  if (!prevData) return;
 
   // --- DSAT Hero Delta ---
   var heroEl = document.getElementById('dsat-hero-delta');
@@ -194,7 +184,6 @@ document.addEventListener('compare-toggled', function(e) {
       var currPct = getDsatRatePct(_dsatData);
       var prevPct = getDsatRatePct(prevData);
       var deltaNum = parseFloat((currPct - prevPct).toFixed(1));
-      // For DSAT rate, lower is better — so positive delta is bad (up=red), negative is good (down=green)
       var cls = deltaNum > 0 ? 'down' : (deltaNum < 0 ? 'up' : 'neutral');
       var arrow = deltaNum > 0 ? '\u2191' : (deltaNum < 0 ? '\u2193' : '\u2192');
       heroEl.innerHTML = '<span class="kpi-delta ' + cls + '" style="font-size:18px;">' +
@@ -206,22 +195,21 @@ document.addEventListener('compare-toggled', function(e) {
 
   // --- DSAT KPI Deltas ---
   var dsatKpiEl = document.getElementById('dsat-kpis');
-  if (active) {
-    var cards = dsatKpiEl.querySelectorAll('.kpi-card');
-    // Total Bad Ratings delta
-    if (cards[0] && typeof _dsatData.totalBadRatings === 'number' && typeof prevData.totalBadRatings === 'number') {
-      addKpiDelta(cards[0], computeDeltaPct(_dsatData.totalBadRatings, prevData.totalBadRatings));
+  if (dsatKpiEl) {
+    if (active) {
+      var cards = dsatKpiEl.querySelectorAll('.kpi-card');
+      if (cards[0] && typeof _dsatData.totalBadRatings === 'number' && typeof prevData.totalBadRatings === 'number') {
+        addKpiDelta(cards[0], computeDeltaPct(_dsatData.totalBadRatings, prevData.totalBadRatings));
+      }
+      if (cards[1] && typeof _dsatData.withComments === 'number' && typeof prevData.withComments === 'number') {
+        addKpiDelta(cards[1], computeDeltaPct(_dsatData.withComments, prevData.withComments));
+      }
+      if (cards[2] && typeof _dsatData.aiNegative === 'number' && typeof prevData.aiNegative === 'number') {
+        addKpiDelta(cards[2], computeDeltaPct(_dsatData.aiNegative, prevData.aiNegative));
+      }
+    } else {
+      removeAllKpiDeltas('dsat-kpis');
     }
-    // With Comments delta
-    if (cards[1] && typeof _dsatData.withComments === 'number' && typeof prevData.withComments === 'number') {
-      addKpiDelta(cards[1], computeDeltaPct(_dsatData.withComments, prevData.withComments));
-    }
-    // AI-Negative delta
-    if (cards[2] && typeof _dsatData.aiNegative === 'number' && typeof prevData.aiNegative === 'number') {
-      addKpiDelta(cards[2], computeDeltaPct(_dsatData.aiNegative, prevData.aiNegative));
-    }
-  } else {
-    removeAllKpiDeltas('dsat-kpis');
   }
 
   // --- Top Reasons Chart: overlay prev week ---

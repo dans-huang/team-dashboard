@@ -2,28 +2,23 @@
 
 var _qaData = null;
 
-document.addEventListener('DOMContentLoaded', async () => {
-  try {
-    const data = await loadData('qa');
-    _qaData = data;
-    document.getElementById('period').textContent = data.period;
-    renderBcrHero(data.bcr);
-    renderBcrByProduct(data.bcrByProduct);
-    renderBcrTrend(data.bcrWeeklyTrend);
-    renderTestExecution(data.testExecution);
-    renderRegressionTrend(data.regressionTrend);
-    renderFunctionTest(data.latestFunctionTest);
-    renderRecentBugs(data.recentBugs);
-    initCompare('qa');
-  } catch (err) {
-    document.getElementById('content').innerHTML =
-      '<p style="color:var(--red)">Error loading QA data: ' + err.message + '</p>';
-  }
-});
+function initQaPage(data) {
+  _qaData = data;
+  var periodEl = document.getElementById('period');
+  if (periodEl && data.period) periodEl.textContent = data.period;
+  renderBcrHero(data.bcr);
+  renderBcrByProduct(data.bcrByProduct);
+  renderBcrTrend(data.bcrWeeklyTrend);
+  renderTestExecution(data.testExecution);
+  renderRegressionTrend(data.regressionTrend);
+  renderFunctionTest(data.latestFunctionTest);
+  renderRecentBugs(data.recentBugs);
+}
 
 // --- 1. BCR Hero ---
 function renderBcrHero(bcr) {
   var el = document.getElementById('bcr-hero');
+  if (!el) return;
   if (!bcr) {
     el.innerHTML = '<p style="color:var(--text-secondary)">No BCR data</p>';
     return;
@@ -50,6 +45,7 @@ function renderBcrHero(bcr) {
 // --- 2. BCR by Product ---
 function renderBcrByProduct(products) {
   var el = document.getElementById('bcr-product-table');
+  if (!el) return;
   if (!products || products.length === 0) {
     el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No product BCR data</p>';
     return;
@@ -75,6 +71,7 @@ function renderBcrByProduct(products) {
 // --- 3. BCR Weekly Trend (Stacked Bar Chart) ---
 function renderBcrTrend(trend) {
   var canvas = document.getElementById('bcr-trend-chart');
+  if (!canvas) return;
   if (!trend || trend.length === 0) {
     canvas.parentElement.innerHTML =
       '<p style="padding:16px;color:var(--text-secondary)">No weekly trend data</p>';
@@ -126,19 +123,15 @@ function renderBcrTrend(trend) {
 }
 
 // --- 4. Test Execution Summary ---
-// Handles both formats:
-//   Legacy (flat): { totalRuns, passRate, velocity, blockedPct }
-//   Production (per-product dict): { "Spark": { completedRuns, totalRuns, totalCases, passRate, avgVelocity, blockedRate }, ... }
 function renderTestExecution(te) {
   var el = document.getElementById('test-exec');
+  if (!el) return;
   if (!te) {
     el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No test execution data</p>';
     return;
   }
 
-  // Detect format: if te has 'totalRuns' at top level, it's legacy flat format
   if (typeof te.totalRuns === 'number') {
-    // Legacy flat format — render as KPI cards
     el.innerHTML = [
       kpiCard('Test Runs', safeFormatNumber(te.totalRuns)),
       kpiCard('Pass Rate', safeFixed(te.passRate * 100, 1) + '%'),
@@ -148,7 +141,6 @@ function renderTestExecution(te) {
     return;
   }
 
-  // Production per-product dict format — render as table
   var products = Object.keys(te);
   if (products.length === 0) {
     el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No test execution data</p>';
@@ -178,23 +170,19 @@ function renderTestExecution(te) {
 }
 
 // --- 5. Regression Pass Rate ---
-// Handles both formats:
-//   Legacy (array): [{ product, passRate, delta }, ...]
-//   Production (per-product dict of arrays): { "Spark": [{ title, date, passed, failed, rate, delta }, ...], ... }
 function renderRegressionTrend(data) {
   var el = document.getElementById('regression-table');
+  if (!el) return;
   if (!data) {
     el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No regression data</p>';
     return;
   }
 
-  // Detect format: if it's an array, use legacy rendering
   if (Array.isArray(data)) {
     renderRegressionTrendLegacy(el, data);
     return;
   }
 
-  // Production per-product dict format
   var products = Object.keys(data);
   if (products.length === 0) {
     el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No regression data</p>';
@@ -244,7 +232,6 @@ function renderRegressionTrend(data) {
   el.innerHTML = html || '<p style="padding:16px;color:var(--text-secondary)">No regression data</p>';
 }
 
-// Legacy array format renderer
 function renderRegressionTrendLegacy(el, products) {
   if (!products || products.length === 0) {
     el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No regression data</p>';
@@ -282,9 +269,9 @@ function renderRegressionTrendLegacy(el, products) {
 }
 
 // --- 6. Latest Function Test ---
-// Handles both legacy (passed, failed, blocked, untested) and production (adds skipped field)
 function renderFunctionTest(tests) {
   var el = document.getElementById('function-test');
+  if (!el) return;
   if (!tests || tests.length === 0) {
     el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No function test data</p>';
     return;
@@ -292,10 +279,9 @@ function renderFunctionTest(tests) {
   var html = '';
 
   tests.forEach(function(t) {
-    // Combine blocked + skipped into one "blocked" segment (like the original report)
     var blocked = (t.blocked || 0) + (t.skipped || 0);
     var total = (t.passed || 0) + (t.failed || 0) + blocked + (t.untested || 0);
-    if (total === 0) total = 1; // avoid divide by zero
+    if (total === 0) total = 1;
     var pPct = ((t.passed || 0) / total * 100).toFixed(1);
     var fPct = ((t.failed || 0) / total * 100).toFixed(1);
     var bPct = (blocked / total * 100).toFixed(1);
@@ -328,13 +314,13 @@ function renderFunctionTest(tests) {
 // --- 7. Recent Bugs ---
 function renderRecentBugs(bugs) {
   var el = document.getElementById('recent-bugs');
+  if (!el) return;
   if (!bugs) {
     el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No bug data</p>';
     return;
   }
   var html = '';
 
-  // QA Catches
   if (bugs.qa && bugs.qa.length > 0) {
     html += '<div style="padding:12px 16px;font-weight:600;color:var(--green);border-bottom:1px solid var(--border);">' +
       'QA Catches</div>';
@@ -348,7 +334,6 @@ function renderRecentBugs(bugs) {
     html += '</tbody></table>';
   }
 
-  // Customer Reports
   if (bugs.customer && bugs.customer.length > 0) {
     html += '<div style="padding:12px 16px;font-weight:600;color:var(--red);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">' +
       'Customer Reports (STFS)</div>';
@@ -369,23 +354,13 @@ function renderRecentBugs(bugs) {
   el.innerHTML = html;
 }
 
-// === Safe formatting helpers ===
-function safeFormatNumber(n) {
-  if (n == null || typeof n !== 'number') return '-';
-  return n.toLocaleString();
-}
-
-function safeFixed(n, digits) {
-  if (n == null || typeof n !== 'number') return '-';
-  return n.toFixed(digits);
-}
-
 // === Compare Mode Handler ===
 document.addEventListener('compare-toggled', function(e) {
+  if (!_qaData) return;
   var detail = e.detail;
   var active = detail.active;
   var prevData = detail.prevData;
-  if (!_qaData || !prevData) return;
+  if (!prevData) return;
 
   // --- BCR Hero Delta ---
   var heroEl = document.getElementById('bcr-hero-delta');
@@ -403,21 +378,17 @@ document.addEventListener('compare-toggled', function(e) {
   }
 
   // --- Test Execution Deltas ---
-  // Only works for legacy flat format; skip for production per-product dict
   var testExecEl = document.getElementById('test-exec');
-  if (active && prevData.testExecution && typeof _qaData.testExecution.totalRuns === 'number') {
+  if (testExecEl && active && prevData.testExecution && _qaData.testExecution && typeof _qaData.testExecution.totalRuns === 'number') {
     var teCards = testExecEl.querySelectorAll('.kpi-card');
-    // Test Runs delta
     if (teCards[0]) addKpiDelta(teCards[0], computeDeltaPct(_qaData.testExecution.totalRuns, prevData.testExecution.totalRuns));
-    // Pass Rate delta (percentage points)
     if (teCards[1]) {
       var currPR = (_qaData.testExecution.passRate * 100).toFixed(1);
       var prevPR = (prevData.testExecution.passRate * 100).toFixed(1);
       addKpiDelta(teCards[1], Math.round(currPR - prevPR));
     }
-    // Cases Executed delta
     if (teCards[2]) addKpiDelta(teCards[2], computeDeltaPct(_qaData.testExecution.velocity, prevData.testExecution.velocity));
-  } else {
+  } else if (testExecEl) {
     removeAllKpiDeltas('test-exec');
   }
 });

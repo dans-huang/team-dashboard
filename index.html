@@ -3,10 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="0;url=pulse.html">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <title>Team Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css?v=4">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 </head>
 <body>
-  <p>Redirecting to <a href="pulse.html">Support Dashboard</a>...</p>
+  <nav class="nav">
+    <a class="nav-brand" href="index.html">Team Dashboard</a>
+    <ul class="nav-tabs" id="period-tabs">
+      <li><a data-view="daily"><kbd>D</kbd> Daily</a></li>
+      <li><a data-view="weekly"><kbd>W</kbd> Weekly</a></li>
+      <li><a data-view="monthly"><kbd>M</kbd> Monthly</a></li>
+    </ul>
+    <div class="nav-right">
+      <label id="period-label">Week:</label>
+      <select id="period-select"></select>
+      <button class="compare-toggle" id="compare-btn" style="display:none">Compare &#x25B8;</button>
+    </div>
+  </nav>
+  <div class="sub-nav" id="sub-nav"></div>
+  <div class="container">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px">
+      <p class="period-label" id="period" style="margin:0"></p>
+    </div>
+    <main id="content">
+      <div class="loading">Loading...</div>
+    </main>
+  </div>
+  <script src="js/dashboard.js?v=4"></script>
+  <script src="js/pulse.js?v=4"></script>
+  <script src="js/qa.js?v=4"></script>
+  <script src="js/dsat.js?v=4"></script>
+  <script src="js/daily.js?v=4"></script>
 </body>
 </html>

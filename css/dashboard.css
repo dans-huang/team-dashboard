@@ -61,6 +61,7 @@ body {
 .nav-tabs a {
   display: flex;
   align-items: center;
+  gap: 6px;
   padding: 0 16px;
   color: var(--text-secondary);
   text-decoration: none;
@@ -68,6 +69,7 @@ body {
   font-size: 14px;
   height: 100%;
   transition: color 0.15s, border-color 0.15s;
+  cursor: pointer;
 }
 
 .nav-tabs a:hover {
@@ -96,6 +98,64 @@ body {
   padding: 4px 8px;
   font-size: 13px;
   cursor: pointer;
+}
+
+/* === Sub-Nav === */
+.sub-nav {
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  gap: 4px;
+  height: 40px;
+}
+
+.sub-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: color 0.15s, background 0.15s;
+}
+
+.sub-nav-item:hover {
+  color: var(--text-primary);
+  background: var(--bg-card);
+}
+
+.sub-nav-item.active {
+  color: var(--accent-light);
+  background: var(--bg-card);
+}
+
+/* === Hotkey Badge === */
+kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  line-height: 1;
+}
+
+.nav-tabs a.active kbd,
+.sub-nav-item.active kbd {
+  color: var(--accent-light);
+  border-color: var(--accent);
 }
 
 /* === Container === */
@@ -317,4 +377,11 @@ a.ticket-link:hover {
   text-align: center;
   padding: 48px;
   color: var(--text-secondary);
+}
+
+/* === Placeholder Section === */
+.placeholder-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
 }

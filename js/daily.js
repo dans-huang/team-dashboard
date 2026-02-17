@@ -2,24 +2,20 @@
 
 var _dailyData = null;
 
-document.addEventListener('DOMContentLoaded', async () => {
-  try {
-    const data = await loadData('daily');
-    _dailyData = data;
-    document.getElementById('period').textContent = data.period;
-    renderDailyKpi(data.kpi);
-    renderProductChart(data.productBreakdown);
-    renderTypeChart(data.ticketTypes);
-    renderAgentTable(data.agentActivity);
-  } catch (err) {
-    document.getElementById('content').innerHTML =
-      '<p style="color:var(--red)">Error loading daily data: ' + err.message + '</p>';
-  }
-});
+function initDailyPage(data) {
+  _dailyData = data;
+  var periodEl = document.getElementById('period');
+  if (periodEl && data.period) periodEl.textContent = data.period;
+  renderDailyKpi(data.kpi);
+  renderProductChart(data.productBreakdown);
+  renderTypeChart(data.ticketTypes);
+  renderAgentTable(data.agentActivity);
+}
 
 // --- KPI Cards ---
 function renderDailyKpi(kpi) {
   var el = document.getElementById('kpi-cards');
+  if (!el) return;
   if (!kpi) {
     el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No KPI data</p>';
     return;
@@ -35,13 +31,13 @@ function renderDailyKpi(kpi) {
 // --- Product Distribution (horizontal bar) ---
 function renderProductChart(products) {
   var canvas = document.getElementById('product-chart');
+  if (!canvas) return;
   if (!products || products.length === 0) {
     canvas.parentElement.innerHTML =
       '<p style="padding:16px;color:var(--text-secondary)">No product data</p>';
     return;
   }
 
-  // Set height based on number of items
   var barHeight = 32;
   var chartHeight = Math.max(200, products.length * barHeight + 60);
   canvas.parentElement.style.height = chartHeight + 'px';
@@ -91,6 +87,7 @@ function renderProductChart(products) {
 // --- Ticket Type Distribution (horizontal bar) ---
 function renderTypeChart(types) {
   var canvas = document.getElementById('type-chart');
+  if (!canvas) return;
   if (!types || types.length === 0) {
     canvas.parentElement.innerHTML =
       '<p style="padding:16px;color:var(--text-secondary)">No ticket type data</p>';
@@ -146,6 +143,7 @@ function renderTypeChart(types) {
 // --- Agent Activity Table ---
 function renderAgentTable(agents) {
   var el = document.getElementById('agent-table');
+  if (!el) return;
   if (!agents || agents.length === 0) {
     el.innerHTML = '<p style="padding:16px;color:var(--text-secondary)">No agent activity data</p>';
     return;
