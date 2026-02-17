@@ -4,7 +4,7 @@ var VIEWS = {
     reports: [
       { id: 'support', label: 'Support', dataDir: 'daily' }
     ],
-    periodType: 'week',
+    periodType: 'day',
     compare: false
   },
   weekly: {
@@ -165,6 +165,24 @@ function isoWeekToMonth(weekStr) {
   return year + '-' + (m < 10 ? '0' + m : m);
 }
 
+// === ISO Week to Date ===
+function isoWeekToDate(weekStr) {
+  var parts = weekStr.split('-W');
+  if (parts.length !== 2) return null;
+  var year = parseInt(parts[0]);
+  var week = parseInt(parts[1]);
+  var jan4 = new Date(year, 0, 4);
+  var dayOfWeek = jan4.getDay() || 7;
+  var mondayW1 = new Date(jan4.getTime() - (dayOfWeek - 1) * 86400000);
+  return new Date(mondayW1.getTime() + (week - 1) * 7 * 86400000);
+}
+
+function formatDateShort(d) {
+  var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  return months[d.getMonth()] + ' ' + d.getDate() + ' (' + days[d.getDay()] + ')';
+}
+
 // === URL Params ===
 function getUrlParams() {
   var params = new URLSearchParams(location.search);
@@ -188,6 +206,7 @@ function setUrlParams(view, report, periodValue) {
     url.searchParams.set('month', periodValue);
     url.searchParams.delete('week');
   } else {
+    // both 'week' and 'day' use week-labeled files
     url.searchParams.set('week', periodValue);
     url.searchParams.delete('month');
   }
@@ -429,7 +448,7 @@ function initCompare(dataDir) {
   btn.onclick = async function() {
     compareMode = !compareMode;
     btn.classList.toggle('active', compareMode);
-    btn.textContent = compareMode ? 'Compare \u25C2' : 'Compare \u25B8';
+    btn.innerHTML = compareMode ? '<kbd>C</kbd> Compare \u25C2' : '<kbd>C</kbd> Compare \u25B8';
 
     if (compareMode && !prevWeekData) {
       var idx = await loadIndex();
@@ -474,9 +493,10 @@ function populatePeriodSelect(idx) {
   if (!select || !label) return;
 
   var params = getUrlParams();
+  var periodType = VIEWS[currentView].periodType;
   select.innerHTML = '';
 
-  if (VIEWS[currentView].periodType === 'month') {
+  if (periodType === 'month') {
     label.textContent = 'Month:';
     idx.months.forEach(function(m) {
       var opt = document.createElement('option');
@@ -484,6 +504,17 @@ function populatePeriodSelect(idx) {
       opt.textContent = m;
       if (m === idx.latestMonth && params.month === 'latest') opt.selected = true;
       if (m === params.month) opt.selected = true;
+      select.appendChild(opt);
+    });
+  } else if (periodType === 'day') {
+    label.textContent = 'Date:';
+    idx.weeks.forEach(function(w) {
+      var opt = document.createElement('option');
+      opt.value = w;
+      var d = isoWeekToDate(w);
+      opt.textContent = d ? formatDateShort(d) : w;
+      if (w === idx.latest && params.week === 'latest') opt.selected = true;
+      if (w === params.week) opt.selected = true;
       select.appendChild(opt);
     });
   } else {
@@ -584,7 +615,7 @@ async function navigateTo(view, report, skipPush) {
       if (viewConfig.compare) {
         compareBtn.style.display = '';
         compareBtn.classList.remove('active');
-        compareBtn.textContent = 'Compare \u25B8';
+        compareBtn.innerHTML = '<kbd>C</kbd> Compare \u25B8';
       } else {
         compareBtn.style.display = 'none';
       }
@@ -773,14 +804,33 @@ function aggregateQaData(weeklyDataArray, month) {
 // === Hotkey Handler ===
 document.addEventListener('keydown', function(e) {
   if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT' || e.target.tagName === 'TEXTAREA') return;
-  var key = e.key.toLowerCase();
-  if (key === 'd') navigateTo('daily');
-  else if (key === 'w') navigateTo('weekly');
-  else if (key === 'm') navigateTo('monthly');
-  else if (key >= '1' && key <= '9') {
-    var idx = parseInt(key) - 1;
+  var key = e.key; // preserve case for bracket detection
+  var lower = key.toLowerCase();
+
+  if (lower === 'd') navigateTo('daily');
+  else if (lower === 'w') navigateTo('weekly');
+  else if (lower === 'm') navigateTo('monthly');
+  else if (lower >= '1' && lower <= '9') {
+    var idx = parseInt(lower) - 1;
     var reports = VIEWS[currentView].reports;
     if (idx < reports.length) navigateTo(currentView, reports[idx].id);
+  }
+  // [ / ] — cycle through periods (older / newer)
+  else if (key === '[' || key === ']') {
+    var select = document.getElementById('period-select');
+    if (!select || select.options.length === 0) return;
+    var i = select.selectedIndex;
+    if (key === '[') i = Math.min(i + 1, select.options.length - 1); // older
+    else i = Math.max(i - 1, 0); // newer
+    if (i !== select.selectedIndex) {
+      select.selectedIndex = i;
+      navigateTo(currentView, currentReport);
+    }
+  }
+  // C — toggle compare
+  else if (lower === 'c') {
+    var btn = document.getElementById('compare-btn');
+    if (btn && btn.style.display !== 'none') btn.click();
   }
 });
 

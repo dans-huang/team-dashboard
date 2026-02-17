@@ -316,6 +316,7 @@ tbody tr:hover {
 .compare-toggle {
   display: inline-flex;
   align-items: center;
+  gap: 6px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 6px;
@@ -329,6 +330,10 @@ tbody tr:hover {
 .compare-toggle.active {
   color: var(--accent-light);
   border-color: var(--accent);
+}
+
+.compare-toggle kbd {
+  margin-right: 2px;
 }
 
 /* === Badge === */
