@@ -476,6 +476,11 @@ a.ticket-link:hover {
   border-color: var(--border-strong);
 }
 
+[data-theme="light"] .theme-toggle {
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
 .theme-toggle .icon-sun,
 .theme-toggle .icon-moon {
   display: block;
