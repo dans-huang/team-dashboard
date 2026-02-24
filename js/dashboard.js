@@ -888,6 +888,11 @@ document.addEventListener('keydown', function(e) {
       navigateTo(currentView, currentReport, false, targetPeriod);
     }
   }
+  // T — toggle theme
+  else if (lower === 't') {
+    var themeBtn = document.getElementById('theme-toggle');
+    if (themeBtn) themeBtn.click();
+  }
   // C — toggle compare
   else if (lower === 'c') {
     var btn = document.getElementById('compare-btn');
