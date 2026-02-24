@@ -9,11 +9,6 @@ on:
       week:
         description: 'Week to generate (e.g. 2026-W07). Leave empty for current week.'
         required: false
-      force_mock:
-        description: 'Generate mock data instead of real API data'
-        required: false
-        type: boolean
-        default: false
 
 permissions:
   contents: write
@@ -67,24 +62,17 @@ jobs:
           if [ -z "$WEEK" ]; then
             WEEK=$(date -u +%G-W%V)
           fi
-          if [ "${{ github.event.inputs.force_mock }}" = "true" ]; then
-            echo "→ Force mock mode: generating mock data..."
-            python3 scripts/generate-mock-data.py "$WEEK"
-          else
-            bash scripts/generate-dashboard-data.sh "$WEEK"
-          fi
+          bash scripts/generate-dashboard-data.sh "$WEEK"
 
-      - name: Validate generated data
+      - name: Validate and update index
         run: |
           WEEK="${{ github.event.inputs.week || '' }}"
           if [ -z "$WEEK" ]; then
             WEEK=$(date -u +%G-W%V)
           fi
-          # Check that at least pulse data was produced
           PULSE_FILE="data/pulse/${WEEK}.json"
           if [ ! -s "$PULSE_FILE" ] || [ "$(wc -c < "$PULSE_FILE")" -lt 100 ]; then
-            echo "⚠ No valid pulse data for $WEEK — falling back to mock data"
-            python3 scripts/generate-mock-data.py "$WEEK"
+            echo "⚠ No valid pulse data produced for $WEEK — skipping index update"
           fi
           python3 scripts/update-index.py
 
