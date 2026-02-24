@@ -431,3 +431,140 @@ a.ticket-link:hover {
   border: 1px solid var(--border);
   border-radius: 12px;
 }
+
+/* === DSAT Breakdown Grid (replaces inline style) === */
+.dsat-breakdown {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* === Mobile Responsive === */
+@media (max-width: 768px) {
+  /* Nav: row 1 = brand + selector, row 2 = tabs */
+  .nav {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px 16px;
+    gap: 0;
+  }
+
+  .nav-tabs {
+    order: 1;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid var(--border);
+    margin-top: 8px;
+    padding-top: 6px;
+  }
+
+  .nav-tabs a {
+    height: 32px;
+    padding: 0 10px;
+    font-size: 13px;
+  }
+
+  .nav-right {
+    gap: 8px;
+    font-size: 12px;
+  }
+
+  .nav-right select {
+    font-size: 12px;
+  }
+
+  .compare-toggle {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  /* Hide keyboard shortcut badges on touch */
+  kbd {
+    display: none;
+  }
+
+  /* Sub-nav: horizontal scroll */
+  .sub-nav {
+    padding: 0 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .sub-nav-item {
+    white-space: nowrap;
+  }
+
+  /* Container: tighter padding */
+  .container {
+    padding: 16px;
+  }
+
+  /* KPI grid: 2 columns */
+  .kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .kpi-card {
+    padding: 16px;
+  }
+
+  .kpi-value {
+    font-size: 28px;
+  }
+
+  /* Big number hero */
+  .big-number {
+    padding: 24px 16px;
+  }
+
+  .big-number-value {
+    font-size: 48px;
+  }
+
+  /* Tables: horizontal scroll when content overflows */
+  .table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  thead th {
+    white-space: nowrap;
+  }
+
+  /* DSAT breakdown: stack vertically */
+  .dsat-breakdown {
+    grid-template-columns: 1fr;
+  }
+
+  #dsat-kpis {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  /* Section spacing */
+  .section {
+    margin-bottom: 24px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kpi-value {
+    font-size: 24px;
+  }
+
+  .big-number-value {
+    font-size: 40px;
+  }
+
+  #dsat-kpis {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .nav-brand {
+    font-size: 14px;
+  }
+}

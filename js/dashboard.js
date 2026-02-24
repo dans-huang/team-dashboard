@@ -63,7 +63,7 @@ var TEMPLATES = {
   'weekly-dsat':
     '<div class="section" id="dsat-hero"></div>' +
     '<div class="section"><h2 class="section-title">AI Negativity Breakdown</h2>' +
-      '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">' +
+      '<div class="dsat-breakdown">' +
         '<div class="chart-container" style="height:250px"><canvas id="ai-pie-chart"></canvas></div>' +
         '<div class="kpi-grid" style="grid-template-columns:1fr" id="dsat-kpis"></div>' +
       '</div></div>' +
