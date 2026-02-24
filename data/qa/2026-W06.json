@@ -1,39 +1,422 @@
 {
-  "period": "2026-02-02 ~ 2026-02-08",
-  "bcr": { "overall": 79.8, "status": "below_target", "target": 80 },
+  "period": "2025-11-10 ~ 2026-02-08",
+  "daysCount": 90,
+  "reportDate": "2026-02-08",
+  "bcr": {
+    "overall": 84.7,
+    "status": "on_track",
+    "target": 80,
+    "qaCount": 127,
+    "customerCount": 23
+  },
   "bcrByProduct": [
-    { "product": "Spark", "qaBugs": 18, "customerBugs": 6, "rate": 75.0 },
-    { "product": "BIAS X", "qaBugs": 4, "customerBugs": 1, "rate": 80.0 }
+    {
+      "product": "Spark",
+      "qaBugs": 59,
+      "customerBugs": 11,
+      "total": 70,
+      "rate": 84.3
+    },
+    {
+      "product": "BIAS X",
+      "qaBugs": 68,
+      "customerBugs": 12,
+      "total": 80,
+      "rate": 85.0
+    }
   ],
   "bcrWeeklyTrend": [
-    { "week": "W02", "qaBugs": 15, "customerBugs": 5 },
-    { "week": "W03", "qaBugs": 18, "customerBugs": 6 },
-    { "week": "W04", "qaBugs": 20, "customerBugs": 4 },
-    { "week": "W05", "qaBugs": 25, "customerBugs": 5 },
-    { "week": "W06", "qaBugs": 22, "customerBugs": 7 }
+    {
+      "week": "2025-W47",
+      "qaBugs": 5,
+      "customerBugs": 2,
+      "total": 7,
+      "weekRate": 71.4
+    },
+    {
+      "week": "2025-W48",
+      "qaBugs": 27,
+      "customerBugs": 0,
+      "total": 27,
+      "weekRate": 100.0
+    },
+    {
+      "week": "2025-W49",
+      "qaBugs": 18,
+      "customerBugs": 3,
+      "total": 21,
+      "weekRate": 85.7
+    },
+    {
+      "week": "2025-W50",
+      "qaBugs": 11,
+      "customerBugs": 5,
+      "total": 16,
+      "weekRate": 68.8
+    },
+    {
+      "week": "2025-W51",
+      "qaBugs": 14,
+      "customerBugs": 1,
+      "total": 15,
+      "weekRate": 93.3
+    },
+    {
+      "week": "2025-W52",
+      "qaBugs": 15,
+      "customerBugs": 0,
+      "total": 15,
+      "weekRate": 100.0
+    },
+    {
+      "week": "2026-W01",
+      "qaBugs": 10,
+      "customerBugs": 1,
+      "total": 11,
+      "weekRate": 90.9
+    },
+    {
+      "week": "2026-W02",
+      "qaBugs": 6,
+      "customerBugs": 0,
+      "total": 6,
+      "weekRate": 100.0
+    },
+    {
+      "week": "2026-W03",
+      "qaBugs": 0,
+      "customerBugs": 5,
+      "total": 5,
+      "weekRate": 0.0
+    },
+    {
+      "week": "2026-W04",
+      "qaBugs": 1,
+      "customerBugs": 0,
+      "total": 1,
+      "weekRate": 100.0
+    },
+    {
+      "week": "2026-W05",
+      "qaBugs": 17,
+      "customerBugs": 2,
+      "total": 19,
+      "weekRate": 89.5
+    },
+    {
+      "week": "2026-W06",
+      "qaBugs": 0,
+      "customerBugs": 1,
+      "total": 1,
+      "weekRate": 0.0
+    }
   ],
-  "testExecution": { "totalRuns": 12, "passRate": 0.895, "velocity": 144, "blockedPct": 0.045 },
-  "regressionTrend": [
-    { "product": "Spark", "passRate": 0.930, "delta": -0.010 },
-    { "product": "BIAS X", "passRate": 0.980, "delta": 0.005 }
-  ],
+  "testExecution": {
+    "Spark": {
+      "completedRuns": 8,
+      "totalRuns": 9,
+      "totalCases": 1024,
+      "totalPassed": 892,
+      "totalFailed": 74,
+      "totalBlocked": 7,
+      "totalSkipped": 51,
+      "passRate": 87.1,
+      "avgVelocity": 28.7,
+      "blockedRate": 5.7
+    },
+    "BIAS X": {
+      "completedRuns": 6,
+      "totalRuns": 8,
+      "totalCases": 1433,
+      "totalPassed": 1368,
+      "totalFailed": 17,
+      "totalBlocked": 0,
+      "totalSkipped": 43,
+      "passRate": 95.5,
+      "avgVelocity": 31.9,
+      "blockedRate": 3.0
+    },
+    "Reactor": {
+      "completedRuns": 7,
+      "totalRuns": 7,
+      "totalCases": 669,
+      "totalPassed": 571,
+      "totalFailed": 54,
+      "totalBlocked": 16,
+      "totalSkipped": 28,
+      "passRate": 85.4,
+      "avgVelocity": 40.8,
+      "blockedRate": 6.6
+    }
+  },
+  "regressionTrend": {
+    "Spark": [
+      {
+        "title": "Spark EDGE 2.9.1.78 Full Regression test",
+        "date": "2025-11-11",
+        "passed": 76,
+        "failed": 0,
+        "skipped": 2,
+        "blocked": 0,
+        "total": 78,
+        "rate": 97.4,
+        "delta": 0
+      },
+      {
+        "title": "Spark Live 2.8.4.203 Full Regression test",
+        "date": "2025-11-13",
+        "passed": 74,
+        "failed": 2,
+        "skipped": 12,
+        "blocked": 0,
+        "total": 88,
+        "rate": 84.1,
+        "delta": -13.3
+      },
+      {
+        "title": "Spark Live 2.8.4.205 Full Regression test",
+        "date": "2025-11-25",
+        "passed": 65,
+        "failed": 1,
+        "skipped": 14,
+        "blocked": 0,
+        "total": 80,
+        "rate": 81.2,
+        "delta": -2.8
+      }
+    ],
+    "BIAS X": [
+      {
+        "title": "1.1.0.51204 Full Regression (Win11 Reaper7)",
+        "date": "2025-12-08",
+        "passed": 269,
+        "failed": 5,
+        "skipped": 8,
+        "blocked": 0,
+        "total": 282,
+        "rate": 95.4,
+        "delta": 0
+      },
+      {
+        "title": "1.2.0 Full Regression (MacOS14 Logic Pro X) Test run",
+        "date": "2025-12-23",
+        "passed": 291,
+        "failed": 2,
+        "skipped": 7,
+        "blocked": 0,
+        "total": 301,
+        "rate": 96.7,
+        "delta": 1.3
+      },
+      {
+        "title": "1.2.0 Full Regression (Win11 Studio One6)",
+        "date": "2026-01-05",
+        "passed": 233,
+        "failed": 5,
+        "skipped": 9,
+        "blocked": 0,
+        "total": 247,
+        "rate": 94.3,
+        "delta": -2.3
+      },
+      {
+        "title": "1.2.0 Full Regression (macOS 26 Standalone)",
+        "date": "2026-01-20",
+        "passed": 244,
+        "failed": 2,
+        "skipped": 5,
+        "blocked": 0,
+        "total": 251,
+        "rate": 97.2,
+        "delta": 2.9
+      }
+    ],
+    "Reactor": [
+      {
+        "title": "Reactor MCU 0.1.3.255 Regression Test",
+        "date": "2025-12-31",
+        "passed": 103,
+        "failed": 5,
+        "skipped": 5,
+        "blocked": 0,
+        "total": 113,
+        "rate": 91.2,
+        "delta": 0
+      },
+      {
+        "title": "Reactor 50w MCU 0.1.4.51 Regression Test",
+        "date": "2026-01-08",
+        "passed": 96,
+        "failed": 5,
+        "skipped": 4,
+        "blocked": 0,
+        "total": 105,
+        "rate": 91.4,
+        "delta": 0.3
+      },
+      {
+        "title": "Reactor 100w MCU 0.1.4.51 Regression Test",
+        "date": "2026-01-09",
+        "passed": 101,
+        "failed": 2,
+        "skipped": 2,
+        "blocked": 0,
+        "total": 105,
+        "rate": 96.2,
+        "delta": 4.8
+      },
+      {
+        "title": "Reactor 50w MCU 0.1.4.103 Regression Test",
+        "date": "2026-02-02",
+        "passed": 105,
+        "failed": 0,
+        "skipped": 0,
+        "blocked": 0,
+        "total": 105,
+        "rate": 100.0,
+        "delta": 3.8
+      }
+    ]
+  },
   "latestFunctionTest": [
-    { "product": "Spark", "passed": 78, "failed": 8, "blocked": 4, "untested": 10 },
-    { "product": "BIAS X", "passed": 42, "failed": 3, "blocked": 2, "untested": 13 }
+    {
+      "product": "Spark",
+      "title": "Spark Pedal 2.2.0.221 Standalone Function Test",
+      "projectCode": "SP",
+      "status": "completed",
+      "startDate": "2026-01-27",
+      "passed": 129,
+      "failed": 21,
+      "blocked": 6,
+      "skipped": 8,
+      "untested": 0,
+      "total": 164
+    },
+    {
+      "product": "BIAS X",
+      "title": "1.2.1 Core Function Test (macOS26 Fender Studio Pro8)",
+      "projectCode": "BX",
+      "status": "completed",
+      "startDate": "2026-02-05",
+      "passed": 162,
+      "failed": 2,
+      "blocked": 0,
+      "skipped": 7,
+      "untested": 0,
+      "total": 175
+    },
+    {
+      "product": "Reactor",
+      "title": "Reactor 100W MCU 0.1.4.103 Function Test",
+      "projectCode": "RA",
+      "status": "completed",
+      "startDate": "2026-02-02",
+      "passed": 33,
+      "failed": 0,
+      "blocked": 0,
+      "skipped": 2,
+      "untested": 0,
+      "total": 35
+    }
   ],
-  "effortSignals": { "staleRuns": 3, "highBlocked": true, "untestedBacklog": 52 },
+  "effortSignals": [
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "Spark EDGE 2.9.1.80 Full Regression test (SE): 19% blocked/skipped (15/78)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "Spark EDGE 2.9.1.80 Full Regression test (SE): in progress for 91 days"
+    },
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "Spark Live 2.8.4.205 Full Regression test (SL): 18% blocked/skipped (14/80)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "BIAS X",
+      "message": "MIDI/Automation Test run 2025/11/26 (BX): in progress for 90 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "BIAS X",
+      "message": "MIDI/Automation Test run 2025/11/26 (BX): 100% untested (39/39)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "BIAS X",
+      "message": "1.1.0.51204 Full Regression (MacOS14 Studio One 7) (BX): in progress for 78 days"
+    },
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "Reactor Firmware (100W) 0.1.2.209 Function Test (RA): 22% blocked/skipped (23/103)"
+    }
+  ],
   "recentBugs": {
     "qa": [
-      { "key": "SA-2830", "summary": "Spark 40: tone import corrupts preset bank" },
-      { "key": "SA-2827", "summary": "Spark Mini: LED indicator wrong color in standby" },
-      { "key": "BIASONE-508", "summary": "BIAS FX: reverb tail cut off on bypass" },
-      { "key": "FWP-1198", "summary": "Spark firmware: OTA fails on battery below 30%" }
+      {
+        "key": "FWP-695",
+        "summary": "[Spark Pedal]Groove Looper \u91cd\u64ad\u6642\u62cd\u5b50\u932f\u8aa4",
+        "project": "FWP"
+      },
+      {
+        "key": "FWP-694",
+        "summary": "[Spark Pedal]Groove Looper \u9304\u88fd\u5230\u4e00\u534a\u66ab\u505c\u6642LED ring\u932f\u8aa4",
+        "project": "FWP"
+      },
+      {
+        "key": "FWP-693",
+        "summary": "[Spark Pedal]Looper\u7121\u6cd5\u559a\u9192Standby\u72c0\u614b\u7684Spark Pedal",
+        "project": "FWP"
+      },
+      {
+        "key": "FWP-692",
+        "summary": "[Spark Pedal]App \u64cd\u4f5cLoop Length, Click on/off\u5f8c\u7684\u884c\u70ba\u8b8a\u5316\u592a\u6162",
+        "project": "FWP"
+      },
+      {
+        "key": "FWP-691",
+        "summary": "[Spark Pedal]Looper LED Ring\u6c92\u6709\u5c0d\u62cd",
+        "project": "FWP"
+      }
     ],
     "customer": [
-      { "key": "STFS-878", "summary": "BIAS FX 2 activation server timeout" },
-      { "key": "STFS-870", "summary": "Spark LIVE firmware update failure" },
-      { "key": "STFS-865", "summary": "Spark app crash on Android 14" },
-      { "key": "STFS-860", "summary": "Spark GO charging issues in cold weather" }
+      {
+        "key": "STFS-481",
+        "summary": "Spark app - 4.5.1 Android - AI Tone Preset Naming Issue",
+        "product": "Spark"
+      },
+      {
+        "key": "STFS-477",
+        "summary": "Spark App 4.5.1 - Dropbox Fail Error (Android Only)",
+        "product": "Spark"
+      },
+      {
+        "key": "STFS-476",
+        "summary": "BIAS X 1.21 - License Shown As Free Trial After Login",
+        "product": "BIAS X"
+      },
+      {
+        "key": "STFS-472",
+        "summary": "BIAS X 1.2.0 \u2013 Black Screen When Rapidly Switching Presets (Windows Only) (QA)",
+        "product": "BIAS X"
+      },
+      {
+        "key": "STFS-471",
+        "summary": "BIAS X 1.2.0 \u2013 MIDI CC Toggle Does Not Respect Value Range (QA)",
+        "product": "BIAS X"
+      }
     ]
   }
 }

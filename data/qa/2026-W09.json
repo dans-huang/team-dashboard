@@ -1,28 +1,28 @@
 {
-  "period": "2025-11-26 ~ 2026-02-24",
+  "period": "2025-12-01 ~ 2026-03-01",
   "daysCount": 90,
-  "reportDate": "2026-02-24",
+  "reportDate": "2026-03-01",
   "bcr": {
-    "overall": 85.9,
+    "overall": 83.3,
     "status": "on_track",
     "target": 80,
-    "qaCount": 116,
+    "qaCount": 95,
     "customerCount": 19
   },
   "bcrByProduct": [
     {
       "product": "Spark",
-      "qaBugs": 49,
+      "qaBugs": 47,
       "customerBugs": 10,
-      "total": 59,
-      "rate": 83.1
+      "total": 57,
+      "rate": 82.5
     },
     {
       "product": "BIAS X",
-      "qaBugs": 67,
+      "qaBugs": 48,
       "customerBugs": 9,
-      "total": 76,
-      "rate": 88.2
+      "total": 57,
+      "rate": 84.2
     }
   ],
   "bcrWeeklyTrend": [
@@ -105,9 +105,9 @@
     },
     {
       "week": "2026-W09",
-      "qaBugs": 2,
+      "qaBugs": 3,
       "customerBugs": 0,
-      "total": 2,
+      "total": 3,
       "weekRate": 100.0
     }
   ],
@@ -295,7 +295,7 @@
       "type": "untested",
       "severity": "info",
       "product": "BIAS X",
-      "message": "1.2.2 Full Regression (Win11 Standalone) (BX): 73% untested (180/247)"
+      "message": "1.2.2 Full Regression (Win11 Standalone) (BX): 43% untested (105/247)"
     },
     {
       "type": "stale",
@@ -319,11 +319,16 @@
       "type": "untested",
       "severity": "info",
       "product": "Reactor",
-      "message": "[Android] 2/22 MKT/KOL Build Function Test (RAPP): 99% untested (192/194)"
+      "message": "[Android] 2/22 MKT/KOL Build Function Test (RAPP): 99% untested (191/193)"
     }
   ],
   "recentBugs": {
     "qa": [
+      {
+        "key": "BIASONE-1773",
+        "summary": "[Frontend] Preset Rename \u5b8c\u6210\u5f8c\u4e0d\u6703\u81ea\u52d5\u95dc\u9589\u5f48\u7a97",
+        "project": "BIASONE"
+      },
       {
         "key": "BIASONE-1772",
         "summary": "[Frontend] Add New Folder \u6210\u529f\u5f8c\uff0c\u5f48\u7a97\u4e0d\u6703\u81ea\u52d5\u95dc\u9589",
@@ -342,11 +347,6 @@
       {
         "key": "FWP-694",
         "summary": "[Spark Pedal]Groove Looper \u9304\u88fd\u5230\u4e00\u534a\u66ab\u505c\u6642LED ring\u932f\u8aa4",
-        "project": "FWP"
-      },
-      {
-        "key": "FWP-693",
-        "summary": "[Spark Pedal]Looper\u7121\u6cd5\u559a\u9192Standby\u72c0\u614b\u7684Spark Pedal",
         "project": "FWP"
       }
     ],

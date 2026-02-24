@@ -772,7 +772,7 @@ function aggregatePulseData(weeklyDataArray, month) {
 function aggregateQaData(weeklyDataArray, month) {
   var result = {
     period: month + ' (Monthly)',
-    bcr: { overall: 0, target: 80, qaBugs: 0, customerBugs: 0 },
+    bcr: { overall: 0, target: 80, qaCount: 0, customerCount: 0 },
     bcrByProduct: [],
     bcrWeeklyTrend: [],
     testExecution: null,
@@ -781,52 +781,54 @@ function aggregateQaData(weeklyDataArray, month) {
     recentBugs: { qa: [], customer: [] }
   };
 
-  var totalQaBugs = 0;
-  var totalCustomerBugs = 0;
-  var productBcrMap = {};
+  if (weeklyDataArray.length === 0) return result;
 
+  // BCR is a rolling metric — use the latest week's snapshot as the month's BCR
+  var latestWeek = weeklyDataArray[weeklyDataArray.length - 1];
+  if (latestWeek && latestWeek.bcr) {
+    result.bcr.overall = latestWeek.bcr.overall || 0;
+    result.bcr.qaCount = latestWeek.bcr.qaCount || 0;
+    result.bcr.customerCount = latestWeek.bcr.customerCount || 0;
+  }
+  if (latestWeek && latestWeek.bcrByProduct) {
+    result.bcrByProduct = latestWeek.bcrByProduct;
+  }
+
+  // Collect per-week trend data, deduplicating by week key
+  var trendMap = {};
   weeklyDataArray.forEach(function(d) {
-    if (d.bcr) {
-      totalQaBugs += d.bcr.qaBugs || 0;
-      totalCustomerBugs += d.bcr.customerBugs || 0;
-    }
-    if (d.bcrByProduct) {
-      d.bcrByProduct.forEach(function(p) {
-        if (!productBcrMap[p.product]) productBcrMap[p.product] = { product: p.product, qaBugs: 0, customerBugs: 0 };
-        productBcrMap[p.product].qaBugs += p.qaBugs || 0;
-        productBcrMap[p.product].customerBugs += p.customerBugs || 0;
+    if (d.bcrWeeklyTrend) {
+      d.bcrWeeklyTrend.forEach(function(t) {
+        trendMap[t.week] = t;
       });
     }
-    if (d.bcrWeeklyTrend) result.bcrWeeklyTrend = result.bcrWeeklyTrend.concat(d.bcrWeeklyTrend);
     if (d.recentBugs) {
       if (d.recentBugs.qa) result.recentBugs.qa = result.recentBugs.qa.concat(d.recentBugs.qa);
       if (d.recentBugs.customer) result.recentBugs.customer = result.recentBugs.customer.concat(d.recentBugs.customer);
     }
   });
-
-  var totalBugs = totalQaBugs + totalCustomerBugs;
-  result.bcr.qaBugs = totalQaBugs;
-  result.bcr.customerBugs = totalCustomerBugs;
-  result.bcr.overall = totalBugs > 0 ? (totalQaBugs / totalBugs * 100) : 0;
-
-  result.bcrByProduct = Object.keys(productBcrMap).map(function(k) {
-    var p = productBcrMap[k];
-    var total = p.qaBugs + p.customerBugs;
-    p.rate = total > 0 ? (p.qaBugs / total * 100) : 0;
-    return p;
-  }).sort(function(a, b) { return (b.qaBugs + b.customerBugs) - (a.qaBugs + a.customerBugs); });
+  result.bcrWeeklyTrend = Object.keys(trendMap).sort().map(function(k) { return trendMap[k]; });
 
   // Take latest for non-summable fields
-  var latestWeek = weeklyDataArray[weeklyDataArray.length - 1];
   if (latestWeek) {
     result.testExecution = latestWeek.testExecution || null;
     result.regressionTrend = latestWeek.regressionTrend || null;
     result.latestFunctionTest = latestWeek.latestFunctionTest || null;
   }
 
-  // Cap recent bugs
-  result.recentBugs.qa = result.recentBugs.qa.slice(0, 20);
-  result.recentBugs.customer = result.recentBugs.customer.slice(0, 20);
+  // Deduplicate and cap recent bugs by key
+  var qaKeys = {};
+  result.recentBugs.qa = result.recentBugs.qa.filter(function(b) {
+    if (qaKeys[b.key]) return false;
+    qaKeys[b.key] = true;
+    return true;
+  }).slice(0, 20);
+  var custKeys = {};
+  result.recentBugs.customer = result.recentBugs.customer.filter(function(b) {
+    if (custKeys[b.key]) return false;
+    custKeys[b.key] = true;
+    return true;
+  }).slice(0, 20);
 
   return result;
 }

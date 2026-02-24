@@ -73,13 +73,13 @@ generate "Weekly Pulse" "$DASHBOARD_DIR/data/pulse/$WEEK.json" \
   python3 "$CLAUDE_DIR/skills/weekly-pulse/scripts/generate-pulse.py" --json --start "$WEEK_START" --end "$WEEK_END"
 
 generate "QA Pulse" "$DASHBOARD_DIR/data/qa/$WEEK.json" \
-  python3 "$CLAUDE_DIR/skills/bug-catch-rate/scripts/qa-pulse-report.py" --json --dry-run
+  python3 "$CLAUDE_DIR/skills/bug-catch-rate/scripts/qa-pulse-report.py" --json --dry-run --end "$WEEK_END"
 
 generate "Weekly Tickets" "$DASHBOARD_DIR/data/tickets/$WEEK.json" \
   python3 "$CLAUDE_DIR/skills/daily-ticket-report/scripts/generate-weekly-report.py" --json --start "$WEEK_START" --end "$WEEK_END"
 
 generate "DSAT" "$DASHBOARD_DIR/data/dsat/$WEEK.json" \
-  python3 "$CLAUDE_DIR/scripts/analysis/fetch-all-dsat-v3.py" --json
+  python3 "$CLAUDE_DIR/scripts/analysis/fetch-all-dsat-v3.py" --json --end "$WEEK_END"
 
 generate "Daily" "$DASHBOARD_DIR/data/daily/$WEEK.json" \
   python3 "$DASHBOARD_DIR/scripts/generate-daily-data.py" --json --date "$WEEK_START"

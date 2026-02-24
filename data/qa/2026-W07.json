@@ -1,21 +1,21 @@
 {
-  "period": "2025-11-18 ~ 2026-02-16",
+  "period": "2025-11-17 ~ 2026-02-15",
   "daysCount": 90,
-  "reportDate": "2026-02-16",
+  "reportDate": "2026-02-15",
   "bcr": {
-    "overall": 85.3,
+    "overall": 85.5,
     "status": "on_track",
     "target": 80,
-    "qaCount": 122,
+    "qaCount": 124,
     "customerCount": 21
   },
   "bcrByProduct": [
     {
       "product": "Spark",
-      "qaBugs": 56,
+      "qaBugs": 58,
       "customerBugs": 10,
-      "total": 66,
-      "rate": 84.8
+      "total": 68,
+      "rate": 85.3
     },
     {
       "product": "BIAS X",
@@ -113,16 +113,16 @@
   ],
   "testExecution": {
     "Spark": {
-      "completedRuns": 5,
-      "totalRuns": 6,
-      "totalCases": 687,
-      "totalPassed": 577,
-      "totalFailed": 69,
+      "completedRuns": 6,
+      "totalRuns": 7,
+      "totalCases": 858,
+      "totalPassed": 742,
+      "totalFailed": 72,
       "totalBlocked": 7,
-      "totalSkipped": 34,
-      "passRate": 84.0,
-      "avgVelocity": 23.4,
-      "blockedRate": 6.0
+      "totalSkipped": 37,
+      "passRate": 86.5,
+      "avgVelocity": 28.1,
+      "blockedRate": 5.1
     },
     "BIAS X": {
       "completedRuns": 6,
@@ -137,16 +137,16 @@
       "blockedRate": 3.0
     },
     "Reactor": {
-      "completedRuns": 6,
-      "totalRuns": 8,
-      "totalCases": 566,
-      "totalPassed": 502,
-      "totalFailed": 28,
-      "totalBlocked": 13,
-      "totalSkipped": 23,
-      "passRate": 88.7,
-      "avgVelocity": 39.4,
-      "blockedRate": 6.4
+      "completedRuns": 7,
+      "totalRuns": 9,
+      "totalCases": 669,
+      "totalPassed": 571,
+      "totalFailed": 54,
+      "totalBlocked": 16,
+      "totalSkipped": 28,
+      "passRate": 85.4,
+      "avgVelocity": 40.8,
+      "blockedRate": 6.6
     }
   },
   "regressionTrend": {
@@ -293,8 +293,8 @@
       "failed": 1,
       "blocked": 0,
       "skipped": 0,
-      "untested": 192,
-      "total": 194
+      "untested": 191,
+      "total": 193
     }
   ],
   "effortSignals": [
@@ -308,7 +308,7 @@
       "type": "stale",
       "severity": "warning",
       "product": "Spark",
-      "message": "Spark EDGE 2.9.1.80 Full Regression test (SE): in progress for 83 days"
+      "message": "Spark EDGE 2.9.1.80 Full Regression test (SE): in progress for 91 days"
     },
     {
       "type": "blocked",
@@ -320,7 +320,7 @@
       "type": "stale",
       "severity": "warning",
       "product": "BIAS X",
-      "message": "MIDI/Automation Test run 2025/11/26 (BX): in progress for 82 days"
+      "message": "MIDI/Automation Test run 2025/11/26 (BX): in progress for 90 days"
     },
     {
       "type": "untested",
@@ -332,7 +332,7 @@
       "type": "stale",
       "severity": "warning",
       "product": "BIAS X",
-      "message": "1.1.0.51204 Full Regression (MacOS14 Studio One 7) (BX): in progress for 70 days"
+      "message": "1.1.0.51204 Full Regression (MacOS14 Studio One 7) (BX): in progress for 78 days"
     },
     {
       "type": "blocked",
@@ -341,16 +341,28 @@
       "message": "Reactor Firmware (100W) 0.1.2.209 Function Test (RA): 22% blocked/skipped (23/103)"
     },
     {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[iOS] 2/22 MKT/KOL Build Function Test (RAPP): in progress for 14 days"
+    },
+    {
       "type": "untested",
       "severity": "info",
       "product": "Reactor",
       "message": "[iOS] 2/22 MKT/KOL Build Function Test (RAPP): 44% untested (86/194)"
     },
     {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[Android] 2/22 MKT/KOL Build Function Test (RAPP): in progress for 14 days"
+    },
+    {
       "type": "untested",
       "severity": "info",
       "product": "Reactor",
-      "message": "[Android] 2/22 MKT/KOL Build Function Test (RAPP): 99% untested (192/194)"
+      "message": "[Android] 2/22 MKT/KOL Build Function Test (RAPP): 99% untested (191/193)"
     }
   ],
   "recentBugs": {

@@ -1,28 +1,28 @@
 {
-  "period": "2025-11-18 ~ 2026-02-16",
+  "period": "2025-11-24 ~ 2026-02-22",
   "daysCount": 90,
-  "reportDate": "2026-02-16",
+  "reportDate": "2026-02-22",
   "bcr": {
-    "overall": 85.3,
+    "overall": 86.2,
     "status": "on_track",
     "target": 80,
-    "qaCount": 122,
-    "customerCount": 21
+    "qaCount": 119,
+    "customerCount": 19
   },
   "bcrByProduct": [
     {
       "product": "Spark",
-      "qaBugs": 56,
+      "qaBugs": 54,
       "customerBugs": 10,
-      "total": 66,
-      "rate": 84.8
+      "total": 64,
+      "rate": 84.4
     },
     {
       "product": "BIAS X",
-      "qaBugs": 66,
-      "customerBugs": 11,
-      "total": 77,
-      "rate": 85.7
+      "qaBugs": 65,
+      "customerBugs": 9,
+      "total": 74,
+      "rate": 87.8
     }
   ],
   "bcrWeeklyTrend": [
@@ -137,16 +137,16 @@
       "blockedRate": 3.0
     },
     "Reactor": {
-      "completedRuns": 6,
-      "totalRuns": 8,
-      "totalCases": 566,
-      "totalPassed": 502,
-      "totalFailed": 28,
-      "totalBlocked": 13,
-      "totalSkipped": 23,
-      "passRate": 88.7,
-      "avgVelocity": 39.4,
-      "blockedRate": 6.4
+      "completedRuns": 5,
+      "totalRuns": 7,
+      "totalCases": 463,
+      "totalPassed": 438,
+      "totalFailed": 12,
+      "totalBlocked": 0,
+      "totalSkipped": 13,
+      "passRate": 94.6,
+      "avgVelocity": 44.8,
+      "blockedRate": 2.8
     }
   },
   "regressionTrend": {
@@ -293,8 +293,8 @@
       "failed": 1,
       "blocked": 0,
       "skipped": 0,
-      "untested": 192,
-      "total": 194
+      "untested": 191,
+      "total": 193
     }
   ],
   "effortSignals": [
@@ -308,7 +308,7 @@
       "type": "stale",
       "severity": "warning",
       "product": "Spark",
-      "message": "Spark EDGE 2.9.1.80 Full Regression test (SE): in progress for 83 days"
+      "message": "Spark EDGE 2.9.1.80 Full Regression test (SE): in progress for 91 days"
     },
     {
       "type": "blocked",
@@ -320,7 +320,7 @@
       "type": "stale",
       "severity": "warning",
       "product": "BIAS X",
-      "message": "MIDI/Automation Test run 2025/11/26 (BX): in progress for 82 days"
+      "message": "MIDI/Automation Test run 2025/11/26 (BX): in progress for 90 days"
     },
     {
       "type": "untested",
@@ -332,13 +332,13 @@
       "type": "stale",
       "severity": "warning",
       "product": "BIAS X",
-      "message": "1.1.0.51204 Full Regression (MacOS14 Studio One 7) (BX): in progress for 70 days"
+      "message": "1.1.0.51204 Full Regression (MacOS14 Studio One 7) (BX): in progress for 78 days"
     },
     {
-      "type": "blocked",
+      "type": "stale",
       "severity": "warning",
       "product": "Reactor",
-      "message": "Reactor Firmware (100W) 0.1.2.209 Function Test (RA): 22% blocked/skipped (23/103)"
+      "message": "[iOS] 2/22 MKT/KOL Build Function Test (RAPP): in progress for 14 days"
     },
     {
       "type": "untested",
@@ -347,10 +347,16 @@
       "message": "[iOS] 2/22 MKT/KOL Build Function Test (RAPP): 44% untested (86/194)"
     },
     {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[Android] 2/22 MKT/KOL Build Function Test (RAPP): in progress for 14 days"
+    },
+    {
       "type": "untested",
       "severity": "info",
       "product": "Reactor",
-      "message": "[Android] 2/22 MKT/KOL Build Function Test (RAPP): 99% untested (192/194)"
+      "message": "[Android] 2/22 MKT/KOL Build Function Test (RAPP): 99% untested (191/193)"
     }
   ],
   "recentBugs": {
