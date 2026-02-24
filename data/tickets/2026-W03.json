@@ -710,42 +710,42 @@
   ],
   "stfs": [
     {
-      "key": "STFS-220",
-      "summary": "Spark app - Hardware Preset Saving Issue (Android)",
+      "key": "STFS-226",
+      "summary": "Spark app - Preset Restore Issue (Cross Platform/Dropbox)",
       "status": "To Do",
       "product": "",
       "ticketCount": 14,
       "followUp": true
     },
     {
-      "key": "STFS-358",
-      "summary": "Spark app - Groove Looper Will be Out of Sync Gradually (Spark 2)",
-      "status": "To Do",
-      "product": "Spark",
-      "ticketCount": 13,
-      "followUp": true
-    },
-    {
-      "key": "STFS-338",
-      "summary": "Spark NEO - TX Doesn't Automatically Connect to the RX",
-      "status": "In Review",
-      "product": "Hardware",
-      "ticketCount": 11,
-      "followUp": false
-    },
-    {
       "key": "STFS-414",
       "summary": "Spark - USB Compatibility issue with macOS 26",
       "status": "To Do",
       "product": "Hardware",
-      "ticketCount": 10,
+      "ticketCount": 14,
+      "followUp": true
+    },
+    {
+      "key": "STFS-442",
+      "summary": "Spark app 4.5.1 – Frozen After Connecting to Spark Amp via In-App Features (iOS Only)",
+      "status": "In Review",
+      "product": "Spark",
+      "ticketCount": 11,
       "followUp": false
     },
     {
-      "key": "STFS-226",
-      "summary": "Spark app - Preset Restore Issue (Cross Platform/Dropbox)",
+      "key": "STFS-220",
+      "summary": "Spark app - Hardware Preset Saving Issue (Android)",
       "status": "In Review",
       "product": "",
+      "ticketCount": 11,
+      "followUp": true
+    },
+    {
+      "key": "STFS-358",
+      "summary": "Spark app - Groove Looper Will be Out of Sync Gradually (Spark 2)",
+      "status": "In Review",
+      "product": "Spark",
       "ticketCount": 9,
       "followUp": false
     },
@@ -758,8 +758,8 @@
       "followUp": false
     },
     {
-      "key": "STFS-211",
-      "summary": "Spark app - Experience Jimi Hendrix™ tag has disappeared. (iOS Only)",
+      "key": "STFS-477",
+      "summary": "Spark App 4.5.1 - Dropbox Fail Error (Android Only)",
       "status": "In Review",
       "product": "",
       "ticketCount": 7,

@@ -1,10 +1,10 @@
 {
   "period": "2025-10-21 ~ 2026-01-19",
   "daysCount": 90,
-  "totalBadRatings": 28,
-  "withComments": 24,
-  "aiNegative": 14,
-  "aiNegativeRateOfComments": 58.33,
+  "totalBadRatings": 38,
+  "withComments": 31,
+  "aiNegative": 19,
+  "aiNegativeRateOfComments": 61.29,
   "aiNegativeRateOfAll": 50.0,
   "samples": [
     {

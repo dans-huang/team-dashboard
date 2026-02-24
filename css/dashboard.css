@@ -1,17 +1,51 @@
 /* === Custom Properties === */
 :root {
-  --bg-primary: #0d1117;
-  --bg-card: #161b22;
-  --bg-card-hover: #1c2129;
-  --border: #30363d;
-  --text-primary: #e6edf3;
-  --text-secondary: #8b949e;
-  --accent: #7c3aed;
-  --accent-light: #a78bfa;
-  --green: #2dd4bf;
-  --orange: #f97316;
-  --red: #ef4444;
+  /* Gray Scale */
+  --gray-50:   #0a0a0a;
+  --gray-100:  #111111;
+  --gray-200:  #191919;
+  --gray-300:  #222222;
+  --gray-400:  #2e2e2e;
+  --gray-500:  #454545;
+  --gray-600:  #6e6e6e;
+  --gray-700:  #8f8f8f;
+  --gray-800:  #b0b0b0;
+  --gray-900:  #d4d4d4;
+  --gray-950:  #ededed;
+
+  /* Semantic Surfaces */
+  --bg-primary:    #0a0a0a;
+  --bg-card:       #111111;
+  --bg-card-hover: #191919;
+  --bg-elevated:   #222222;
+  --bg-inset:      #000000;
+
+  /* Borders */
+  --border:       rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.12);
+
+  /* Text */
+  --text-primary:   #fafafa;
+  --text-secondary: #8f8f8f;
+  --text-tertiary:  #6e6e6e;
+
+  /* Accent — blue, used sparingly */
+  --accent:       #3b82f6;
+  --accent-light: #60a5fa;
+  --accent-muted: rgba(59, 130, 246, 0.15);
+
+  /* Status Colors */
+  --green:  #22c55e;
+  --orange: #eab308;
+  --red:    #ef4444;
   --yellow: #fbbf24;
+
+  /* Chart Palette */
+  --chart-1: #3b82f6;
+  --chart-2: #8b5cf6;
+  --chart-3: #06b6d4;
+  --chart-4: #f59e0b;
+  --chart-5: #ec4899;
 }
 
 /* === Reset & Body === */
@@ -22,7 +56,9 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.5;
@@ -38,14 +74,14 @@ body {
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
-  height: 56px;
+  height: 48px;
   padding: 0 24px;
   gap: 24px;
 }
 
 .nav-brand {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 600;
   color: var(--text-primary);
   text-decoration: none;
   white-space: nowrap;
@@ -66,7 +102,7 @@ body {
   color: var(--text-secondary);
   text-decoration: none;
   border-bottom: 2px solid transparent;
-  font-size: 14px;
+  font-size: 13px;
   height: 100%;
   transition: color 0.15s, border-color 0.15s;
   cursor: pointer;
@@ -77,8 +113,8 @@ body {
 }
 
 .nav-tabs a.active {
-  color: var(--accent-light);
-  border-bottom-color: var(--accent);
+  color: var(--text-primary);
+  border-bottom-color: var(--text-primary);
 }
 
 .nav-right {
@@ -130,7 +166,7 @@ body {
 }
 
 .sub-nav-item.active {
-  color: var(--accent-light);
+  color: var(--text-primary);
   background: var(--bg-card);
 }
 
@@ -154,8 +190,8 @@ kbd {
 
 .nav-tabs a.active kbd,
 .sub-nav-item.active kbd {
-  color: var(--accent-light);
-  border-color: var(--accent);
+  color: var(--text-primary);
+  border-color: var(--border-strong);
 }
 
 /* === Container === */
@@ -194,11 +230,15 @@ kbd {
   font-size: 36px;
   font-weight: bold;
   line-height: 1.2;
+  font-variant-numeric: tabular-nums;
 }
 
 .kpi-label {
-  font-size: 13px;
-  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-tertiary);
   margin-top: 4px;
 }
 
@@ -224,6 +264,7 @@ kbd {
   font-size: 64px;
   font-weight: 800;
   line-height: 1.1;
+  font-variant-numeric: tabular-nums;
 }
 
 .big-number-value.ok { color: var(--green); }
@@ -233,7 +274,6 @@ kbd {
 /* === Table === */
 .table-wrap {
   background: var(--bg-card);
-  border: 1px solid var(--border);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -245,14 +285,14 @@ table {
 }
 
 thead th {
-  background: var(--bg-primary);
+  background: var(--bg-inset);
   padding: 10px 16px;
   text-align: left;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+  color: var(--text-tertiary);
 }
 
 tbody td {
@@ -289,8 +329,9 @@ tbody tr:hover {
 
 /* === Alert Banner === */
 .alert-banner {
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.22), rgba(239, 68, 68, 0.22));
+  background: var(--bg-card);
   border: 1px solid var(--border);
+  border-left: 3px solid var(--orange);
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 16px;
@@ -328,8 +369,8 @@ tbody tr:hover {
 }
 
 .compare-toggle.active {
-  color: var(--accent-light);
-  border-color: var(--accent);
+  color: var(--text-primary);
+  border-color: var(--border-strong);
 }
 
 .compare-toggle kbd {
@@ -346,17 +387,17 @@ tbody tr:hover {
 }
 
 .badge-green {
-  background: rgba(45, 212, 191, 0.22);
+  background: rgba(34, 197, 94, 0.15);
   color: var(--green);
 }
 
 .badge-orange {
-  background: rgba(249, 115, 22, 0.22);
+  background: rgba(234, 179, 8, 0.15);
   color: var(--orange);
 }
 
 .badge-red {
-  background: rgba(239, 68, 68, 0.22);
+  background: rgba(239, 68, 68, 0.15);
   color: var(--red);
 }
 

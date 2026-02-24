@@ -70,7 +70,7 @@ function renderAiPie(data) {
       labels: ['AI-Negative', 'Other DSAT'],
       datasets: [{
         data: [aiNeg, otherDsat],
-        backgroundColor: ['#ef4444', '#30363d'],
+        backgroundColor: ['#ef4444', 'rgba(255, 255, 255, 0.06)'],
         borderWidth: 0
       }]
     },
@@ -99,8 +99,8 @@ function renderTopReasons(reasons) {
       labels: reasons.map(function(r) { return r.reason; }),
       datasets: [{
         data: reasons.map(function(r) { return r.count; }),
-        backgroundColor: '#f9731688',
-        borderColor: '#f97316',
+        backgroundColor: 'rgba(234, 179, 8, 0.5)',
+        borderColor: '#eab308',
         borderWidth: 1,
         borderRadius: 4
       }]
@@ -115,7 +115,7 @@ function renderTopReasons(reasons) {
       scales: {
         x: {
           beginAtZero: true,
-          grid: { color: '#30363d' }
+          grid: { color: 'rgba(255, 255, 255, 0.04)' }
         },
         y: {
           grid: { display: false }
@@ -222,8 +222,8 @@ document.addEventListener('compare-toggled', function(e) {
           reasonsChart.data.datasets.push({
             label: 'Previous Week',
             data: prevData.topReasons.map(function(r) { return r.count; }),
-            backgroundColor: '#8b949e44',
-            borderColor: '#8b949e',
+            backgroundColor: 'rgba(143, 143, 143, 0.3)',
+            borderColor: '#8f8f8f',
             borderWidth: 1,
             borderRadius: 4
           });

@@ -49,8 +49,8 @@ function renderProductChart(products) {
       labels: products.map(function(p) { return p.product; }),
       datasets: [{
         data: products.map(function(p) { return p.count; }),
-        backgroundColor: '#7c3aed88',
-        borderColor: '#7c3aed',
+        backgroundColor: 'rgba(59, 130, 246, 0.5)',
+        borderColor: '#3b82f6',
         borderWidth: 1,
         borderRadius: 4
       }]
@@ -73,7 +73,7 @@ function renderProductChart(products) {
       scales: {
         x: {
           beginAtZero: true,
-          grid: { color: '#30363d' }
+          grid: { color: 'rgba(255, 255, 255, 0.04)' }
         },
         y: {
           grid: { display: false },
@@ -105,8 +105,8 @@ function renderTypeChart(types) {
       labels: types.map(function(t) { return t.type; }),
       datasets: [{
         data: types.map(function(t) { return t.count; }),
-        backgroundColor: '#2dd4bf88',
-        borderColor: '#2dd4bf',
+        backgroundColor: 'rgba(6, 182, 212, 0.5)',
+        borderColor: '#06b6d4',
         borderWidth: 1,
         borderRadius: 4
       }]
@@ -129,7 +129,7 @@ function renderTypeChart(types) {
       scales: {
         x: {
           beginAtZero: true,
-          grid: { color: '#30363d' }
+          grid: { color: 'rgba(255, 255, 255, 0.04)' }
         },
         y: {
           grid: { display: false },

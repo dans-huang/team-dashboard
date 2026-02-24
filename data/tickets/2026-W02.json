@@ -683,18 +683,18 @@
   ],
   "stfs": [
     {
-      "key": "STFS-442",
-      "summary": "Spark app 4.5.1 – Frozen After Connecting to Spark Amp via In-App Features (iOS Only)",
+      "key": "STFS-358",
+      "summary": "Spark app - Groove Looper Will be Out of Sync Gradually (Spark 2)",
       "status": "In Review",
       "product": "Spark",
       "ticketCount": 15,
       "followUp": true
     },
     {
-      "key": "STFS-477",
-      "summary": "Spark App 4.5.1 - Dropbox Fail Error (Android Only)",
+      "key": "STFS-442",
+      "summary": "Spark app 4.5.1 – Frozen After Connecting to Spark Amp via In-App Features (iOS Only)",
       "status": "In Review",
-      "product": "",
+      "product": "Spark",
       "ticketCount": 14,
       "followUp": false
     },
@@ -739,8 +739,8 @@
       "followUp": true
     },
     {
-      "key": "STFS-220",
-      "summary": "Spark app - Hardware Preset Saving Issue (Android)",
+      "key": "STFS-477",
+      "summary": "Spark App 4.5.1 - Dropbox Fail Error (Android Only)",
       "status": "In Review",
       "product": "",
       "ticketCount": 9,

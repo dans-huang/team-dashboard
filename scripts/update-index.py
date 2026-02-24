@@ -19,6 +19,15 @@ def iso_week_to_month(week_str: str) -> str:
     return monday.strftime('%Y-%m')
 
 
+def validate_week(data_dir: Path, week: str) -> bool:
+    """A week is valid if pulse or tickets data exists with meaningful content (>100 bytes)."""
+    for subdir in ['pulse', 'tickets']:
+        f = data_dir / subdir / f'{week}.json'
+        if f.exists() and f.stat().st_size > 100:
+            return True
+    return False
+
+
 def main():
     data_dir = Path(__file__).parent.parent / 'data'
     weeks = set()
@@ -30,6 +39,9 @@ def main():
             match = re.match(r'(\d{4}-W\d{2})\.json', f.name)
             if match:
                 weeks.add(match.group(1))
+
+    # Filter to only weeks with valid data
+    weeks = {w for w in weeks if validate_week(data_dir, w)}
 
     sorted_weeks = sorted(weeks, reverse=True)
 

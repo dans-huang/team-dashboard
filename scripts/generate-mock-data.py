@@ -2,6 +2,8 @@
 """Generate 2 months of realistic mock dashboard data for development/testing."""
 import json
 import random
+import re
+import sys
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -365,10 +367,10 @@ def generate_dsat(year: int, week: int) -> dict:
 
 def generate_daily(year: int, week: int) -> dict:
     monday = iso_week_monday(year, week)
-    # Pick a random day in the week for the daily snapshot
-    day_offset = random.randint(0, 6)
-    report_date = monday + timedelta(days=day_offset)
+    # Always use Monday to match the dropdown label derived from ISO week
+    report_date = monday
     days_abbr = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    day_offset = 0
     total = rand_vary(55, 0.25)
 
     product_breakdown = []
@@ -456,8 +458,41 @@ def generate_tickets(year: int, week: int, pulse_data: dict) -> dict:
     }
 
 
+def generate_single_week(year: int, week: int):
+    """Generate mock data for a single week."""
+    for subdir in ['pulse', 'qa', 'dsat', 'daily', 'tickets']:
+        (DATA_DIR / subdir).mkdir(parents=True, exist_ok=True)
+
+    wl = week_label(year, week)
+    monday = iso_week_monday(year, week)
+    print(f'Generating {wl} ({monday.isoformat()})...')
+
+    pulse = generate_pulse(year, week, 350)
+    qa = generate_qa(year, week)
+    dsat = generate_dsat(year, week)
+    daily = generate_daily(year, week)
+    tickets = generate_tickets(year, week, pulse)
+
+    for subdir, data in [('pulse', pulse), ('qa', qa), ('dsat', dsat),
+                         ('daily', daily), ('tickets', tickets)]:
+        path = DATA_DIR / subdir / f'{wl}.json'
+        path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n')
+
+    print(f'Done. Generated {wl}.')
+
+
 def main():
-    # Weeks to generate: 2025-W51 through 2026-W05 (existing: W06, W07, W08)
+    # Support single week argument: python generate-mock-data.py 2026-W09
+    if len(sys.argv) > 1:
+        arg = sys.argv[1]
+        match = re.match(r'(\d{4})-W(\d{2})', arg)
+        if match:
+            generate_single_week(int(match.group(1)), int(match.group(2)))
+            return
+        print(f'Invalid week format: {arg}. Expected: YYYY-WNN')
+        sys.exit(1)
+
+    # Default: generate 2025-W51 through 2026-W05
     weeks_to_generate = [
         (2025, 51), (2025, 52),
         (2026, 1), (2026, 2), (2026, 3), (2026, 4), (2026, 5)

@@ -133,7 +133,15 @@ async function loadReportData(dataDir) {
   var select = document.getElementById('period-select');
   var week = (select && select.value) ? select.value : idx.latest;
   var resp = await fetch('data/' + dataDir + '/' + week + '.json');
-  if (!resp.ok) throw new Error('No data for ' + dataDir + '/' + week);
+  if (!resp.ok) {
+    // Try falling back to the next available week
+    var weekIdx = idx.weeks.indexOf(week);
+    for (var fi = weekIdx + 1; fi < idx.weeks.length; fi++) {
+      var fallbackResp = await fetch('data/' + dataDir + '/' + idx.weeks[fi] + '.json');
+      if (fallbackResp.ok) return fallbackResp.json();
+    }
+    throw new Error('No data for ' + dataDir + '/' + week);
+  }
   return resp.json();
 }
 
@@ -216,9 +224,9 @@ function setUrlParams(view, report, periodValue) {
 // === Chart.js Defaults ===
 function applyChartDefaults() {
   if (typeof Chart === 'undefined') return;
-  Chart.defaults.color = '#8b949e';
-  Chart.defaults.borderColor = '#30363d';
-  Chart.defaults.font.family = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif";
+  Chart.defaults.color = '#8f8f8f';
+  Chart.defaults.borderColor = 'rgba(255, 255, 255, 0.04)';
+  Chart.defaults.font.family = "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif";
   Chart.defaults.font.size = 12;
 }
 
@@ -332,8 +340,8 @@ function renderDailyTrend(trend) {
       labels: trend.map(function(d) { return d.day; }),
       datasets: [{
         data: trend.map(function(d) { return d.count; }),
-        backgroundColor: '#7c3aed88',
-        borderColor: '#7c3aed',
+        backgroundColor: 'rgba(59, 130, 246, 0.5)',
+        borderColor: '#3b82f6',
         borderWidth: 1,
         borderRadius: 4
       }]
@@ -343,7 +351,7 @@ function renderDailyTrend(trend) {
       maintainAspectRatio: false,
       plugins: { legend: { display: false } },
       scales: {
-        y: { beginAtZero: true, grid: { color: '#30363d' } },
+        y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.04)' } },
         x: { grid: { display: false } }
       }
     }
@@ -665,7 +673,14 @@ async function navigateTo(view, report, skipPush, period) {
   } catch (err) {
     var content = document.getElementById('content');
     if (content) {
-      content.innerHTML = '<p style="color:var(--red);padding:24px;">Error loading data: ' + err.message + '</p>';
+      var idx = await loadIndex();
+      var latestPeriod = (VIEWS[view].periodType === 'month') ? idx.latestMonth : idx.latest;
+      content.innerHTML = '<div style="text-align:center;padding:48px 24px;">' +
+        '<div style="font-size:48px;margin-bottom:16px;">&#128202;</div>' +
+        '<h2 style="margin-bottom:8px;">No data for this period</h2>' +
+        '<p style="color:var(--text-secondary);margin-bottom:16px;">' + err.message + '</p>' +
+        (latestPeriod ? '<a href="#" onclick="navigateTo(\'' + view + '\',\'' + report + '\',false,\'' + latestPeriod + '\');return false;" style="color:var(--accent-light);">Jump to latest available (' + latestPeriod + ')</a>' : '') +
+        '</div>';
     }
   }
 
@@ -712,8 +727,9 @@ function aggregatePulseData(weeklyDataArray, month) {
     }
     if (d.ticketTypes) {
       d.ticketTypes.forEach(function(t) {
-        if (!typeMap[t.type]) typeMap[t.type] = { type: t.type, count: 0 };
+        if (!typeMap[t.type]) typeMap[t.type] = { type: t.type, count: 0, aiCount: 0 };
         typeMap[t.type].count += t.count || 0;
+        if (typeof t.aiCount === 'number') typeMap[t.type].aiCount += t.aiCount;
       });
     }
   });
@@ -738,6 +754,7 @@ function aggregatePulseData(weeklyDataArray, month) {
   result.ticketTypes = Object.keys(typeMap).map(function(k) {
     var t = typeMap[k];
     t.pct = totalTypeCount > 0 ? (t.count / totalTypeCount * 100) : 0;
+    t.aiResRate = (t.count > 0 && t.aiCount > 0) ? (t.aiCount / t.count * 100) : null;
     return t;
   }).sort(function(a, b) { return b.count - a.count; });
 

@@ -674,18 +674,18 @@
   ],
   "stfs": [
     {
-      "key": "STFS-442",
-      "summary": "Spark app 4.5.1 – Frozen After Connecting to Spark Amp via In-App Features (iOS Only)",
+      "key": "STFS-358",
+      "summary": "Spark app - Groove Looper Will be Out of Sync Gradually (Spark 2)",
       "status": "In Review",
       "product": "Spark",
-      "ticketCount": 15,
+      "ticketCount": 14,
       "followUp": true
     },
     {
-      "key": "STFS-211",
-      "summary": "Spark app - Experience Jimi Hendrix™ tag has disappeared. (iOS Only)",
+      "key": "STFS-338",
+      "summary": "Spark NEO - TX Doesn't Automatically Connect to the RX",
       "status": "To Do",
-      "product": "",
+      "product": "Hardware",
       "ticketCount": 12,
       "followUp": false
     },
@@ -694,46 +694,46 @@
       "summary": "Spark app - Preset Restore Issue (Cross Platform/Dropbox)",
       "status": "To Do",
       "product": "",
-      "ticketCount": 12,
+      "ticketCount": 11,
       "followUp": false
     },
     {
-      "key": "STFS-270",
-      "summary": "Spark 2 - Can't change tone/preset on Spark 2 via the Spark app",
+      "key": "STFS-442",
+      "summary": "Spark app 4.5.1 – Frozen After Connecting to Spark Amp via In-App Features (iOS Only)",
+      "status": "To Do",
+      "product": "Spark",
+      "ticketCount": 7,
+      "followUp": true
+    },
+    {
+      "key": "STFS-220",
+      "summary": "Spark app - Hardware Preset Saving Issue (Android)",
       "status": "To Do",
       "product": "",
-      "ticketCount": 11,
-      "followUp": false
+      "ticketCount": 7,
+      "followUp": true
+    },
+    {
+      "key": "STFS-421",
+      "summary": "BIAS X 1.0.0 - Plugin Crash Issue (Cubase/Logic Pro/Studio One)",
+      "status": "To Do",
+      "product": "BIAS Desktop",
+      "ticketCount": 6,
+      "followUp": true
     },
     {
       "key": "STFS-477",
       "summary": "Spark App 4.5.1 - Dropbox Fail Error (Android Only)",
       "status": "To Do",
       "product": "",
-      "ticketCount": 7,
-      "followUp": true
+      "ticketCount": 5,
+      "followUp": false
     },
     {
       "key": "STFS-414",
       "summary": "Spark - USB Compatibility issue with macOS 26",
-      "status": "To Do",
-      "product": "Hardware",
-      "ticketCount": 7,
-      "followUp": true
-    },
-    {
-      "key": "STFS-338",
-      "summary": "Spark NEO - TX Doesn't Automatically Connect to the RX",
-      "status": "To Do",
-      "product": "Hardware",
-      "ticketCount": 6,
-      "followUp": true
-    },
-    {
-      "key": "STFS-358",
-      "summary": "Spark app - Groove Looper Will be Out of Sync Gradually (Spark 2)",
       "status": "In Review",
-      "product": "Spark",
+      "product": "Hardware",
       "ticketCount": 5,
       "followUp": true
     }

@@ -1,9 +1,9 @@
 {
-  "period": "2026-01-02 (Fri)",
-  "startDate": "2026-01-02",
-  "endDate": "2026-01-02",
+  "period": "2025-12-29 (Mon)",
+  "startDate": "2025-12-29",
+  "endDate": "2025-12-29",
   "kpi": {
-    "totalTickets": 68,
+    "totalTickets": 60,
     "topProduct": "SPARK 2",
     "refunds": 3,
     "productCount": 10
@@ -11,95 +11,95 @@
   "productBreakdown": [
     {
       "product": "SPARK 2",
-      "count": 16,
-      "pct": 23.5
+      "count": 14,
+      "pct": 23.3
     },
     {
       "product": "SPARK",
-      "count": 11,
-      "pct": 16.2
+      "count": 10,
+      "pct": 16.7
     },
     {
       "product": "SPARK GO",
-      "count": 10,
-      "pct": 14.7
+      "count": 9,
+      "pct": 15.0
     },
     {
       "product": "SPARK MINI",
       "count": 7,
-      "pct": 10.3
+      "pct": 11.7
     },
     {
       "product": "SPARK LIVE",
       "count": 7,
-      "pct": 10.3
+      "pct": 11.7
     },
     {
       "product": "SPARK NEO",
       "count": 4,
-      "pct": 5.9
+      "pct": 6.7
     },
     {
       "product": "BIAS X",
       "count": 4,
-      "pct": 5.9
+      "pct": 6.7
     },
     {
       "product": "SPARK CAB",
       "count": 2,
-      "pct": 2.9
+      "pct": 3.3
     },
     {
       "product": "SPARK LINK",
       "count": 2,
-      "pct": 2.9
+      "pct": 3.3
     },
     {
       "product": "SPARK EDGE",
       "count": 2,
-      "pct": 2.9
+      "pct": 3.3
     }
   ],
   "ticketTypes": [
     {
       "type": "Troubleshooting",
-      "count": 38,
-      "pct": 55.9
+      "count": 34,
+      "pct": 56.7
     },
     {
       "type": "Request For Refund/Replacement",
-      "count": 7,
-      "pct": 10.3
+      "count": 6,
+      "pct": 10.0
     },
     {
       "type": "Order Related",
       "count": 6,
-      "pct": 8.8
+      "pct": 10.0
     },
     {
       "type": "Product Spec",
-      "count": 6,
-      "pct": 8.8
+      "count": 5,
+      "pct": 8.3
     },
     {
       "type": "Product Registration",
       "count": 4,
-      "pct": 5.9
+      "pct": 6.7
     },
     {
       "type": "Manage My Account",
-      "count": 4,
-      "pct": 5.9
+      "count": 3,
+      "pct": 5.0
     },
     {
       "type": "Edit Address   Contact Information",
       "count": 1,
-      "pct": 1.5
+      "pct": 1.7
     },
     {
       "type": "Delete/Migrate Account",
       "count": 1,
-      "pct": 1.5
+      "pct": 1.7
     }
   ],
   "agentActivity": [

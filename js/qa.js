@@ -86,15 +86,15 @@ function renderBcrTrend(trend) {
         {
           label: 'QA Bugs',
           data: trend.map(function(d) { return d.qaBugs; }),
-          backgroundColor: '#2dd4bf88',
-          borderColor: '#2dd4bf',
+          backgroundColor: 'rgba(6, 182, 212, 0.5)',
+          borderColor: '#06b6d4',
           borderWidth: 1,
           borderRadius: 4
         },
         {
           label: 'Customer Bugs',
           data: trend.map(function(d) { return d.customerBugs; }),
-          backgroundColor: '#ef444488',
+          backgroundColor: 'rgba(239, 68, 68, 0.5)',
           borderColor: '#ef4444',
           borderWidth: 1,
           borderRadius: 4
@@ -115,7 +115,7 @@ function renderBcrTrend(trend) {
         y: {
           stacked: true,
           beginAtZero: true,
-          grid: { color: '#30363d' }
+          grid: { color: 'rgba(255, 255, 255, 0.04)' }
         }
       }
     }

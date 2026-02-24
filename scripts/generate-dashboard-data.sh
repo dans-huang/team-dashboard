@@ -82,7 +82,7 @@ generate "DSAT" "$DASHBOARD_DIR/data/dsat/$WEEK.json" \
   python3 "$CLAUDE_DIR/scripts/analysis/fetch-all-dsat-v3.py" --json
 
 generate "Daily" "$DASHBOARD_DIR/data/daily/$WEEK.json" \
-  python3 "$DASHBOARD_DIR/scripts/generate-daily-data.py" --json --date "$WEEK_END"
+  python3 "$DASHBOARD_DIR/scripts/generate-daily-data.py" --json --date "$WEEK_START"
 
 echo ""
 echo "→ Updating index..."

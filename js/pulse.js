@@ -27,16 +27,19 @@ function renderTicketTypes(types) {
   }
   var rows = types.map(function(t) {
     var pct = typeof t.pct === 'number' ? t.pct.toFixed(1) + '%' : '-';
+    var aiRate = (typeof t.aiResRate === 'number') ? t.aiResRate.toFixed(1) + '%' : '-';
+    var aiClass = (typeof t.aiResRate === 'number') ? (t.aiResRate >= 50 ? 'up' : (t.aiResRate >= 25 ? 'neutral' : 'down')) : 'neutral';
     return '<tr>' +
       '<td><strong>' + (t.type || '-') + '</strong></td>' +
       '<td>' + formatNumber(t.count) + '</td>' +
       '<td>' + pct + '</td>' +
       '<td>' + formatDelta(t.delta) + '</td>' +
+      '<td><span class="kpi-delta ' + aiClass + '">' + aiRate + '</span></td>' +
     '</tr>';
   }).join('');
   el.innerHTML =
     '<table>' +
-    '<thead><tr><th>Type</th><th>Count</th><th>%</th><th>vs Prev</th></tr></thead>' +
+    '<thead><tr><th>Type</th><th>Count</th><th>%</th><th>vs Prev</th><th>AI Res Rate</th></tr></thead>' +
     '<tbody>' + rows + '</tbody>' +
     '</table>';
 }
@@ -103,8 +106,8 @@ document.addEventListener('compare-toggled', function(e) {
           chart.data.datasets.push({
             label: 'Previous Week',
             data: prevData.dailyTrend.map(function(d) { return d.count; }),
-            backgroundColor: '#8b949e44',
-            borderColor: '#8b949e',
+            backgroundColor: 'rgba(143, 143, 143, 0.3)',
+            borderColor: '#8f8f8f',
             borderWidth: 1,
             borderRadius: 4
           });
