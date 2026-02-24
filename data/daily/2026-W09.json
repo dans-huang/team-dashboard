@@ -115,17 +115,24 @@
   "agentActivity": [
     {
       "name": "Devin (AI)",
-      "assigned": 277,
+      "assigned": 276,
       "replies": 532,
-      "avgAssignedPerDay": 39.6,
+      "avgAssignedPerDay": 39.4,
       "avgRepliesPerDay": 76.0
     },
     {
       "name": "Ryan",
-      "assigned": 40,
-      "replies": 47,
-      "avgAssignedPerDay": 5.7,
-      "avgRepliesPerDay": 6.7
+      "assigned": 59,
+      "replies": 52,
+      "avgAssignedPerDay": 8.4,
+      "avgRepliesPerDay": 7.4
+    },
+    {
+      "name": "Heyling",
+      "assigned": 39,
+      "replies": 18,
+      "avgAssignedPerDay": 5.6,
+      "avgRepliesPerDay": 2.6
     },
     {
       "name": "Michael",
@@ -135,18 +142,11 @@
       "avgRepliesPerDay": 3.6
     },
     {
-      "name": "Heyling",
-      "assigned": 27,
-      "replies": 11,
-      "avgAssignedPerDay": 3.9,
-      "avgRepliesPerDay": 1.6
-    },
-    {
       "name": "Eleanor",
-      "assigned": 19,
-      "replies": 20,
-      "avgAssignedPerDay": 2.7,
-      "avgRepliesPerDay": 2.9
+      "assigned": 30,
+      "replies": 24,
+      "avgAssignedPerDay": 4.3,
+      "avgRepliesPerDay": 3.4
     },
     {
       "name": "Chris Hsu",
@@ -164,9 +164,9 @@
     },
     {
       "name": "Dans",
-      "assigned": 1,
+      "assigned": 2,
       "replies": 1,
-      "avgAssignedPerDay": 0.1,
+      "avgAssignedPerDay": 0.3,
       "avgRepliesPerDay": 0.1
     },
     {

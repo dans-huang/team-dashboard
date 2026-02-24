@@ -72,8 +72,7 @@ function renderProductChart(products) {
       },
       scales: {
         x: {
-          beginAtZero: true,
-          grid: { color: 'rgba(255, 255, 255, 0.04)' }
+          beginAtZero: true
         },
         y: {
           grid: { display: false },
@@ -128,8 +127,7 @@ function renderTypeChart(types) {
       },
       scales: {
         x: {
-          beginAtZero: true,
-          grid: { color: 'rgba(255, 255, 255, 0.04)' }
+          beginAtZero: true
         },
         y: {
           grid: { display: false },

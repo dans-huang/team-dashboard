@@ -70,7 +70,7 @@ function renderAiPie(data) {
       labels: ['AI-Negative', 'Other DSAT'],
       datasets: [{
         data: [aiNeg, otherDsat],
-        backgroundColor: ['#ef4444', 'rgba(255, 255, 255, 0.06)'],
+        backgroundColor: ['#ef4444', chartMutedBg()],
         borderWidth: 0
       }]
     },
@@ -114,8 +114,7 @@ function renderTopReasons(reasons) {
       },
       scales: {
         x: {
-          beginAtZero: true,
-          grid: { color: 'rgba(255, 255, 255, 0.04)' }
+          beginAtZero: true
         },
         y: {
           grid: { display: false }

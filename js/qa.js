@@ -114,8 +114,7 @@ function renderBcrTrend(trend) {
         },
         y: {
           stacked: true,
-          beginAtZero: true,
-          grid: { color: 'rgba(255, 255, 255, 0.04)' }
+          beginAtZero: true
         }
       }
     }

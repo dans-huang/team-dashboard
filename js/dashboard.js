@@ -221,11 +221,37 @@ function setUrlParams(view, report, periodValue) {
   return url.toString();
 }
 
+// === Theme Toggle ===
+function isLightTheme() {
+  return document.documentElement.getAttribute('data-theme') === 'light';
+}
+
+function chartMutedBg() {
+  return isLightTheme() ? 'rgba(0, 0, 0, 0.06)' : 'rgba(255, 255, 255, 0.06)';
+}
+
+function initTheme() {
+  var btn = document.getElementById('theme-toggle');
+  if (!btn) return;
+  btn.addEventListener('click', function() {
+    var next = isLightTheme() ? 'dark' : 'light';
+    if (next === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+    localStorage.setItem('theme', next);
+    applyChartDefaults();
+    navigateTo(currentView, currentReport, true);
+  });
+}
+
 // === Chart.js Defaults ===
 function applyChartDefaults() {
   if (typeof Chart === 'undefined') return;
-  Chart.defaults.color = '#8f8f8f';
-  Chart.defaults.borderColor = 'rgba(255, 255, 255, 0.04)';
+  var light = isLightTheme();
+  Chart.defaults.color = light ? '#6b6b6b' : '#8f8f8f';
+  Chart.defaults.borderColor = light ? 'rgba(0, 0, 0, 0.06)' : 'rgba(255, 255, 255, 0.04)';
   Chart.defaults.font.family = "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif";
   Chart.defaults.font.size = 12;
 }
@@ -351,7 +377,7 @@ function renderDailyTrend(trend) {
       maintainAspectRatio: false,
       plugins: { legend: { display: false } },
       scales: {
-        y: { beginAtZero: true, grid: { color: 'rgba(255, 255, 255, 0.04)' } },
+        y: { beginAtZero: true },
         x: { grid: { display: false } }
       }
     }
@@ -490,7 +516,7 @@ function initNav() {
   var select = document.getElementById('period-select');
   if (select) {
     select.addEventListener('change', function() {
-      navigateTo(currentView, currentReport);
+      navigateTo(currentView, currentReport, false, select.value);
     });
   }
 }
@@ -878,6 +904,7 @@ window.addEventListener('popstate', function() {
 // === Init ===
 document.addEventListener('DOMContentLoaded', function() {
   applyChartDefaults();
+  initTheme();
   initNav();
   // Route from URL params
   var params = getUrlParams();
