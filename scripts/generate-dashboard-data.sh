@@ -81,7 +81,7 @@ generate "Weekly Tickets" "$DASHBOARD_DIR/data/tickets/$WEEK.json" \
 generate "DSAT" "$DASHBOARD_DIR/data/dsat/$WEEK.json" \
   python3 "$CLAUDE_DIR/scripts/analysis/fetch-all-dsat-v3.py" --json --end "$WEEK_END"
 
-generate "Daily" "$DASHBOARD_DIR/data/daily/$WEEK.json" \
+generate "Daily" "$DASHBOARD_DIR/data/daily/$WEEK_START.json" \
   python3 "$DASHBOARD_DIR/scripts/generate-daily-data.py" --json --date "$WEEK_START"
 
 echo ""

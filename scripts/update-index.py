@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Update data/index.json with available weeks and months from data/ subdirectories."""
+"""Update data/index.json with available weeks, months, and days from data/ subdirectories."""
 import json
 import re
 from datetime import date, timedelta
@@ -31,7 +31,9 @@ def validate_week(data_dir: Path, week: str) -> bool:
 def main():
     data_dir = Path(__file__).parent.parent / 'data'
     weeks = set()
-    for subdir in ['pulse', 'qa', 'tickets', 'dsat', 'daily']:
+    days = set()
+
+    for subdir in ['pulse', 'qa', 'tickets', 'dsat']:
         dir_path = data_dir / subdir
         if not dir_path.exists():
             continue
@@ -40,10 +42,21 @@ def main():
             if match:
                 weeks.add(match.group(1))
 
+    # Scan daily dir for date-keyed files (YYYY-MM-DD.json)
+    daily_dir = data_dir / 'daily'
+    if daily_dir.exists():
+        for f in daily_dir.glob('*.json'):
+            # Date-keyed files: 2026-02-01.json
+            dmatch = re.match(r'(\d{4}-\d{2}-\d{2})\.json', f.name)
+            if dmatch and f.stat().st_size > 100:
+                days.add(dmatch.group(1))
+            # Legacy week-keyed files (ignore for weeks list, handled above)
+
     # Filter to only weeks with valid data
     weeks = {w for w in weeks if validate_week(data_dir, w)}
 
     sorted_weeks = sorted(weeks, reverse=True)
+    sorted_days = sorted(days, reverse=True)
 
     # Derive months from weeks
     month_set = set()
@@ -58,10 +71,12 @@ def main():
         'latest': sorted_weeks[0] if sorted_weeks else None,
         'months': sorted_months,
         'latestMonth': sorted_months[0] if sorted_months else None,
+        'days': sorted_days,
+        'latestDay': sorted_days[0] if sorted_days else None,
     }
     index_path = data_dir / 'index.json'
     index_path.write_text(json.dumps(index, indent=2) + '\n')
-    print(f'Updated {index_path}: {len(sorted_weeks)} weeks, {len(sorted_months)} months')
+    print(f'Updated {index_path}: {len(sorted_weeks)} weeks, {len(sorted_months)} months, {len(sorted_days)} days')
 
 
 if __name__ == '__main__':

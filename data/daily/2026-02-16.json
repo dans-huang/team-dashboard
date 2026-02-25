@@ -129,31 +129,31 @@
     },
     {
       "name": "Chris Hsu",
-      "assigned": 89,
+      "assigned": 90,
       "replies": 93,
-      "avgAssignedPerDay": 12.7,
+      "avgAssignedPerDay": 12.9,
       "avgRepliesPerDay": 13.3
     },
     {
       "name": "Eleanor",
-      "assigned": 60,
-      "replies": 69,
-      "avgAssignedPerDay": 8.6,
-      "avgRepliesPerDay": 9.9
+      "assigned": 59,
+      "replies": 70,
+      "avgAssignedPerDay": 8.4,
+      "avgRepliesPerDay": 10.0
     },
     {
       "name": "Heyling",
       "assigned": 56,
-      "replies": 78,
+      "replies": 79,
       "avgAssignedPerDay": 8.0,
-      "avgRepliesPerDay": 11.1
+      "avgRepliesPerDay": 11.3
     },
     {
       "name": "Ryan",
       "assigned": 30,
-      "replies": 58,
+      "replies": 59,
       "avgAssignedPerDay": 4.3,
-      "avgRepliesPerDay": 8.3
+      "avgRepliesPerDay": 8.4
     },
     {
       "name": "Ernie",

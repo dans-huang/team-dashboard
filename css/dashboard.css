@@ -462,11 +462,12 @@ a.ticket-link:hover {
   background: none;
   border: 1px solid var(--border);
   border-radius: 6px;
-  padding: 4px 6px;
+  padding: 4px 8px;
   cursor: pointer;
   color: var(--text-secondary);
   display: inline-flex;
   align-items: center;
+  gap: 4px;
   line-height: 0;
   transition: color 0.15s, border-color 0.15s;
 }
@@ -499,11 +500,11 @@ a.ticket-link:hover {
 
 /* === Mobile Responsive === */
 @media (max-width: 768px) {
-  /* Nav: row 1 = brand + selector, row 2 = tabs */
+  /* Nav: row 1 = brand + toggle, row 2 = selector + compare, row 3 = tabs */
   .nav {
     flex-wrap: wrap;
     height: auto;
-    padding: 8px 16px;
+    padding: 10px 16px;
     gap: 0;
   }
 
@@ -517,23 +518,24 @@ a.ticket-link:hover {
   }
 
   .nav-tabs a {
-    height: 32px;
-    padding: 0 10px;
-    font-size: 13px;
+    height: 36px;
+    padding: 0 12px;
+    font-size: 14px;
   }
 
   .nav-right {
     gap: 8px;
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .nav-right select {
-    font-size: 12px;
+    font-size: 13px;
+    padding: 6px 10px;
   }
 
   .compare-toggle {
     font-size: 12px;
-    padding: 4px 8px;
+    padding: 6px 10px;
   }
 
   /* Hide keyboard shortcut badges on touch */
@@ -550,44 +552,69 @@ a.ticket-link:hover {
 
   .sub-nav-item {
     white-space: nowrap;
+    padding: 8px 14px;
+    font-size: 14px;
   }
 
-  /* Container: tighter padding */
+  /* Container */
   .container {
-    padding: 16px;
+    padding: 16px 12px;
   }
 
   /* KPI grid: 2 columns */
   .kpi-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: 10px;
   }
 
   .kpi-card {
-    padding: 16px;
+    padding: 14px;
   }
 
   .kpi-value {
-    font-size: 28px;
+    font-size: 26px;
+  }
+
+  .kpi-label {
+    font-size: 10px;
   }
 
   /* Big number hero */
   .big-number {
-    padding: 24px 16px;
+    padding: 20px 16px;
+    border-radius: 8px;
   }
 
   .big-number-value {
-    font-size: 48px;
+    font-size: 44px;
   }
 
-  /* Tables: horizontal scroll when content overflows */
+  /* Tables: compact for mobile */
   .table-wrap {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+
+  table {
+    font-size: 13px;
   }
 
   thead th {
+    padding: 8px 10px;
+    font-size: 10px;
     white-space: nowrap;
+  }
+
+  tbody td {
+    padding: 8px 10px;
+  }
+
+  /* Charts: reduce padding */
+  .chart-container {
+    padding: 12px;
+    border-radius: 8px;
   }
 
   /* DSAT breakdown: stack vertically */
@@ -601,21 +628,49 @@ a.ticket-link:hover {
 
   /* Section spacing */
   .section {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   .section-title {
-    font-size: 16px;
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  /* Period label */
+  .period-label {
+    font-size: 13px;
+  }
+
+  /* Badges smaller */
+  .badge {
+    font-size: 11px;
+    padding: 2px 6px;
   }
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 12px 8px;
+  }
+
+  .kpi-grid {
+    gap: 8px;
+  }
+
+  .kpi-card {
+    padding: 12px;
+  }
+
   .kpi-value {
-    font-size: 24px;
+    font-size: 22px;
+  }
+
+  .kpi-label {
+    font-size: 9px;
   }
 
   .big-number-value {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   #dsat-kpis {
@@ -624,5 +679,27 @@ a.ticket-link:hover {
 
   .nav-brand {
     font-size: 14px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  thead th {
+    padding: 6px 8px;
+    font-size: 9px;
+  }
+
+  tbody td {
+    padding: 6px 8px;
+  }
+
+  .section-title {
+    font-size: 14px;
+  }
+
+  .chart-container {
+    padding: 8px;
+    height: 250px;
   }
 }

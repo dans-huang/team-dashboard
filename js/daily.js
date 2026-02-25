@@ -38,8 +38,9 @@ function renderProductChart(products) {
     return;
   }
 
-  var barHeight = 32;
-  var chartHeight = Math.max(200, products.length * barHeight + 60);
+  var isMobile = window.innerWidth < 768;
+  var barHeight = isMobile ? 28 : 32;
+  var chartHeight = Math.max(180, products.length * barHeight + 50);
   canvas.parentElement.style.height = chartHeight + 'px';
 
   var ctx = canvas.getContext('2d');
@@ -76,7 +77,7 @@ function renderProductChart(products) {
         },
         y: {
           grid: { display: false },
-          ticks: { font: { size: 12 } }
+          ticks: { font: { size: isMobile ? 11 : 12 } }
         }
       }
     }
@@ -93,8 +94,9 @@ function renderTypeChart(types) {
     return;
   }
 
-  var barHeight = 32;
-  var chartHeight = Math.max(200, types.length * barHeight + 60);
+  var isMobile = window.innerWidth < 768;
+  var barHeight = isMobile ? 28 : 32;
+  var chartHeight = Math.max(180, types.length * barHeight + 50);
   canvas.parentElement.style.height = chartHeight + 'px';
 
   var ctx = canvas.getContext('2d');
@@ -131,7 +133,7 @@ function renderTypeChart(types) {
         },
         y: {
           grid: { display: false },
-          ticks: { font: { size: 12 } }
+          ticks: { font: { size: isMobile ? 11 : 12 } }
         }
       }
     }

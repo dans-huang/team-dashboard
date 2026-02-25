@@ -119,6 +119,9 @@ async function loadIndex() {
     _indexCache.months = Object.keys(monthSet).sort().reverse();
     _indexCache.latestMonth = _indexCache.months[0] || null;
   }
+  // Ensure days array exists (for daily view)
+  if (!_indexCache.days) _indexCache.days = [];
+  if (!_indexCache.latestDay) _indexCache.latestDay = _indexCache.days[0] || null;
   return _indexCache;
 }
 
@@ -131,16 +134,23 @@ async function loadWeekData(report, week) {
 async function loadReportData(dataDir) {
   var idx = await loadIndex();
   var select = document.getElementById('period-select');
-  var week = (select && select.value) ? select.value : idx.latest;
-  var resp = await fetch('data/' + dataDir + '/' + week + '.json');
+  var periodType = VIEWS[currentView].periodType;
+  var key;
+  if (periodType === 'day') {
+    key = (select && select.value) ? select.value : idx.latestDay;
+  } else {
+    key = (select && select.value) ? select.value : idx.latest;
+  }
+  var resp = await fetch('data/' + dataDir + '/' + key + '.json');
   if (!resp.ok) {
-    // Try falling back to the next available week
-    var weekIdx = idx.weeks.indexOf(week);
-    for (var fi = weekIdx + 1; fi < idx.weeks.length; fi++) {
-      var fallbackResp = await fetch('data/' + dataDir + '/' + idx.weeks[fi] + '.json');
+    // Try falling back to the next available period
+    var list = (periodType === 'day') ? idx.days : idx.weeks;
+    var keyIdx = list.indexOf(key);
+    for (var fi = keyIdx + 1; fi < list.length; fi++) {
+      var fallbackResp = await fetch('data/' + dataDir + '/' + list[fi] + '.json');
       if (fallbackResp.ok) return fallbackResp.json();
     }
-    throw new Error('No data for ' + dataDir + '/' + week);
+    throw new Error('No data for ' + dataDir + '/' + key);
   }
   return resp.json();
 }
@@ -198,7 +208,8 @@ function getUrlParams() {
     view: params.get('view') || 'weekly',
     report: params.get('report') || null,
     week: params.get('week') || 'latest',
-    month: params.get('month') || 'latest'
+    month: params.get('month') || 'latest',
+    day: params.get('day') || 'latest'
   };
 }
 
@@ -210,13 +221,19 @@ function setUrlParams(view, report, periodValue) {
   } else {
     url.searchParams.delete('report');
   }
-  if (VIEWS[view].periodType === 'month') {
+  var pt = VIEWS[view].periodType;
+  if (pt === 'month') {
     url.searchParams.set('month', periodValue);
     url.searchParams.delete('week');
+    url.searchParams.delete('day');
+  } else if (pt === 'day') {
+    url.searchParams.set('day', periodValue);
+    url.searchParams.delete('week');
+    url.searchParams.delete('month');
   } else {
-    // both 'week' and 'day' use week-labeled files
     url.searchParams.set('week', periodValue);
     url.searchParams.delete('month');
+    url.searchParams.delete('day');
   }
   return url.toString();
 }
@@ -542,13 +559,13 @@ function populatePeriodSelect(idx) {
     });
   } else if (periodType === 'day') {
     label.textContent = 'Date:';
-    idx.weeks.forEach(function(w) {
+    idx.days.forEach(function(d) {
       var opt = document.createElement('option');
-      opt.value = w;
-      var d = isoWeekToDate(w);
-      opt.textContent = d ? formatDateShort(d) : w;
-      if (w === idx.latest && params.week === 'latest') opt.selected = true;
-      if (w === params.week) opt.selected = true;
+      opt.value = d;
+      var dt = new Date(d + 'T00:00:00');
+      opt.textContent = isNaN(dt) ? d : formatDateShort(dt);
+      if (d === idx.latestDay && params.day === 'latest') opt.selected = true;
+      if (d === params.day) opt.selected = true;
       select.appendChild(opt);
     });
   } else {
@@ -700,7 +717,8 @@ async function navigateTo(view, report, skipPush, period) {
     var content = document.getElementById('content');
     if (content) {
       var idx = await loadIndex();
-      var latestPeriod = (VIEWS[view].periodType === 'month') ? idx.latestMonth : idx.latest;
+      var pt = VIEWS[view].periodType;
+      var latestPeriod = pt === 'month' ? idx.latestMonth : (pt === 'day' ? idx.latestDay : idx.latest);
       content.innerHTML = '<div style="text-align:center;padding:48px 24px;">' +
         '<div style="font-size:48px;margin-bottom:16px;">&#128202;</div>' +
         '<h2 style="margin-bottom:8px;">No data for this period</h2>' +
@@ -903,7 +921,9 @@ document.addEventListener('keydown', function(e) {
 // === Popstate Handler ===
 window.addEventListener('popstate', function() {
   var params = getUrlParams();
-  navigateTo(params.view, params.report, true);
+  var pt = VIEWS[params.view] ? VIEWS[params.view].periodType : 'week';
+  var period = pt === 'day' ? params.day : (pt === 'month' ? params.month : params.week);
+  navigateTo(params.view, params.report, true, period !== 'latest' ? period : undefined);
 });
 
 // === Init ===
@@ -913,5 +933,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initNav();
   // Route from URL params
   var params = getUrlParams();
-  navigateTo(params.view, params.report, true);
+  var pt = VIEWS[params.view] ? VIEWS[params.view].periodType : 'week';
+  var period = pt === 'day' ? params.day : (pt === 'month' ? params.month : params.week);
+  navigateTo(params.view, params.report, true, period !== 'latest' ? period : undefined);
 });

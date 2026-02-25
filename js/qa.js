@@ -81,7 +81,10 @@ function renderBcrTrend(trend) {
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: trend.map(function(d) { return d.week; }),
+      labels: trend.map(function(d) {
+        // Shorten week labels for mobile: "2026-W09" → "W09"
+        return window.innerWidth < 768 ? d.week.replace(/^\d{4}-/, '') : d.week;
+      }),
       datasets: [
         {
           label: 'QA Bugs',
@@ -110,7 +113,11 @@ function renderBcrTrend(trend) {
       scales: {
         x: {
           stacked: true,
-          grid: { display: false }
+          grid: { display: false },
+          ticks: {
+            maxRotation: 45,
+            font: { size: window.innerWidth < 768 ? 10 : 12 }
+          }
         },
         y: {
           stacked: true,
