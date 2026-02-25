@@ -8,8 +8,9 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 DASHBOARD_DIR="$(dirname "$SCRIPT_DIR")"
 CLAUDE_DIR="${CLAUDE_DIR:-$(dirname "$(dirname "$DASHBOARD_DIR")")}"
 
-START_DATE="${1:?Usage: $0 START_DATE END_DATE}"
-END_DATE="${2:?Usage: $0 START_DATE END_DATE}"
+START_DATE="${1:?Usage: $0 START_DATE [END_DATE]}"
+# Default end date: yesterday (never generate today — day hasn't ended)
+END_DATE="${2:-$(python3 -c "from datetime import datetime, timedelta; print((datetime.now()-timedelta(days=1)).strftime('%Y-%m-%d'))")}"
 
 # Source Zendesk credentials
 ZD_ENV="$CLAUDE_DIR/scripts/automation/.env.zendesk"
