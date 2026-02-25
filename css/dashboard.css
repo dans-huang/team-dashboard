@@ -486,9 +486,9 @@ a.ticket-link:hover {
   display: block;
 }
 
+.theme-toggle .icon-moon { display: none; }
 [data-theme="light"] .theme-toggle .icon-sun { display: none; }
 [data-theme="light"] .theme-toggle .icon-moon { display: block; }
-:root .theme-toggle .icon-moon { display: none; }
 
 /* === DSAT Breakdown Grid (replaces inline style) === */
 .dsat-breakdown {
