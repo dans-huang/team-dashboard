@@ -132,9 +132,9 @@
     {
       "name": "Eleanor",
       "assigned": 43,
-      "replies": 30,
+      "replies": 31,
       "avgAssignedPerDay": 6.1,
-      "avgRepliesPerDay": 4.3
+      "avgRepliesPerDay": 4.4
     },
     {
       "name": "Michael",
@@ -146,9 +146,9 @@
     {
       "name": "Ryan",
       "assigned": 35,
-      "replies": 20,
+      "replies": 25,
       "avgAssignedPerDay": 5.0,
-      "avgRepliesPerDay": 2.9
+      "avgRepliesPerDay": 3.6
     },
     {
       "name": "Ernie",
