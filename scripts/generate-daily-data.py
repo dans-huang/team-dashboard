@@ -17,12 +17,14 @@ import json
 import argparse
 from datetime import datetime, timedelta
 
+# Resolve claude workspace root: CLAUDE_DIR env var (CI) or ../../.. (local)
+_claude_root = os.environ.get('CLAUDE_DIR') or os.path.join(
+    os.path.dirname(__file__), '..', '..', '..')
+
 # Add report_engine path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..', '..',
-                                'skills', 'daily-ticket-report', 'scripts'))
+sys.path.insert(0, os.path.join(_claude_root, 'skills', 'daily-ticket-report', 'scripts'))
 # Add zendesk client path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..', '..',
-                                'scripts', 'automation'))
+sys.path.insert(0, os.path.join(_claude_root, 'scripts', 'automation'))
 
 import report_engine as engine
 from zendesk_api_client import ZendeskClient
@@ -30,8 +32,7 @@ from zendesk_api_client import ZendeskClient
 
 def load_agents():
     """Load agent ID→name mapping from config/zendesk-agents.json."""
-    config_path = os.path.join(os.path.dirname(__file__), '..', '..', '..',
-                               'config', 'zendesk-agents.json')
+    config_path = os.path.join(_claude_root, 'config', 'zendesk-agents.json')
     with open(config_path) as f:
         data = json.load(f)
     return data.get('agents', {})
