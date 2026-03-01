@@ -1,3 +1,21 @@
+// === Taipei Timezone Helpers (UTC+8) ===
+function taipeiNow() {
+  return new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Taipei' }));
+}
+
+function getYesterdayTaipei() {
+  var now = taipeiNow();
+  now.setDate(now.getDate() - 1);
+  var y = now.getFullYear();
+  var m = String(now.getMonth() + 1).padStart(2, '0');
+  var d = String(now.getDate()).padStart(2, '0');
+  return y + '-' + m + '-' + d;
+}
+
+function parseDateTaipei(dateStr) {
+  return new Date(dateStr + 'T00:00:00+08:00');
+}
+
 // === View Configuration ===
 var VIEWS = {
   daily: {
@@ -122,6 +140,10 @@ async function loadIndex() {
   // Ensure days array exists (for daily view)
   if (!_indexCache.days) _indexCache.days = [];
   if (!_indexCache.latestDay) _indexCache.latestDay = _indexCache.days[0] || null;
+  // Cap at yesterday (Taipei time) to never show partial/incomplete today data
+  var yesterdayTpe = getYesterdayTaipei();
+  _indexCache.days = _indexCache.days.filter(function(d) { return d <= yesterdayTpe; });
+  _indexCache.latestDay = _indexCache.days[0] || null;
   return _indexCache;
 }
 
@@ -168,29 +190,29 @@ async function loadMonthlyData(dataDir, idx) {
   return weeklyData[weeklyData.length - 1];
 }
 
-// === ISO Week to Month ===
+// === ISO Week to Month (UTC-based to avoid local TZ drift) ===
 function isoWeekToMonth(weekStr) {
   var parts = weekStr.split('-W');
   if (parts.length !== 2) return null;
   var year = parseInt(parts[0]);
   var week = parseInt(parts[1]);
-  // Find Monday of ISO week
-  var jan4 = new Date(year, 0, 4);
-  var dayOfWeek = jan4.getDay() || 7;
+  // Find Monday of ISO week using UTC
+  var jan4 = new Date(Date.UTC(year, 0, 4));
+  var dayOfWeek = jan4.getUTCDay() || 7;
   var mondayW1 = new Date(jan4.getTime() - (dayOfWeek - 1) * 86400000);
   var monday = new Date(mondayW1.getTime() + (week - 1) * 7 * 86400000);
-  var m = monday.getMonth() + 1;
+  var m = monday.getUTCMonth() + 1;
   return year + '-' + (m < 10 ? '0' + m : m);
 }
 
-// === ISO Week to Date ===
+// === ISO Week to Date (UTC-based) ===
 function isoWeekToDate(weekStr) {
   var parts = weekStr.split('-W');
   if (parts.length !== 2) return null;
   var year = parseInt(parts[0]);
   var week = parseInt(parts[1]);
-  var jan4 = new Date(year, 0, 4);
-  var dayOfWeek = jan4.getDay() || 7;
+  var jan4 = new Date(Date.UTC(year, 0, 4));
+  var dayOfWeek = jan4.getUTCDay() || 7;
   var mondayW1 = new Date(jan4.getTime() - (dayOfWeek - 1) * 86400000);
   return new Date(mondayW1.getTime() + (week - 1) * 7 * 86400000);
 }
@@ -205,7 +227,7 @@ function formatDateShort(d) {
 function getUrlParams() {
   var params = new URLSearchParams(location.search);
   return {
-    view: params.get('view') || 'weekly',
+    view: params.get('view') || 'daily',
     report: params.get('report') || null,
     week: params.get('week') || 'latest',
     month: params.get('month') || 'latest',
@@ -562,7 +584,7 @@ function populatePeriodSelect(idx) {
     idx.days.forEach(function(d) {
       var opt = document.createElement('option');
       opt.value = d;
-      var dt = new Date(d + 'T00:00:00');
+      var dt = parseDateTaipei(d);
       opt.textContent = isNaN(dt) ? d : formatDateShort(dt);
       if (d === idx.latestDay && params.day === 'latest') opt.selected = true;
       if (d === params.day) opt.selected = true;

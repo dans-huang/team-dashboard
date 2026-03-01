@@ -54,8 +54,8 @@ jobs:
         run: |
           INPUT_DATE="${{ github.event.inputs.date || '' }}"
           if [ -z "$INPUT_DATE" ]; then
-            # Default: yesterday (UTC, which is fine since 01:30 UTC = 09:30 TPE)
-            TARGET_DATE=$(date -u -d "yesterday" +%Y-%m-%d 2>/dev/null || date -u -v-1d +%Y-%m-%d)
+            # Default: yesterday in Taipei time (Asia/Taipei, UTC+8)
+            TARGET_DATE=$(TZ=Asia/Taipei date -d "yesterday" +%Y-%m-%d 2>/dev/null || TZ=Asia/Taipei date -v-1d +%Y-%m-%d)
           else
             TARGET_DATE="$INPUT_DATE"
           fi
