@@ -3,124 +3,136 @@
   "startDate": "2026-02-27",
   "endDate": "2026-02-27",
   "kpi": {
-    "totalTickets": 27,
-    "topProduct": "SPARK LINK",
-    "refunds": 2,
-    "productCount": 10
+    "totalTickets": 59,
+    "topProduct": "SPARK 2",
+    "refunds": 5,
+    "productCount": 13
   },
   "productBreakdown": [
     {
-      "product": "SPARK LINK",
-      "count": 5,
-      "pct": 18.5
+      "product": "SPARK 2",
+      "count": 13,
+      "pct": 22.0
     },
     {
-      "product": "SPARK 2",
+      "product": "SPARK LINK",
+      "count": 7,
+      "pct": 11.9
+    },
+    {
+      "product": "SPARK GO",
+      "count": 7,
+      "pct": 11.9
+    },
+    {
+      "product": "SPARK MINI",
       "count": 4,
-      "pct": 14.8
+      "pct": 6.8
+    },
+    {
+      "product": "SPARK",
+      "count": 4,
+      "pct": 6.8
+    },
+    {
+      "product": "SPARK NEO",
+      "count": 3,
+      "pct": 5.1
     },
     {
       "product": "SPARK LIVE",
       "count": 3,
-      "pct": 11.1
+      "pct": 5.1
     },
     {
-      "product": "SPARK NEO",
+      "product": "SPARK APP",
       "count": 2,
-      "pct": 7.4
+      "pct": 3.4
     },
     {
-      "product": "SPARK GO",
+      "product": "SPARK BATTERY",
       "count": 2,
-      "pct": 7.4
-    },
-    {
-      "product": "SPARK",
-      "count": 2,
-      "pct": 7.4
-    },
-    {
-      "product": "SPARK MINI",
-      "count": 1,
-      "pct": 3.7
+      "pct": 3.4
     },
     {
       "product": "XDRUMMER",
       "count": 1,
-      "pct": 3.7
+      "pct": 1.7
     },
     {
-      "product": "SPARK CONTROL X",
-      "count": 1,
-      "pct": 3.7
-    },
-    {
-      "product": "SPARK APP",
-      "count": 1,
-      "pct": 3.7
+      "product": "Other (3 products)",
+      "count": 3,
+      "pct": 5.1
     }
   ],
   "ticketTypes": [
     {
       "type": "Troubleshooting",
-      "count": 15,
-      "pct": 55.6
+      "count": 34,
+      "pct": 57.6
+    },
+    {
+      "type": "Product Spec",
+      "count": 6,
+      "pct": 10.2
+    },
+    {
+      "type": "Request For Refund/Replacement",
+      "count": 5,
+      "pct": 8.5
     },
     {
       "type": "Product Registration",
       "count": 3,
-      "pct": 11.1
+      "pct": 5.1
     },
     {
-      "type": "Request For Refund/Replacement",
+      "type": "License Related",
       "count": 2,
-      "pct": 7.4
+      "pct": 3.4
     },
     {
       "type": "Feedback Or Suggestions",
       "count": 1,
-      "pct": 3.7
+      "pct": 1.7
     },
     {
       "type": "Edit Address   Contact Information",
       "count": 1,
-      "pct": 3.7
+      "pct": 1.7
     },
     {
       "type": "Purchase Related",
       "count": 1,
-      "pct": 3.7
+      "pct": 1.7
     },
     {
-      "type": "Shipping Related",
-      "count": 1,
-      "pct": 3.7
-    },
-    {
-      "type": "Product Spec",
-      "count": 1,
-      "pct": 3.7
-    },
-    {
-      "type": "Other (2 types)",
-      "count": 2,
-      "pct": 7.4
+      "type": "Other (6 types)",
+      "count": 6,
+      "pct": 10.2
     }
   ],
   "agentActivity": [
     {
       "name": "Devin (AI)",
-      "assigned": 231,
-      "replies": 429,
-      "avgAssignedPerDay": 33.0,
-      "avgRepliesPerDay": 61.3
+      "assigned": 234,
+      "replies": 434,
+      "avgAssignedPerDay": 33.4,
+      "avgRepliesPerDay": 62.0
     },
     {
       "name": "Heyling",
       "assigned": 62,
-      "replies": 56,
+      "replies": 60,
       "avgAssignedPerDay": 8.9,
-      "avgRepliesPerDay": 8.0
+      "avgRepliesPerDay": 8.6
+    },
+    {
+      "name": "Michael",
+      "assigned": 51,
+      "replies": 69,
+      "avgAssignedPerDay": 7.3,
+      "avgRepliesPerDay": 9.9
     },
     {
       "name": "Chris Hsu",
@@ -130,32 +142,25 @@
       "avgRepliesPerDay": 6.3
     },
     {
-      "name": "Michael",
-      "assigned": 46,
-      "replies": 54,
-      "avgAssignedPerDay": 6.6,
-      "avgRepliesPerDay": 7.7
-    },
-    {
       "name": "Eleanor",
-      "assigned": 41,
-      "replies": 37,
-      "avgAssignedPerDay": 5.9,
-      "avgRepliesPerDay": 5.3
+      "assigned": 45,
+      "replies": 38,
+      "avgAssignedPerDay": 6.4,
+      "avgRepliesPerDay": 5.4
     },
     {
       "name": "Ryan",
-      "assigned": 37,
+      "assigned": 43,
       "replies": 37,
-      "avgAssignedPerDay": 5.3,
+      "avgAssignedPerDay": 6.1,
       "avgRepliesPerDay": 5.3
     },
     {
       "name": "Ernie",
-      "assigned": 2,
-      "replies": 0,
-      "avgAssignedPerDay": 0.3,
-      "avgRepliesPerDay": 0.0
+      "assigned": 7,
+      "replies": 8,
+      "avgAssignedPerDay": 1.0,
+      "avgRepliesPerDay": 1.1
     },
     {
       "name": "WT",
