@@ -38,11 +38,36 @@ jobs:
         run: |
           pip install requests google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
 
-      - name: Setup Google credentials
+      - name: Setup and refresh Google credentials
+        env:
+          CLAUDE_DIR: claude-workspace
         run: |
           sudo mkdir -p /Users/nativepg/Claude
           echo '${{ secrets.GOOGLE_TOKENS_JSON }}' | sudo tee /Users/nativepg/Claude/.google-tokens.json > /dev/null
-          echo '${{ secrets.GOOGLE_TOKENS_JSON }}' > ~/.google-tokens.json
+
+          # Refresh the access token (stored tokens expire after 1 hour)
+          python3 -c "
+          import json, requests
+          token_path = '/Users/nativepg/Claude/.google-tokens.json'
+          creds_path = 'claude-workspace/config/google-oauth-credentials.json'
+          with open(token_path) as f:
+              tokens = json.load(f)
+          with open(creds_path) as f:
+              creds = json.load(f)
+          web = creds.get('web', creds.get('installed', {}))
+          resp = requests.post('https://oauth2.googleapis.com/token', data={
+              'client_id': web['client_id'],
+              'client_secret': web['client_secret'],
+              'refresh_token': tokens['refresh_token'],
+              'grant_type': 'refresh_token'
+          })
+          if resp.status_code != 200:
+              raise RuntimeError(f'Token refresh failed: {resp.text}')
+          tokens['access_token'] = resp.json()['access_token']
+          with open(token_path, 'w') as f:
+              json.dump(tokens, f, indent=2)
+          print(f'Token refreshed (expires in {resp.json().get(\"expires_in\", \"?\")}s)')
+          "
 
       - name: Generate daily data
         env:
@@ -66,13 +91,19 @@ jobs:
           OUTPUT="data/daily/${TARGET_DATE}.json"
           python3 scripts/generate-daily-data.py --json --date "$TARGET_DATE" > "$OUTPUT"
 
-          # Validate output
+          # Validate output: must be valid JSON with actual ticket data
           if [ ! -s "$OUTPUT" ] || ! python3 -m json.tool "$OUTPUT" > /dev/null 2>&1; then
             echo "⚠ Invalid or empty JSON output — aborting"
             rm -f "$OUTPUT"
             exit 1
           fi
-          echo "✓ Saved to $OUTPUT"
+          TOTAL=$(python3 -c "import json; print(json.load(open('$OUTPUT'))['kpi']['totalTickets'])")
+          if [ "$TOTAL" = "0" ]; then
+            echo "⚠ totalTickets is 0 — likely a data fetch issue (expired token?). Aborting."
+            rm -f "$OUTPUT"
+            exit 1
+          fi
+          echo "✓ Saved to $OUTPUT ($TOTAL tickets)"
 
       - name: Update index
         run: python3 scripts/update-index.py
