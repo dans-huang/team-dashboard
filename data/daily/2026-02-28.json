@@ -1,0 +1,14 @@
+{
+  "period": "2026-02-28 (Sat)",
+  "startDate": "2026-02-28",
+  "endDate": "2026-02-28",
+  "kpi": {
+    "totalTickets": 0,
+    "topProduct": null,
+    "refunds": 0,
+    "productCount": 0
+  },
+  "productBreakdown": [],
+  "ticketTypes": [],
+  "agentActivity": []
+}
