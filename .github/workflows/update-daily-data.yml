@@ -44,6 +44,7 @@ jobs:
         run: |
           sudo mkdir -p /Users/nativepg/Claude
           echo '${{ secrets.GOOGLE_TOKENS_JSON }}' | sudo tee /Users/nativepg/Claude/.google-tokens.json > /dev/null
+          sudo chmod 666 /Users/nativepg/Claude/.google-tokens.json
 
           # Refresh the access token using credentials embedded in the token file
           python3 -c "
