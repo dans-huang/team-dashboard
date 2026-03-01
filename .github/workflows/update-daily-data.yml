@@ -45,19 +45,15 @@ jobs:
           sudo mkdir -p /Users/nativepg/Claude
           echo '${{ secrets.GOOGLE_TOKENS_JSON }}' | sudo tee /Users/nativepg/Claude/.google-tokens.json > /dev/null
 
-          # Refresh the access token (stored tokens expire after 1 hour)
+          # Refresh the access token using credentials embedded in the token file
           python3 -c "
           import json, requests
           token_path = '/Users/nativepg/Claude/.google-tokens.json'
-          creds_path = 'claude-workspace/config/google-oauth-credentials.json'
           with open(token_path) as f:
               tokens = json.load(f)
-          with open(creds_path) as f:
-              creds = json.load(f)
-          web = creds.get('web', creds.get('installed', {}))
           resp = requests.post('https://oauth2.googleapis.com/token', data={
-              'client_id': web['client_id'],
-              'client_secret': web['client_secret'],
+              'client_id': tokens['client_id'],
+              'client_secret': tokens['client_secret'],
               'refresh_token': tokens['refresh_token'],
               'grant_type': 'refresh_token'
           })
