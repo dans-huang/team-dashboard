@@ -1,18 +1,12 @@
 {
   "period": "2025-12-01 ~ 2026-03-01",
   "daysCount": 90,
-  "totalBadRatings": 323,
-  "withComments": 272,
-  "aiNegative": 158,
-  "aiNegativeRateOfComments": 58.09,
-  "aiNegativeRateOfAll": 48.92,
+  "totalBadRatings": 335,
+  "withComments": 281,
+  "aiNegative": 165,
+  "aiNegativeRateOfComments": 58.72,
+  "aiNegativeRateOfAll": 49.25,
   "samples": [
-    {
-      "ticketId": 21491403881485,
-      "comment": "I've had issues with my Link for a long time. I was told, because it's under warranty, I could get it replaced. But I've had to email several times to see the status and I'm still waiting for the replacement. It's getting frustrating. Other than this issue I've loved Positive Grid products.",
-      "createdAt": "2025-11-30T19:51:10Z",
-      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41536138364685.json"
-    },
     {
       "ticketId": 21491403881485,
       "comment": "I don\u2019t think the person who responded really read my email. I felt completely unappreciated as a customer.  Feel like a complete fool for even making a second order (which I have).  Getting a $20 discount code instead of the $70 difference between my purchase (which WAS described as your \u201cBlack Friday special\u201d. - a \u201ccarry bag\u201d?  WhoTF needs that?) and the price offered 2 days later feels like the LOWEST effort possible.  I was (and still am) SOOOO tempted to just return the whole thing and buy it again at the Black Friday price.  Whatever. ",
@@ -126,15 +120,15 @@
       "comment": "As I have said before there r a lot of people who do not have access to a Windows 8 on laptop & most company owned laptops do not allow access to download firmware from outside vendors. \nFind a way to upgrade using iOS with iPad or iPhone ",
       "createdAt": "2025-12-12T16:49:38Z",
       "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41884971933709.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Our order got \"stuck\" in your system.  We ordered well in advance of when we expected delivery but never received our item.  You don't have a phone number to contact for issues.  Your responses take too long and are usually late into the evening while awaiting answers.  Our agent was AWESOME and completely understood our circumstance and timeline and she did everything to get us a duplicate order which we finally received.  PLEASE CONSIDER AN PHONE NUMBER for real-time assistance.  You're products are too high in demand to not have a customer service department available on weekday business hours.",
+      "createdAt": "2025-12-12T22:19:43Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/41896774029197.json"
     }
   ],
   "allComments": [
-    {
-      "ticketId": 21491403881485,
-      "comment": "I've had issues with my Link for a long time. I was told, because it's under warranty, I could get it replaced. But I've had to email several times to see the status and I'm still waiting for the replacement. It's getting frustrating. Other than this issue I've loved Positive Grid products.",
-      "createdAt": "2025-11-30T19:51:10Z",
-      "isAiNegative": true
-    },
     {
       "ticketId": 16243939216525,
       "comment": "There could have been other steps taken to solve problem. But, I understand the time it takes and the effort, to the company, is just not worth it.",
@@ -427,6 +421,12 @@
       "ticketId": 41099952294541,
       "comment": "I still have not received the carry bag for my Spark 2 amp. I placed the order on 11-25-25. I am told that the bag has shipped, however the shipping tracking shows that the bag has been sitting in Ontario Ca for 5 days and it hasn\u2019t moved. Am I ever going to get my order completed?",
       "createdAt": "2025-12-13T11:57:19Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "the software presets  portion of the product is unorganized, unsearchable, hard to navigate,  cant share among smart devices. \n\ndont get me started on your support-\nresponses are too protracted.  answers are too simple\ncan\u2019t talk to anyone\u2026\n\ngood making of a product. just alot of unneeded complexity",
+      "createdAt": "2025-12-14T00:56:10Z",
       "isAiNegative": false
     }
   ]
