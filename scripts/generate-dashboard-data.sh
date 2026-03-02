@@ -5,7 +5,14 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 DASHBOARD_DIR="$(dirname "$SCRIPT_DIR")"
 # Default: look for claude workspace two levels up from dashboard
 CLAUDE_DIR="${CLAUDE_DIR:-$(dirname "$(dirname "$DASHBOARD_DIR")")}"
-WEEK="${1:-$(date -u +%G-W%V)}"
+
+# Default: previous week (the completed week, not the current one)
+WEEK="${1:-$(python3 -c "
+from datetime import datetime, timedelta
+last_week = datetime.utcnow() - timedelta(days=7)
+iso = last_week.isocalendar()
+print(f'{iso[0]}-W{iso[1]:02d}')
+")}"
 
 # Compute Monday (start) and Sunday (end) from ISO week
 # e.g. 2026-W07 → 2026-02-09 ~ 2026-02-15
@@ -69,6 +76,7 @@ generate() {
   fi
 }
 
+# --- Weekly reports (all 4 tabs) ---
 generate "Weekly Pulse" "$DASHBOARD_DIR/data/pulse/$WEEK.json" \
   python3 "$CLAUDE_DIR/skills/weekly-pulse/scripts/generate-pulse.py" --json --start "$WEEK_START" --end "$WEEK_END"
 
@@ -81,8 +89,22 @@ generate "Weekly Tickets" "$DASHBOARD_DIR/data/tickets/$WEEK.json" \
 generate "DSAT" "$DASHBOARD_DIR/data/dsat/$WEEK.json" \
   python3 "$CLAUDE_DIR/scripts/analysis/fetch-all-dsat-v3.py" --json --end "$WEEK_END"
 
-generate "Daily" "$DASHBOARD_DIR/data/daily/$WEEK_START.json" \
-  python3 "$DASHBOARD_DIR/scripts/generate-daily-data.py" --json --date "$WEEK_START"
+# --- Daily data for ALL 7 days of the week ---
+echo ""
+echo "→ Generating daily data for all days in $WEEK..."
+current="$WEEK_START"
+while [[ "$current" < "$WEEK_END" || "$current" == "$WEEK_END" ]]; do
+  output="$DASHBOARD_DIR/data/daily/$current.json"
+
+  if [ -f "$output" ] && [ "$(wc -c < "$output")" -gt 100 ]; then
+    echo "  ✓ $current — already exists, skipping"
+  else
+    generate "Daily $current" "$output" \
+      python3 "$DASHBOARD_DIR/scripts/generate-daily-data.py" --json --date "$current"
+  fi
+
+  current=$(python3 -c "from datetime import datetime, timedelta; print((datetime.strptime('$current','%Y-%m-%d')+timedelta(days=1)).strftime('%Y-%m-%d'))")
+done
 
 echo ""
 echo "→ Updating index..."

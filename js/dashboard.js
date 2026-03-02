@@ -16,6 +16,13 @@ function parseDateTaipei(dateStr) {
   return new Date(dateStr + 'T00:00:00+08:00');
 }
 
+function getIsoWeekNumber(d) {
+  var dt = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  dt.setUTCDate(dt.getUTCDate() + 4 - (dt.getUTCDay() || 7));
+  var yearStart = new Date(Date.UTC(dt.getUTCFullYear(), 0, 1));
+  return Math.ceil(((dt - yearStart) / 86400000 + 1) / 7);
+}
+
 // === View Configuration ===
 var VIEWS = {
   daily: {
@@ -144,6 +151,20 @@ async function loadIndex() {
   var yesterdayTpe = getYesterdayTaipei();
   _indexCache.days = _indexCache.days.filter(function(d) { return d <= yesterdayTpe; });
   _indexCache.latestDay = _indexCache.days[0] || null;
+  // Cap weeks at previous completed week (current week is still in progress)
+  var now = taipeiNow();
+  var currentIsoWeek = now.getFullYear() + '-W' +
+    String(getIsoWeekNumber(now)).padStart(2, '0');
+  _indexCache.weeks = _indexCache.weeks.filter(function(w) { return w < currentIsoWeek; });
+  _indexCache.latest = _indexCache.weeks[0] || null;
+  // Recalculate months from filtered weeks
+  var monthSet = {};
+  _indexCache.weeks.forEach(function(w) {
+    var m = isoWeekToMonth(w);
+    if (m) monthSet[m] = true;
+  });
+  _indexCache.months = Object.keys(monthSet).sort().reverse();
+  _indexCache.latestMonth = _indexCache.months[0] || null;
   return _indexCache;
 }
 

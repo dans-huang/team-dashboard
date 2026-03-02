@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       date:
-        description: 'Date to generate (YYYY-MM-DD). Leave empty for yesterday.'
+        description: 'Date to generate (YYYY-MM-DD). Leave empty for yesterday + backfill.'
         required: false
 
 permissions:
@@ -66,7 +66,7 @@ jobs:
           print(f'Token refreshed (expires in {resp.json().get(\"expires_in\", \"?\")}s)')
           "
 
-      - name: Generate daily data
+      - name: Generate daily data with backfill
         env:
           ZENDESK_SUBDOMAIN: positivegrid
           ZENDESK_EMAIL: ${{ secrets.ZENDESK_EMAIL }}
@@ -75,32 +75,76 @@ jobs:
           CLAUDE_DIR: claude-workspace
         run: |
           INPUT_DATE="${{ github.event.inputs.date || '' }}"
-          if [ -z "$INPUT_DATE" ]; then
-            # Default: yesterday in Taipei time (Asia/Taipei, UTC+8)
-            TARGET_DATE=$(TZ=Asia/Taipei date -d "yesterday" +%Y-%m-%d 2>/dev/null || TZ=Asia/Taipei date -v-1d +%Y-%m-%d)
-          else
-            TARGET_DATE="$INPUT_DATE"
-          fi
-
-          echo "Generating daily data for: $TARGET_DATE"
           mkdir -p data/daily
 
-          OUTPUT="data/daily/${TARGET_DATE}.json"
-          python3 scripts/generate-daily-data.py --json --date "$TARGET_DATE" > "$OUTPUT"
+          generate_day() {
+            local DATE="$1"
+            local OUTPUT="data/daily/${DATE}.json"
 
-          # Validate output: must be valid JSON with actual ticket data
-          if [ ! -s "$OUTPUT" ] || ! python3 -m json.tool "$OUTPUT" > /dev/null 2>&1; then
-            echo "⚠ Invalid or empty JSON output — aborting"
-            rm -f "$OUTPUT"
-            exit 1
+            # Skip if file already exists with valid data (>100 bytes)
+            if [ -f "$OUTPUT" ] && [ "$(wc -c < "$OUTPUT")" -gt 100 ]; then
+              echo "  ✓ $DATE — already exists, skipping"
+              return 0
+            fi
+
+            echo "  → Generating $DATE..."
+            local TMP
+            TMP=$(mktemp)
+            if python3 scripts/generate-daily-data.py --json --date "$DATE" > "$TMP" 2>/dev/null; then
+              if [ -s "$TMP" ] && python3 -m json.tool "$TMP" > /dev/null 2>&1; then
+                local TOTAL
+                TOTAL=$(python3 -c "import json; print(json.load(open('$TMP'))['kpi']['totalTickets'])")
+                if [ "$TOTAL" != "0" ]; then
+                  mv "$TMP" "$OUTPUT"
+                  echo "    ✓ Saved ($TOTAL tickets)"
+                  return 0
+                else
+                  echo "    ⚠ 0 tickets — skipped (weekend or data issue)"
+                  rm -f "$TMP"
+                  return 1
+                fi
+              fi
+            fi
+            echo "    ✗ Failed — skipped"
+            rm -f "$TMP"
+            return 1
+          }
+
+          if [ -n "$INPUT_DATE" ]; then
+            # Manual trigger: generate specific date only
+            echo "=== Generating specific date: $INPUT_DATE ==="
+            generate_day "$INPUT_DATE"
+          else
+            # Scheduled run: generate yesterday + backfill last 7 days
+            YESTERDAY=$(python3 -c "
+          from datetime import datetime, timedelta, timezone
+          tpe = timezone(timedelta(hours=8))
+          yesterday = datetime.now(tpe) - timedelta(days=1)
+          print(yesterday.strftime('%Y-%m-%d'))
+          ")
+
+            echo "=== Daily Data Generation (with backfill) ==="
+            echo "Yesterday: $YESTERDAY"
+            echo ""
+
+            # Generate yesterday first (most important)
+            echo "--- Yesterday ---"
+            generate_day "$YESTERDAY"
+            echo ""
+
+            # Backfill: check last 7 days for missing data
+            echo "--- Backfill check (last 7 days) ---"
+            python3 -c "
+          from datetime import datetime, timedelta, timezone
+          tpe = timezone(timedelta(hours=8))
+          today = datetime.now(tpe).date()
+          for i in range(2, 8):
+              d = today - timedelta(days=i)
+              print(d.strftime('%Y-%m-%d'))
+          " | while read -r DATE; do
+              generate_day "$DATE"
+            done
           fi
-          TOTAL=$(python3 -c "import json; print(json.load(open('$OUTPUT'))['kpi']['totalTickets'])")
-          if [ "$TOTAL" = "0" ]; then
-            echo "⚠ totalTickets is 0 — likely a data fetch issue (expired token?). Aborting."
-            rm -f "$OUTPUT"
-            exit 1
-          fi
-          echo "✓ Saved to $OUTPUT ($TOTAL tickets)"
 
       - name: Update index
         run: python3 scripts/update-index.py

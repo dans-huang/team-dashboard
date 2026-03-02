@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       week:
-        description: 'Week to generate (e.g. 2026-W07). Leave empty for current week.'
+        description: 'Week to generate (e.g. 2026-W07). Leave empty for previous week.'
         required: false
 
 permissions:
@@ -60,20 +60,19 @@ jobs:
         run: |
           WEEK="${{ github.event.inputs.week || '' }}"
           if [ -z "$WEEK" ]; then
-            WEEK=$(date -u +%G-W%V)
+            # On Monday, generate for the PREVIOUS (completed) week, not the current one
+            # 7 days ago from Monday = previous Monday = start of previous week
+            WEEK=$(python3 -c "
+          from datetime import datetime, timedelta
+          last_week = datetime.utcnow() - timedelta(days=7)
+          print(f'{last_week.isocalendar()[0]}-W{last_week.isocalendar()[1]:02d}')
+          ")
           fi
+          echo "Generating data for week: $WEEK"
           bash scripts/generate-dashboard-data.sh "$WEEK"
 
       - name: Validate and update index
         run: |
-          WEEK="${{ github.event.inputs.week || '' }}"
-          if [ -z "$WEEK" ]; then
-            WEEK=$(date -u +%G-W%V)
-          fi
-          PULSE_FILE="data/pulse/${WEEK}.json"
-          if [ ! -s "$PULSE_FILE" ] || [ "$(wc -c < "$PULSE_FILE")" -lt 100 ]; then
-            echo "⚠ No valid pulse data produced for $WEEK — skipping index update"
-          fi
           python3 scripts/update-index.py
 
       - name: Commit and push data
@@ -81,7 +80,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git diff --cached --quiet || git commit -m "data: update dashboard for $(date -u +%G-W%V)"
+          git diff --cached --quiet || git commit -m "data: update dashboard for $(date -u +%Y-%m-%d)"
           git push
 
   deploy:
