@@ -41,6 +41,7 @@ if [ -f "$ZD_ENV" ]; then
 fi
 
 # Refresh Google OAuth token (expires every hour)
+# In CI, the YAML workflow already refreshes the token. This is for local usage.
 REFRESH_SCRIPT="$CLAUDE_DIR/scripts/automation/refresh-google-oauth.py"
 if [ -f "$REFRESH_SCRIPT" ]; then
   echo "→ Refreshing Google OAuth token..."
@@ -57,23 +58,28 @@ echo ""
 mkdir -p "$DASHBOARD_DIR/data"/{pulse,qa,tickets,dsat,daily}
 
 # Helper: run a script, validate JSON output, skip on empty/invalid
+# Shows stderr in CI for debugging failed scripts
 generate() {
   local label="$1" output="$2"; shift 2
   echo "→ $label..."
-  local tmp
+  local tmp stderr_tmp
   tmp=$(mktemp)
-  if "$@" > "$tmp" 2>/dev/null; then
+  stderr_tmp=$(mktemp)
+  if "$@" > "$tmp" 2>"$stderr_tmp"; then
     if [ -s "$tmp" ] && python3 -m json.tool "$tmp" > /dev/null 2>&1; then
       mv "$tmp" "$output"
       echo "  ✓ Saved to $(basename "$(dirname "$output")")/$(basename "$output")"
     else
       echo "  ⚠ Script produced empty or invalid JSON — skipped"
+      [ -s "$stderr_tmp" ] && echo "  stderr: $(head -5 "$stderr_tmp")"
       rm -f "$tmp"
     fi
   else
-    echo "  ✗ Script failed — skipped"
+    echo "  ✗ Script failed (exit $?) — skipped"
+    [ -s "$stderr_tmp" ] && echo "  stderr: $(head -10 "$stderr_tmp")"
     rm -f "$tmp"
   fi
+  rm -f "$stderr_tmp"
 }
 
 # --- Weekly reports (all 4 tabs) ---
