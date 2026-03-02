@@ -38,14 +38,32 @@ jobs:
         run: |
           pip install requests google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
 
-      - name: Setup Google credentials
+      - name: Setup and refresh Google credentials
         run: |
           # Scripts expect token at hardcoded path /Users/nativepg/Claude/.google-tokens.json
-          # Create the directory structure and place token there
           sudo mkdir -p /Users/nativepg/Claude
           echo '${{ secrets.GOOGLE_TOKENS_JSON }}' | sudo tee /Users/nativepg/Claude/.google-tokens.json > /dev/null
-          # Also place at home for any scripts that check there
-          echo '${{ secrets.GOOGLE_TOKENS_JSON }}' > ~/.google-tokens.json
+          sudo chmod 666 /Users/nativepg/Claude/.google-tokens.json
+
+          # Refresh the access token using credentials embedded in the token file
+          python3 -c "
+          import json, requests
+          token_path = '/Users/nativepg/Claude/.google-tokens.json'
+          with open(token_path) as f:
+              tokens = json.load(f)
+          resp = requests.post('https://oauth2.googleapis.com/token', data={
+              'client_id': tokens['client_id'],
+              'client_secret': tokens['client_secret'],
+              'refresh_token': tokens['refresh_token'],
+              'grant_type': 'refresh_token'
+          })
+          if resp.status_code != 200:
+              raise RuntimeError(f'Token refresh failed: {resp.text}')
+          tokens['access_token'] = resp.json()['access_token']
+          with open(token_path, 'w') as f:
+              json.dump(tokens, f, indent=2)
+          print(f'Token refreshed (expires in {resp.json().get(\"expires_in\", \"?\")}s)')
+          "
 
       - name: Generate dashboard data
         env:
