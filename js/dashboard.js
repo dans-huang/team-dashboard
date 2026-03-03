@@ -212,6 +212,8 @@ async function loadMonthlyData(dataDir, idx) {
 }
 
 // === ISO Week to Month (UTC-based to avoid local TZ drift) ===
+// Uses Thursday of the week (ISO standard) to determine which month a week belongs to.
+// This prevents W01 (Mon Dec 29) from mapping to December when its Thursday is Jan 1.
 function isoWeekToMonth(weekStr) {
   var parts = weekStr.split('-W');
   if (parts.length !== 2) return null;
@@ -222,7 +224,9 @@ function isoWeekToMonth(weekStr) {
   var dayOfWeek = jan4.getUTCDay() || 7;
   var mondayW1 = new Date(jan4.getTime() - (dayOfWeek - 1) * 86400000);
   var monday = new Date(mondayW1.getTime() + (week - 1) * 7 * 86400000);
-  var m = monday.getUTCMonth() + 1;
+  // Use Thursday (+3 days) for month assignment (ISO standard)
+  var thursday = new Date(monday.getTime() + 3 * 86400000);
+  var m = thursday.getUTCMonth() + 1;
   return year + '-' + (m < 10 ? '0' + m : m);
 }
 

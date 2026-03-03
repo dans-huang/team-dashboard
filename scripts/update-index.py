@@ -7,7 +7,9 @@ from pathlib import Path
 
 
 def iso_week_to_month(week_str: str) -> str:
-    """Convert ISO week string (e.g., '2026-W07') to month string (e.g., '2026-02')."""
+    """Convert ISO week string (e.g., '2026-W07') to month string (e.g., '2026-02').
+    Uses Thursday of the week (ISO standard) to determine the month,
+    preventing W01 (Mon Dec 29) from mapping to December."""
     match = re.match(r'(\d{4})-W(\d{2})', week_str)
     if not match:
         return ''
@@ -16,7 +18,9 @@ def iso_week_to_month(week_str: str) -> str:
     jan4 = date(year, 1, 4)
     monday_w1 = jan4 - timedelta(days=jan4.isoweekday() - 1)
     monday = monday_w1 + timedelta(weeks=week - 1)
-    return monday.strftime('%Y-%m')
+    # Use Thursday (+3 days) for month assignment (ISO standard)
+    thursday = monday + timedelta(days=3)
+    return thursday.strftime('%Y-%m')
 
 
 def validate_week(data_dir: Path, week: str) -> bool:

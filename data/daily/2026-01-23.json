@@ -1,0 +1,208 @@
+{
+  "period": "2026-01-23 (Fri)",
+  "startDate": "2026-01-23",
+  "endDate": "2026-01-23",
+  "kpi": {
+    "totalTickets": 99,
+    "topProduct": "SPARK 2",
+    "refunds": 4,
+    "productCount": 13
+  },
+  "productBreakdown": [
+    {
+      "product": "SPARK 2",
+      "count": 18,
+      "pct": 18.2
+    },
+    {
+      "product": "SPARK",
+      "count": 16,
+      "pct": 16.2
+    },
+    {
+      "product": "SPARK MINI",
+      "count": 4,
+      "pct": 4.0
+    },
+    {
+      "product": "SPARK LINK",
+      "count": 4,
+      "pct": 4.0
+    },
+    {
+      "product": "SPARK LIVE",
+      "count": 3,
+      "pct": 3.0
+    },
+    {
+      "product": "SPARK NEO",
+      "count": 3,
+      "pct": 3.0
+    },
+    {
+      "product": "SPARK EDGE",
+      "count": 3,
+      "pct": 3.0
+    },
+    {
+      "product": "SPARK CONTROL X",
+      "count": 2,
+      "pct": 2.0
+    },
+    {
+      "product": "SPARK CAB",
+      "count": 2,
+      "pct": 2.0
+    },
+    {
+      "product": "SPARK APP",
+      "count": 2,
+      "pct": 2.0
+    },
+    {
+      "product": "Other (3 products)",
+      "count": 3,
+      "pct": 3.0
+    }
+  ],
+  "ticketTypes": [
+    {
+      "type": "Troubleshooting",
+      "count": 33,
+      "pct": 33.3
+    },
+    {
+      "type": "Product Registration",
+      "count": 6,
+      "pct": 6.1
+    },
+    {
+      "type": "Manage My Account",
+      "count": 5,
+      "pct": 5.1
+    },
+    {
+      "type": "Order Related",
+      "count": 5,
+      "pct": 5.1
+    },
+    {
+      "type": "Request For Refund/Replacement",
+      "count": 4,
+      "pct": 4.0
+    },
+    {
+      "type": "License Related",
+      "count": 4,
+      "pct": 4.0
+    },
+    {
+      "type": "Cancel Order",
+      "count": 4,
+      "pct": 4.0
+    },
+    {
+      "type": "Product Spec",
+      "count": 3,
+      "pct": 3.0
+    },
+    {
+      "type": "Other (7 types)",
+      "count": 15,
+      "pct": 15.2
+    }
+  ],
+  "agentActivity": [
+    {
+      "name": "Devin (AI)",
+      "assigned": 232,
+      "replies": 556,
+      "avgAssignedPerDay": 33.1,
+      "avgRepliesPerDay": 79.4
+    },
+    {
+      "name": "Michael",
+      "assigned": 120,
+      "replies": 136,
+      "avgAssignedPerDay": 17.1,
+      "avgRepliesPerDay": 19.4
+    },
+    {
+      "name": "Eleanor",
+      "assigned": 105,
+      "replies": 92,
+      "avgAssignedPerDay": 15.0,
+      "avgRepliesPerDay": 13.1
+    },
+    {
+      "name": "Heyling",
+      "assigned": 50,
+      "replies": 48,
+      "avgAssignedPerDay": 7.1,
+      "avgRepliesPerDay": 6.9
+    },
+    {
+      "name": "Ryan",
+      "assigned": 41,
+      "replies": 72,
+      "avgAssignedPerDay": 5.9,
+      "avgRepliesPerDay": 10.3
+    },
+    {
+      "name": "Chris Hsu",
+      "assigned": 41,
+      "replies": 50,
+      "avgAssignedPerDay": 5.9,
+      "avgRepliesPerDay": 7.1
+    },
+    {
+      "name": "Dans",
+      "assigned": 3,
+      "replies": 5,
+      "avgAssignedPerDay": 0.4,
+      "avgRepliesPerDay": 0.7
+    },
+    {
+      "name": "Jim",
+      "assigned": 0,
+      "replies": 0,
+      "avgAssignedPerDay": 0.0,
+      "avgRepliesPerDay": 0.0
+    },
+    {
+      "name": "Ernie",
+      "assigned": 0,
+      "replies": 18,
+      "avgAssignedPerDay": 0.0,
+      "avgRepliesPerDay": 2.6
+    },
+    {
+      "name": "WT",
+      "assigned": 0,
+      "replies": 0,
+      "avgAssignedPerDay": 0.0,
+      "avgRepliesPerDay": 0.0
+    },
+    {
+      "name": "Vix",
+      "assigned": 0,
+      "replies": 0,
+      "avgAssignedPerDay": 0.0,
+      "avgRepliesPerDay": 0.0
+    },
+    {
+      "name": "Robert",
+      "assigned": 0,
+      "replies": 0,
+      "avgAssignedPerDay": 0.0,
+      "avgRepliesPerDay": 0.0
+    },
+    {
+      "name": "Rob",
+      "assigned": 0,
+      "replies": 0,
+      "avgAssignedPerDay": 0.0,
+      "avgRepliesPerDay": 0.0
+    }
+  ]
+}
