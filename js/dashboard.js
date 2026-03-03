@@ -129,10 +129,11 @@ var _currentReport = null;
 
 // === Data Loading ===
 var _indexCache = null;
+var _fetchOpts = { cache: 'no-cache' };
 
 async function loadIndex() {
   if (_indexCache) return _indexCache;
-  var resp = await fetch('data/index.json');
+  var resp = await fetch('data/index.json', _fetchOpts);
   _indexCache = await resp.json();
   // Derive months from weeks if not present
   if (!_indexCache.months) {
@@ -169,7 +170,7 @@ async function loadIndex() {
 }
 
 async function loadWeekData(report, week) {
-  var resp = await fetch('data/' + report + '/' + week + '.json');
+  var resp = await fetch('data/' + report + '/' + week + '.json', _fetchOpts);
   if (!resp.ok) return null;
   return resp.json();
 }
@@ -184,13 +185,13 @@ async function loadReportData(dataDir) {
   } else {
     key = (select && select.value) ? select.value : idx.latest;
   }
-  var resp = await fetch('data/' + dataDir + '/' + key + '.json');
+  var resp = await fetch('data/' + dataDir + '/' + key + '.json', _fetchOpts);
   if (!resp.ok) {
     // Try falling back to the next available period
     var list = (periodType === 'day') ? idx.days : idx.weeks;
     var keyIdx = list.indexOf(key);
     for (var fi = keyIdx + 1; fi < list.length; fi++) {
-      var fallbackResp = await fetch('data/' + dataDir + '/' + list[fi] + '.json');
+      var fallbackResp = await fetch('data/' + dataDir + '/' + list[fi] + '.json', _fetchOpts);
       if (fallbackResp.ok) return fallbackResp.json();
     }
     throw new Error('No data for ' + dataDir + '/' + key);
