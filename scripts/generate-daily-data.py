@@ -38,51 +38,58 @@ def load_agents():
     return data.get('agents', {})
 
 
-def fetch_agent_activity(client, agents, start_date, end_date):
-    """Fetch 7-day assigned + commented ticket counts per agent.
+def fetch_agent_activity(client, agents, target_date, avg_start_date):
+    """Fetch per-agent activity: single-day counts + 7-day averages.
 
     Args:
         client: ZendeskClient instance
-        agents: dict of agent_id (str) → name
-        start_date: str YYYY-MM-DD (7 days ago)
-        end_date: str YYYY-MM-DD (target date)
+        agents: dict of agent_id (str) -> name
+        target_date: str YYYY-MM-DD (the specific day)
+        avg_start_date: str YYYY-MM-DD (7-day window start)
 
     Returns:
-        list of dicts sorted by assigned desc
+        list of dicts sorted by daily assigned desc
     """
-    days = (datetime.strptime(end_date, '%Y-%m-%d') -
-            datetime.strptime(start_date, '%Y-%m-%d')).days + 1
+    avg_days = (datetime.strptime(target_date, '%Y-%m-%d') -
+                datetime.strptime(avg_start_date, '%Y-%m-%d')).days + 1
     results = []
 
     for agent_id, name in agents.items():
-        # Skip non-agent accounts
         if name in ('Administrator', 'Merch Team'):
             continue
 
         try:
+            # Single-day counts
             assigned = client.search_count(
                 f"type:ticket assignee:{agent_id} "
-                f"created>={start_date} created<={end_date}"
+                f"created>={target_date} created<={target_date}"
             )
             replies = client.search_count(
                 f"type:ticket commenter:{agent_id} "
-                f"created>={start_date} created<={end_date}"
+                f"created>={target_date} created<={target_date}"
+            )
+            # 7-day totals for averages
+            assigned_7d = client.search_count(
+                f"type:ticket assignee:{agent_id} "
+                f"created>={avg_start_date} created<={target_date}"
+            )
+            replies_7d = client.search_count(
+                f"type:ticket commenter:{agent_id} "
+                f"created>={avg_start_date} created<={target_date}"
             )
         except Exception as e:
             print(f"  Warning: failed to fetch data for {name}: {e}",
                   file=sys.stderr)
-            assigned = 0
-            replies = 0
+            assigned = replies = assigned_7d = replies_7d = 0
 
         results.append({
             'name': name,
             'assigned': assigned,
             'replies': replies,
-            'avgAssignedPerDay': round(assigned / days, 1),
-            'avgRepliesPerDay': round(replies / days, 1),
+            'avgAssignedPerDay': round(assigned_7d / avg_days, 1),
+            'avgRepliesPerDay': round(replies_7d / avg_days, 1),
         })
 
-    # Sort by assigned descending
     results.sort(key=lambda x: x['assigned'], reverse=True)
     return results
 
@@ -108,19 +115,19 @@ def main():
     else:
         target_date = datetime.now().date() - timedelta(days=1)
 
-    # Agent activity window: 7 days ending on target_date
-    activity_start = target_date - timedelta(days=6)
+    # Agent activity: daily counts for target_date, avg over 7-day window
+    avg_start = target_date - timedelta(days=6)
 
     day_label = target_date.strftime('%a')
     print(f"=== Daily Dashboard Data: {target_date} ({day_label}) ===")
-    print(f"  Agent activity window: {activity_start} ~ {target_date}")
+    print(f"  Agent avg window: {avg_start} ~ {target_date}")
 
-    # --- Part 1: Ticket data from Google Sheets ---
-    print("  Fetching ticket data...")
-    token = engine.get_access_token()
-    rows, header_idx = engine.fetch_ticket_data(token)
+    # --- Part 1: Ticket data from Zendesk API (daily JSON cache) ---
+    print("  Loading ticket data...")
+    from ticket_data_store import load_date_range_as_rows
+    day_rows, header_idx = load_date_range_as_rows(target_date, target_date)
 
-    if not rows:
+    if not day_rows:
         print("  No ticket data found.")
         if args.json:
             fallback = {
@@ -135,9 +142,6 @@ def main():
             sys.stdout.write(json.dumps(fallback, indent=2) + '\n')
         return
 
-    # Filter to target date only
-    day_rows = engine.filter_rows_by_date_range(
-        rows, header_idx, target_date, target_date)
     print(f"  {len(day_rows)} tickets on {target_date}")
 
     # Analyze
@@ -155,12 +159,12 @@ def main():
                           key=analysis['by_product'].get).upper().replace('_', ' ')
 
     # --- Part 2: Agent activity from Zendesk ---
-    print("  Fetching agent activity (7d)...")
+    print("  Fetching agent activity...")
     agents = load_agents()
     client = ZendeskClient()
     agent_activity = fetch_agent_activity(
         client, agents,
-        str(activity_start), str(target_date)
+        str(target_date), str(avg_start)
     )
     print(f"  {len(agent_activity)} agents processed")
 
@@ -218,7 +222,7 @@ def main():
         print(f"\n  Total Tickets: {total}")
         print(f"  Top Product: {top_product}")
         print(f"  Refunds: {analysis.get('refund_count', 0)}")
-        print(f"\n  Agent Activity (7d):")
+        print(f"\n  Agent Activity ({target_date}):")
         for a in agent_activity[:10]:
             print(f"    {a['name']:<15} assigned={a['assigned']}  replies={a['replies']}")
 

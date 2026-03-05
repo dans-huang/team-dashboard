@@ -163,10 +163,10 @@ function renderAgentTable(agents) {
     '<table>' +
     '<thead><tr>' +
       '<th>Agent</th>' +
-      '<th>Assigned (7d)</th>' +
-      '<th>Replied (7d)</th>' +
-      '<th>Avg Assigned/Day</th>' +
-      '<th>Avg Replies/Day</th>' +
+      '<th>Assigned</th>' +
+      '<th>Replied</th>' +
+      '<th>Avg/Day (7d)</th>' +
+      '<th>Avg Replies/Day (7d)</th>' +
     '</tr></thead>' +
     '<tbody>' + rows + '</tbody>' +
     '</table>';
