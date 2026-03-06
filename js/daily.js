@@ -154,8 +154,6 @@ function renderAgentTable(agents) {
       '<td><strong>' + a.name + '</strong></td>' +
       '<td>' + formatNumber(a.assigned) + '</td>' +
       '<td>' + formatNumber(a.replies) + '</td>' +
-      '<td>' + a.avgAssignedPerDay + '</td>' +
-      '<td>' + a.avgRepliesPerDay + '</td>' +
     '</tr>';
   }).join('');
 
@@ -165,8 +163,6 @@ function renderAgentTable(agents) {
       '<th>Agent</th>' +
       '<th>Assigned</th>' +
       '<th>Replied</th>' +
-      '<th>Avg/Day (7d)</th>' +
-      '<th>Avg Replies/Day (7d)</th>' +
     '</tr></thead>' +
     '<tbody>' + rows + '</tbody>' +
     '</table>';

@@ -103,7 +103,7 @@ var TEMPLATES = {
       '<div class="chart-container" style="height:auto;min-height:200px"><canvas id="product-chart"></canvas></div></div>' +
     '<div class="section"><h2 class="section-title">Ticket Type Distribution</h2>' +
       '<div class="chart-container" style="height:auto;min-height:200px"><canvas id="type-chart"></canvas></div></div>' +
-    '<div class="section"><h2 class="section-title">Agent Activity (7 Days)</h2>' +
+    '<div class="section"><h2 class="section-title">Agent Activity</h2>' +
       '<div class="table-wrap" id="agent-table"></div></div>',
 
   'monthly-voc':
