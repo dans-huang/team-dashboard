@@ -3,206 +3,180 @@
   "startDate": "2026-03-04",
   "endDate": "2026-03-04",
   "kpi": {
-    "totalTickets": 88,
-    "topProduct": "SPARK",
-    "refunds": 5,
-    "productCount": 18
+    "totalTickets": 96,
+    "topProduct": "SPARK 2",
+    "refunds": 12,
+    "productCount": 19
   },
   "productBreakdown": [
     {
-      "product": "SPARK",
-      "count": 15,
-      "pct": 17.0
-    },
-    {
       "product": "SPARK 2",
       "count": 13,
-      "pct": 14.8
+      "pct": 13.5
+    },
+    {
+      "product": "SPARK MINI",
+      "count": 11,
+      "pct": 11.5
     },
     {
       "product": "SPARK GO",
-      "count": 9,
-      "pct": 10.2
+      "count": 11,
+      "pct": 11.5
+    },
+    {
+      "product": "SPARK",
+      "count": 8,
+      "pct": 8.3
     },
     {
       "product": "SPARK NEO",
       "count": 7,
-      "pct": 8.0
-    },
-    {
-      "product": "SPARK MINI",
-      "count": 6,
-      "pct": 6.8
+      "pct": 7.3
     },
     {
       "product": "SPARK LINK",
-      "count": 5,
-      "pct": 5.7
-    },
-    {
-      "product": "SPARK NEO TX",
-      "count": 2,
-      "pct": 2.3
-    },
-    {
-      "product": "RIFF",
-      "count": 2,
-      "pct": 2.3
-    },
-    {
-      "product": "SPARK APP",
-      "count": 2,
-      "pct": 2.3
+      "count": 4,
+      "pct": 4.2
     },
     {
       "product": "SPARK CONTROL X",
-      "count": 2,
-      "pct": 2.3
+      "count": 3,
+      "pct": 3.1
     },
     {
-      "product": "Other (8 products)",
-      "count": 11,
+      "product": "SPARK EDGE",
+      "count": 3,
+      "pct": 3.1
+    },
+    {
+      "product": "SPARK CAB",
+      "count": 3,
+      "pct": 3.1
+    },
+    {
+      "product": "BIAS X",
+      "count": 2,
+      "pct": 2.1
+    },
+    {
+      "product": "Other (9 products)",
+      "count": 12,
       "pct": 12.5
     }
   ],
   "ticketTypes": [
     {
       "type": "Troubleshooting",
-      "count": 53,
-      "pct": 60.2
-    },
-    {
-      "type": "Product Registration",
-      "count": 8,
-      "pct": 9.1
-    },
-    {
-      "type": "Product Spec",
-      "count": 5,
-      "pct": 5.7
+      "count": 50,
+      "pct": 52.1
     },
     {
       "type": "Request For Refund/Replacement",
+      "count": 12,
+      "pct": 12.5
+    },
+    {
+      "type": "Product Registration",
       "count": 5,
-      "pct": 5.7
+      "pct": 5.2
+    },
+    {
+      "type": "Product Spec",
+      "count": 3,
+      "pct": 3.1
     },
     {
       "type": "Order Related",
-      "count": 5,
-      "pct": 5.7
+      "count": 3,
+      "pct": 3.1
     },
     {
       "type": "How To Use",
-      "count": 2,
-      "pct": 2.3
-    },
-    {
-      "type": "Promotion Details",
-      "count": 2,
-      "pct": 2.3
+      "count": 3,
+      "pct": 3.1
     },
     {
       "type": "Edit Address   Contact Information",
-      "count": 1,
-      "pct": 1.1
+      "count": 2,
+      "pct": 2.1
     },
     {
-      "type": "Other (7 types)",
-      "count": 7,
-      "pct": 8.0
+      "type": "Shipping Related",
+      "count": 1,
+      "pct": 1.0
+    },
+    {
+      "type": "Other (3 types)",
+      "count": 3,
+      "pct": 3.1
     }
   ],
   "agentActivity": [
     {
       "name": "Devin (AI)",
-      "assigned": 147,
-      "replies": 375,
-      "avgAssignedPerDay": 21.0,
-      "avgRepliesPerDay": 53.6
-    },
-    {
-      "name": "Heyling",
-      "assigned": 92,
-      "replies": 68,
-      "avgAssignedPerDay": 13.1,
-      "avgRepliesPerDay": 9.7
+      "assigned": 19,
+      "replies": 55
     },
     {
       "name": "Chris Hsu",
-      "assigned": 88,
-      "replies": 74,
-      "avgAssignedPerDay": 12.6,
-      "avgRepliesPerDay": 10.6
+      "assigned": 19,
+      "replies": 16
     },
     {
-      "name": "Michael",
-      "assigned": 83,
-      "replies": 60,
-      "avgAssignedPerDay": 11.9,
-      "avgRepliesPerDay": 8.6
+      "name": "Heyling",
+      "assigned": 13,
+      "replies": 12
     },
     {
       "name": "Eleanor",
-      "assigned": 61,
-      "replies": 50,
-      "avgAssignedPerDay": 8.7,
-      "avgRepliesPerDay": 7.1
+      "assigned": 12,
+      "replies": 5
     },
     {
-      "name": "Ryan",
-      "assigned": 52,
-      "replies": 50,
-      "avgAssignedPerDay": 7.4,
-      "avgRepliesPerDay": 7.1
+      "name": "Michael",
+      "assigned": 12,
+      "replies": 10
     },
     {
       "name": "WT",
-      "assigned": 14,
-      "replies": 14,
-      "avgAssignedPerDay": 2.0,
-      "avgRepliesPerDay": 2.0
+      "assigned": 4,
+      "replies": 4
     },
     {
-      "name": "Ernie",
-      "assigned": 8,
-      "replies": 5,
-      "avgAssignedPerDay": 1.1,
-      "avgRepliesPerDay": 0.7
-    },
-    {
-      "name": "Dans",
+      "name": "Ryan",
       "assigned": 2,
-      "replies": 4,
-      "avgAssignedPerDay": 0.3,
-      "avgRepliesPerDay": 0.6
+      "replies": 2
     },
     {
       "name": "Jim",
       "assigned": 0,
-      "replies": 0,
-      "avgAssignedPerDay": 0.0,
-      "avgRepliesPerDay": 0.0
+      "replies": 0
+    },
+    {
+      "name": "Ernie",
+      "assigned": 0,
+      "replies": 0
     },
     {
       "name": "Vix",
       "assigned": 0,
-      "replies": 1,
-      "avgAssignedPerDay": 0.0,
-      "avgRepliesPerDay": 0.1
+      "replies": 0
+    },
+    {
+      "name": "Dans",
+      "assigned": 0,
+      "replies": 0
     },
     {
       "name": "Robert",
       "assigned": 0,
-      "replies": 0,
-      "avgAssignedPerDay": 0.0,
-      "avgRepliesPerDay": 0.0
+      "replies": 0
     },
     {
       "name": "Rob",
       "assigned": 0,
-      "replies": 0,
-      "avgAssignedPerDay": 0.0,
-      "avgRepliesPerDay": 0.0
+      "replies": 0
     }
   ]
 }
