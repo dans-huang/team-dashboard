@@ -120,13 +120,13 @@
     },
     {
       "name": "Michael",
-      "assigned": 17,
-      "replies": 16
+      "assigned": 16,
+      "replies": 17
     },
     {
       "name": "Chris Hsu",
-      "assigned": 14,
-      "replies": 12
+      "assigned": 15,
+      "replies": 14
     },
     {
       "name": "Eleanor",
@@ -151,31 +151,6 @@
     {
       "name": "Ernie",
       "assigned": 1,
-      "replies": 0
-    },
-    {
-      "name": "Jim",
-      "assigned": 0,
-      "replies": 0
-    },
-    {
-      "name": "Vix",
-      "assigned": 0,
-      "replies": 0
-    },
-    {
-      "name": "Dans",
-      "assigned": 0,
-      "replies": 0
-    },
-    {
-      "name": "Robert",
-      "assigned": 0,
-      "replies": 0
-    },
-    {
-      "name": "Rob",
-      "assigned": 0,
       "replies": 0
     }
   ]

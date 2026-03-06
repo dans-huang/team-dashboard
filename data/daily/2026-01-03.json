@@ -139,11 +139,6 @@
       "replies": 1
     },
     {
-      "name": "Jim",
-      "assigned": 0,
-      "replies": 0
-    },
-    {
       "name": "Ernie",
       "assigned": 0,
       "replies": 1
@@ -157,26 +152,6 @@
       "name": "Chris Hsu",
       "assigned": 0,
       "replies": 2
-    },
-    {
-      "name": "Vix",
-      "assigned": 0,
-      "replies": 0
-    },
-    {
-      "name": "Dans",
-      "assigned": 0,
-      "replies": 3
-    },
-    {
-      "name": "Robert",
-      "assigned": 0,
-      "replies": 0
-    },
-    {
-      "name": "Rob",
-      "assigned": 0,
-      "replies": 0
     }
   ]
 }

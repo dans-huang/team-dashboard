@@ -131,7 +131,7 @@
     {
       "name": "Michael",
       "assigned": 8,
-      "replies": 13
+      "replies": 14
     },
     {
       "name": "Ryan",
@@ -149,32 +149,7 @@
       "replies": 1
     },
     {
-      "name": "Jim",
-      "assigned": 0,
-      "replies": 0
-    },
-    {
       "name": "WT",
-      "assigned": 0,
-      "replies": 0
-    },
-    {
-      "name": "Vix",
-      "assigned": 0,
-      "replies": 0
-    },
-    {
-      "name": "Dans",
-      "assigned": 0,
-      "replies": 0
-    },
-    {
-      "name": "Robert",
-      "assigned": 0,
-      "replies": 0
-    },
-    {
-      "name": "Rob",
       "assigned": 0,
       "replies": 0
     }

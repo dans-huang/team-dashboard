@@ -116,17 +116,17 @@
     {
       "name": "Devin (AI)",
       "assigned": 26,
-      "replies": 60
+      "replies": 61
     },
     {
       "name": "Michael",
-      "assigned": 21,
-      "replies": 10
+      "assigned": 20,
+      "replies": 23
     },
     {
       "name": "Chris Hsu",
       "assigned": 19,
-      "replies": 15
+      "replies": 18
     },
     {
       "name": "WT",
@@ -144,39 +144,14 @@
       "replies": 0
     },
     {
+      "name": "Heyling",
+      "assigned": 5,
+      "replies": 5
+    },
+    {
       "name": "Eleanor",
       "assigned": 4,
       "replies": 3
-    },
-    {
-      "name": "Heyling",
-      "assigned": 4,
-      "replies": 3
-    },
-    {
-      "name": "Dans",
-      "assigned": 2,
-      "replies": 4
-    },
-    {
-      "name": "Jim",
-      "assigned": 0,
-      "replies": 0
-    },
-    {
-      "name": "Vix",
-      "assigned": 0,
-      "replies": 0
-    },
-    {
-      "name": "Robert",
-      "assigned": 0,
-      "replies": 0
-    },
-    {
-      "name": "Rob",
-      "assigned": 0,
-      "replies": 0
     }
   ]
 }
