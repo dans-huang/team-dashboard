@@ -9,7 +9,58 @@ function initDailyPage(data) {
   renderDailyKpi(data.kpi);
   renderProductChart(data.productBreakdown);
   renderTypeChart(data.ticketTypes);
-  renderAgentTable(data.agentActivity);
+  // Render table immediately with today's data, then enhance with 7-day avg
+  renderAgentTable(data.agentActivity, null);
+  load7DayAgentAvg(data);
+}
+
+async function load7DayAgentAvg(todayData) {
+  var currentDate = todayData.startDate || todayData.endDate;
+  if (!currentDate || !_indexCache || !_indexCache.days) return;
+
+  // Find previous 6 days from index
+  var dayIdx = _indexCache.days.indexOf(currentDate);
+  if (dayIdx < 0) return;
+
+  var prevDays = _indexCache.days.slice(dayIdx + 1, dayIdx + 7);
+  if (prevDays.length === 0) return;
+
+  // Fetch previous days' data
+  var fetches = prevDays.map(function(d) {
+    return fetch('data/daily/' + d + '.json', _fetchOpts)
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .catch(function() { return null; });
+  });
+  var results = await Promise.all(fetches);
+
+  // Collect all days' agent data (including today)
+  var allDays = [todayData].concat(results.filter(function(r) { return r != null; }));
+  var totalDays = allDays.length;
+
+  // Sum per agent across all days
+  var agentSums = {};
+  allDays.forEach(function(dayData) {
+    if (!dayData.agentActivity) return;
+    dayData.agentActivity.forEach(function(a) {
+      if (!agentSums[a.name]) agentSums[a.name] = { assigned: 0, replies: 0, days: 0 };
+      agentSums[a.name].assigned += a.assigned || 0;
+      agentSums[a.name].replies += a.replies || 0;
+      agentSums[a.name].days++;
+    });
+  });
+
+  // Build averages map
+  var avgMap = {};
+  Object.keys(agentSums).forEach(function(name) {
+    var s = agentSums[name];
+    avgMap[name] = {
+      avgAssigned: Math.round(s.assigned / totalDays * 10) / 10,
+      avgReplies: Math.round(s.replies / totalDays * 10) / 10
+    };
+  });
+
+  // Re-render with averages
+  renderAgentTable(todayData.agentActivity, avgMap, totalDays);
 }
 
 // --- KPI Cards ---
@@ -141,7 +192,7 @@ function renderTypeChart(types) {
 }
 
 // --- Agent Activity Table ---
-function renderAgentTable(agents) {
+function renderAgentTable(agents, avgMap, totalDays) {
   var el = document.getElementById('agent-table');
   if (!el) return;
   if (!agents || agents.length === 0) {
@@ -149,11 +200,17 @@ function renderAgentTable(agents) {
     return;
   }
 
+  var hasAvg = avgMap != null;
+  var avgLabel = totalDays ? totalDays + 'd' : '7d';
+
   var rows = agents.map(function(a) {
+    var avg = hasAvg && avgMap[a.name];
     return '<tr>' +
       '<td><strong>' + a.name + '</strong></td>' +
       '<td>' + formatNumber(a.assigned) + '</td>' +
       '<td>' + formatNumber(a.replies) + '</td>' +
+      (hasAvg ? '<td>' + (avg ? avg.avgAssigned.toFixed(1) : '-') + '</td>' : '') +
+      (hasAvg ? '<td>' + (avg ? avg.avgReplies.toFixed(1) : '-') + '</td>' : '') +
     '</tr>';
   }).join('');
 
@@ -163,6 +220,8 @@ function renderAgentTable(agents) {
       '<th>Agent</th>' +
       '<th>Assigned</th>' +
       '<th>Replied</th>' +
+      (hasAvg ? '<th>Avg Assigned/' + avgLabel + '</th>' : '') +
+      (hasAvg ? '<th>Avg Replied/' + avgLabel + '</th>' : '') +
     '</tr></thead>' +
     '<tbody>' + rows + '</tbody>' +
     '</table>';
