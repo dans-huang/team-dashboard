@@ -1,5 +1,5 @@
 {
-  "period": "2025-10-06 ~ 2026-01-04",
+  "period": "Week of 12/29 - 01/04",
   "daysCount": 90,
   "reportDate": "2026-01-04",
   "bcr": {
@@ -352,17 +352,17 @@
     "qa": [
       {
         "key": "BIASONE-1734",
-        "summary": "[Native] Ableton playback \u6642\u5403\u5230 gear toggle on/off \u7684 Automation \u6703\u9020\u6210\u5168\u90e8\u7684 Automation deactivated",
+        "summary": "[Native] Ableton playback 時吃到 gear toggle on/off 的 Automation 會造成全部的 Automation deactivated",
         "project": "BIASONE"
       },
       {
         "key": "BIASONE-1732",
-        "summary": "[Native] Ableton Live \u4e4b Gear toggle on/off Automation \u82e5\u662f\u65bc DAW Playback \u671f\u9593\u624b\u52d5 toggle \u6703\u9020\u6210 Automation \u5931\u6548",
+        "summary": "[Native] Ableton Live 之 Gear toggle on/off Automation 若是於 DAW Playback 期間手動 toggle 會造成 Automation 失效",
         "project": "BIASONE"
       },
       {
         "key": "BIASONE-1731",
-        "summary": "[Frontend / Native] \u65bc Automation Mapping List \u4e2d\u6c92\u6709\u96b1\u85cf Cab Mic \u4e4b\u76f8\u95dc\u9078\u9805",
+        "summary": "[Frontend / Native] 於 Automation Mapping List 中沒有隱藏 Cab Mic 之相關選項",
         "project": "BIASONE"
       },
       {
@@ -372,7 +372,7 @@
       },
       {
         "key": "BIASONE-1728",
-        "summary": "[Frontend / Native] Mixer \u4e4b CC Assignment \u4e0d\u6703\u986f\u793a\u65bc MIDI Mapping List \u4e0a",
+        "summary": "[Frontend / Native] Mixer 之 CC Assignment 不會顯示於 MIDI Mapping List 上",
         "project": "BIASONE"
       }
     ],
@@ -384,12 +384,12 @@
       },
       {
         "key": "STFS-464",
-        "summary": "Spark app 4.5.2 (iOS) \u2013 UI Cut Off on iPhone SE (1st Generation)",
+        "summary": "Spark app 4.5.2 (iOS) – UI Cut Off on iPhone SE (1st Generation)",
         "product": "Spark"
       },
       {
         "key": "STFS-460",
-        "summary": "Spark app 4.5 \u2013 Chord Analysis Issue",
+        "summary": "Spark app 4.5 – Chord Analysis Issue",
         "product": "Spark"
       },
       {
@@ -399,9 +399,12 @@
       },
       {
         "key": "STFS-457",
-        "summary": "Spark app 4.5.1 (Android) \u2013 Spark Control X Product Card Causes Crash",
+        "summary": "Spark app 4.5.1 (Android) – Spark Control X Product Card Causes Crash",
         "product": "Spark"
       }
     ]
-  }
+  },
+  "startDate": "2025-12-29",
+  "endDate": "2026-01-04",
+  "bcrWindow": "2025-10-06 ~ 2026-01-04"
 }

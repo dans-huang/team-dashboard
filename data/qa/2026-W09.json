@@ -1,5 +1,5 @@
 {
-  "period": "2025-12-01 ~ 2026-03-01",
+  "period": "Week of 02/23 - 03/01",
   "daysCount": 90,
   "reportDate": "2026-03-01",
   "bcr": {
@@ -358,19 +358,19 @@
       },
       {
         "key": "BIASONE-1773",
-        "summary": "[Frontend] Preset Rename \u5b8c\u6210\u5f8c\u4e0d\u6703\u81ea\u52d5\u95dc\u9589\u5f48\u7a97",
+        "summary": "[Frontend] Preset Rename 完成後不會自動關閉彈窗",
         "project": "BIASONE"
       },
       {
         "key": "BIASONE-1772",
-        "summary": "[Frontend] Add New Folder \u6210\u529f\u5f8c\uff0c\u5f48\u7a97\u4e0d\u6703\u81ea\u52d5\u95dc\u9589",
+        "summary": "[Frontend] Add New Folder 成功後，彈窗不會自動關閉",
         "project": "BIASONE"
       }
     ],
     "customer": [
       {
         "key": "STFS-487",
-        "summary": "BIAS X 1.2.1 \u2013 MIDI Power Control Cannot Toggle Back On",
+        "summary": "BIAS X 1.2.1 – MIDI Power Control Cannot Toggle Back On",
         "product": "BIAS X"
       },
       {
@@ -394,5 +394,8 @@
         "product": "BIAS X"
       }
     ]
-  }
+  },
+  "startDate": "2026-02-23",
+  "endDate": "2026-03-01",
+  "bcrWindow": "2025-12-01 ~ 2026-03-01"
 }

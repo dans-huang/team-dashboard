@@ -1,5 +1,5 @@
 {
-  "period": "2025-10-27 ~ 2026-01-25",
+  "period": "Week of 01/19 - 01/25",
   "daysCount": 90,
   "reportDate": "2026-01-25",
   "bcr": {
@@ -373,7 +373,7 @@
     "qa": [
       {
         "key": "BIASONE-1744",
-        "summary": "[Frontend/ Native] \u65bc macOS 26 \u7b2c\u4e00\u6b21\u6210\u529f\u767b\u5165\u6709 License \u7684\u5e33\u865f\u6642\uff0c\u6703\u5361\u8f49\u5708\u5708 Loading",
+        "summary": "[Frontend/ Native] 於 macOS 26 第一次成功登入有 License 的帳號時，會卡轉圈圈 Loading",
         "project": "BIASONE"
       },
       {
@@ -383,34 +383,34 @@
       },
       {
         "key": "BIASONE-1739",
-        "summary": "[Frontend / Native] Tuner \u4e4b CC Control \u6578\u503c\u5224\u5b9a\u932f\u8aa4",
+        "summary": "[Frontend / Native] Tuner 之 CC Control 數值判定錯誤",
         "project": "BIASONE"
       },
       {
         "key": "BIASONE-1738",
-        "summary": "[Native] CC Assignment Tap Tempo \u884c\u70ba\u932f\u8aa4",
+        "summary": "[Native] CC Assignment Tap Tempo 行為錯誤",
         "project": "BIASONE"
       },
       {
         "key": "BIASONE-1737",
-        "summary": "[Frontend] Automation List \u7684 Delete UI \u53ea\u6703\u522a\u9664 Parameter \u6b04\u4f4d",
+        "summary": "[Frontend] Automation List 的 Delete UI 只會刪除 Parameter 欄位",
         "project": "BIASONE"
       }
     ],
     "customer": [
       {
         "key": "STFS-472",
-        "summary": "BIAS X 1.2.0 \u2013 Black Screen When Rapidly Switching Presets (Windows Only) (QA)",
+        "summary": "BIAS X 1.2.0 – Black Screen When Rapidly Switching Presets (Windows Only) (QA)",
         "product": "BIAS X"
       },
       {
         "key": "STFS-471",
-        "summary": "BIAS X 1.2.0 \u2013 MIDI CC Toggle Does Not Respect Value Range (QA)",
+        "summary": "BIAS X 1.2.0 – MIDI CC Toggle Does Not Respect Value Range (QA)",
         "product": "BIAS X"
       },
       {
         "key": "STFS-470",
-        "summary": "BIAS X 1.2.0 \u2013 Automation Not Recording (Logic Pro X) (QA)",
+        "summary": "BIAS X 1.2.0 – Automation Not Recording (Logic Pro X) (QA)",
         "product": "BIAS X"
       },
       {
@@ -420,9 +420,12 @@
       },
       {
         "key": "STFS-468",
-        "summary": "BIAS X 1.2.0 \u2013 Automation Becomes Deactivated After Gear Toggle On/Off (Ableton Live) (QA)",
+        "summary": "BIAS X 1.2.0 – Automation Becomes Deactivated After Gear Toggle On/Off (Ableton Live) (QA)",
         "product": "BIAS X"
       }
     ]
-  }
+  },
+  "startDate": "2026-01-19",
+  "endDate": "2026-01-25",
+  "bcrWindow": "2025-10-27 ~ 2026-01-25"
 }

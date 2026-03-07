@@ -6,7 +6,7 @@ function initQaPage(data) {
   _qaData = data;
   var periodEl = document.getElementById('period');
   if (periodEl && data.period) periodEl.textContent = data.period;
-  renderBcrHero(data.bcr);
+  renderBcrHero(data.bcr, data.bcrWindow, data.daysCount);
   renderBcrByProduct(data.bcrByProduct);
   renderBcrTrend(data.bcrWeeklyTrend);
   renderTestExecution(data.testExecution);
@@ -16,7 +16,7 @@ function initQaPage(data) {
 }
 
 // --- 1. BCR Hero ---
-function renderBcrHero(bcr) {
+function renderBcrHero(bcr, bcrWindow, daysCount) {
   var el = document.getElementById('bcr-hero');
   if (!el) return;
   if (!bcr) {
@@ -29,6 +29,7 @@ function renderBcrHero(bcr) {
   var valueClass = onTrack ? 'ok' : 'bad';
   var badgeClass = onTrack ? 'badge-green' : 'badge-red';
   var statusText = onTrack ? 'On Track' : 'Below Target';
+  var windowLabel = bcrWindow ? bcrWindow : (daysCount ? 'Rolling ' + daysCount + ' days' : '');
 
   el.innerHTML = '<div class="big-number">' +
     '<div class="big-number-value ' + valueClass + '">' + overall.toFixed(1) + '%</div>' +
@@ -38,6 +39,7 @@ function renderBcrHero(bcr) {
     '</div>' +
     '<div style="margin-top:8px;font-size:13px;color:var(--text-secondary);">' +
       'Target: ' + target + '%' +
+      (windowLabel ? ' &middot; ' + windowLabel : '') +
     '</div>' +
     '</div>';
 }

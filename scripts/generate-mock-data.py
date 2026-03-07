@@ -303,10 +303,15 @@ def generate_qa(year: int, week: int) -> dict:
             'product': random.choice(QA_PRODUCTS)
         })
 
+    sunday = monday + timedelta(days=6)
+    bcr_start = (monday - timedelta(days=90)).isoformat()
     return {
-        'period': f'{(monday - timedelta(days=90)).isoformat()} ~ {monday.isoformat()}',
+        'period': f'Week of {monday.strftime("%m/%d")} - {sunday.strftime("%m/%d")}',
+        'bcrWindow': f'{bcr_start} ~ {sunday.isoformat()}',
+        'startDate': monday.isoformat(),
+        'endDate': sunday.isoformat(),
         'daysCount': 90,
-        'reportDate': monday.isoformat(),
+        'reportDate': sunday.isoformat(),
         'bcr': {
             'overall': overall_bcr,
             'status': 'on_track' if overall_bcr >= 80 else 'at_risk',

@@ -864,6 +864,8 @@ function aggregatePulseData(weeklyDataArray, month) {
 function aggregateQaData(weeklyDataArray, month) {
   var result = {
     period: month + ' (Monthly)',
+    bcrWindow: null,
+    daysCount: null,
     bcr: { overall: 0, target: 80, qaCount: 0, customerCount: 0 },
     bcrByProduct: [],
     bcrWeeklyTrend: [],
@@ -884,6 +886,10 @@ function aggregateQaData(weeklyDataArray, month) {
   }
   if (latestWeek && latestWeek.bcrByProduct) {
     result.bcrByProduct = latestWeek.bcrByProduct;
+  }
+  if (latestWeek) {
+    result.bcrWindow = latestWeek.bcrWindow || null;
+    result.daysCount = latestWeek.daysCount || null;
   }
 
   // Collect per-week trend data, deduplicating by week key

@@ -87,7 +87,7 @@ generate "Weekly Pulse" "$DASHBOARD_DIR/data/pulse/$WEEK.json" \
   python3 "$CLAUDE_DIR/skills/weekly-pulse/scripts/generate-pulse.py" --json --start "$WEEK_START" --end "$WEEK_END"
 
 generate "QA Pulse" "$DASHBOARD_DIR/data/qa/$WEEK.json" \
-  python3 "$CLAUDE_DIR/skills/bug-catch-rate/scripts/qa-pulse-report.py" --json --dry-run --end "$WEEK_END"
+  python3 "$CLAUDE_DIR/skills/bug-catch-rate/scripts/qa-pulse-report.py" --json --dry-run --start "$WEEK_START" --end "$WEEK_END"
 
 generate "Weekly Tickets" "$DASHBOARD_DIR/data/tickets/$WEEK.json" \
   python3 "$CLAUDE_DIR/skills/daily-ticket-report/scripts/generate-weekly-report.py" --json --start "$WEEK_START" --end "$WEEK_END"
