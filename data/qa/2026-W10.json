@@ -1,0 +1,270 @@
+{
+  "period": "Week of 03/02 - 03/08",
+  "bcrWindow": "2025-12-08 ~ 2026-03-08",
+  "startDate": "2026-03-02",
+  "endDate": "2026-03-08",
+  "daysCount": 90,
+  "reportDate": "2026-03-08",
+  "bcr": {
+    "overall": 0.0,
+    "status": "below_target",
+    "target": 80,
+    "qaCount": 0,
+    "customerCount": 0
+  },
+  "bcrByProduct": [
+    {
+      "product": "Spark",
+      "qaBugs": 0,
+      "customerBugs": 0,
+      "total": 0,
+      "rate": 0.0
+    },
+    {
+      "product": "BIAS X",
+      "qaBugs": 0,
+      "customerBugs": 0,
+      "total": 0,
+      "rate": 0.0
+    }
+  ],
+  "bcrWeeklyTrend": [],
+  "testExecution": {
+    "Spark": {
+      "completedRuns": 5,
+      "totalRuns": 5,
+      "totalCases": 779,
+      "totalPassed": 530,
+      "totalFailed": 68,
+      "totalBlocked": 74,
+      "totalSkipped": 20,
+      "passRate": 68.0,
+      "avgVelocity": 33.2,
+      "blockedRate": 12.1
+    },
+    "BIAS X": {
+      "completedRuns": 7,
+      "totalRuns": 9,
+      "totalCases": 1676,
+      "totalPassed": 1595,
+      "totalFailed": 21,
+      "totalBlocked": 1,
+      "totalSkipped": 54,
+      "passRate": 95.2,
+      "avgVelocity": 32.3,
+      "blockedRate": 3.3
+    },
+    "Reactor": {
+      "completedRuns": 7,
+      "totalRuns": 12,
+      "totalCases": 768,
+      "totalPassed": 709,
+      "totalFailed": 43,
+      "totalBlocked": 0,
+      "totalSkipped": 16,
+      "passRate": 92.3,
+      "avgVelocity": 66.3,
+      "blockedRate": 2.1
+    }
+  },
+  "regressionTrend": {
+    "BIAS X": [
+      {
+        "title": "1.1.0.51204 Full Regression (Win11 Reaper7)",
+        "date": "2025-12-08",
+        "passed": 269,
+        "failed": 5,
+        "skipped": 8,
+        "blocked": 0,
+        "total": 282,
+        "rate": 95.4,
+        "delta": 0
+      },
+      {
+        "title": "1.2.0 Full Regression (MacOS14 Logic Pro X) Test run",
+        "date": "2025-12-23",
+        "passed": 291,
+        "failed": 2,
+        "skipped": 7,
+        "blocked": 0,
+        "total": 301,
+        "rate": 96.7,
+        "delta": 1.3
+      },
+      {
+        "title": "1.2.0 Full Regression (Win11 Studio One6)",
+        "date": "2026-01-05",
+        "passed": 233,
+        "failed": 5,
+        "skipped": 9,
+        "blocked": 0,
+        "total": 247,
+        "rate": 94.3,
+        "delta": -2.3
+      },
+      {
+        "title": "1.2.0 Full Regression (macOS 26 Standalone)",
+        "date": "2026-01-20",
+        "passed": 244,
+        "failed": 2,
+        "skipped": 5,
+        "blocked": 0,
+        "total": 251,
+        "rate": 97.2,
+        "delta": 2.9
+      },
+      {
+        "title": "1.2.2 Full Regression (Win11 Standalone)",
+        "date": "2026-02-23",
+        "passed": 227,
+        "failed": 4,
+        "skipped": 11,
+        "blocked": 1,
+        "total": 243,
+        "rate": 93.4,
+        "delta": -3.8
+      }
+    ],
+    "Reactor": [
+      {
+        "title": "Reactor MCU 0.1.3.255 Regression Test",
+        "date": "2025-12-31",
+        "passed": 103,
+        "failed": 5,
+        "skipped": 5,
+        "blocked": 0,
+        "total": 113,
+        "rate": 91.2,
+        "delta": 0
+      },
+      {
+        "title": "Reactor 50w MCU 0.1.4.51 Regression Test",
+        "date": "2026-01-08",
+        "passed": 96,
+        "failed": 5,
+        "skipped": 4,
+        "blocked": 0,
+        "total": 105,
+        "rate": 91.4,
+        "delta": 0.3
+      },
+      {
+        "title": "Reactor 100w MCU 0.1.4.51 Regression Test",
+        "date": "2026-01-09",
+        "passed": 101,
+        "failed": 2,
+        "skipped": 2,
+        "blocked": 0,
+        "total": 105,
+        "rate": 96.2,
+        "delta": 4.8
+      },
+      {
+        "title": "Reactor 50w MCU 0.1.4.103 Regression Test",
+        "date": "2026-02-02",
+        "passed": 105,
+        "failed": 0,
+        "skipped": 0,
+        "blocked": 0,
+        "total": 105,
+        "rate": 100.0,
+        "delta": 3.8
+      }
+    ]
+  },
+  "latestFunctionTest": [
+    {
+      "product": "Spark",
+      "title": "Mobile MCP Auto-Test - Core Function (2026-02-25)",
+      "projectCode": "SA",
+      "status": "completed",
+      "startDate": "2026-02-25",
+      "passed": 18,
+      "failed": 0,
+      "blocked": 67,
+      "skipped": 0,
+      "untested": 87,
+      "total": 172
+    },
+    {
+      "product": "BIAS X",
+      "title": "1.2.1 Core Function Test (macOS26 Fender Studio Pro8)",
+      "projectCode": "BX",
+      "status": "completed",
+      "startDate": "2026-02-05",
+      "passed": 162,
+      "failed": 2,
+      "blocked": 0,
+      "skipped": 7,
+      "untested": 0,
+      "total": 175
+    },
+    {
+      "product": "Reactor",
+      "title": "[Android]3/4 Reactor App 1.0.867 Core Function test",
+      "projectCode": "RAPP",
+      "status": "completed",
+      "startDate": "2026-03-04",
+      "passed": 177,
+      "failed": 27,
+      "blocked": 0,
+      "skipped": 0,
+      "untested": 0,
+      "total": 204
+    }
+  ],
+  "effortSignals": [
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "Mobile MCP Auto-Test - Core Function (2026-02-25) (SA): 39% blocked/skipped (67/172)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "BIAS X",
+      "message": "1.1.0.51204 Full Regression (MacOS14 Studio One 7) (BX): in progress for 90 days"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[iOS] 2/22 MKT/KOL Build Function Test (RAPP): in progress for 27 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Reactor",
+      "message": "[iOS] 2/22 MKT/KOL Build Function Test (RAPP): 44% untested (86/194)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[Android] 2/22 MKT/KOL Build Function Test (RAPP): in progress for 27 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Reactor",
+      "message": "[Android] 2/22 MKT/KOL Build Function Test (RAPP): 99% untested (191/193)"
+    },
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[iOS]2/23 Reactor App Tone Page Function test (RAPP): 64% blocked/skipped (64/100)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[iOS]2/23 Reactor App Tone Page Function test (RAPP): in progress for 11 days"
+    }
+  ],
+  "recentBugs": {
+    "qa": [],
+    "customer": []
+  }
+}
