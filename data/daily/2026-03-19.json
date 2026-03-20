@@ -1,0 +1,182 @@
+{
+  "period": "2026-03-19 (Thu)",
+  "startDate": "2026-03-19",
+  "endDate": "2026-03-19",
+  "kpi": {
+    "totalTickets": 110,
+    "topProduct": "SPARK",
+    "refunds": 27,
+    "productCount": 17
+  },
+  "productBreakdown": [
+    {
+      "product": "SPARK",
+      "count": 17,
+      "pct": 15.5
+    },
+    {
+      "product": "SPARK 2",
+      "count": 14,
+      "pct": 12.7
+    },
+    {
+      "product": "SPARK MINI",
+      "count": 10,
+      "pct": 9.1
+    },
+    {
+      "product": "SPARK GO",
+      "count": 9,
+      "pct": 8.2
+    },
+    {
+      "product": "SPARK LINK",
+      "count": 6,
+      "pct": 5.5
+    },
+    {
+      "product": "SPARK NEO",
+      "count": 4,
+      "pct": 3.6
+    },
+    {
+      "product": "BIAS X",
+      "count": 4,
+      "pct": 3.6
+    },
+    {
+      "product": "SPARK CONTROL X",
+      "count": 4,
+      "pct": 3.6
+    },
+    {
+      "product": "SPARK CAB",
+      "count": 3,
+      "pct": 2.7
+    },
+    {
+      "product": "BIAS HEAD",
+      "count": 2,
+      "pct": 1.8
+    },
+    {
+      "product": "Other (7 products)",
+      "count": 9,
+      "pct": 8.2
+    }
+  ],
+  "ticketTypes": [
+    {
+      "type": "Troubleshooting",
+      "count": 34,
+      "pct": 30.9
+    },
+    {
+      "type": "Request For Refund/Replacement",
+      "count": 27,
+      "pct": 24.5
+    },
+    {
+      "type": "Manage My Account",
+      "count": 4,
+      "pct": 3.6
+    },
+    {
+      "type": "How To Use",
+      "count": 4,
+      "pct": 3.6
+    },
+    {
+      "type": "Promotion Details",
+      "count": 4,
+      "pct": 3.6
+    },
+    {
+      "type": "Product Spec",
+      "count": 4,
+      "pct": 3.6
+    },
+    {
+      "type": "Edit Address   Contact Information",
+      "count": 3,
+      "pct": 2.7
+    },
+    {
+      "type": "Product Registration",
+      "count": 3,
+      "pct": 2.7
+    },
+    {
+      "type": "Other (2 types)",
+      "count": 4,
+      "pct": 3.6
+    }
+  ],
+  "agentActivity": [
+    {
+      "name": "Devin (AI)",
+      "assigned": 37,
+      "replies": 75
+    },
+    {
+      "name": "Chris Hsu",
+      "assigned": 12,
+      "replies": 11
+    },
+    {
+      "name": "Eleanor",
+      "assigned": 6,
+      "replies": 3
+    },
+    {
+      "name": "Michael",
+      "assigned": 3,
+      "replies": 1
+    },
+    {
+      "name": "Heyling",
+      "assigned": 3,
+      "replies": 0
+    },
+    {
+      "name": "Ryan",
+      "assigned": 2,
+      "replies": 0
+    },
+    {
+      "name": "Ernie",
+      "assigned": 1,
+      "replies": 0
+    },
+    {
+      "name": "Jim",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "WT",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Vix",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Dans",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Robert",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Rob",
+      "assigned": 0,
+      "replies": 0
+    }
+  ]
+}
