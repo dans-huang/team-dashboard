@@ -1,0 +1,233 @@
+{
+  "period": "Week of 04/06 - 04/12",
+  "bcrWindow": "2026-01-12 ~ 2026-04-12",
+  "startDate": "2026-04-06",
+  "endDate": "2026-04-12",
+  "daysCount": 90,
+  "reportDate": "2026-04-12",
+  "bcr": {
+    "overall": 0.0,
+    "status": "below_target",
+    "target": 80,
+    "qaCount": 0,
+    "customerCount": 0
+  },
+  "bcrByProduct": [
+    {
+      "product": "Spark",
+      "qaBugs": 0,
+      "customerBugs": 0,
+      "total": 0,
+      "rate": 0.0
+    },
+    {
+      "product": "BIAS X",
+      "qaBugs": 0,
+      "customerBugs": 0,
+      "total": 0,
+      "rate": 0.0
+    }
+  ],
+  "bcrWeeklyTrend": [],
+  "testExecution": {
+    "Spark": {
+      "completedRuns": 2,
+      "totalRuns": 6,
+      "totalCases": 336,
+      "totalPassed": 147,
+      "totalFailed": 21,
+      "totalBlocked": 73,
+      "totalSkipped": 8,
+      "passRate": 43.8,
+      "avgVelocity": 150.5,
+      "blockedRate": 24.1
+    },
+    "BIAS X": {
+      "completedRuns": 5,
+      "totalRuns": 5,
+      "totalCases": 1111,
+      "totalPassed": 1055,
+      "totalFailed": 10,
+      "totalBlocked": 1,
+      "totalSkipped": 41,
+      "passRate": 95.0,
+      "avgVelocity": 38.9,
+      "blockedRate": 3.8
+    },
+    "Reactor": {
+      "completedRuns": 11,
+      "totalRuns": 13,
+      "totalCases": 1327,
+      "totalPassed": 844,
+      "totalFailed": 102,
+      "totalBlocked": 25,
+      "totalSkipped": 75,
+      "passRate": 63.6,
+      "avgVelocity": 9.6,
+      "blockedRate": 7.5
+    }
+  },
+  "regressionTrend": {
+    "BIAS X": [
+      {
+        "title": "1.2.0 Full Regression (macOS 26 Standalone)",
+        "date": "2026-01-20",
+        "passed": 244,
+        "failed": 2,
+        "skipped": 5,
+        "blocked": 0,
+        "total": 251,
+        "rate": 97.2,
+        "delta": 0
+      },
+      {
+        "title": "1.2.2 Full Regression (Win11 Standalone)",
+        "date": "2026-02-23",
+        "passed": 227,
+        "failed": 4,
+        "skipped": 11,
+        "blocked": 1,
+        "total": 243,
+        "rate": 93.4,
+        "delta": -3.8
+      },
+      {
+        "title": "1.2.2.60303 Full Regression (macOS15 Logic Pro11.2)",
+        "date": "2026-03-03",
+        "passed": 253,
+        "failed": 1,
+        "skipped": 11,
+        "blocked": 0,
+        "total": 265,
+        "rate": 95.5,
+        "delta": 2.1
+      }
+    ],
+    "Reactor": [
+      {
+        "title": "Reactor 50w MCU 0.1.4.103 Regression Test",
+        "date": "2026-02-02",
+        "passed": 105,
+        "failed": 0,
+        "skipped": 0,
+        "blocked": 0,
+        "total": 105,
+        "rate": 100.0,
+        "delta": 0
+      }
+    ]
+  },
+  "latestFunctionTest": [
+    {
+      "product": "Spark",
+      "title": "Flash Test run 2026/04/01",
+      "projectCode": "S2",
+      "status": "in_progress",
+      "startDate": "2026-04-01",
+      "passed": 33,
+      "failed": 0,
+      "blocked": 0,
+      "skipped": 0,
+      "untested": 64,
+      "total": 98
+    },
+    {
+      "product": "BIAS X",
+      "title": "1.2.1 Core Function Test (macOS26 Fender Studio Pro8)",
+      "projectCode": "BX",
+      "status": "completed",
+      "startDate": "2026-02-05",
+      "passed": 162,
+      "failed": 2,
+      "blocked": 0,
+      "skipped": 7,
+      "untested": 0,
+      "total": 175
+    },
+    {
+      "product": "Reactor",
+      "title": "QA-238 Story Verification Test Run (iOS)",
+      "projectCode": "RAPP",
+      "status": "completed",
+      "startDate": "2026-03-25",
+      "passed": 123,
+      "failed": 5,
+      "blocked": 1,
+      "skipped": 4,
+      "untested": 0,
+      "total": 133
+    }
+  ],
+  "effortSignals": [
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "Mobile MCP Auto-Test - Core Function (2026-02-25) (SA): 39% blocked/skipped (67/172)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "Spark App Android Regression - 2026-03-10 (SA): in progress for 34 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Spark",
+      "message": "Spark App Android Regression - 2026-03-10 (SA): 93% untested (525/562)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "Android 16KB Full Regression Test 3/11 (SA): in progress for 33 days"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "Flash Test run 2026/04/01 (S2): in progress for 12 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Spark",
+      "message": "Flash Test run 2026/04/01 (S2): 65% untested (64/98)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "Spark Pedal PVT Regression Test 20260320 (SP): in progress for 23 days"
+    },
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[iOS]2/23 Reactor App Tone Page Function test (RAPP): 64% blocked/skipped (64/100)"
+    },
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[Android]3/2 Reactor App 1.0.828 Creator Hub Function Test (RAPP): 24% blocked/skipped (15/63)"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Reactor",
+      "message": "[iOS] Reactor App 1.0.17.69 GA Phase 1 Full Regression (RAPP): 60% untested (258/432)"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Reactor",
+      "message": "[Android] Reactor App 1.0.1097 GA Phase 1 Full Regression (RAPP): 87% untested (380/435)"
+    }
+  ],
+  "recentBugs": {
+    "qa": [],
+    "customer": []
+  }
+}
