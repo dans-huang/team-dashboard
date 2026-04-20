@@ -1,0 +1,433 @@
+{
+  "period": "2026-01-19 ~ 2026-04-19",
+  "daysCount": 90,
+  "totalBadRatings": 263,
+  "withComments": 218,
+  "aiNegative": 127,
+  "aiNegativeRateOfComments": 58.26,
+  "aiNegativeRateOfAll": 48.29,
+  "samples": [
+    {
+      "ticketId": 16243939216525,
+      "comment": "None of these worked. Still trying to do this without buying or adding additional hardware. Would really be nice if it was all self contained in the spark app. ",
+      "createdAt": "2026-01-19T03:18:23Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42777119743117.json"
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "AI was used to respond to my inquiry and it took too long.  AI then passed to the team which took another couple additional days.  Bottom line is that Positive Grid  (PG) should carry all accessories supporting items sold under PG brand name. I was looking for the audio cable and charger adapter to use with the CAB and those were not shown under Accessories so I had to write and that was a letdown experience.  I lost interest by the time I got the answer.",
+      "createdAt": "2026-01-20T21:10:19Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42831858241165.json"
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "I was given a price by the ai of $250 and then the regular sales price by staff with a $20 dollar coupon that voided my $10 coupon...  the lack of consistency   made me look elsewhere for what I needed. I wanted to upgrade and continue giving business but this type of customer service worries me in commitment towards additional products from positive grid. ",
+      "createdAt": "2026-01-21T04:08:58Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42841344567053.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "You guys are on the verge of great \nKeep pushing - fender tonemaster and yamaha still deliver better tone but your vocal tone is excellent. AI for tone shaping is the best - putting pedals on amps very good but not quite show ready - love your products \n\n",
+      "createdAt": "2026-01-21T15:22:07Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42852035683725.json"
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "i have already sent emails about your customer service ,absolutely no help at all .Read my previous emails",
+      "createdAt": "2026-01-21T18:04:20Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42858314656781.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "1. Why AI answer for customer?\n2. Why the customer have to solve your product problem?\n3. Why dont learn about the comment from customer?\n4. You cant make any bussines with theese all.\nSorry Guys!!!",
+      "createdAt": "2026-01-22T04:59:45Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42873919840781.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Ai information & not correct. ",
+      "createdAt": "2026-01-22T13:39:27Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42880858533517.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I submitted a help request when the serial number for my Spark 2 wasn't accepted for registration.\nI was then surprised that your AI came back with an answer right away. Its solution was everything that I had tried already. I also consulted with my Sweetwater agent who was as confused as I was. \nThat's why I asked for a human. AI help was no help. \n",
+      "createdAt": "2026-01-22T15:45:50Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42885242123789.json"
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "If you're having a return and replace why would you not send over the replacement so we can use the box to return the original one. 3 weeks and still trying to get a resolution. I send it last Friday the 16th and no update on the new one being mailed. Im a disabled vet that place music to help feed my family and this has by far been the worse customer service I have received. WHY?",
+      "createdAt": "2026-01-22T22:08:18Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42899795930765.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Your AI support is exactly like a lazy intern. Useless.",
+      "createdAt": "2026-01-23T10:40:22Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42909120558477.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I would prefer no chatbot replying. It didn't give me the answers I needed, and only when a human replied I got them",
+      "createdAt": "2026-01-23T12:46:58Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42911361053325.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Bonjour\nImpossible de me connecter\u2026l\u2019apairage en Bluetooth se fait pourtant \nEt puis une version en fran\u00e7ais serait bien.\nL Noel",
+      "createdAt": "2026-01-23T16:20:46Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42918237380621.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": " Not sure AI is right on my question ",
+      "createdAt": "2026-01-24T03:44:57Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42935447589005.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I am told in a email inquiry that the price of the Link XLR is $135 but I still see it listed for $169",
+      "createdAt": "2026-01-24T15:38:20Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42942077113101.json"
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "You make it impossible to make a claim NEVER BUY FROM SPARK  AGAIN ",
+      "createdAt": "2026-01-25T00:22:04Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42949201716493.json"
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "You asked me for some feedback and how I would rate your support. I am honestly not sure how to answer that question- it is either unsatisfied or very unsatisfied.\n\nMost of your communication to me has been AI. While it hasn\u2019t been offensive, it is certainly not a personal touch.\n\nI had to wait over a week to get the original delivery because of how you chose to ship the product.\n\nOnce you determined to replace the amp, I requested a faster mode of shipping since I had already waited so long.\n\nInstead, you still chose to ship it ground. I understand that the delay is now due to this storm which you have no control over, but if you had chosen any other method of shipping than ground, I would have the amp.\n\nSo bottom line, you have had my money since LAST MONTH and I still don\u2019t  have a working amp.\n\nYou tell me, is that quality customer support? In my mind it is far from it.\n\nThis amp better measure up to your hype.",
+      "createdAt": "2026-01-25T15:07:08Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42955634849933.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I bought a spark 2 from reverb.com. tried to register. Your website told me the previous owner had to deregister. I contacted owner and he did his part. I tried to re register and it's still saying it's registered. Your AI chat also said it's still registered. Previous owner said that his account with you guys says there are no items registered to him. Id like to find a solution to this. ",
+      "createdAt": "2026-01-25T20:11:40Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42959244280973.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I recieved assurances that the product would be delivered at a date that came and went. Nothing was done until I really started pestering your company and had to do my own research to figure out why the VAI\nguitar amp was not delivered on the date assured and was finally delivered but considerably well after the date declared.",
+      "createdAt": "2026-01-26T07:11:31Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42965409100685.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Bonjour\nImpossible de me connecter\u2026l\u2019apairage en Bluetooth se fait pourtant \nEt puis une version en fran\u00e7ais serait bien.\nDevin ne parles t-il-pas fran\u00e7ais ?\nL Noel",
+      "createdAt": "2026-01-26T18:55:24Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42982990097549.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I asked about an item that you have on sale (and are still advertising as such), but that you are sold out of: the 20% off spark2 pearl. Amazon and your US website still has stock. Your AI response was basically that they were sorry for my bad luck, but there is no way to get the sale price honoured when the stock comes in. It feels dismissive and I don\u2019t quite understand why you are willing to loose a sale because of your inability to be sufficiently stocked. As I have been weighing my very competitive options for new gear, a 20% sale tipped the scale in your favour\u2026and then it didn\u2019t. I don\u2019t expect anything more than an AI generated response to this, but I am curious WHY you are not able to honour your sale price for a customer who expresses a desire to purchase within the sale window? \n     I\u2019m very disappointed and considering other options (e.g. Yamaha THR)\n\n",
+      "createdAt": "2026-01-26T19:45:13Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/42985245681549.json"
+    }
+  ],
+  "allComments": [
+    {
+      "ticketId": 16243939216525,
+      "comment": "None of these worked. Still trying to do this without buying or adding additional hardware. Would really be nice if it was all self contained in the spark app. ",
+      "createdAt": "2026-01-19T03:18:23Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I don\u2019t recall ever seeing a response to my questions and apparently I can\u2019t call anyone to discuss the issues. I plan to return to Guitar Center if I can\u2019t figure out how this works",
+      "createdAt": "2026-01-19T22:15:47Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "AI was used to respond to my inquiry and it took too long.  AI then passed to the team which took another couple additional days.  Bottom line is that Positive Grid  (PG) should carry all accessories supporting items sold under PG brand name. I was looking for the audio cable and charger adapter to use with the CAB and those were not shown under Accessories so I had to write and that was a letdown experience.  I lost interest by the time I got the answer.",
+      "createdAt": "2026-01-20T21:10:19Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I prefer talking to a human so I don't get Generic answers to my questions.",
+      "createdAt": "2026-01-20T22:23:26Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "I was given a price by the ai of $250 and then the regular sales price by staff with a $20 dollar coupon that voided my $10 coupon...  the lack of consistency   made me look elsewhere for what I needed. I wanted to upgrade and continue giving business but this type of customer service worries me in commitment towards additional products from positive grid. ",
+      "createdAt": "2026-01-21T04:08:58Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "You guys are on the verge of great \nKeep pushing - fender tonemaster and yamaha still deliver better tone but your vocal tone is excellent. AI for tone shaping is the best - putting pedals on amps very good but not quite show ready - love your products \n\n",
+      "createdAt": "2026-01-21T15:22:07Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "i have already sent emails about your customer service ,absolutely no help at all .Read my previous emails",
+      "createdAt": "2026-01-21T18:04:20Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "The entire support process was very slow. Just deflected the issue since it was with Amazon - but I understood that. So what was supposed to be a 3 day delivery turned into a 18 day delivery. Ridiculous. I'm still excited for the product/AMP I ordered because I heard great things, but the support was not good. Also, you guys need more options for shipping. I can help you guys with that. I can save you guys a boatload of money on the shipping side and you can get your product to your customers much faster and give them way more options if they're looking for a faster delivery time. Seriously, take a look please we want to help and should have a conversation. https://gg.consulting/shipping We look forward to hearing from you guys. Best, Mike Esposito GG.Consulting",
+      "createdAt": "2026-01-21T21:08:07Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "1. Why AI answer for customer?\n2. Why the customer have to solve your product problem?\n3. Why dont learn about the comment from customer?\n4. You cant make any bussines with theese all.\nSorry Guys!!!",
+      "createdAt": "2026-01-22T04:59:45Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "It took a whole business day to get the crappiest a\u00ed response from support I've ever seen. About five days later a person came in to apologize. I lost interest in doing business with this company. It looks like I'll see the replacement device I got from the store who sold me the item in about a week...",
+      "createdAt": "2026-01-22T06:12:38Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The power adaptor of my SPARK 40 broke and I would need a new one. So, I thought, I could as well order a new SPARK (a SPARK 2), but you don't ship to me anymore.\n\nNeither can I order a replacement for the power supply, not can I order a SPARK 2 as a complete replacement (and improvement).\n\nThat's not good.",
+      "createdAt": "2026-01-22T07:04:54Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Disapointed about drivers and software with positive Grid Spark GO , Spark 2 with my MacBook and IPhone 17 Pro.\nI canceled my order with Spark live to Classic Amp and Baffle",
+      "createdAt": "2026-01-22T07:25:14Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Ai information & not correct. ",
+      "createdAt": "2026-01-22T13:39:27Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I submitted a help request when the serial number for my Spark 2 wasn't accepted for registration.\nI was then surprised that your AI came back with an answer right away. Its solution was everything that I had tried already. I also consulted with my Sweetwater agent who was as confused as I was. \nThat's why I asked for a human. AI help was no help. \n",
+      "createdAt": "2026-01-22T15:45:50Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "If you're having a return and replace why would you not send over the replacement so we can use the box to return the original one. 3 weeks and still trying to get a resolution. I send it last Friday the 16th and no update on the new one being mailed. Im a disabled vet that place music to help feed my family and this has by far been the worse customer service I have received. WHY?",
+      "createdAt": "2026-01-22T22:08:18Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Feedback is very slow. Forgot to attach a shipping label. To get the shipping label took another 2-3 days.",
+      "createdAt": "2026-01-23T05:37:35Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Your AI support is exactly like a lazy intern. Useless.",
+      "createdAt": "2026-01-23T10:40:22Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "too costly to return physical unit...didn't think this would be required ",
+      "createdAt": "2026-01-23T11:12:58Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I would prefer no chatbot replying. It didn't give me the answers I needed, and only when a human replied I got them",
+      "createdAt": "2026-01-23T12:46:58Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Bonjour\nImpossible de me connecter\u2026l\u2019apairage en Bluetooth se fait pourtant \nEt puis une version en fran\u00e7ais serait bien.\nL Noel",
+      "createdAt": "2026-01-23T16:20:46Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": " Not sure AI is right on my question ",
+      "createdAt": "2026-01-24T03:44:57Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "To bad the switch changes sounds on lift and not on push won\u2019t buy it till it does (if it can) ",
+      "createdAt": "2026-01-24T12:00:34Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I am told in a email inquiry that the price of the Link XLR is $135 but I still see it listed for $169",
+      "createdAt": "2026-01-24T15:38:20Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "You make it impossible to make a claim NEVER BUY FROM SPARK  AGAIN ",
+      "createdAt": "2026-01-25T00:22:04Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I bought the Spark 2 thinking its user friendly with the CAB 140 and is not. You have no DC supply connect between the CAB and Spark.-disappointing!!!!!",
+      "createdAt": "2026-01-25T05:48:58Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "You asked me for some feedback and how I would rate your support. I am honestly not sure how to answer that question- it is either unsatisfied or very unsatisfied.\n\nMost of your communication to me has been AI. While it hasn\u2019t been offensive, it is certainly not a personal touch.\n\nI had to wait over a week to get the original delivery because of how you chose to ship the product.\n\nOnce you determined to replace the amp, I requested a faster mode of shipping since I had already waited so long.\n\nInstead, you still chose to ship it ground. I understand that the delay is now due to this storm which you have no control over, but if you had chosen any other method of shipping than ground, I would have the amp.\n\nSo bottom line, you have had my money since LAST MONTH and I still don\u2019t  have a working amp.\n\nYou tell me, is that quality customer support? In my mind it is far from it.\n\nThis amp better measure up to your hype.",
+      "createdAt": "2026-01-25T15:07:08Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I bought a spark 2 from reverb.com. tried to register. Your website told me the previous owner had to deregister. I contacted owner and he did his part. I tried to re register and it's still saying it's registered. Your AI chat also said it's still registered. Previous owner said that his account with you guys says there are no items registered to him. Id like to find a solution to this. ",
+      "createdAt": "2026-01-25T20:11:40Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I recieved assurances that the product would be delivered at a date that came and went. Nothing was done until I really started pestering your company and had to do my own research to figure out why the VAI\nguitar amp was not delivered on the date assured and was finally delivered but considerably well after the date declared.",
+      "createdAt": "2026-01-26T07:11:31Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Bonjour\nImpossible de me connecter\u2026l\u2019apairage en Bluetooth se fait pourtant \nEt puis une version en fran\u00e7ais serait bien.\nDevin ne parles t-il-pas fran\u00e7ais ?\nL Noel",
+      "createdAt": "2026-01-26T18:55:24Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I asked about an item that you have on sale (and are still advertising as such), but that you are sold out of: the 20% off spark2 pearl. Amazon and your US website still has stock. Your AI response was basically that they were sorry for my bad luck, but there is no way to get the sale price honoured when the stock comes in. It feels dismissive and I don\u2019t quite understand why you are willing to loose a sale because of your inability to be sufficiently stocked. As I have been weighing my very competitive options for new gear, a 20% sale tipped the scale in your favour\u2026and then it didn\u2019t. I don\u2019t expect anything more than an AI generated response to this, but I am curious WHY you are not able to honour your sale price for a customer who expresses a desire to purchase within the sale window? \n     I\u2019m very disappointed and considering other options (e.g. Yamaha THR)\n\n",
+      "createdAt": "2026-01-26T19:45:13Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Figured it would have been an easy solve. ",
+      "createdAt": "2026-01-26T23:05:49Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "Positive Grid has some serious problems.  When orders go wrong like mine, PG makes is really hard to navigate getting some sort of resolution.  I ordered a Positive Grid 2 late 2025.  The first order was lost in transit by UPS (never reaching my State).  Since PG considers any order \"mailed\" as fulfilled, there is no tracking to make sure the purchaser receives the unit.  After my order was ten days late, I tried to get PG help.  The PG AI bot essentially blamed me for the lost order asking me to verify my address (which was correct) and to make sure I had a secure place to receive the order (and maybe try a different address).  Eventually, I live person contacted me and saw that UPS lost the item in CA and reissued the order.  The order finally arrived today and it was only the Spark Carry Bag - no Positive Grid 2.  As a repeat customer, I expect better than this type of treatment.  The AI bot is very weak (and I work in the AI field).  I resent a request to support to inform me what the heck is going on.  The online status of my order is still the original noted as FULFILLED.  The UPS tracking number on the order still says it is stuck in Ontario CA.  So, I paid for the item and now spend too much time trying hunt down the status of my order.  This is how PG treats a former customer.  ",
+      "createdAt": "2026-01-26T23:29:26Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "Everything took a 2 day response. I lost the original email with the RA number and had to email again. I got an automated response immediately but then 2 more days for the real reaponse with the RA number. I love the products but you need better AI or you need an actual human monitoring these emails more.",
+      "createdAt": "2026-01-27T11:54:03Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "The AI support was horrible. Said the capability was no available in BIas FX2 until i sent a screenshot showing that it does work. Once I got a \"real\" person and not a clanker, it was awesome support. Is the issue fixed? no but that is a server side capability that I just need to wait on. (analyzing chords for songs)",
+      "createdAt": "2026-01-28T20:14:33Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Just trying to get tracking for my shipment atoll not able ",
+      "createdAt": "2026-01-28T22:24:51Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Soweit ok, die erste Antwort war ein wenig hilfreich. Leider wurde meine nachfolgende Nachfrage dann nicht mehr beantwortet. Sehr schade, somit bin ich auch nicht mit dem technischen Problem weiter gekommen. ",
+      "createdAt": "2026-01-29T18:02:15Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "The process of having to set up a new account just to update an email address is ridiculous and makes your members website archaic in its function. I\u2019ve had to update my email address across a large number of sites and your process was the dumbest and most annoying of all. Then you need support to link old and new. Incredibly frustrating and so unnecessary.",
+      "createdAt": "2026-01-29T23:02:25Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "I asked for compatible gears. Impossible to get a clear answer on my question about wich pedal is compatible with my foot controller spark X control.",
+      "createdAt": "2026-01-30T22:20:58Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "It\u00b4s a bit disappointing that a user makes a suggestion for an improvement (personal opinion) on a product (Spark2) and gets answered by AI. Not that the AI answer was unpleasant, but it just makes user feedback pointless. As a user of your products, I would expect a human response, not a machine one. I hope that the product never malfunctions, as considering this example, I don\u00b4t have any hopes for a solution, talking to bots.",
+      "createdAt": "2026-01-31T14:55:30Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "\"While I understand the utility of AI auto-replies for basic inquiries, they are not helpful in this situation. I always perform my own troubleshooting including AI before contacting support because my time is valuable as is yours..\n\nThis issue requires actionable solutions, not automated placeholders. I need a concrete timeline: for example, a confirmation that you will have a solution by a reasonable date for a firmware release that addresses the chirping issue.\n\nIf you cannot provide a substantive human response, I will be returning this product and switching to the JBL alternative. Relying on automation to delay real support is not sustainable and will drive customers away.\"\n\nDavid (AI)",
+      "createdAt": "2026-01-31T15:45:57Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Hello, I thank the support people at positive grid for being responsive in trying to solve my chord analysis issues and I am happy to say that issue has improved. I can now analyze chords which were previously generating an error message and failing with the anlysis.\nHowever, I now have a new issue. I now am having problems trying to add songs to my \"saved songs\" list. I select the song and try to add it to my playlist but the song does not show up in the playlist.",
+      "createdAt": "2026-01-31T19:08:27Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I was looking for specific info and the AI bot gave mostly generic info I already knew. I would prefer to interact with a real person and not AI in the future. ",
+      "createdAt": "2026-01-31T23:17:08Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Support took a really long time to get a resolution",
+      "createdAt": "2026-02-01T06:39:52Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "He was very attentive and helpful in solving our problem",
+      "createdAt": "2026-02-02T08:41:42Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Already tried your \u201csolution\u201d.  It doesn\u2019t work. You should\u2019ve just entered the registration number for me don\u2019t you think?",
+      "createdAt": "2026-02-03T00:20:46Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "to much AI",
+      "createdAt": "2026-02-03T11:45:51Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Purchased amp on Saturday 29 Jan specifically because of the 20% off offer. Realised straight away that I\u2019d ordered the wrong one so contacted customer services on the same day to try to prevent shipping and order the correct one. Was informed (by AI) that the amp had shipped on Saturday and then again by  customer service on Monday 2 Feb. Was then informed this morning Tuesday 3 Feb by Parcelforce that they had only just received and shipped the amp today. This means I will have to return or refuse delivery at a cost to myself, which surely could have been prevented! I was also informed that I could no longer get the 20% discount offer as it had expired. Not a good experience for my first purchase from Positive Grid.",
+      "createdAt": "2026-02-03T12:48:46Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I use an acoustic nylon strings guitar. May be the spark mini is dedicated for metalic strings.\nI have understand that it is a mod\u00e9lisation amp...\n",
+      "createdAt": "2026-02-03T16:17:30Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Didn\u2019t quite understand why if a product goes on sale within 30d of when the product was purchased, a price adjustment is not done. \n\nI appreciate the $20 coupon offered but it would have been nice if there were more options. In fact I would have loved the option to return it and then be able to take afvantage of the sale and get a larger amp. ",
+      "createdAt": "2026-02-04T03:57:59Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Difficult to find help page, contact email, etc.  Also, only got an AI bot response.  ",
+      "createdAt": "2026-02-04T13:22:21Z",
+      "isAiNegative": true
+    }
+  ]
+}
