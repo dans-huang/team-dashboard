@@ -1,0 +1,177 @@
+{
+  "period": "2026-04-28 (Tue)",
+  "startDate": "2026-04-28",
+  "endDate": "2026-04-28",
+  "kpi": {
+    "totalTickets": 97,
+    "topProduct": "SPARK",
+    "refunds": 6,
+    "productCount": 15
+  },
+  "productBreakdown": [
+    {
+      "product": "SPARK",
+      "count": 17,
+      "pct": 17.5
+    },
+    {
+      "product": "SPARK GO",
+      "count": 13,
+      "pct": 13.4
+    },
+    {
+      "product": "SPARK 2",
+      "count": 11,
+      "pct": 11.3
+    },
+    {
+      "product": "SPARK MINI",
+      "count": 9,
+      "pct": 9.3
+    },
+    {
+      "product": "SPARK LINK",
+      "count": 4,
+      "pct": 4.1
+    },
+    {
+      "product": "SPARK NEO",
+      "count": 3,
+      "pct": 3.1
+    },
+    {
+      "product": "EXPERIENCE JIMI HENDRIX",
+      "count": 2,
+      "pct": 2.1
+    },
+    {
+      "product": "SPARK LIVE",
+      "count": 2,
+      "pct": 2.1
+    },
+    {
+      "product": "SPARK EDGE",
+      "count": 2,
+      "pct": 2.1
+    },
+    {
+      "product": "BIAS FX 2 MOBILE",
+      "count": 2,
+      "pct": 2.1
+    },
+    {
+      "product": "Other (5 products)",
+      "count": 7,
+      "pct": 7.2
+    }
+  ],
+  "ticketTypes": [
+    {
+      "type": "Troubleshooting",
+      "count": 37,
+      "pct": 38.1
+    },
+    {
+      "type": "How To Use",
+      "count": 6,
+      "pct": 6.2
+    },
+    {
+      "type": "Request For Refund/Replacement",
+      "count": 6,
+      "pct": 6.2
+    },
+    {
+      "type": "Product Spec",
+      "count": 5,
+      "pct": 5.2
+    },
+    {
+      "type": "Product Registration",
+      "count": 5,
+      "pct": 5.2
+    },
+    {
+      "type": "Manage My Account",
+      "count": 4,
+      "pct": 4.1
+    },
+    {
+      "type": "Invoice/Vat Related",
+      "count": 3,
+      "pct": 3.1
+    },
+    {
+      "type": "Edit Address   Contact Information",
+      "count": 3,
+      "pct": 3.1
+    },
+    {
+      "type": "Other (6 types)",
+      "count": 10,
+      "pct": 10.3
+    }
+  ],
+  "agentActivity": [
+    {
+      "name": "Devin (AI)",
+      "assigned": 38,
+      "replies": 61
+    },
+    {
+      "name": "Eleanor",
+      "assigned": 17,
+      "replies": 8
+    },
+    {
+      "name": "Michael",
+      "assigned": 9,
+      "replies": 9
+    },
+    {
+      "name": "Chris Hsu",
+      "assigned": 9,
+      "replies": 2
+    },
+    {
+      "name": "Ryan",
+      "assigned": 4,
+      "replies": 4
+    },
+    {
+      "name": "Jim",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Ernie",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "WT",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Vix",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Dans",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Robert",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Rob",
+      "assigned": 0,
+      "replies": 0
+    }
+  ]
+}
