@@ -1,0 +1,433 @@
+{
+  "period": "2026-02-02 ~ 2026-05-03",
+  "daysCount": 90,
+  "totalBadRatings": 240,
+  "withComments": 200,
+  "aiNegative": 110,
+  "aiNegativeRateOfComments": 55.0,
+  "aiNegativeRateOfAll": 45.83,
+  "samples": [
+    {
+      "ticketId": 21491403881485,
+      "comment": "to much AI",
+      "createdAt": "2026-02-03T11:45:51Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43200402601997.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Purchased amp on Saturday 29 Jan specifically because of the 20% off offer. Realised straight away that I\u2019d ordered the wrong one so contacted customer services on the same day to try to prevent shipping and order the correct one. Was informed (by AI) that the amp had shipped on Saturday and then again by  customer service on Monday 2 Feb. Was then informed this morning Tuesday 3 Feb by Parcelforce that they had only just received and shipped the amp today. This means I will have to return or refuse delivery at a cost to myself, which surely could have been prevented! I was also informed that I could no longer get the 20% discount offer as it had expired. Not a good experience for my first purchase from Positive Grid.",
+      "createdAt": "2026-02-03T12:48:46Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43201944023949.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Difficult to find help page, contact email, etc.  Also, only got an AI bot response.  ",
+      "createdAt": "2026-02-04T13:22:21Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43236439492493.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I disapprove of AI replacing humans. ",
+      "createdAt": "2026-02-04T16:24:32Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43243888735757.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "1. When its an ai answer why give email a name?\n2. Sign off 'Best'. Best what? Best I could do?\n3. Says AI can make mistakes. Humans have managed without this tagline, huh?\n4. Spark Mini still not connecting with DAW.\noh well..",
+      "createdAt": "2026-02-05T13:29:40Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43270765098637.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I don\u2019t want to hear from a fuckass ai when I reach out to customer support. ChatGPT is at my finger tips. If I\u2019m reaching out to the support email I want human responses. I don\u2019t get why it has to be so dystopian ",
+      "createdAt": "2026-02-05T19:18:18Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43284625908109.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "It took several emails to discover I was not communicating with a real person. At no time, or no where on the website did I find a phone number so I could speak to a real person. ",
+      "createdAt": "2026-02-06T16:59:59Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43310537014413.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "No help at all! And I just paid for the \"X\" download and it will NOT work on my brand new Windows 11 laptop. WTF!?",
+      "createdAt": "2026-02-06T23:18:28Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43322505026957.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Hi, \nI did not receive any real support as my remark was more to give a little feedback on my new Spark 2 and ask if possible to add some different styles in the jam section or looper drums section (like reggae, hiphop, punk rock,...) and also effects l, especialy a spring reverb.\nThe only answer I received is a A.I. email saying it will be forwarded further.\nI realy hope Positive Grid will add th9se styles amd effects to upgrade the user experience and bring more possibilities to the players using the devices.\nDefinitly enjoy the Spark 2 and the possibilities it offers.\nThank you",
+      "createdAt": "2026-02-07T06:52:37Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43327305627021.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "If you are using AI for response to inquiries then why does it take so long to get a response?  I'm not very happy to learn the XSonic foot controller for my Spark 40 was not made by Sonic and wasn't part of your regular product lineup.  I bought this controller when they first came out and there was no mention from Positive Grid that the foot controller was not made by the same company.  So it turns out I can't register the product with you because it wasn't made by you? I have had a lot of trouble with that footswitch, it is hard to get paired with my Spark 40 and is not an intuitive pairing process at all.  When it first came out on the market I was happy to hear it was available, since the amp did not have a footswitch previously.  i bought one when they first came available and have never had an easy time using it, so I never even tried to register it until recently, because I now have some time on my hands to master its usage but I am still frustrated with the difficulty in getting it to work with the amp.  ",
+      "createdAt": "2026-02-07T18:09:37Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43335743666189.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Hi!\nI would first like to thank Eleanor, my representative. She is fantastic and did an amazing job to help me! The solution I chose was to replace my Spark 40 with a new Spark 2. I love the products. There was an internal defect in my Spark 40 that caused it to cut out every few minutes. After researching Spark forums online, it seems this is a common issue in my model and it was recommended that Positive Grid would take of it. While you did provide me the option of a certified repair, the cost of repair and shipping charges I would incur totaled to $250 - $275. Eleanor offered me a second option of purchasing the Spark 2 with a discount to help compensate for my inconvenience. The discount was the standard upgrade discount available to all Spark 40 owners and an additional $20 coupon. While I am grateful for her offering me that discount (she said it was the most she was authorized to provide) I would have preferred a larger discount towards additional products as $20 seems a bit light. I appreciate your products and team, and am enjoying my new amp and learning the new tools it has. I hope my message can help you continue to provide great customer service.\nThanks,\nJohn Curiel",
+      "createdAt": "2026-02-08T02:35:18Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43342992144909.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "the ai was very friendly and quick but it didn't tell me if my wish would be technically possible. it just said i understand your concern. would be much nicer to wait a little longer for a reply but get it from a real person",
+      "createdAt": "2026-02-08T16:25:35Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43349910196493.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Dear Devin,\n\n\u200bThank you for your response.\n\n\u200bI would like to provide some technical feedback that might be helpful for your team. Despite the official documentation stating that the USB interface is only for Windows or Mac, I have successfully recorded high-quality digital audio and 4K video directly onto my Samsung Galaxy S24 Plus using a USB-C fiber optic cable. The phone recognizes the Spark LIVE perfectly as a professional audio interface.\n\n\u200bFurthermore, I found a solution for the backing track limitation: by connecting my iPad directly into the Spark LIVE's \"Line In\" port, I was able to mix the backing track with my guitar signal and send the full mix through the fiber optic USB cable to my mobile device. This setup resulted in a perfect, high-definition digital recording of both instruments.\n\n\u200bI believe this is a great workaround for mobile users who want to take full advantage of the Spark LIVE\u2019s digital output without needing a PC or Mac. I hope this information is useful for your technical support database.\n\n\u200bBest regards,\n\n\u200bMarcelo Ortega.",
+      "createdAt": "2026-02-09T17:55:46Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43375375357965.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "It\u2019 taken me a couple of weeks to cool off from the frustrations of using the Spark-2.   Can you imagine?   I traded in my only other amp for yours, however I couldn\u2019t get it to work and when I finally did, I didn\u2019t want to look at this stupid thing.  It\u2019s been sitting for almost three weeks before I would try again.  Doesn\u2019t bode well for your product.   I will describe as follows.\n\nWhat sent me over the edge to the dark side: \nI spent over two hours trying to get your APP properly connected.  For over two hours I went back-and-forth over the procedures; rebooted my iPhone; rebooted your APP; but nothing would work.  I KNEW IT WAS AN EASY PROBLEM, so finally I went to your online contact for help.   \nTHIS IS WHERE THE NIGHTMARE started.   Now I have a whole new set of problems:  what the firmware levels, what type and software level of three other items?   ARE YOU GUYS OUT OF YOUR MINDS?  Is this how you help, by bringing more challenges and problems?   Thanks for nothing.  And you help service will not accept my email unless I answer all of your STUPID questions.  WHAT A NIGHTMARE!!!.   Let\u2019s not help the customer; let\u2019s piss-off them off!!!!   \n\nSo, I put B.S. answer into your system so that I could get through, and then it took four days to get a response.  FOUR DAYS!!!!!\n\nTHE ROOT CAUSE: \nNote:\n\u2022\tI had successfully downloaded your APP onto my iPhone 14 and registered with your company.\n\u2022\tI had successfully Bluetooth connected my iPhone 14 to your Spark 2.\n(I wish I had screen shots, however I could not get back in to see the screens, so I have to describe from memory)\nWhen I first opened your APP, the first page asks which Spark amp is being used.  Spark 2 >> done.  No problem\nThen the next page connects the Bluetooth.  Done successfully.\nBut then the next page read that I needed to \u201cconnect the audio\u201d.\nPlease note: I have no idea why/who/what/where/when \u201cconnect audio\u201d means.   And you gave no instructions.\nThen the next page (from memory) didn\u2019t say much.   it had the words \u201cconnect audio\u201d, however there were no instructions on what to do.   I thought \u201cmaybe if I touch the words \u201cconnect audio\u201d that that\u2019s a link/button.  I tried once, twice, three times I touched on the words \u201cconnect audio\u201d, but nothing.   Over the next couple of hours, as I was frustratingly going back-and-forth, I came upon this page several times; and I would think/wish that the words \u201cconnect audio\u201d was some sort of link/button to take me to connect audio.  I tried several times touching on the words \u201cconnect audio\u201d, but nothing.  I was blocked.\n\nAfter four days of waiting, I realized that the Spark company had no real intentions of helping me, I took your amp back to the music store (Guitar Center) from which I purchased it.  The store associate helped me.   He handled my iPhone, however he held it so that I could see what he was doing in your APP.   When he got to that third page, where the words \u201cconnect audio\u201d were, I was immediately thinking \u201cwell, there\u2019s nothing on this page to do\u201d.  Can you imagine my shock when he did select some secret/trick button that brought us to the next page in your APP, to allow us to connect the audio.   Are you guys friggin kidding me??????   I was on that page numerous times, searching and looking for something to press.  OH!!!!!   It\u2019s a trick/hidden button?!?!?!   You friggin morons.\n\nSo, now it was hooked up.\n\nAfter a two week cool-down, I finally decided that I would give it another try, so I turned on your amp and APP.  The first thing your APP asks for is for me to register the product.   OK.   And quickly it asked for me to enter the serial number.   AND THE NIGHTMARE CONTINUES.    I entered the serial number: Nope, that\u2019s not right.   Tried again:  Nope, that\u2019s not right.   Tried again: Nope, that\u2019s not right.     I just want to cry.   What is it with you people and these confusing systems?  \n\n\n  ((I had photos here, but they do not print))\n\n\nHere is my serial number, part number tag, along with your further instructions.\n  \n\nYa-know, if you made it easier, you wouldn\u2019t need instructions.\nThese instructions are absolutely meaningless to me.\nI have read them a dozen times, in amusement as to how someone tries to explain something, but doesn\u2019t help at all.\nWhich bullet point applies to me?   IDK?!?!?\nYour examples are more confusing.\nHow about this, why don\u2019t you use the proper format on your serial number tag and then there won\u2019t be any problems.\nWhatever.   I\u2019ll sleep better WITHOUT registering.\n\nI\u2019ve worked more than thirty years in electronic control systems, with the last twelve years with radio/navigation units as a Tier-1 to the automotive companies.   All of these products have displays.  \n\nNow, I\u2019m going to use an acronym that your company has obviously never heard of before:  \nHMI (Human Machine Interface): this refers to the systems and interfaces that allow humans to interact with machines or processes; through screens, control panels, or dashboards.  \n\nYou guys really need to become aware of and remove all of these little tricks, confusions and hidden meanings; so that your product is usable.   I suggest you read the book: The Inmates Are Running the Asylum by Alan Cooper: how engineers and programmers end up designing products for themselves, not for real users; why this leads to confusing, frustrating software.   Also: there are companies out there that specialize in helping companies like you improve their HMI.  I suggest you call them.\n\nAfter three weeks, I finally for the first time played with your amp.   It sounds good.  I guess it has all kinds of other features, like the looper; but I think that I just don\u2019t have the constitution to go beyond simply turning-on your amp and using it.  The idea that I will again and again and again and again and again be faced with confusions is too much to bear.  \nWhat a nightmare.\n\n\nRegards,\nMike Tramutolo\n",
+      "createdAt": "2026-02-09T21:17:00Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43383319986701.json"
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "I was inquiring online about the pedal\u2019s actuation by describing the way the pedal actuates on lifting your foot instead of when you press your foot and everything online I found said it should actuate when pressing, so I went to Positive Grid support to inquire and was told, I think by your AI assistant, that it was indeed to actuate when pressed and not when you lift your foot.  I was then contacted by a representative who asked for a video and then said it was working as designed, so now I\u2019m confused and can\u2019t find any literature on proper actuation of the pedal. I would like some sort of proper documentation, if possible, describing how it works.  I\u2019ve had the pedal for over a year and really never used it because of this issue, until I recently started to inquire about the issue. ",
+      "createdAt": "2026-02-10T02:17:25Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43391938183949.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I met Dave (ai) who listed some actions to test to get BIAS working. That didn't work (i already found all those actions to try on user forums). When I reported back that it wasn't working it and how to continue it was radio silence for several days until I found a solution myself. When I reported that and requested to close the support case I got an answer from Dave (ai) within an hour, and this feedback mail within a day. Soo, some human interaction as 2nd level support and a bit faster replies would have been appreciated. Anyhow, all is good and working now :)",
+      "createdAt": "2026-02-11T17:48:40Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43442485924621.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "AI answer that made me lose all my presets",
+      "createdAt": "2026-02-12T06:50:59Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43459021172621.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I don't get a solution / support till now. I think, your feedback mail is too fast... :)",
+      "createdAt": "2026-02-13T09:54:17Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43495393146765.json"
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "The AI was extremely clever; it took me a while to realise Devin was not a person.  However, Devin asked me to photograph my power supply, which I did, an then having establish it was okay, many further exchanges ensued.  Had it been a human being asking the questions, that person would have know to tell me to photograph the connector into the transformer, which would have immediately shown the power supply was the problem.  The problem would have been solved weeks earlier. \n\nThe person who finally got involved identified the problem very quickly.",
+      "createdAt": "2026-02-14T15:26:24Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43530410308237.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The AI refers to a option that is either non-existent or not where it says it is (feedback line) ",
+      "createdAt": "2026-02-16T20:21:35Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/43569068974861.json"
+    }
+  ],
+  "allComments": [
+    {
+      "ticketId": 405137182592,
+      "comment": "He was very attentive and helpful in solving our problem",
+      "createdAt": "2026-02-02T08:41:42Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Already tried your \u201csolution\u201d.  It doesn\u2019t work. You should\u2019ve just entered the registration number for me don\u2019t you think?",
+      "createdAt": "2026-02-03T00:20:46Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "to much AI",
+      "createdAt": "2026-02-03T11:45:51Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Purchased amp on Saturday 29 Jan specifically because of the 20% off offer. Realised straight away that I\u2019d ordered the wrong one so contacted customer services on the same day to try to prevent shipping and order the correct one. Was informed (by AI) that the amp had shipped on Saturday and then again by  customer service on Monday 2 Feb. Was then informed this morning Tuesday 3 Feb by Parcelforce that they had only just received and shipped the amp today. This means I will have to return or refuse delivery at a cost to myself, which surely could have been prevented! I was also informed that I could no longer get the 20% discount offer as it had expired. Not a good experience for my first purchase from Positive Grid.",
+      "createdAt": "2026-02-03T12:48:46Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I use an acoustic nylon strings guitar. May be the spark mini is dedicated for metalic strings.\nI have understand that it is a mod\u00e9lisation amp...\n",
+      "createdAt": "2026-02-03T16:17:30Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Didn\u2019t quite understand why if a product goes on sale within 30d of when the product was purchased, a price adjustment is not done. \n\nI appreciate the $20 coupon offered but it would have been nice if there were more options. In fact I would have loved the option to return it and then be able to take afvantage of the sale and get a larger amp. ",
+      "createdAt": "2026-02-04T03:57:59Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Difficult to find help page, contact email, etc.  Also, only got an AI bot response.  ",
+      "createdAt": "2026-02-04T13:22:21Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I have yet to hear back with a solution to my my issue so I can't give an opinion at this time",
+      "createdAt": "2026-02-04T15:23:52Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I disapprove of AI replacing humans. ",
+      "createdAt": "2026-02-04T16:24:32Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "1. When its an ai answer why give email a name?\n2. Sign off 'Best'. Best what? Best I could do?\n3. Says AI can make mistakes. Humans have managed without this tagline, huh?\n4. Spark Mini still not connecting with DAW.\noh well..",
+      "createdAt": "2026-02-05T13:29:40Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I don\u2019t want to hear from a fuckass ai when I reach out to customer support. ChatGPT is at my finger tips. If I\u2019m reaching out to the support email I want human responses. I don\u2019t get why it has to be so dystopian ",
+      "createdAt": "2026-02-05T19:18:18Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "The solution did nothing and I still have the same problem and cannot access my product.",
+      "createdAt": "2026-02-06T01:04:28Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "It took several emails to discover I was not communicating with a real person. At no time, or no where on the website did I find a phone number so I could speak to a real person. ",
+      "createdAt": "2026-02-06T16:59:59Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "No help at all! And I just paid for the \"X\" download and it will NOT work on my brand new Windows 11 laptop. WTF!?",
+      "createdAt": "2026-02-06T23:18:28Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Hi, \nI did not receive any real support as my remark was more to give a little feedback on my new Spark 2 and ask if possible to add some different styles in the jam section or looper drums section (like reggae, hiphop, punk rock,...) and also effects l, especialy a spring reverb.\nThe only answer I received is a A.I. email saying it will be forwarded further.\nI realy hope Positive Grid will add th9se styles amd effects to upgrade the user experience and bring more possibilities to the players using the devices.\nDefinitly enjoy the Spark 2 and the possibilities it offers.\nThank you",
+      "createdAt": "2026-02-07T06:52:37Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "My RMA is taking longer than expected and hasn\u2019t been resolved yet",
+      "createdAt": "2026-02-07T13:35:29Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "The issue is still not fixed..",
+      "createdAt": "2026-02-07T15:27:43Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "If you are using AI for response to inquiries then why does it take so long to get a response?  I'm not very happy to learn the XSonic foot controller for my Spark 40 was not made by Sonic and wasn't part of your regular product lineup.  I bought this controller when they first came out and there was no mention from Positive Grid that the foot controller was not made by the same company.  So it turns out I can't register the product with you because it wasn't made by you? I have had a lot of trouble with that footswitch, it is hard to get paired with my Spark 40 and is not an intuitive pairing process at all.  When it first came out on the market I was happy to hear it was available, since the amp did not have a footswitch previously.  i bought one when they first came available and have never had an easy time using it, so I never even tried to register it until recently, because I now have some time on my hands to master its usage but I am still frustrated with the difficulty in getting it to work with the amp.  ",
+      "createdAt": "2026-02-07T18:09:37Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I did not receive any support.",
+      "createdAt": "2026-02-08T02:04:44Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Hi!\nI would first like to thank Eleanor, my representative. She is fantastic and did an amazing job to help me! The solution I chose was to replace my Spark 40 with a new Spark 2. I love the products. There was an internal defect in my Spark 40 that caused it to cut out every few minutes. After researching Spark forums online, it seems this is a common issue in my model and it was recommended that Positive Grid would take of it. While you did provide me the option of a certified repair, the cost of repair and shipping charges I would incur totaled to $250 - $275. Eleanor offered me a second option of purchasing the Spark 2 with a discount to help compensate for my inconvenience. The discount was the standard upgrade discount available to all Spark 40 owners and an additional $20 coupon. While I am grateful for her offering me that discount (she said it was the most she was authorized to provide) I would have preferred a larger discount towards additional products as $20 seems a bit light. I appreciate your products and team, and am enjoying my new amp and learning the new tools it has. I hope my message can help you continue to provide great customer service.\nThanks,\nJohn Curiel",
+      "createdAt": "2026-02-08T02:35:18Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 384625104572,
+      "comment": "Terrible communication throughout",
+      "createdAt": "2026-02-08T08:01:04Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "the ai was very friendly and quick but it didn't tell me if my wish would be technically possible. it just said i understand your concern. would be much nicer to wait a little longer for a reply but get it from a real person",
+      "createdAt": "2026-02-08T16:25:35Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "Your cancellation process is basically non-existent. I cancelled an order almost immediately after making it and it was ignored and shipped anyway ",
+      "createdAt": "2026-02-09T16:05:36Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Dear Devin,\n\n\u200bThank you for your response.\n\n\u200bI would like to provide some technical feedback that might be helpful for your team. Despite the official documentation stating that the USB interface is only for Windows or Mac, I have successfully recorded high-quality digital audio and 4K video directly onto my Samsung Galaxy S24 Plus using a USB-C fiber optic cable. The phone recognizes the Spark LIVE perfectly as a professional audio interface.\n\n\u200bFurthermore, I found a solution for the backing track limitation: by connecting my iPad directly into the Spark LIVE's \"Line In\" port, I was able to mix the backing track with my guitar signal and send the full mix through the fiber optic USB cable to my mobile device. This setup resulted in a perfect, high-definition digital recording of both instruments.\n\n\u200bI believe this is a great workaround for mobile users who want to take full advantage of the Spark LIVE\u2019s digital output without needing a PC or Mac. I hope this information is useful for your technical support database.\n\n\u200bBest regards,\n\n\u200bMarcelo Ortega.",
+      "createdAt": "2026-02-09T17:55:46Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "It\u2019 taken me a couple of weeks to cool off from the frustrations of using the Spark-2.   Can you imagine?   I traded in my only other amp for yours, however I couldn\u2019t get it to work and when I finally did, I didn\u2019t want to look at this stupid thing.  It\u2019s been sitting for almost three weeks before I would try again.  Doesn\u2019t bode well for your product.   I will describe as follows.\n\nWhat sent me over the edge to the dark side: \nI spent over two hours trying to get your APP properly connected.  For over two hours I went back-and-forth over the procedures; rebooted my iPhone; rebooted your APP; but nothing would work.  I KNEW IT WAS AN EASY PROBLEM, so finally I went to your online contact for help.   \nTHIS IS WHERE THE NIGHTMARE started.   Now I have a whole new set of problems:  what the firmware levels, what type and software level of three other items?   ARE YOU GUYS OUT OF YOUR MINDS?  Is this how you help, by bringing more challenges and problems?   Thanks for nothing.  And you help service will not accept my email unless I answer all of your STUPID questions.  WHAT A NIGHTMARE!!!.   Let\u2019s not help the customer; let\u2019s piss-off them off!!!!   \n\nSo, I put B.S. answer into your system so that I could get through, and then it took four days to get a response.  FOUR DAYS!!!!!\n\nTHE ROOT CAUSE: \nNote:\n\u2022\tI had successfully downloaded your APP onto my iPhone 14 and registered with your company.\n\u2022\tI had successfully Bluetooth connected my iPhone 14 to your Spark 2.\n(I wish I had screen shots, however I could not get back in to see the screens, so I have to describe from memory)\nWhen I first opened your APP, the first page asks which Spark amp is being used.  Spark 2 >> done.  No problem\nThen the next page connects the Bluetooth.  Done successfully.\nBut then the next page read that I needed to \u201cconnect the audio\u201d.\nPlease note: I have no idea why/who/what/where/when \u201cconnect audio\u201d means.   And you gave no instructions.\nThen the next page (from memory) didn\u2019t say much.   it had the words \u201cconnect audio\u201d, however there were no instructions on what to do.   I thought \u201cmaybe if I touch the words \u201cconnect audio\u201d that that\u2019s a link/button.  I tried once, twice, three times I touched on the words \u201cconnect audio\u201d, but nothing.   Over the next couple of hours, as I was frustratingly going back-and-forth, I came upon this page several times; and I would think/wish that the words \u201cconnect audio\u201d was some sort of link/button to take me to connect audio.  I tried several times touching on the words \u201cconnect audio\u201d, but nothing.  I was blocked.\n\nAfter four days of waiting, I realized that the Spark company had no real intentions of helping me, I took your amp back to the music store (Guitar Center) from which I purchased it.  The store associate helped me.   He handled my iPhone, however he held it so that I could see what he was doing in your APP.   When he got to that third page, where the words \u201cconnect audio\u201d were, I was immediately thinking \u201cwell, there\u2019s nothing on this page to do\u201d.  Can you imagine my shock when he did select some secret/trick button that brought us to the next page in your APP, to allow us to connect the audio.   Are you guys friggin kidding me??????   I was on that page numerous times, searching and looking for something to press.  OH!!!!!   It\u2019s a trick/hidden button?!?!?!   You friggin morons.\n\nSo, now it was hooked up.\n\nAfter a two week cool-down, I finally decided that I would give it another try, so I turned on your amp and APP.  The first thing your APP asks for is for me to register the product.   OK.   And quickly it asked for me to enter the serial number.   AND THE NIGHTMARE CONTINUES.    I entered the serial number: Nope, that\u2019s not right.   Tried again:  Nope, that\u2019s not right.   Tried again: Nope, that\u2019s not right.     I just want to cry.   What is it with you people and these confusing systems?  \n\n\n  ((I had photos here, but they do not print))\n\n\nHere is my serial number, part number tag, along with your further instructions.\n  \n\nYa-know, if you made it easier, you wouldn\u2019t need instructions.\nThese instructions are absolutely meaningless to me.\nI have read them a dozen times, in amusement as to how someone tries to explain something, but doesn\u2019t help at all.\nWhich bullet point applies to me?   IDK?!?!?\nYour examples are more confusing.\nHow about this, why don\u2019t you use the proper format on your serial number tag and then there won\u2019t be any problems.\nWhatever.   I\u2019ll sleep better WITHOUT registering.\n\nI\u2019ve worked more than thirty years in electronic control systems, with the last twelve years with radio/navigation units as a Tier-1 to the automotive companies.   All of these products have displays.  \n\nNow, I\u2019m going to use an acronym that your company has obviously never heard of before:  \nHMI (Human Machine Interface): this refers to the systems and interfaces that allow humans to interact with machines or processes; through screens, control panels, or dashboards.  \n\nYou guys really need to become aware of and remove all of these little tricks, confusions and hidden meanings; so that your product is usable.   I suggest you read the book: The Inmates Are Running the Asylum by Alan Cooper: how engineers and programmers end up designing products for themselves, not for real users; why this leads to confusing, frustrating software.   Also: there are companies out there that specialize in helping companies like you improve their HMI.  I suggest you call them.\n\nAfter three weeks, I finally for the first time played with your amp.   It sounds good.  I guess it has all kinds of other features, like the looper; but I think that I just don\u2019t have the constitution to go beyond simply turning-on your amp and using it.  The idea that I will again and again and again and again and again be faced with confusions is too much to bear.  \nWhat a nightmare.\n\n\nRegards,\nMike Tramutolo\n",
+      "createdAt": "2026-02-09T21:17:00Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "I was inquiring online about the pedal\u2019s actuation by describing the way the pedal actuates on lifting your foot instead of when you press your foot and everything online I found said it should actuate when pressing, so I went to Positive Grid support to inquire and was told, I think by your AI assistant, that it was indeed to actuate when pressed and not when you lift your foot.  I was then contacted by a representative who asked for a video and then said it was working as designed, so now I\u2019m confused and can\u2019t find any literature on proper actuation of the pedal. I would like some sort of proper documentation, if possible, describing how it works.  I\u2019ve had the pedal for over a year and really never used it because of this issue, until I recently started to inquire about the issue. ",
+      "createdAt": "2026-02-10T02:17:25Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I have not been given a return label for shipping my amp back for replacement or any follow up after providing the RMA information",
+      "createdAt": "2026-02-10T15:40:17Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I met Dave (ai) who listed some actions to test to get BIAS working. That didn't work (i already found all those actions to try on user forums). When I reported back that it wasn't working it and how to continue it was radio silence for several days until I found a solution myself. When I reported that and requested to close the support case I got an answer from Dave (ai) within an hour, and this feedback mail within a day. Soo, some human interaction as 2nd level support and a bit faster replies would have been appreciated. Anyhow, all is good and working now :)",
+      "createdAt": "2026-02-11T17:48:40Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "AI answer that made me lose all my presets",
+      "createdAt": "2026-02-12T06:50:59Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I still can't use dropbox for my backups",
+      "createdAt": "2026-02-12T19:13:23Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "The person who was helping me was alright, he gave me some instructions to try fix my amp, however it didn't work.",
+      "createdAt": "2026-02-13T07:08:47Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I don't get a solution / support till now. I think, your feedback mail is too fast... :)",
+      "createdAt": "2026-02-13T09:54:17Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "The AI was extremely clever; it took me a while to realise Devin was not a person.  However, Devin asked me to photograph my power supply, which I did, an then having establish it was okay, many further exchanges ensued.  Had it been a human being asking the questions, that person would have know to tell me to photograph the connector into the transformer, which would have immediately shown the power supply was the problem.  The problem would have been solved weeks earlier. \n\nThe person who finally got involved identified the problem very quickly.",
+      "createdAt": "2026-02-14T15:26:24Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Muy mal todo",
+      "createdAt": "2026-02-15T10:04:09Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The AI refers to a option that is either non-existent or not where it says it is (feedback line) ",
+      "createdAt": "2026-02-16T20:21:35Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I never got my problem resolved.  I was just trying to order a custom cover for my spark amp.  When it was time to put it in my cart I got a pop-up saying 'something went wrong try again'.  I tried 3 times and got the same message.",
+      "createdAt": "2026-02-17T12:50:49Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Constant ping pong back and forth with an AI bot to work with. it was a week to just get a return label for a bricked unit. Information was provided via website to start process and re asked for in the troubleshooting, showing inefficiencies. The return label was fedex and it made it back to the warranty facility in 1 business day. However the return product sits in a warehouse for 4 days and is now trending another 7 days to make it to me? Its hard to see value in a return getting to you in 2 days and your Customer getting their item in 11 days. ",
+      "createdAt": "2026-02-18T13:26:04Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The AI was ill intormed. Kept repeating wrong answers ",
+      "createdAt": "2026-02-20T07:21:47Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "how about u respond first!!!!",
+      "createdAt": "2026-02-20T15:20:03Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Although prompt in response - No timeline for a resolution was given or even estimated. So that was a disappointment.",
+      "createdAt": "2026-02-20T15:38:14Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I'm not sure if it was just an AI-generated answer or solution.\n\nIf so, it should be labeled more clearly.",
+      "createdAt": "2026-02-20T16:17:40Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "not a fan of ai. especially when it missed the most basic bit of information and cost me many extra hours of troubleshooting for no reason at all. clearly didn\u2019t understand the basics of your products",
+      "createdAt": "2026-02-20T20:09:35Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I have tried a whole bunch of ways to install the firmware, and the Spark GO blinks green and says NO USB connection.  Just want to send it back",
+      "createdAt": "2026-02-20T23:44:46Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The problem remains unresolved. The app still reports the exact same problem of a vague and useless report of 'unkown error' when trying to backup tones. There has been no resolve as to what the reasons are behind the error, nor how to stop it occurring. The AI response has not resolved the problem.",
+      "createdAt": "2026-02-21T07:25:19Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Clearly there's a problem between spark app and Dropbox. The ai atendent assumed I had Dropbox app installed on my device and gave me poor answers. It isn't the case. I never used Dropbox app and the drop box backup was working fine until some time. I reinstalled it completely ",
+      "createdAt": "2026-02-21T13:04:56Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Clearly there's a problem between spark app and Dropbox. The ai atendent assumed I had Dropbox app installed on my device and gave me poor answers. It isn't the case. I never used Dropbox app and the drop box backup was working fine until some time. I reinstalled it completely and the problem persisted. I think a little more human accuracy analysing the problem could solve it.",
+      "createdAt": "2026-02-21T13:05:43Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I choose not to interact or support companies who choose to use A.I. over human beings. Is it always about the money?",
+      "createdAt": "2026-02-21T15:12:11Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 18494102380685,
+      "comment": "No easy way to quickly cancel a mistaken order but they are slow and wont respond to my outstanding support request.  I've been waiting over a week for a response.",
+      "createdAt": "2026-02-22T16:41:36Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Response was faster than I expected. Instruction were clear and effective. Nothing but kudos to Devin!",
+      "createdAt": "2026-02-22T23:53:21Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I would like to talk to a live tech support person.",
+      "createdAt": "2026-02-23T19:25:00Z",
+      "isAiNegative": false
+    }
+  ]
+}
