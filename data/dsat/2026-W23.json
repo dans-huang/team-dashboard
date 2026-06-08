@@ -1,0 +1,433 @@
+{
+  "period": "2026-03-09 ~ 2026-06-07",
+  "daysCount": 90,
+  "totalBadRatings": 231,
+  "withComments": 195,
+  "aiNegative": 109,
+  "aiNegativeRateOfComments": 55.9,
+  "aiNegativeRateOfAll": 47.19,
+  "samples": [
+    {
+      "ticketId": 41099952294541,
+      "comment": "I've nothing to say about the person interacting with me, polite, providing the information I was asking. The problem I have is related with the product, the effect Whammy not being available is bad, meaning we have to look for an additional pedal to get the effect we need. It goes against what you sell, we expect to have all the tons and effects available with your Amps and Software, if that's not the case then we need to start think about other solutions. I'm disappointed and somehow frustrated, regretting to have just acquire the Control X. I'm considering returning it and probably look for another option that can provide me what I need. ",
+      "createdAt": "2026-03-09T09:31:55Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44123238145677.json"
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "I am still waiting on my returns postage details! ",
+      "createdAt": "2026-03-10T07:27:53Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44156885151373.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I understand that the tech involved it's complex.  I purchased the mini for 3 basic purposes, play, ease of adding effects and ability to direct connect with my Mac.  2/3 is good, but it will not connect to my Mac.  Worked with ai step by step.  I understand that there may be a firmware update coming, ok.  Please sooner rather than later.  But, I've also been considering a second spark in the spark 2.  Though I understand the spark 2 is not having any problems, it gives me pause.  I dunno.  Here's to hoping you guys get it together.",
+      "createdAt": "2026-03-10T13:07:02Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44162129450637.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I never received a response. I\u2019ve checked my junk mail and this is the only email I\u2019ve received in response to my question.  Thanks ",
+      "createdAt": "2026-03-11T00:15:05Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44185461128717.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The response was AI generated. It would have been nice to have a real person giving me feedback, which would have been more accurate and personal.",
+      "createdAt": "2026-03-11T07:51:31Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44190443048973.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "AI Blah Blah",
+      "createdAt": "2026-03-11T13:50:49Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44196833414541.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Won\u2019tvrespond to my emails",
+      "createdAt": "2026-03-12T22:03:31Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44248456551565.json"
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I have a bass guitar and whilst there seem plenty aimed at the guitar the sound quality whilst using a bass guitar was very poor.  Ashsme really as it was such a lovely little gadget .. I wait hopefully there will be a little cute device with plenty of songs aimed at the bass guitar ? ",
+      "createdAt": "2026-03-12T22:07:11Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44248566349581.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "The unavailability of the volume slider to play backing tracks is a huge drawback in bias fx2 on the Ipad. This is also totally contrary to what is being shown on various youtube channels. ",
+      "createdAt": "2026-03-16T02:50:13Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44313119282829.json"
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "The support has been great but the concern is why I needed the support.  The mini is supposed to be a premium product and I've already had 2 that have failed for differing reasons and am now waiting for yet another replacement.  It doesn't instill confidence in the product and constantly being without a working amp has been very frustrating.",
+      "createdAt": "2026-03-17T09:46:42Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44351298064653.json"
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "The AI bot is....not ideal, but I get it. The solutions offered in various FAQs were hard to navigate - the button simply didn't work, and no amount of filming it made it work. Unplugging for 24hours was ultimately the solution, though that was accidentally arrived at (and I'm sure could have been a shorter time period), but that was never suggested. So it goes. It works. I love the product.",
+      "createdAt": "2026-03-18T15:30:51Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44394783050253.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The more automation, the less trust your consumers will have for your products and services so ultimately, less business for PG. \n\nThe 2nd email from \"Michael Fan\" who is an AI chat bot provided me with an acceptable answer. \n\nHowever, should anything out of the ordinary go wrong with my products arrival or it's functioning when it gets here, I'm confident that the resolution won't be solved with ease due to the lack of human resources on the business' end. \n\nPlease don't automate everything. There are plenty of reviews on the internet of PG consumers who have had product issues, shipping issues, refund issues, that are all exacerbated due to the lack of human interaction between the business and the consumer.  \n\nThis message will most likely not be seen by human. If I'm wrong, prove it. ",
+      "createdAt": "2026-03-18T16:34:36Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44397156058765.json"
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "I WANTED TO SPEAK TO A HUMAN. THE AI WAS VERY FRUSTRATING",
+      "createdAt": "2026-03-18T22:52:58Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44410637550477.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Vey kind reply but it actually didn't solve the issue. I really appreciate the discount coupon you offered me but I'm waiting for the final fix of the issue I reported, to be fully satisfied.",
+      "createdAt": "2026-03-19T07:14:33Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44416341530765.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I asked a pre-purchase question earlier this week. The AI bot answered. I asked further questions, in two emails attached to the same thread and received no response. Support is very important to me, and this is the only support email address I have. But with a response to only my initial question, that is very poor support.",
+      "createdAt": "2026-03-19T18:38:45Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44433303228173.json"
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "To get a answer from a Ai sucks.",
+      "createdAt": "2026-03-20T05:26:43Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44447266789133.json"
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I need to speak with a human I was denied this . I\u2019m blind upi need phone support . Not having accessibility is epic fail . Shame. ",
+      "createdAt": "2026-03-20T22:06:13Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44471403425549.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Read my email instead of soliciting more feedback from me",
+      "createdAt": "2026-03-21T00:09:30Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44473726242701.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I was shopping for a new Spark Live and asking questions about discounts and promos. Devin AI responded. My issue is with the AI support tool. It's fine for L1, but it doesn't allow for dialog, further questions. ",
+      "createdAt": "2026-03-22T12:48:50Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44493390764813.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "First, it\u2019s ridiculous that a customer cannot change their email address on an account. With all the data breaches happening these days, people\u2019s email addresses are accessed all the time. I wanted to change my email on this account because it has been involved with multiple data breaches, and I am trying to cut ad many ties as possible. It\u2019s embarrassing that it isn\u2019t an option in 2026.\n\nSecond, The AI assistant was incorrect regarding the spark upgrade promo for existing customers that had bought the original spark 40. I\u2019ve been able to apply the discount it in a cart, but have not checkout because I wanted to see if I could migrate all my data to another email address before doing so. \n\nI love your products, but this support was awful. ",
+      "createdAt": "2026-03-23T16:43:14Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44516853734285.json"
+    }
+  ],
+  "allComments": [
+    {
+      "ticketId": 41099952294541,
+      "comment": "I've nothing to say about the person interacting with me, polite, providing the information I was asking. The problem I have is related with the product, the effect Whammy not being available is bad, meaning we have to look for an additional pedal to get the effect we need. It goes against what you sell, we expect to have all the tons and effects available with your Amps and Software, if that's not the case then we need to start think about other solutions. I'm disappointed and somehow frustrated, regretting to have just acquire the Control X. I'm considering returning it and probably look for another option that can provide me what I need. ",
+      "createdAt": "2026-03-09T09:31:55Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "The Support was great, the solution not.\n\nI wanted a different model, even when I have to pay more for it. I understand it isn't possible. So I will look for different solutions in the market.",
+      "createdAt": "2026-03-09T10:30:23Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "I am still waiting on my returns postage details! ",
+      "createdAt": "2026-03-10T07:27:53Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I understand that the tech involved it's complex.  I purchased the mini for 3 basic purposes, play, ease of adding effects and ability to direct connect with my Mac.  2/3 is good, but it will not connect to my Mac.  Worked with ai step by step.  I understand that there may be a firmware update coming, ok.  Please sooner rather than later.  But, I've also been considering a second spark in the spark 2.  Though I understand the spark 2 is not having any problems, it gives me pause.  I dunno.  Here's to hoping you guys get it together.",
+      "createdAt": "2026-03-10T13:07:02Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I\u2019d like real human customer service in the phone. I just bought a new Spark 2 and it did not come with any instructions except a QR code for the users manual, which didn\u2019t really tell me how to get stated \u2014 for dummies. ",
+      "createdAt": "2026-03-10T21:56:55Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "Waste of $111",
+      "createdAt": "2026-03-10T23:49:44Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I never received a response. I\u2019ve checked my junk mail and this is the only email I\u2019ve received in response to my question.  Thanks ",
+      "createdAt": "2026-03-11T00:15:05Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Same explanation needed.",
+      "createdAt": "2026-03-11T03:38:30Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "Really didn\u2019t solve my problem ",
+      "createdAt": "2026-03-11T03:48:49Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The response was AI generated. It would have been nice to have a real person giving me feedback, which would have been more accurate and personal.",
+      "createdAt": "2026-03-11T07:51:31Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "AI Blah Blah",
+      "createdAt": "2026-03-11T13:50:49Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Won\u2019tvrespond to my emails",
+      "createdAt": "2026-03-12T22:03:31Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I have a bass guitar and whilst there seem plenty aimed at the guitar the sound quality whilst using a bass guitar was very poor.  Ashsme really as it was such a lovely little gadget .. I wait hopefully there will be a little cute device with plenty of songs aimed at the bass guitar ? ",
+      "createdAt": "2026-03-12T22:07:11Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Support was good.  Not being able to use the Spark app on my laptop....... Bad.  I may ditch the amp because of this.",
+      "createdAt": "2026-03-14T10:18:26Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I found the answer to my problem through the Spark Amp Users FB page before Positive Grid got back to me.",
+      "createdAt": "2026-03-14T17:48:48Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I couldn't get Bias X to start up after the verification screen. Spent numerous hours on different websites to find the solution of which I still don't know how I fixed it. But to be sure Positive grid support was pretty useless. I'm still within my 30 days and will most likely ask for a refund, we'll see. I was very disappointed that I couldn't use the software after 48 hours of purchase. ",
+      "createdAt": "2026-03-15T22:06:43Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "what would i do with free shipping ?",
+      "createdAt": "2026-03-15T22:30:54Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "The unavailability of the volume slider to play backing tracks is a huge drawback in bias fx2 on the Ipad. This is also totally contrary to what is being shown on various youtube channels. ",
+      "createdAt": "2026-03-16T02:50:13Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "It takes a long time, and in the end, I go nowhere with you.I will not buy any more positive grid products",
+      "createdAt": "2026-03-16T03:18:11Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Backing up presets just doesn't work, the proposed solution can't be applied to a large number of presets.",
+      "createdAt": "2026-03-16T13:41:28Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "The support has been great but the concern is why I needed the support.  The mini is supposed to be a premium product and I've already had 2 that have failed for differing reasons and am now waiting for yet another replacement.  It doesn't instill confidence in the product and constantly being without a working amp has been very frustrating.",
+      "createdAt": "2026-03-17T09:46:42Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "You guys are avoiding to solve My problem using recording on IOS devices",
+      "createdAt": "2026-03-17T16:18:57Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I didn\u2019t receive an answer to my question.",
+      "createdAt": "2026-03-17T17:41:51Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I dont like IA...\nI like humans !",
+      "createdAt": "2026-03-18T00:11:28Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "To register the product I need the serial number\nWhere is it??\nwhat make the process so difficult and time-wasting?",
+      "createdAt": "2026-03-18T05:38:18Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "The AI bot is....not ideal, but I get it. The solutions offered in various FAQs were hard to navigate - the button simply didn't work, and no amount of filming it made it work. Unplugging for 24hours was ultimately the solution, though that was accidentally arrived at (and I'm sure could have been a shorter time period), but that was never suggested. So it goes. It works. I love the product.",
+      "createdAt": "2026-03-18T15:30:51Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The more automation, the less trust your consumers will have for your products and services so ultimately, less business for PG. \n\nThe 2nd email from \"Michael Fan\" who is an AI chat bot provided me with an acceptable answer. \n\nHowever, should anything out of the ordinary go wrong with my products arrival or it's functioning when it gets here, I'm confident that the resolution won't be solved with ease due to the lack of human resources on the business' end. \n\nPlease don't automate everything. There are plenty of reviews on the internet of PG consumers who have had product issues, shipping issues, refund issues, that are all exacerbated due to the lack of human interaction between the business and the consumer.  \n\nThis message will most likely not be seen by human. If I'm wrong, prove it. ",
+      "createdAt": "2026-03-18T16:34:36Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "I WANTED TO SPEAK TO A HUMAN. THE AI WAS VERY FRUSTRATING",
+      "createdAt": "2026-03-18T22:52:58Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Vey kind reply but it actually didn't solve the issue. I really appreciate the discount coupon you offered me but I'm waiting for the final fix of the issue I reported, to be fully satisfied.",
+      "createdAt": "2026-03-19T07:14:33Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I asked a pre-purchase question earlier this week. The AI bot answered. I asked further questions, in two emails attached to the same thread and received no response. Support is very important to me, and this is the only support email address I have. But with a response to only my initial question, that is very poor support.",
+      "createdAt": "2026-03-19T18:38:45Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "To get a answer from a Ai sucks.",
+      "createdAt": "2026-03-20T05:26:43Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I need to speak with a human I was denied this . I\u2019m blind upi need phone support . Not having accessibility is epic fail . Shame. ",
+      "createdAt": "2026-03-20T22:06:13Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Read my email instead of soliciting more feedback from me",
+      "createdAt": "2026-03-21T00:09:30Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "My issue hasn't been addressed yet. ",
+      "createdAt": "2026-03-21T14:47:31Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I was shopping for a new Spark Live and asking questions about discounts and promos. Devin AI responded. My issue is with the AI support tool. It's fine for L1, but it doesn't allow for dialog, further questions. ",
+      "createdAt": "2026-03-22T12:48:50Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Equalization of Bluetooth Music is not possible in any way. It\u2019s a great limitation",
+      "createdAt": "2026-03-22T17:22:12Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "First, it\u2019s ridiculous that a customer cannot change their email address on an account. With all the data breaches happening these days, people\u2019s email addresses are accessed all the time. I wanted to change my email on this account because it has been involved with multiple data breaches, and I am trying to cut ad many ties as possible. It\u2019s embarrassing that it isn\u2019t an option in 2026.\n\nSecond, The AI assistant was incorrect regarding the spark upgrade promo for existing customers that had bought the original spark 40. I\u2019ve been able to apply the discount it in a cart, but have not checkout because I wanted to see if I could migrate all my data to another email address before doing so. \n\nI love your products, but this support was awful. ",
+      "createdAt": "2026-03-23T16:43:14Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I did not like to receive a AI response without a real perspective for a solution. Moreover, a wider range of hardware/OS coping with BIAS X is in my view essential for the success of this brilliant product.",
+      "createdAt": "2026-03-24T07:45:46Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I didn\u2019t get to deal with a live human until after the item ship there should be a way of modifying an order if you want to change the color without any hassle, I\u2019m stuck with a product that I don\u2019t want much higher price",
+      "createdAt": "2026-03-24T10:38:35Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Singularly and exclusively the worst customer support experience I've ever had.  Confusing support section of website, incredibly slow responses ... by AI authors given human names (really?) ... a complete inability to speak with someone with a brain ... which i doubt exists anyway.  I'm doing my best to spread the word so that others don't take the bait and have to suffer the inefficiency.  Good riddance,",
+      "createdAt": "2026-03-24T14:59:21Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I am still waiting to hear back from someone!",
+      "createdAt": "2026-03-24T23:41:56Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "It was a weeks long process to get a new charging cable. ",
+      "createdAt": "2026-03-25T14:17:33Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Not a big deal now but this was a used Spark Mini and I ended up returning it.   I responded to the AI generated (Devin) with the requested information and did not recieve any sort of responce on what to do next.  Like I said not a big deal now and the unit could have just been bad.  Either way not an issue now. I ended up ordering a new Spark Mini because I like the unit so much. ",
+      "createdAt": "2026-03-25T21:13:31Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Finally have to solve it myself. There were no any answer of the site or supporter response.",
+      "createdAt": "2026-03-26T07:14:19Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "The problem clearly lies with Positive Grid, not Image Line. Seems like it'd be a pretty simple fix too. Such a shame too. THe products has so msny good things about it, but I'll probably never use it. And I can't reccomend it to anyone else who uses FL STudio, which is a lot ofpeople.\n\nOh, well. If it ever gets resolved, I'll be the first to sing Bias X's praises. I also hope to be able to use Bias FX 2 and Bias Amp, all things I purchased but don't use. SUch a shame and a waste.",
+      "createdAt": "2026-03-26T11:15:15Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "Surprised there was an issue loading new firmware on Windows 11 after it has been out so long.  It also seemed weird that my ticket was closed although the problem wasn't fixed, so I am not sure what's next?",
+      "createdAt": "2026-03-26T13:03:54Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "The support person (Eleanor) was great.  Very helpful.  Unfortunately what Positive Grid is offering as a solution isn't acceptable to me, it doesn't really solve the underlying problem, and I'm left with a replacement that has the same design defect.  \n\nIf Positive Grid wants to be taken seriously for it's gear, it has to put our equipment that stands up to use.  Over the long term.   And if there are issues, then stand behind the products, fix the issues and support customers with solutions.  \n\nAnything less will mean that people won't be satisfied, and Positive Grid 's reputation will be impacted. \n\nWhich is too bad cause I love my Spark 40.  The equipment is fantastic.  It just has one fatal flaw resulting from a poor design choice with the power input plug. \n\nWhich hasn't been rectified, and I've been offered the option to pay for the same flawed amp I have.   \n\nI hope your company sorts this out. \n\nI was a satisfied customer, and a recommender.   \n\nWish I could say that I still am.  \n\nChristopher Stevenson ",
+      "createdAt": "2026-03-26T18:48:22Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "It didn't fix the issue um having",
+      "createdAt": "2026-03-27T23:13:53Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "The battery will not stay in on the Spark 2 without the battery cover. I was willing to pay for a replacement, but no solution was offered. I am sure that there are battery covers available to ship but this was not offered as a potential solution for me.\nSo now I am going to scan the battery cover, and 3D print it for myself.",
+      "createdAt": "2026-03-28T02:16:49Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "Dealt with a pointless AI Email Chat. Repeated issues between that and an actual person so what\u2019s the point??",
+      "createdAt": "2026-03-28T04:17:04Z",
+      "isAiNegative": true
+    }
+  ]
+}
