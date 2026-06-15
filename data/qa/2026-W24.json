@@ -1,0 +1,312 @@
+{
+  "period": "Week of 06/08 - 06/14",
+  "bcrWindow": "2026-03-16 ~ 2026-06-14",
+  "startDate": "2026-06-08",
+  "endDate": "2026-06-14",
+  "daysCount": 90,
+  "reportDate": "2026-06-14",
+  "bcr": {
+    "overall": 0.0,
+    "status": "below_target",
+    "target": 80,
+    "qaCount": 0,
+    "customerCount": 0
+  },
+  "bcrByProduct": [
+    {
+      "product": "Spark",
+      "qaBugs": 0,
+      "customerBugs": 0,
+      "total": 0,
+      "rate": 0.0
+    },
+    {
+      "product": "BIAS X",
+      "qaBugs": 0,
+      "customerBugs": 0,
+      "total": 0,
+      "rate": 0.0
+    }
+  ],
+  "bcrWeeklyTrend": [],
+  "testExecution": {
+    "Spark": {
+      "completedRuns": 4,
+      "totalRuns": 6,
+      "totalCases": 1250,
+      "totalPassed": 1164,
+      "totalFailed": 31,
+      "totalBlocked": 0,
+      "totalSkipped": 27,
+      "passRate": 93.1,
+      "avgVelocity": 131.2,
+      "blockedRate": 2.2
+    },
+    "BIAS X": {
+      "completedRuns": 8,
+      "totalRuns": 9,
+      "totalCases": 2115,
+      "totalPassed": 2006,
+      "totalFailed": 17,
+      "totalBlocked": 2,
+      "totalSkipped": 90,
+      "passRate": 94.8,
+      "avgVelocity": 109.4,
+      "blockedRate": 4.3
+    },
+    "Reactor": {
+      "completedRuns": 4,
+      "totalRuns": 12,
+      "totalCases": 946,
+      "totalPassed": 817,
+      "totalFailed": 57,
+      "totalBlocked": 4,
+      "totalSkipped": 57,
+      "passRate": 86.4,
+      "avgVelocity": 42.9,
+      "blockedRate": 6.4
+    }
+  },
+  "regressionTrend": {
+    "Spark": [
+      {
+        "title": "Spark Pedal 2.7.1.97 Full Regression",
+        "date": "2026-05-22",
+        "passed": 204,
+        "failed": 6,
+        "skipped": 17,
+        "blocked": 0,
+        "total": 244,
+        "rate": 83.6,
+        "delta": 0
+      }
+    ],
+    "BIAS X": [
+      {
+        "title": "1.2.3.60411 Full Regression (macOS15 Logic Pro11.2)",
+        "date": "2026-04-13",
+        "passed": 255,
+        "failed": 1,
+        "skipped": 9,
+        "blocked": 0,
+        "total": 265,
+        "rate": 96.2,
+        "delta": 0
+      },
+      {
+        "title": "1.2.3.60422 Full Regression (Win11 Pro Tools)",
+        "date": "2026-04-21",
+        "passed": 229,
+        "failed": 1,
+        "skipped": 8,
+        "blocked": 0,
+        "total": 238,
+        "rate": 96.2,
+        "delta": -0.0
+      },
+      {
+        "title": "1.2.3.60424 Full Regression (macOS 15 Logic Pro11)",
+        "date": "2026-04-27",
+        "passed": 227,
+        "failed": 1,
+        "skipped": 10,
+        "blocked": 0,
+        "total": 238,
+        "rate": 95.4,
+        "delta": -0.8
+      },
+      {
+        "title": "1.2.4.13994 Full Regression (macOS 15 Standalone)",
+        "date": "2026-05-19",
+        "passed": 244,
+        "failed": 3,
+        "skipped": 15,
+        "blocked": 0,
+        "total": 262,
+        "rate": 93.1,
+        "delta": -2.2
+      },
+      {
+        "title": "1.2.4.13994 Full Regression (Win11 Standalone)",
+        "date": "2026-05-26",
+        "passed": 245,
+        "failed": 3,
+        "skipped": 13,
+        "blocked": 1,
+        "total": 262,
+        "rate": 93.5,
+        "delta": 0.4
+      },
+      {
+        "title": "1.2.4.13994 Full Regression (Win10 22H2, Reaper 6)",
+        "date": "2026-05-28",
+        "passed": 270,
+        "failed": 3,
+        "skipped": 11,
+        "blocked": 0,
+        "total": 284,
+        "rate": 95.1,
+        "delta": 1.6
+      },
+      {
+        "title": "1.2.4.13994 Full Regression (macOS26, Logic Pro 12)",
+        "date": "2026-06-02",
+        "passed": 268,
+        "failed": 2,
+        "skipped": 13,
+        "blocked": 1,
+        "total": 284,
+        "rate": 94.4,
+        "delta": -0.7
+      },
+      {
+        "title": "1.2.4.13456 Full Regression (Win10 22H2, Cubase 15)",
+        "date": "2026-06-10",
+        "passed": 268,
+        "failed": 3,
+        "skipped": 11,
+        "blocked": 0,
+        "total": 282,
+        "rate": 95.0,
+        "delta": 0.7
+      }
+    ],
+    "Reactor": [
+      {
+        "title": "[Android] Reactor App 1.0.1097 GA Phase 1 Full Regression",
+        "date": "2026-04-09",
+        "passed": 368,
+        "failed": 25,
+        "skipped": 32,
+        "blocked": 1,
+        "total": 435,
+        "rate": 84.6,
+        "delta": 0
+      }
+    ]
+  },
+  "latestFunctionTest": [
+    {
+      "product": "Spark",
+      "title": "Spark App 4.5.3.78 core function test",
+      "projectCode": "SA",
+      "status": "completed",
+      "startDate": "2026-06-09",
+      "passed": 159,
+      "failed": 11,
+      "blocked": 0,
+      "skipped": 7,
+      "untested": 0,
+      "total": 178
+    },
+    {
+      "product": "Reactor",
+      "title": "Test run 2026/05/29",
+      "projectCode": "RAPP",
+      "status": "completed",
+      "startDate": "2026-05-29",
+      "passed": 221,
+      "failed": 6,
+      "blocked": 2,
+      "skipped": 16,
+      "untested": 0,
+      "total": 247
+    }
+  ],
+  "effortSignals": [
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "Flash Test run 2026/04/01 (S2): in progress for 75 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Spark",
+      "message": "Flash Test run 2026/04/01 (S2): 65% untested (64/98)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "Spark Pedal PVT Regression Test 20260320 (SP): in progress for 86 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "BIAS X",
+      "message": "1.2.4.13456 Full Regression (Win11, Studio One 7) (BX): 32% untested (90/282)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[iOS] Reactor App 1.0.17.69 GA Phase 1 Full Regression (RAPP): in progress for 67 days"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[iOS] Reactor App 1.0.18.70 GA Phase 2 Settings Page Function Test (RAPP): in progress for 58 days"
+    },
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[AI TEST] [Android] Reactor App 1.0.1097 GA Phase 1 Full Regression (RAPP): 34% blocked/skipped (147/428)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[AI TEST] [Android] Reactor App 1.0.1097 GA Phase 1 Full Regression (RAPP): in progress for 53 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Reactor",
+      "message": "[AI TEST] [Android] Reactor App 1.0.1097 GA Phase 1 Full Regression (RAPP): 66% untested (281/428)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[iOS]Reactor GA Production Regression Test (RAPP): in progress for 42 days"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[Android]Reactor GA Phase 4 release Regression Test (RAPP): in progress for 31 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Reactor",
+      "message": "[Android]Reactor GA Phase 4 release Regression Test (RAPP): 96% untested (483/504)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[iOS]20260525 Reactor GA Production Regression Test (RAPP): in progress for 21 days"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[iOS]Reactor App 1.1.0.93 Core Function Test (RAPP): in progress for 20 days"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[Android]Reactor App [Version number] Core Function Test (RAPP): in progress for 20 days"
+    }
+  ],
+  "recentBugs": {
+    "qa": [],
+    "customer": []
+  }
+}
