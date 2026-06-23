@@ -1,0 +1,177 @@
+{
+  "period": "2026-06-22 (Mon)",
+  "startDate": "2026-06-22",
+  "endDate": "2026-06-22",
+  "kpi": {
+    "totalTickets": 75,
+    "topProduct": "SPARK 2",
+    "refunds": 9,
+    "productCount": 23
+  },
+  "productBreakdown": [
+    {
+      "product": "SPARK 2",
+      "count": 10,
+      "pct": 13.3
+    },
+    {
+      "product": "SPARK",
+      "count": 8,
+      "pct": 10.7
+    },
+    {
+      "product": "SPARK GO",
+      "count": 7,
+      "pct": 9.3
+    },
+    {
+      "product": "PERSONALIZATION",
+      "count": 6,
+      "pct": 8.0
+    },
+    {
+      "product": "SPARK MINI",
+      "count": 5,
+      "pct": 6.7
+    },
+    {
+      "product": "SPARK NEO",
+      "count": 5,
+      "pct": 6.7
+    },
+    {
+      "product": "SPARK LINK",
+      "count": 3,
+      "pct": 4.0
+    },
+    {
+      "product": "SPARK LIVE",
+      "count": 3,
+      "pct": 4.0
+    },
+    {
+      "product": "REACTOR 100",
+      "count": 2,
+      "pct": 2.7
+    },
+    {
+      "product": "REACTOR 50",
+      "count": 2,
+      "pct": 2.7
+    },
+    {
+      "product": "Other (13 products)",
+      "count": 18,
+      "pct": 24.0
+    }
+  ],
+  "ticketTypes": [
+    {
+      "type": "Troubleshooting",
+      "count": 31,
+      "pct": 41.3
+    },
+    {
+      "type": "Request For Refund/Replacement",
+      "count": 9,
+      "pct": 12.0
+    },
+    {
+      "type": "Order Related",
+      "count": 8,
+      "pct": 10.7
+    },
+    {
+      "type": "How To Use",
+      "count": 5,
+      "pct": 6.7
+    },
+    {
+      "type": "Purchase Related",
+      "count": 5,
+      "pct": 6.7
+    },
+    {
+      "type": "License Related",
+      "count": 5,
+      "pct": 6.7
+    },
+    {
+      "type": "Product Spec",
+      "count": 3,
+      "pct": 4.0
+    },
+    {
+      "type": "Manage My Account",
+      "count": 2,
+      "pct": 2.7
+    },
+    {
+      "type": "Other (5 types)",
+      "count": 6,
+      "pct": 8.0
+    }
+  ],
+  "agentActivity": [
+    {
+      "name": "Devin (AI)",
+      "assigned": 30,
+      "replies": 45
+    },
+    {
+      "name": "Michael",
+      "assigned": 12,
+      "replies": 3
+    },
+    {
+      "name": "Eleanor",
+      "assigned": 11,
+      "replies": 8
+    },
+    {
+      "name": "Ryan",
+      "assigned": 8,
+      "replies": 17
+    },
+    {
+      "name": "Chris Hsu",
+      "assigned": 4,
+      "replies": 0
+    },
+    {
+      "name": "Jim",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Ernie",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "WT",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Vix",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Dans",
+      "assigned": 0,
+      "replies": 1
+    },
+    {
+      "name": "Robert",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Rob",
+      "assigned": 0,
+      "replies": 0
+    }
+  ]
+}
