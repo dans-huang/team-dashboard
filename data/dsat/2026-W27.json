@@ -1,0 +1,433 @@
+{
+  "period": "2026-04-06 ~ 2026-07-05",
+  "daysCount": 90,
+  "totalBadRatings": 217,
+  "withComments": 181,
+  "aiNegative": 103,
+  "aiNegativeRateOfComments": 56.91,
+  "aiNegativeRateOfAll": 47.47,
+  "samples": [
+    {
+      "ticketId": 16243939216525,
+      "comment": "The support I received did not actually solve the issue. The AI response only repeated troubleshooting steps I had already completed and did not provide any new or useful direction. The login problem resolved itself many hours later, which strongly suggests there was a temporary issue on Positive Grid\u2019s side. There was no clear communication about this, and I ended up wasting a significant amount of time trying to fix something that does not appear to have been caused by my local setup. This was a frustrating support experience and it should have been handled much better.",
+      "createdAt": "2026-04-08T09:24:37Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44923546564621.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "It would be helpful if Ai was informed of the issue at tonecloud server end, so it's assistance would be more accurate, instead of giving a wrong stock answer that would not solve the problem. ",
+      "createdAt": "2026-04-08T23:58:31Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44950570404237.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "straightforward NO to request for a discount on Spark CAB, since I have a lot of equipment (spark 1 & 22, BiasX and BiasFXII).  I've Paid full-price on nearly everything,. I only asked since they already are offering a discount on Spark2, which I think I paid full-price.  \n\nThe biggest criticisms I've seen or heard about PositiveGrid is releasing product, interested people pay full price then several months later it is heavily discounted. Now they stopped support for BIASFXII which a lot of people spent a lot of money on.  \n\n\n\n",
+      "createdAt": "2026-04-09T17:37:26Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44969334893581.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I just feel that if an Ai agent is going to respond, its response should be much faster than it actually is.  ",
+      "createdAt": "2026-04-09T17:58:47Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44970122750349.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I still am awaiting postage to semd back my debice under warranty",
+      "createdAt": "2026-04-09T22:54:34Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/44979435648909.json"
+    },
+    {
+      "ticketId": 11809167362189,
+      "comment": "I purchased the Bias X upgrade from Bias FX Elite four days ago. The order shows paid and order status shows \"Unfulfilled\".",
+      "createdAt": "2026-04-10T22:25:08Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45008278586893.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Ai chatbot was relatively quick. I\u2019m curiuos why these don\u2019t respond instantly though. However it was not quite correct and didn\u2019t see that I had purchased the product directly through positive grid and it was on record already just not registered. I submitted an actual picture of the serial number label on the product and it still asked for a picture in the second message. It also did not see that I had missed a space when tying in the serial #. In the end the actual reason the serial number wasn\u2019t registering was some sort of server issue that a human messaged about. Overall the ai service wasn\u2019t very helpful and the issue resolved itself. It was relatively quick though\u2026",
+      "createdAt": "2026-04-12T13:47:19Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45030307813133.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The problem with Dropbox backups isn't new. It's been reported on user forums for a long time. It's a great shame for the company that you can't solve it. What's more, you stubbornly refuse to admit the problem exists. You offer partial solutions, claiming they solve the problem. They don't. Spark is a relatively new product on the market, and many people are already complaining\u2014not about the hardware, but about the company's service. It's scary to think what the future will bring. I have very old Boss devices. Everyone still has company support, even though they're no longer in production. Maybe it's worth taking a look.",
+      "createdAt": "2026-04-13T15:01:22Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45049291195149.json"
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I don't like your usage of AI for support emails, its also part of the reason why I returned my amp as well with the stupid AI shit. Other than that the actual humans who responded to my emails were great.",
+      "createdAt": "2026-04-13T16:29:15Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45052801259789.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Your AI support is only for the basic issues.  It's also repetitive and took days to finally get a human involved.",
+      "createdAt": "2026-04-14T14:04:41Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45079405112845.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "\nI think it\u2019s ridiculous that just because you haven\u2019t bought your product new that you don\u2019t have the ability to use free software that goes with it. I can\u2019t get the original owner to respond to my email to remove his ownership from the software so apparently there\u2019s no way I can use the software to its full extent unless I keep pushing the used temporary button. I think this is ridiculous! You should be able to buy a license if you have one of your products that was purchased secondhand. I\u2019m using it, but I have to feel that there\u2019s more I could do with it if I had full access to the software that goes with it.",
+      "createdAt": "2026-04-15T22:28:40Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45131665344397.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I don't need an Ai response telling me how thoughtful I was. It's lame. ",
+      "createdAt": "2026-04-15T22:32:37Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45131763659277.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Plus using AI? ",
+      "createdAt": "2026-04-16T04:42:10Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45136777408909.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "As is universal in the feedback world, you're asking the wrong question:  \"How was this service conversation?\"  The correct question is, \"How satisfied are you with Positive Grid's handling of this problem?\"  I'll answer both questions:  \n\n\"How was this service conversation?\"   The conversation went ok, and your rep told me everything his script told him to say.  Blah blah blah, whatever.  \n\n\"How satisfied are you with Positive Grid's handling of this problem?\"  VERY unsatisfied.  You have a know, repeated problem that you have no intention of fixing anytime soon -- the Jimi Hendrix presets don't show up in the app after purchase, and have to be downloaded manually.  I purchased this add-on for the sole purpose of using those presets, and I can't do that without a very inconvenient work-around.  \n\nIt's a problem, it's fixable, and I didn't hear one word from your rep that gave me confidence that you care enough about the problem to fix it immediately.  I paid for something that I didn't get, and your best answer is \"one of these days, one of these days.\"  \n\nI've put a lot of money into Spark products in the last two months, but this transaction sours me on the whole deal.  ",
+      "createdAt": "2026-04-16T14:18:37Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45145130880909.json"
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I think it took too much time before a human got invited in the conversation for clarification\u2026 straightforward with the human 10/10!",
+      "createdAt": "2026-04-16T18:34:04Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45154756174733.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Support was good if u are a musician. However the AI used, when I tried to describe I wasn\u2019t a musician, responses that only a musician would understand. Was trying to explain that the sound from the headphones was softened or enhanced. Then it began to mock the fact that I wanted to use positive as close to natural as I could because the enhancement was nothing like my practices. It actually could not understand why I wanted it to at least be close to my Gibson real sound. \nThe answer is that if I knew more about music it would have been perfect, I don\u2019t, it wasn\u2019t. Have no complaints, it\u2019s obvious I have little knowledge and should not have purchased th positive grid because of that. A simple question of how I could get that real sometimes shitty practice sound wasn\u2019t answered cause it couldn\u2019t ascertain what I meant. Anyhow your AI couldn\u2019t answer, went on another AI sight. Will try it next wk. Love the gear though. Buying it was my fault. \nI\u2019ll figure it out. Again only complaint I have is my lack of knowledge.",
+      "createdAt": "2026-04-19T21:44:40Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45217245182861.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Maybe having an actual person handle this type of request would be more beneficial for both parties ",
+      "createdAt": "2026-04-20T16:21:50Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45233640587277.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "First answer, AI-generated, did not give a solution and it actually repeated my question. The second answer still did not give a solution,  but at least told me that someone is working on the solution",
+      "createdAt": "2026-04-21T05:26:17Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45253868974477.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "AI responses are not very helpful; feel that a personalized grill could be a great opportunity market your product as I\u2019m sure there\u2019s a demand for this. If there\u2019s a phone number I can call, I\u2019d be happy to speak with someone about a personalized Spark Cab grill or an extra grill. More than willing to pay what it costs to send an extra grill. I can also do a promo video for this product (and more), if that helps; I love the Spark link/Spark link XLR and would love to promote them! Thanks for reading and hope to hear back:)",
+      "createdAt": "2026-04-21T16:45:09Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45264973935885.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "AI is dumb, plenty of harmonica players are using the spark go\nWhy can\u2019t we have real humans answering a simple question ",
+      "createdAt": "2026-04-25T00:06:27Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45363907190157.json"
+    }
+  ],
+  "allComments": [
+    {
+      "ticketId": 16243939216525,
+      "comment": "Still have same issue",
+      "createdAt": "2026-04-07T11:51:07Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The support I received did not actually solve the issue. The AI response only repeated troubleshooting steps I had already completed and did not provide any new or useful direction. The login problem resolved itself many hours later, which strongly suggests there was a temporary issue on Positive Grid\u2019s side. There was no clear communication about this, and I ended up wasting a significant amount of time trying to fix something that does not appear to have been caused by my local setup. This was a frustrating support experience and it should have been handled much better.",
+      "createdAt": "2026-04-08T09:24:37Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "It would be helpful if Ai was informed of the issue at tonecloud server end, so it's assistance would be more accurate, instead of giving a wrong stock answer that would not solve the problem. ",
+      "createdAt": "2026-04-08T23:58:31Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I bought a Spark 40 regerstered it and used it for 6 years now you tell me its not mine.\n\nNo interest in doing any more business with you",
+      "createdAt": "2026-04-09T00:33:50Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "The person who answered my queries (Heyling, I believe was her name) was very helpful. However, I find it pretty absurd that the amp faces issues on updating the firmware via Windows 11 computers as a whole. That's an incredibly common operating system, and to have a flaw in the software so significant is not acceptable for a premium product like this.\n\nTo have the suggested fix be \"Try a different computer with a different operating system\" is not feasible for most people.",
+      "createdAt": "2026-04-09T11:24:06Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "straightforward NO to request for a discount on Spark CAB, since I have a lot of equipment (spark 1 & 22, BiasX and BiasFXII).  I've Paid full-price on nearly everything,. I only asked since they already are offering a discount on Spark2, which I think I paid full-price.  \n\nThe biggest criticisms I've seen or heard about PositiveGrid is releasing product, interested people pay full price then several months later it is heavily discounted. Now they stopped support for BIASFXII which a lot of people spent a lot of money on.  \n\n\n\n",
+      "createdAt": "2026-04-09T17:37:26Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I just feel that if an Ai agent is going to respond, its response should be much faster than it actually is.  ",
+      "createdAt": "2026-04-09T17:58:47Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I still am awaiting postage to semd back my debice under warranty",
+      "createdAt": "2026-04-09T22:54:34Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "riff is not working right and haveing problems with bias x no processed sound only direct i think its the riff \nand you still have my purchase for bias x as unfulfield ",
+      "createdAt": "2026-04-10T00:08:15Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "riff is not working right and haveing problems with bias x no processed sound only direct i think its the riff \nand you still have my purchase for bias x as unfulfilled ",
+      "createdAt": "2026-04-10T00:08:31Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Dear Positive Grid team, unfortunately, the experience was very poor, and I do not wish to hear about what you are unable to do for me. As a result, I have decided not to proceed with any purchase.\nI hope you understand and take this feedback seriously.\n\nSincerely,\n\nCarlos.",
+      "createdAt": "2026-04-10T12:05:17Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Product and software are not what I expected. Customer service attempted to help but offer no solutions.",
+      "createdAt": "2026-04-10T13:12:48Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 11809167362189,
+      "comment": "I purchased the Bias X upgrade from Bias FX Elite four days ago. The order shows paid and order status shows \"Unfulfilled\".",
+      "createdAt": "2026-04-10T22:25:08Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Since everything told me regarding the firmware update was already tried but still didn't resolve the issue. The software should work flawless regardless which Windows OS. I will use the product with older firmware but what about future updates and the ease of keeping your device up to date",
+      "createdAt": "2026-04-11T15:06:07Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Nice quick response. \nUnfortunately you couldn\u2019t resolve my issue. ",
+      "createdAt": "2026-04-12T09:39:54Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Ai chatbot was relatively quick. I\u2019m curiuos why these don\u2019t respond instantly though. However it was not quite correct and didn\u2019t see that I had purchased the product directly through positive grid and it was on record already just not registered. I submitted an actual picture of the serial number label on the product and it still asked for a picture in the second message. It also did not see that I had missed a space when tying in the serial #. In the end the actual reason the serial number wasn\u2019t registering was some sort of server issue that a human messaged about. Overall the ai service wasn\u2019t very helpful and the issue resolved itself. It was relatively quick though\u2026",
+      "createdAt": "2026-04-12T13:47:19Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The problem with Dropbox backups isn't new. It's been reported on user forums for a long time. It's a great shame for the company that you can't solve it. What's more, you stubbornly refuse to admit the problem exists. You offer partial solutions, claiming they solve the problem. They don't. Spark is a relatively new product on the market, and many people are already complaining\u2014not about the hardware, but about the company's service. It's scary to think what the future will bring. I have very old Boss devices. Everyone still has company support, even though they're no longer in production. Maybe it's worth taking a look.",
+      "createdAt": "2026-04-13T15:01:22Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I don't like your usage of AI for support emails, its also part of the reason why I returned my amp as well with the stupid AI shit. Other than that the actual humans who responded to my emails were great.",
+      "createdAt": "2026-04-13T16:29:15Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Unfortunately,  my question (how can I pay the Jimmy Hendrix set for the Spark 40 other than with Google pay) received no clean answer I could Deal with.\n So no order is placed...",
+      "createdAt": "2026-04-13T20:05:27Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I didn\u2019t receive any real support. I just received a quick answer to the issue so many people are facing with the same feature same product. \n\nSpark live could be the greatest amp in the market for non-professional musician\u2019s projects, but without that feature it turns into a super expensive average mixer/amplifier with some sound effects. \n\nSince I cannot afford to buy additional items to work on my projects, it seems I need to sell my Spark live to buy the item that has the feature I need to succeed in my projects. I hope the Technical Support Team work to creat a patch to include this feature cause I would like to have everything in just one product. \n",
+      "createdAt": "2026-04-14T06:25:47Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Your AI support is only for the basic issues.  It's also repetitive and took days to finally get a human involved.",
+      "createdAt": "2026-04-14T14:04:41Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I submitted a follow up question that hopefully be answered",
+      "createdAt": "2026-04-14T15:00:44Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "\nI think it\u2019s ridiculous that just because you haven\u2019t bought your product new that you don\u2019t have the ability to use free software that goes with it. I can\u2019t get the original owner to respond to my email to remove his ownership from the software so apparently there\u2019s no way I can use the software to its full extent unless I keep pushing the used temporary button. I think this is ridiculous! You should be able to buy a license if you have one of your products that was purchased secondhand. I\u2019m using it, but I have to feel that there\u2019s more I could do with it if I had full access to the software that goes with it.",
+      "createdAt": "2026-04-15T22:28:40Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I don't need an Ai response telling me how thoughtful I was. It's lame. ",
+      "createdAt": "2026-04-15T22:32:37Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Plus using AI? ",
+      "createdAt": "2026-04-16T04:42:10Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "As is universal in the feedback world, you're asking the wrong question:  \"How was this service conversation?\"  The correct question is, \"How satisfied are you with Positive Grid's handling of this problem?\"  I'll answer both questions:  \n\n\"How was this service conversation?\"   The conversation went ok, and your rep told me everything his script told him to say.  Blah blah blah, whatever.  \n\n\"How satisfied are you with Positive Grid's handling of this problem?\"  VERY unsatisfied.  You have a know, repeated problem that you have no intention of fixing anytime soon -- the Jimi Hendrix presets don't show up in the app after purchase, and have to be downloaded manually.  I purchased this add-on for the sole purpose of using those presets, and I can't do that without a very inconvenient work-around.  \n\nIt's a problem, it's fixable, and I didn't hear one word from your rep that gave me confidence that you care enough about the problem to fix it immediately.  I paid for something that I didn't get, and your best answer is \"one of these days, one of these days.\"  \n\nI've put a lot of money into Spark products in the last two months, but this transaction sours me on the whole deal.  ",
+      "createdAt": "2026-04-16T14:18:37Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I think it took too much time before a human got invited in the conversation for clarification\u2026 straightforward with the human 10/10!",
+      "createdAt": "2026-04-16T18:34:04Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "Several solutions were suggested, but none resolved the problem.  ",
+      "createdAt": "2026-04-16T23:50:03Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "The system asked for the same information twice before it would process a replacement and I never got a replacement notification that it was being shipped ",
+      "createdAt": "2026-04-18T02:27:59Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Support was good if u are a musician. However the AI used, when I tried to describe I wasn\u2019t a musician, responses that only a musician would understand. Was trying to explain that the sound from the headphones was softened or enhanced. Then it began to mock the fact that I wanted to use positive as close to natural as I could because the enhancement was nothing like my practices. It actually could not understand why I wanted it to at least be close to my Gibson real sound. \nThe answer is that if I knew more about music it would have been perfect, I don\u2019t, it wasn\u2019t. Have no complaints, it\u2019s obvious I have little knowledge and should not have purchased th positive grid because of that. A simple question of how I could get that real sometimes shitty practice sound wasn\u2019t answered cause it couldn\u2019t ascertain what I meant. Anyhow your AI couldn\u2019t answer, went on another AI sight. Will try it next wk. Love the gear though. Buying it was my fault. \nI\u2019ll figure it out. Again only complaint I have is my lack of knowledge.",
+      "createdAt": "2026-04-19T21:44:40Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Lack of a solution to update your product using latest Windows 11 system. ",
+      "createdAt": "2026-04-20T07:36:26Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Maybe having an actual person handle this type of request would be more beneficial for both parties ",
+      "createdAt": "2026-04-20T16:21:50Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "First answer, AI-generated, did not give a solution and it actually repeated my question. The second answer still did not give a solution,  but at least told me that someone is working on the solution",
+      "createdAt": "2026-04-21T05:26:17Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "AI responses are not very helpful; feel that a personalized grill could be a great opportunity market your product as I\u2019m sure there\u2019s a demand for this. If there\u2019s a phone number I can call, I\u2019d be happy to speak with someone about a personalized Spark Cab grill or an extra grill. More than willing to pay what it costs to send an extra grill. I can also do a promo video for this product (and more), if that helps; I love the Spark link/Spark link XLR and would love to promote them! Thanks for reading and hope to hear back:)",
+      "createdAt": "2026-04-21T16:45:09Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 396201035592,
+      "comment": "I bought the Hendrix extra, it\u2019s been over 3 weeks and NOT working!!! Took my money just fcking fine and been fooling around all this time with no solution.You need a person that knows how to do a return and start over. Walmart employees can accomplish this, not you people!!!",
+      "createdAt": "2026-04-22T01:58:03Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I only rated you satisfactory because the issue was not fixed.  The reply was very fast and I was told you are working on fixing the issue.  I hope it will not take a long time to fix the glitch you have with Windows 11 Version 25H2 updating.  Once the fix is completed and working,  I would change my rating to VERY SATISFIED. ",
+      "createdAt": "2026-04-22T11:01:51Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I purchased my PG product secondhand through legitimate means, and have extensive proof of ownership, yet the already-registered serial cannot be transferred to me, meaning I do not get any associated benefits of having the product registered in my name. Other companies in the music gear space can handle this just fine.",
+      "createdAt": "2026-04-24T03:04:53Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I feel the support for positive grid is very old support.. no modern technologies involved.. being able to support someone through text messages, social media like Facebook Messenger, life support. OR EVEN PHONE CALLS!! For a company this big it is unacceptable. Not to mention returning things is very difficult.. old school way. For modern company like this they should have better options for support, returning things.. not satisfied at all..",
+      "createdAt": "2026-04-24T15:47:50Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "AI is dumb, plenty of harmonica players are using the spark go\nWhy can\u2019t we have real humans answering a simple question ",
+      "createdAt": "2026-04-25T00:06:27Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Wrong answer by dumb AI.\nI try today and it works perfectly ",
+      "createdAt": "2026-04-25T00:08:31Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "This process has been ridiculous. I have a legitimate question about my PG product and I haven't yet had anyone hear it and provide an answer. I did everything asked of me, I just need a resolution",
+      "createdAt": "2026-04-25T02:20:23Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "I'm not sure how feasible this is but, ideally, you should test software such as your firmware updates on the windows 11 updates before they get released to the general public. Not sure if Microsoft have this facility for software houses though.",
+      "createdAt": "2026-04-25T03:32:26Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "But it was very fast and friendly.",
+      "createdAt": "2026-04-25T12:10:57Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "If you sell something as a matching cab to the Spark 2 amp, then the cab should actually match it both in tolex/vinyl color and sheen and in the grill cloth. Who wants a \u201cmatching\u201d cabinet that does not match the amp? I think this is basic logic that somehow Positive Grid seems to want to ignore. You should make your suppliers match the amp that they are making the cabinet to match. Like I said, this is basic. Do you think Fender or Marshall or Orange or Vox would make a cabinet that doesn\u2019t match the amp? I can\u2019t believe a company in this business wouldn\u2019t know this. I will never recommend Positive Grid products. Your philosophy is just stupid.",
+      "createdAt": "2026-04-27T20:18:39Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 18494102380685,
+      "comment": "no clear",
+      "createdAt": "2026-04-29T00:25:57Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "It's quite unbelievable that you can't update the firmware through IOS when use of a ipad is so prevalent.  ",
+      "createdAt": "2026-04-29T10:54:56Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I understand that someone registering and then returning an item involves a few extra steps but I purchased directly from Amazon so the solution of contacting the person who purchased before me is not an option. Truthfully being told I have no warranty extended to my purchase sours me on the whole process. ",
+      "createdAt": "2026-04-29T19:06:49Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "When it comes to replacing it a defective USB-C cord, I'm sorry, but the process as bad as it was actually could've been worse because I decided I wasn't going to do any of the things that was asked of me. It was like you were asking me to jump through hoops for a USB-C cord that should be working out of the box with my XLR link.\n\nThe problem has been solved, but I can't be impressed with this.",
+      "createdAt": "2026-04-30T18:20:21Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I can query an Ai myself, when I contact support I don't want to talk to an ai",
+      "createdAt": "2026-05-01T18:04:35Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Very poor. Faulty software product that doesn\u2019t meet the standard advertised. Sent at AI response that failed to deal with my issues. Very disappointed with Positive Grid after being a loyal customer for several years. ",
+      "createdAt": "2026-05-01T21:20:30Z",
+      "isAiNegative": true
+    }
+  ]
+}
