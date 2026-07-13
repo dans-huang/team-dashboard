@@ -1,0 +1,674 @@
+{
+  "period": "Week of 07/06 - 07/12",
+  "reportType": "weekly",
+  "startDate": "2026-07-06",
+  "endDate": "2026-07-12",
+  "alerts": [
+    {
+      "severity": "high",
+      "message": "BIAS FX 2 MOBILE \u91cf\u80fd +400%\uff081 \u2192 5\uff09",
+      "type": "volume_spike"
+    },
+    {
+      "severity": "high",
+      "message": "RIFF \u91cf\u80fd +100%\uff082 \u2192 4\uff09",
+      "type": "volume_spike"
+    }
+  ],
+  "kpi": {
+    "totalTickets": 509,
+    "topProduct": "SPARK 2",
+    "refunds": 48,
+    "productCount": 28
+  },
+  "dailyTrend": [
+    {
+      "date": "2026-07-05",
+      "day": "Sun",
+      "count": 24
+    },
+    {
+      "date": "2026-07-06",
+      "day": "Mon",
+      "count": 94
+    },
+    {
+      "date": "2026-07-07",
+      "day": "Tue",
+      "count": 87
+    },
+    {
+      "date": "2026-07-08",
+      "day": "Wed",
+      "count": 72
+    },
+    {
+      "date": "2026-07-09",
+      "day": "Thu",
+      "count": 79
+    },
+    {
+      "date": "2026-07-10",
+      "day": "Fri",
+      "count": 71
+    },
+    {
+      "date": "2026-07-11",
+      "day": "Sat",
+      "count": 55
+    },
+    {
+      "date": "2026-07-12",
+      "day": "Sun",
+      "count": 27
+    }
+  ],
+  "productBreakdown": [
+    {
+      "product": "SPARK 2",
+      "count": 94,
+      "pct": 18.5,
+      "delta": -9.615384615384617,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Power / Battery  Not Powering On",
+          "count": 18,
+          "tickets": [
+            {
+              "id": "592935"
+            },
+            {
+              "id": "592909"
+            },
+            {
+              "id": "593018"
+            },
+            {
+              "id": "593083"
+            },
+            {
+              "id": "592998"
+            }
+          ]
+        },
+        {
+          "tally": "Warranty  Warranty  Warranty Service Followup",
+          "count": 15,
+          "tickets": [
+            {
+              "id": "593055"
+            },
+            {
+              "id": "593033"
+            },
+            {
+              "id": "593028"
+            },
+            {
+              "id": "593027"
+            },
+            {
+              "id": "592995"
+            }
+          ]
+        },
+        {
+          "tally": "Product Inquiry  How To  How To   Configuration",
+          "count": 9,
+          "tickets": [
+            {
+              "id": "592965"
+            },
+            {
+              "id": "593025"
+            },
+            {
+              "id": "593023"
+            },
+            {
+              "id": "592985"
+            },
+            {
+              "id": "593092"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK",
+      "count": 69,
+      "pct": 13.6,
+      "delta": -14.814814814814813,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Hardware  Firmware Update Failed",
+          "count": 10,
+          "tickets": [
+            {
+              "id": "592916"
+            },
+            {
+              "id": "592908"
+            },
+            {
+              "id": "593058"
+            },
+            {
+              "id": "593021"
+            },
+            {
+              "id": "593132"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Sound  No Sound Output",
+          "count": 8,
+          "tickets": [
+            {
+              "id": "592970"
+            },
+            {
+              "id": "593034"
+            },
+            {
+              "id": "593004"
+            },
+            {
+              "id": "593170"
+            },
+            {
+              "id": "593110"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Sound  Cut In / Out",
+          "count": 3,
+          "tickets": [
+            {
+              "id": "592923"
+            },
+            {
+              "id": "593108"
+            },
+            {
+              "id": "593356"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK GO",
+      "count": 59,
+      "pct": 11.6,
+      "delta": 13.461538461538462,
+      "direction": "up",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Sound  No Sound Output",
+          "count": 9,
+          "tickets": [
+            {
+              "id": "592959"
+            },
+            {
+              "id": "593129"
+            },
+            {
+              "id": "593113"
+            },
+            {
+              "id": "593180"
+            },
+            {
+              "id": "593209"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Power / Battery  Not Powering On",
+          "count": 8,
+          "tickets": [
+            {
+              "id": "592922"
+            },
+            {
+              "id": "593045"
+            },
+            {
+              "id": "593029"
+            },
+            {
+              "id": "593260"
+            },
+            {
+              "id": "593213"
+            }
+          ]
+        },
+        {
+          "tally": "Warranty  Warranty  Warranty Service Followup",
+          "count": 7,
+          "tickets": [
+            {
+              "id": "592948"
+            },
+            {
+              "id": "593054"
+            },
+            {
+              "id": "593042"
+            },
+            {
+              "id": "593016"
+            },
+            {
+              "id": "593165"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK LINK",
+      "count": 44,
+      "pct": 8.6,
+      "delta": 4.761904761904762,
+      "direction": "up",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Power / Battery  Won T Charge Or Charges Slowly",
+          "count": 15,
+          "tickets": [
+            {
+              "id": "592971"
+            },
+            {
+              "id": "593049"
+            },
+            {
+              "id": "593032"
+            },
+            {
+              "id": "592994"
+            },
+            {
+              "id": "592993"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Hardware  Physical Controls / Parts",
+          "count": 6,
+          "tickets": [
+            {
+              "id": "592926"
+            },
+            {
+              "id": "593263"
+            },
+            {
+              "id": "593206"
+            },
+            {
+              "id": "593333"
+            },
+            {
+              "id": "593391"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Power / Battery  Not Powering On",
+          "count": 4,
+          "tickets": [
+            {
+              "id": "592957"
+            },
+            {
+              "id": "592913"
+            },
+            {
+              "id": "593247"
+            },
+            {
+              "id": "593395"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK NEO",
+      "count": 32,
+      "pct": 6.3,
+      "delta": 3.225806451612903,
+      "direction": "up",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Bluetooth / Wireless  Inter-Product Connection Issue",
+          "count": 4,
+          "tickets": [
+            {
+              "id": "592939"
+            },
+            {
+              "id": "592990"
+            },
+            {
+              "id": "593184"
+            },
+            {
+              "id": "593326"
+            }
+          ]
+        },
+        {
+          "tally": "Warranty  Warranty  Warranty Service Followup",
+          "count": 4,
+          "tickets": [
+            {
+              "id": "592927"
+            },
+            {
+              "id": "593015"
+            },
+            {
+              "id": "593279"
+            },
+            {
+              "id": "593370"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Hardware  Physical Controls / Parts",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "592912"
+            },
+            {
+              "id": "593312"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK MINI",
+      "count": 22,
+      "pct": 4.3,
+      "delta": -42.10526315789473,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Warranty  Warranty  Warranty Service Followup",
+          "count": 3,
+          "tickets": [
+            {
+              "id": "593072"
+            },
+            {
+              "id": "593136"
+            },
+            {
+              "id": "593271"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Hardware  Firmware Update Failed",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "592919"
+            },
+            {
+              "id": "593122"
+            }
+          ]
+        },
+        {
+          "tally": "Website  Product Registration  Cannot Register Successfully",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "593030"
+            },
+            {
+              "id": "593082"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK LIVE",
+      "count": 13,
+      "pct": 2.6,
+      "delta": 0.0,
+      "direction": "flat",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Sound  No Sound Output",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "592938"
+            },
+            {
+              "id": "593119"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Power / Battery  Not Powering On",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "593043"
+            },
+            {
+              "id": "593347"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Sound  White / Hiss Noise",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "593031"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "REACTOR 50",
+      "count": 12,
+      "pct": 2.4,
+      "delta": -53.84615384615385,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Post-Sales  Return   Refund Request  Refund Request",
+          "count": 4,
+          "tickets": [
+            {
+              "id": "593008"
+            },
+            {
+              "id": "593124"
+            },
+            {
+              "id": "593261"
+            },
+            {
+              "id": "593221"
+            }
+          ]
+        },
+        {
+          "tally": "Warranty  Warranty  Warranty Service Followup",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "593103"
+            },
+            {
+              "id": "593272"
+            }
+          ]
+        },
+        {
+          "tally": "Website  Product Registration  Cannot Register Successfully",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "592941"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Other (20 products)",
+      "count": 98,
+      "pct": 19.3,
+      "delta": 0,
+      "direction": "same",
+      "topIssues": []
+    }
+  ],
+  "ticketTypes": [
+    {
+      "type": "Troubleshooting",
+      "count": 239,
+      "pct": 47.0,
+      "delta": -17.869415807560138,
+      "direction": "down"
+    },
+    {
+      "type": "Request For Refund/Replacement",
+      "count": 48,
+      "pct": 9.4,
+      "delta": 4.3478260869565215,
+      "direction": "up"
+    },
+    {
+      "type": "How To Use",
+      "count": 26,
+      "pct": 5.1,
+      "delta": -21.21212121212121,
+      "direction": "down"
+    },
+    {
+      "type": "Shipping Related",
+      "count": 22,
+      "pct": 4.3,
+      "delta": -4.3478260869565215,
+      "direction": "down"
+    },
+    {
+      "type": "License Related",
+      "count": 22,
+      "pct": 4.3,
+      "delta": 22.22222222222222,
+      "direction": "up"
+    },
+    {
+      "type": "Product Spec",
+      "count": 18,
+      "pct": 3.5,
+      "delta": -41.935483870967744,
+      "direction": "down"
+    },
+    {
+      "type": "Product Registration",
+      "count": 17,
+      "pct": 3.3,
+      "delta": 13.333333333333334,
+      "direction": "up"
+    },
+    {
+      "type": "Order Related",
+      "count": 17,
+      "pct": 3.3,
+      "delta": -29.166666666666668,
+      "direction": "down"
+    }
+  ],
+  "stfs": [
+    {
+      "key": "STFS-491",
+      "summary": "Spark 40 / MINI / GO / NEO \u2013 Firmware Update Failure \u2013 Updater Does Not Start",
+      "status": "In Progress",
+      "product": "Hardware/Firmware",
+      "ticketCount": 198,
+      "followUp": false
+    },
+    {
+      "key": "STFS-338",
+      "summary": "Spark NEO - TX Doesn't Automatically Connect to the RX",
+      "status": "In Progress",
+      "product": "Hardware",
+      "ticketCount": 43,
+      "followUp": false
+    },
+    {
+      "key": "STFS-358",
+      "summary": "Spark app - Groove Looper Will be Out of Sync Gradually (Spark 2)",
+      "status": "In Progress",
+      "product": "Spark App",
+      "ticketCount": 31,
+      "followUp": false
+    },
+    {
+      "key": "STFS-390",
+      "summary": "Spark Control X - Choppy Audio",
+      "status": "To Do",
+      "product": "Hardware",
+      "ticketCount": 19,
+      "followUp": true
+    },
+    {
+      "key": "STFS-404",
+      "summary": "Spark 2 \u2013 Serial Number Detection Issue (ML IN Manufactured Units)",
+      "status": "To Do",
+      "product": "Hardware/Firmware",
+      "ticketCount": 18,
+      "followUp": true
+    },
+    {
+      "key": "STFS-209",
+      "summary": "Spark App (Android) - Saved Song Loading Issue",
+      "status": "To Do",
+      "product": "",
+      "ticketCount": 18,
+      "followUp": true
+    },
+    {
+      "key": "STFS-451",
+      "summary": "Spark app 4.5.1 - IAP License Issue (JH Pack)",
+      "status": "To Do",
+      "product": "Spark App",
+      "ticketCount": 17,
+      "followUp": true
+    },
+    {
+      "key": "STFS-372",
+      "summary": "BIAS FX 2 Mobile and BIAS AMP 2 Mobile Integration Issue on iOS / iPadOS",
+      "status": "To Do",
+      "product": "",
+      "ticketCount": 14,
+      "followUp": true
+    }
+  ]
+}
