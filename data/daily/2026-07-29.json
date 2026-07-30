@@ -1,0 +1,177 @@
+{
+  "period": "2026-07-29 (Wed)",
+  "startDate": "2026-07-29",
+  "endDate": "2026-07-29",
+  "kpi": {
+    "totalTickets": 89,
+    "topProduct": "SPARK GO",
+    "refunds": 9,
+    "productCount": 22
+  },
+  "productBreakdown": [
+    {
+      "product": "SPARK GO",
+      "count": 16,
+      "pct": 18.0
+    },
+    {
+      "product": "SPARK 2",
+      "count": 13,
+      "pct": 14.6
+    },
+    {
+      "product": "SPARK",
+      "count": 12,
+      "pct": 13.5
+    },
+    {
+      "product": "SPARK LINK",
+      "count": 6,
+      "pct": 6.7
+    },
+    {
+      "product": "REACTOR 50",
+      "count": 4,
+      "pct": 4.5
+    },
+    {
+      "product": "REACTOR CONTROL",
+      "count": 4,
+      "pct": 4.5
+    },
+    {
+      "product": "PERSONALIZATION",
+      "count": 3,
+      "pct": 3.4
+    },
+    {
+      "product": "EXPERIENCE JIMI HENDRIX",
+      "count": 3,
+      "pct": 3.4
+    },
+    {
+      "product": "SPARK CAB",
+      "count": 2,
+      "pct": 2.2
+    },
+    {
+      "product": "SPARK NEO TX",
+      "count": 2,
+      "pct": 2.2
+    },
+    {
+      "product": "Other (12 products)",
+      "count": 16,
+      "pct": 18.0
+    }
+  ],
+  "ticketTypes": [
+    {
+      "type": "Troubleshooting",
+      "count": 43,
+      "pct": 48.3
+    },
+    {
+      "type": "Shipping Related",
+      "count": 9,
+      "pct": 10.1
+    },
+    {
+      "type": "Request For Refund/Replacement",
+      "count": 9,
+      "pct": 10.1
+    },
+    {
+      "type": "How To Use",
+      "count": 4,
+      "pct": 4.5
+    },
+    {
+      "type": "Product Registration",
+      "count": 4,
+      "pct": 4.5
+    },
+    {
+      "type": "Order Related",
+      "count": 3,
+      "pct": 3.4
+    },
+    {
+      "type": "Newsletter Subscription",
+      "count": 3,
+      "pct": 3.4
+    },
+    {
+      "type": "Purchase Related",
+      "count": 3,
+      "pct": 3.4
+    },
+    {
+      "type": "Other (5 types)",
+      "count": 8,
+      "pct": 9.0
+    }
+  ],
+  "agentActivity": [
+    {
+      "name": "Devin (AI)",
+      "assigned": 44,
+      "replies": 64
+    },
+    {
+      "name": "Michael",
+      "assigned": 17,
+      "replies": 7
+    },
+    {
+      "name": "Eleanor",
+      "assigned": 8,
+      "replies": 7
+    },
+    {
+      "name": "Chris Hsu",
+      "assigned": 8,
+      "replies": 2
+    },
+    {
+      "name": "Ryan",
+      "assigned": 1,
+      "replies": 0
+    },
+    {
+      "name": "Jim",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Ernie",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "WT",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Vix",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Dans",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Robert",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Rob",
+      "assigned": 0,
+      "replies": 0
+    }
+  ]
+}
