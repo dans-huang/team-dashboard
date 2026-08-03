@@ -1,0 +1,433 @@
+{
+  "period": "2026-05-04 ~ 2026-08-02",
+  "daysCount": 90,
+  "totalBadRatings": 206,
+  "withComments": 171,
+  "aiNegative": 100,
+  "aiNegativeRateOfComments": 58.48,
+  "aiNegativeRateOfAll": 48.54,
+  "samples": [
+    {
+      "ticketId": 41099952294541,
+      "comment": "the promotion THIS WEEK email received on Monday April 27, was OVER by the time I tried to order a Spark Cab on Friday. There was no mention when the promotion ended. One might even consider it including the Saturday or end Sunday. Sale price was $339 Canadian, Original Price $399. I didn't notice until after Check Out process that the price was $399. When I got a response I received a Code for $10 off. Well, the Sales was $60 off. I will wait for another promotion. ",
+      "createdAt": "2026-05-04T00:08:21Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45569646814605.json"
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "The AI support does not provide quality feedback or instructions on how to fix issues. I would rather speak with an actual rep",
+      "createdAt": "2026-05-04T12:55:23Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45576776741389.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Product did not work o. My device... and the company refused to give me a refund so basicly they took 108 dollars from me and wasted my time for 3 weeks with emails thatnks for nothing",
+      "createdAt": "2026-05-04T13:09:20Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45577241360525.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "An AI response? Really? To a simple question that would have benefited from something human. Corporate. ",
+      "createdAt": "2026-05-05T14:28:47Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45612616939661.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "AI canned response.  Such bullshit support",
+      "createdAt": "2026-05-06T03:57:22Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45633993317389.json"
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I repeat too much the same information, with bot, then with human",
+      "createdAt": "2026-05-06T05:50:45Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45634831030541.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "It didn't say of there are any plans to offer a cover for Spark Cab, it only told me there isn't one available now. ",
+      "createdAt": "2026-05-07T04:21:52Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45664631945997.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I asked why not put the Spark Go on sale if you were flash selling the carry bag as just buying the carry bag for $13 meant paying $8 for shipping. The response was to buy the Spark Go at full price with the bag and qualify for free shipping. Though this statement is correct, it did not resolve my request and I can understand the request of a discount code could not be done but still left unsatisfied. If both products had been on sale I would have purchased both, instead I bought nothing. ",
+      "createdAt": "2026-05-07T08:16:22Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45666380616589.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Great to have a response even if it was a robot",
+      "createdAt": "2026-05-08T09:11:00Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45697304652173.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Great to have a response even if it was a robot, but no definite answer",
+      "createdAt": "2026-05-08T13:05:00Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45700916993165.json"
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I need a two dollar part.  Cheap parts from China that you guys dont even sell.  Your advice was to send it somewhere for repair....for a 2 dollar part!  Had to source it in my own and will try to repair.  You should at least be a resource for Parts procurement ",
+      "createdAt": "2026-05-09T20:33:51Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45733226533645.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Response time was fine...though don't know why I needed to 'verify' my email (don't tell me about security).  Simply don't understand how a product this otherwise advanced has such tiny controls...at least have a slider bar option.  And a bit in disbelief there is a laptop version either.",
+      "createdAt": "2026-05-11T13:48:42Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45756225542925.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Have real people get back to us, not AI\n",
+      "createdAt": "2026-05-12T01:02:02Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45777424004749.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Would've  given 5 stars if not A.I. ! Not a fan of a.i. was only 3 days late for go case deal , real person would let it slide as I've bought so much of your gear.",
+      "createdAt": "2026-05-12T08:20:44Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45781763589901.json"
+    },
+    {
+      "ticketId": 18494102380685,
+      "comment": "Latency is a fundamental and well-established specification for any DSP-based audio product. It is not an obscure or unreasonable data point to request, , it\u2019s actually a core performance metric that any serious musician or audio engineer would expect to be published before making a purchasing decision. The fact that Positive Grid does not have an \"official or internal published latency figure\" for a product already on the market is, at best, an oversight, and at worst, a deliberate choice to withhold information that may not reflect favorably on the product.\n\nI would also point out that every other reputable manufacturer in this space \u2014 including Line 6, Kemper, Neural DSP, and even Fractal Audio, who sets the bar for transparency in this industry, all publishes their latency specifications openly. Positive Grid appears to be the exception, not the norm.\n\nSuggesting that customers visit a Guitar Center for a \"hands-on test\" as a substitute for a published technical specification is not an acceptable answer either. Customers deserve measurable, verifiable data to make informed decisions, and not anecdotal impressions from a retail demo.\n\nI respectfully but firmly request that this matter be escalated to your engineering or product management team, and that a measured, published latency figure for the Spark LIVE be made available. Transparency with your customers is not optional \u2014 it is a baseline expectation.\n",
+      "createdAt": "2026-05-13T21:15:48Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45835944605581.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The AI system seemed gooed. The resolution not so good",
+      "createdAt": "2026-05-14T06:42:19Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45843499190285.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "The initial AI response was incorrect on all 3 points it answered. When a person picked up the query they were very helpful,  but I am still waiting for a definitive answer to one of my questions. ",
+      "createdAt": "2026-05-14T07:59:27Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45844045012365.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I assume since nothing of registered that to me I won't be able to use any of the features online or a craziness firmware or softwares or anything come with the internet said I could use it normally cuz I'm not normal some stuck with just the features that are built in there and it's just going to be a break at that point yes if I could contact the registered owner and see if they could unleash it I don't have that information you do you'd be so kind and provided to me or you reach out to them on behalf I'll make more sense to tell me to go find them how am I supposed to find them I want to use the amp and all the features about the buyer registration whatever the previously I owned Park one has registered money to get stolen that's gone and then across this without pawn shop it's a good deal so I got it you got any boyfriend here thanks",
+      "createdAt": "2026-05-14T22:28:43Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45869118111885.json"
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I contacted you directly to resolve the product fault and provided you with all the information you request led in a timely manner, only to be told that I need to raise the warranty claim through the original retailer (Amazon). The Spark amp was a Christmas gift from my elderly parents, who will now need to go through the whole process again on a product they have very little knowledge or understanding of. It would have been a lot easier if I could have resolved the issue directly with you.",
+      "createdAt": "2026-05-15T07:27:15Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45875516880781.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": " I wanted to know if the device would work with my specific guitar without an adapter.  The AI answered with information that I had already searched for (and found) before posting the question. If the adapter is sold on your website, I couldn't dind it.  The AI offered to prvide information about the adapter rather than just providing me with the information.\n\nThere are many wireless systems for use with guitars available for sale.  I have no reason to buy yours based on the poor response to my question.",
+      "createdAt": "2026-05-15T14:11:09Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45882264666637.json"
+    }
+  ],
+  "allComments": [
+    {
+      "ticketId": 41099952294541,
+      "comment": "the promotion THIS WEEK email received on Monday April 27, was OVER by the time I tried to order a Spark Cab on Friday. There was no mention when the promotion ended. One might even consider it including the Saturday or end Sunday. Sale price was $339 Canadian, Original Price $399. I didn't notice until after Check Out process that the price was $399. When I got a response I received a Code for $10 off. Well, the Sales was $60 off. I will wait for another promotion. ",
+      "createdAt": "2026-05-04T00:08:21Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "The AI support does not provide quality feedback or instructions on how to fix issues. I would rather speak with an actual rep",
+      "createdAt": "2026-05-04T12:55:23Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Product did not work o. My device... and the company refused to give me a refund so basicly they took 108 dollars from me and wasted my time for 3 weeks with emails thatnks for nothing",
+      "createdAt": "2026-05-04T13:09:20Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "An AI response? Really? To a simple question that would have benefited from something human. Corporate. ",
+      "createdAt": "2026-05-05T14:28:47Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "AI canned response.  Such bullshit support",
+      "createdAt": "2026-05-06T03:57:22Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I repeat too much the same information, with bot, then with human",
+      "createdAt": "2026-05-06T05:50:45Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I was able to fix issue myself.",
+      "createdAt": "2026-05-06T21:04:59Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Can\u2019t update the firmware on the device to access some of the advertised sonic features until a 3rd party (Microsoft) modifies their software.",
+      "createdAt": "2026-05-06T22:27:04Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I thought you'd have a carry case for the Spark Edge - but you don't",
+      "createdAt": "2026-05-07T00:11:39Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "It didn't say of there are any plans to offer a cover for Spark Cab, it only told me there isn't one available now. ",
+      "createdAt": "2026-05-07T04:21:52Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I asked why not put the Spark Go on sale if you were flash selling the carry bag as just buying the carry bag for $13 meant paying $8 for shipping. The response was to buy the Spark Go at full price with the bag and qualify for free shipping. Though this statement is correct, it did not resolve my request and I can understand the request of a discount code could not be done but still left unsatisfied. If both products had been on sale I would have purchased both, instead I bought nothing. ",
+      "createdAt": "2026-05-07T08:16:22Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Great to have a response even if it was a robot",
+      "createdAt": "2026-05-08T09:11:00Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I am very disappointed that I bought a Spark 2 and Spark Cab, and found out afterward that the grilles don\u2019t match. There\u2019s a reason that the Spark Cab matched the Spark 40, people expect matching products. I think the Spark Cab should\u2019ve been updated when the Spark 2 was introduced. Now I\u2019m trying to find third party solutions for this. ",
+      "createdAt": "2026-05-08T11:51:22Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Great to have a response even if it was a robot, but no definite answer",
+      "createdAt": "2026-05-08T13:05:00Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I was looking for a discount that I missed and the answer was a simple no... instead I have found coupons for at least 15 dollars discounts",
+      "createdAt": "2026-05-09T14:09:08Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 18494102380685,
+      "comment": "I understand that it is your company policy, so there may be nothing that can be done. However, I hope you would also consider secondhand buyers.\n\nIf the seller of a used product can no longer be contacted and is therefore unable to unregister the device, that is not the fault of the new buyer, is it?",
+      "createdAt": "2026-05-09T15:48:21Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I wanted to change the delivery address and despite the package not being shipped, it was still\nSent to the wrong address dine time after.",
+      "createdAt": "2026-05-09T19:29:02Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I need a two dollar part.  Cheap parts from China that you guys dont even sell.  Your advice was to send it somewhere for repair....for a 2 dollar part!  Had to source it in my own and will try to repair.  You should at least be a resource for Parts procurement ",
+      "createdAt": "2026-05-09T20:33:51Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "It took a long time for support to reply between messages, after doing many things you asked for the answer was return it to Amazon and then the $20 credit you gave me couldn't be used for the only item I wanted  to purchase. ",
+      "createdAt": "2026-05-11T01:03:33Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Response time was fine...though don't know why I needed to 'verify' my email (don't tell me about security).  Simply don't understand how a product this otherwise advanced has such tiny controls...at least have a slider bar option.  And a bit in disbelief there is a laptop version either.",
+      "createdAt": "2026-05-11T13:48:42Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Have real people get back to us, not AI\n",
+      "createdAt": "2026-05-12T01:02:02Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "It stated \"yes we understand/ know the problem\". Then irritatingly suggested the workaround that I gave it. Yes it works but standing on stage,  pressing the volume pedal, restarting the app, reconnecting everything just to see that the volume is still wrong is stupid. If your Control X gave me more control over Input 2 (not just Input 1) then I could use EQ in multiple presents.  Your stuff is clever but not clever enough. ",
+      "createdAt": "2026-05-12T06:42:42Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Would've  given 5 stars if not A.I. ! Not a fan of a.i. was only 3 days late for go case deal , real person would let it slide as I've bought so much of your gear.",
+      "createdAt": "2026-05-12T08:20:44Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Why don\u2019t you sell the adaptor chords separately. It is ridiculous. ",
+      "createdAt": "2026-05-12T22:49:40Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "Disappointed in product having an issue and having to find packaging to ship was unfortunate. It would\u2019ve been a lot nicer if new item was shipped so my son could use what I bought for him and then got to ship back in the correct box. We did nothing wrong and were hurt by it.",
+      "createdAt": "2026-05-13T01:34:04Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 18494102380685,
+      "comment": "Latency is a fundamental and well-established specification for any DSP-based audio product. It is not an obscure or unreasonable data point to request, , it\u2019s actually a core performance metric that any serious musician or audio engineer would expect to be published before making a purchasing decision. The fact that Positive Grid does not have an \"official or internal published latency figure\" for a product already on the market is, at best, an oversight, and at worst, a deliberate choice to withhold information that may not reflect favorably on the product.\n\nI would also point out that every other reputable manufacturer in this space \u2014 including Line 6, Kemper, Neural DSP, and even Fractal Audio, who sets the bar for transparency in this industry, all publishes their latency specifications openly. Positive Grid appears to be the exception, not the norm.\n\nSuggesting that customers visit a Guitar Center for a \"hands-on test\" as a substitute for a published technical specification is not an acceptable answer either. Customers deserve measurable, verifiable data to make informed decisions, and not anecdotal impressions from a retail demo.\n\nI respectfully but firmly request that this matter be escalated to your engineering or product management team, and that a measured, published latency figure for the Spark LIVE be made available. Transparency with your customers is not optional \u2014 it is a baseline expectation.\n",
+      "createdAt": "2026-05-13T21:15:48Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "It seems your technical department was unable to hear the hiss and distortion in my spark cab, which was obvious to all the guitarists I showed it to.\nI was hoping that I could get a newer manufactured unit, but was told to just send it back to Amazon at a cost of $84 shipping. \nI guess the customer is no longer right, we just have to accept inferior products and service.",
+      "createdAt": "2026-05-14T00:42:42Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The AI system seemed gooed. The resolution not so good",
+      "createdAt": "2026-05-14T06:42:19Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "The initial AI response was incorrect on all 3 points it answered. When a person picked up the query they were very helpful,  but I am still waiting for a definitive answer to one of my questions. ",
+      "createdAt": "2026-05-14T07:59:27Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The issue is not solved at all",
+      "createdAt": "2026-05-14T08:13:37Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I assume since nothing of registered that to me I won't be able to use any of the features online or a craziness firmware or softwares or anything come with the internet said I could use it normally cuz I'm not normal some stuck with just the features that are built in there and it's just going to be a break at that point yes if I could contact the registered owner and see if they could unleash it I don't have that information you do you'd be so kind and provided to me or you reach out to them on behalf I'll make more sense to tell me to go find them how am I supposed to find them I want to use the amp and all the features about the buyer registration whatever the previously I owned Park one has registered money to get stolen that's gone and then across this without pawn shop it's a good deal so I got it you got any boyfriend here thanks",
+      "createdAt": "2026-05-14T22:28:43Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I contacted you directly to resolve the product fault and provided you with all the information you request led in a timely manner, only to be told that I need to raise the warranty claim through the original retailer (Amazon). The Spark amp was a Christmas gift from my elderly parents, who will now need to go through the whole process again on a product they have very little knowledge or understanding of. It would have been a lot easier if I could have resolved the issue directly with you.",
+      "createdAt": "2026-05-15T07:27:15Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": " I wanted to know if the device would work with my specific guitar without an adapter.  The AI answered with information that I had already searched for (and found) before posting the question. If the adapter is sold on your website, I couldn't dind it.  The AI offered to prvide information about the adapter rather than just providing me with the information.\n\nThere are many wireless systems for use with guitars available for sale.  I have no reason to buy yours based on the poor response to my question.",
+      "createdAt": "2026-05-15T14:11:09Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Customers want to talk to a HUMAN on the PHONE. Not an AI bot. Pathetic. ",
+      "createdAt": "2026-05-15T19:25:34Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Just wanted to say thanks for your help getting my Spark2 unbricked\u2014I really appreciate the support! \ud83d\ude4c\nThat said, the reason I was tinkering with the firmware in the first place was to address a core issue that's still unresolved: the built-in looper. As it stands, the looper really needs a firmware update\u2014it's currently unusable because it drifts out of time and loses sync.\nAny chance this is on the roadmap? Happy to beta-test or provide detailed feedback if it helps.",
+      "createdAt": "2026-05-16T01:33:55Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Support got me right to the proper FAQ entry, so good on that, but this is literally THE ONLY bluetooth device I've ever had to re-pair every single time I use it. That is a weak design, and I'm disappointed in this product. I should have shopped more carefully and chosen another product, probably third party.",
+      "createdAt": "2026-05-16T11:40:48Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I find at least offensive to get response over an email from AI. I can accept chats using AI, but not official chanel like email, sorry. Also - getting the same response twice, ignoring feedback is just bad. ",
+      "createdAt": "2026-05-16T14:49:52Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I haven't got a resolution.  I asked to return the product so I can get my money back and I was sent another product instead.  I specifically wrote 2 emails that I did not want, but wanted to return the item and it still was sent to me.  My next step is contact my credit card to dispute this charge.",
+      "createdAt": "2026-05-17T15:27:05Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Was not good at all.  Kept repeating steps.  Then treated me like a child with instructions.  In the end, the last question was to check on something (that was the original problem)  NOT HELPFUL AT ALL> Not sure I will ever use BIAS FX 2 after this experience.  Probably looking to go with a different company.  Glad I didn't spend more to get AI version.",
+      "createdAt": "2026-05-17T23:54:54Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "The warranty replacement SPARK \n1) WAS NOT WHITE,IT WAS BLACK\n2) IS A FAULTY UNIT. IT TURNS ON, YES BUT DOESNOT FUNCTION AS A AMPLIFIER. JUST LOUND NOISE COMES OUT OF IT. \n\nPLEASE SEND A NEW-NON FURBISHED WHITE SPARK 2 TO MY ADDRESSS.\n571-242-0042\nshaz.javed.usmc@gmail.com",
+      "createdAt": "2026-05-18T22:47:03Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Since the Spark 2 has output and the Spark Live has input I was under the impression that I could use the two together to have a two amp configuration.",
+      "createdAt": "2026-05-19T14:06:59Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Customer service to terrible.  You don't listen to your customer and you show no sense of urgency.  I would not buy another product nor recommend your products to friends. ",
+      "createdAt": "2026-05-19T15:21:14Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 18494102380685,
+      "comment": "AI responses don't necessarily solve anything.  They only apologized for the delay....",
+      "createdAt": "2026-05-19T22:35:12Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I was just wanting the 10% off for signing up with my email. This doesn\u2019t impact my desire to buy PG products. I just thought it would be easy to apply the 10% to my order with a code or link. Maybe there was a time restriction? Anyway, nothing against the person who helped me, it is just the information I was seeking didn\u2019t get conveyed. It is almost as if the responsibility and blame for not knowing how to access the 10% discount was my fault and my problem. My ADHD/Dyslexic brain couldn\u2019t figure it out and my own so I was seeking help. Did I get the help I requested? No. Shalom \u05e9\u05dc\u05d5\u05dd ",
+      "createdAt": "2026-05-19T23:19:37Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "I had only just opened the box of my brand new Cab  and now 19 emails later I\u2019m still waiting for the missing part. I had to jump through hoops to prove that I\u2019d bought it when you could have just checked my account with you. ",
+      "createdAt": "2026-05-20T06:13:34Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Do better guys. Do way better than this.",
+      "createdAt": "2026-05-23T18:40:20Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I got a response in style, everything is as it should be, everything is working correctly. Well, I would like to solve my problem with the lack of high and medium frequencies of sound.",
+      "createdAt": "2026-05-24T10:52:31Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Even though it is nice to give me 20 euros voucher, the final price is still almost 50 euros higher than what I found on Amazon...",
+      "createdAt": "2026-05-27T00:02:27Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Little bit hardline given I\u2019ve been a PG customer for years and I wasn\u2019t able to extend the Bias x trial wanted due to hardware incompatibility at my end, (I only had an ageing MacBook Air and a cheap interface) - I fully intended to purchase Bias X within a couple of months now I probably won\u2019t. Shame really but maybe one day funds allowing and I\u2019m still a Positive Grid fan.",
+      "createdAt": "2026-05-27T07:01:55Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "The step by step troubleshooting response was nice, but it didn\u2019t resolve my issue. I\u2019m so so so so so so soooooo fed up with my spark control causing audio skipping that it\u2019s not even enjoyable playing guitar right now. It would have been nice at the end of the email to have some sort of follow up contact, but instead it told me to not use my spark control and audio playback together which is one their features. I\u2019m so unbelievably frustrated",
+      "createdAt": "2026-05-28T04:52:46Z",
+      "isAiNegative": true
+    }
+  ]
+}
