@@ -1,0 +1,433 @@
+{
+  "period": "2026-05-18 ~ 2026-08-16",
+  "daysCount": 90,
+  "totalBadRatings": 188,
+  "withComments": 154,
+  "aiNegative": 87,
+  "aiNegativeRateOfComments": 56.49,
+  "aiNegativeRateOfAll": 46.28,
+  "samples": [
+    {
+      "ticketId": 405137182592,
+      "comment": "The warranty replacement SPARK \n1) WAS NOT WHITE,IT WAS BLACK\n2) IS A FAULTY UNIT. IT TURNS ON, YES BUT DOESNOT FUNCTION AS A AMPLIFIER. JUST LOUND NOISE COMES OUT OF IT. \n\nPLEASE SEND A NEW-NON FURBISHED WHITE SPARK 2 TO MY ADDRESSS.\n571-242-0042\nshaz.javed.usmc@gmail.com",
+      "createdAt": "2026-05-18T22:47:03Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45958442174605.json"
+    },
+    {
+      "ticketId": 18494102380685,
+      "comment": "AI responses don't necessarily solve anything.  They only apologized for the delay....",
+      "createdAt": "2026-05-19T22:35:12Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45992006078221.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I was just wanting the 10% off for signing up with my email. This doesn\u2019t impact my desire to buy PG products. I just thought it would be easy to apply the 10% to my order with a code or link. Maybe there was a time restriction? Anyway, nothing against the person who helped me, it is just the information I was seeking didn\u2019t get conveyed. It is almost as if the responsibility and blame for not knowing how to access the 10% discount was my fault and my problem. My ADHD/Dyslexic brain couldn\u2019t figure it out and my own so I was seeking help. Did I get the help I requested? No. Shalom \u05e9\u05dc\u05d5\u05dd ",
+      "createdAt": "2026-05-19T23:19:37Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45992979053581.json"
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "I had only just opened the box of my brand new Cab  and now 19 emails later I\u2019m still waiting for the missing part. I had to jump through hoops to prove that I\u2019d bought it when you could have just checked my account with you. ",
+      "createdAt": "2026-05-20T06:13:34Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/45998371230605.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Little bit hardline given I\u2019ve been a PG customer for years and I wasn\u2019t able to extend the Bias x trial wanted due to hardware incompatibility at my end, (I only had an ageing MacBook Air and a cheap interface) - I fully intended to purchase Bias X within a couple of months now I probably won\u2019t. Shame really but maybe one day funds allowing and I\u2019m still a Positive Grid fan.",
+      "createdAt": "2026-05-27T07:01:55Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46175892723853.json"
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "The step by step troubleshooting response was nice, but it didn\u2019t resolve my issue. I\u2019m so so so so so so soooooo fed up with my spark control causing audio skipping that it\u2019s not even enjoyable playing guitar right now. It would have been nice at the end of the email to have some sort of follow up contact, but instead it told me to not use my spark control and audio playback together which is one their features. I\u2019m so unbelievably frustrated",
+      "createdAt": "2026-05-28T04:52:46Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46205656554125.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I received an AI response to a question about using wah pedals without the Jimi Hendrix mod. I am attaching the response below.\n\nThe Experience Jimi Hendrix\u2122 expansion was officially discontinued on April 30, 2026 and is no longer available for purchase. I'm not able to share information about future product plans, but any announcements would come through Positive Grid's official channels \u2014 subscribing to the newsletter at positivegrid.com is the easiest way to stay in the loop.\n\nFor wah on Spark 2: the J.H. Legendary Wah from that pack was the only built-in wah option in the Spark app, so that route isn't currently available if you missed the April 30 cutoff.\n\nThe good news is that a traditional hardware wah pedal works perfectly in your signal chain \u2014 just connect guitar \u2192 wah pedal \u2192 Spark 2 input. You get full wah control right in the middle of your pedalboard with no app dependency needed.\n\nI would like someone to tell me a good model of wah to use with the Spark control X and any limitations it may have as far as mixing, as well as if a similar expansion to the Hendrix mod will be released?",
+      "createdAt": "2026-05-28T14:06:08Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46213516172941.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Ai slop",
+      "createdAt": "2026-05-29T21:07:33Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46259223606669.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "My purchases are still linked to my old email address that will soon be closing",
+      "createdAt": "2026-06-01T08:50:19Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46293141925389.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The product had not shipped but I was told that they could not cancel the order before it ships. That I would have to wait for it to arrive and then return the item. What a waste. ",
+      "createdAt": "2026-06-02T12:49:11Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46329399192845.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "My original complaint was that the Positive Grid Neo wireless transmitter does not fit the Ibanez S series guitars. This is a known issue. \n\nYou recommend an extension on your site, but the site does not point to sources where we can purchase them. (Also, I have the angle jack and it definitely is NOT a good workaround because it places the entire contraption in the way of the whammy bar. )\n\nCan you point customers to the straight extension you have a picture of on your website. My attempts to source a suitable female-make 1/4 Jack extension have been unsuccessful.\n\nCheers",
+      "createdAt": "2026-06-02T23:29:19Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46352143664525.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "1st: AI is not supportive. AI is just a cheap solution for you not having to pay real humans. Shame on you!\n\n2nd: when I buy a Pedal that cost aprox. 400\u20ac on the Street I do not understand how you can not Provider a solution to fully use it, even if an other customer allready used the redeem Code.\nThere are companies offering better software-support than you guys do.\nI am disappointed. This is 2026 and you act like IT is something Completely new.",
+      "createdAt": "2026-06-03T12:19:05Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46360771517325.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Only wanted a simple answer to a question. I have purchased a lot of your products. But not buying no more. Do not want to speak to an AI bot. That cannot answer my question.",
+      "createdAt": "2026-06-03T17:25:49Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46371765392269.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I gave golden feedback for the spark smart jam system, and all I received was AI reply. Lame",
+      "createdAt": "2026-06-04T02:10:12Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46385701877389.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I requested to cancel the order and was told it was too late even though it had not shipped. I have now requested a return label and received this email instead of the label. ",
+      "createdAt": "2026-06-06T20:53:58Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46450023084941.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Case/Issue 590117, on 5 June, was \"transferred to a human agent\" by AI for assistance. No further communication from Positive Grid, incld. any \"human agent\" since ...... only this survey asking how it went!??",
+      "createdAt": "2026-06-07T05:27:32Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46454259245709.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I have a Spark, it's a great little amp\u2026but I would have hoped using Ai that the Reactor would have multi tap delay or maybe the possibility of using two delays in the chain, to get the Hank Marvin sound I would like (and a lot of others)\u2026..same for the omission at the moment of a pitch shifter etc, for a classic 12 string sound from the 60s\u2026.I have a pedal made by Digitech for a lovely 12 string sound, so it can be done, but would rather have a preset on the Reactor for ease of use\u2026.maybe these can be future updates ( maybe model a Meazzi valve echo unit for the Hank sound) and maybe model a Rickenbacker 12 string\u2026\u2026At the moment, without these features, I doubt if I will buy over my Spark\u2026..There are more to amps than hundreds of overdrive and distorted Rock and Metal tones. ",
+      "createdAt": "2026-06-07T07:22:46Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46454833351053.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "It was a meaningless AIi response. Didn\u2019t address the issue at all. ",
+      "createdAt": "2026-06-07T15:31:23Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46458150388365.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I dont like it, that I get an AI answer.\nThat didnt answer my question.",
+      "createdAt": "2026-06-07T16:57:33Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46459024226701.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Need to figure out how to use looper, right now I got about 10 sec. Watch looper videos several times no explanation on how to extend times. Your support answers didn\u2019t explain how to get to the actions to make changes, either that or I\u2019m too stupid to understand. Basic metronome nor grove looper have menu options to prolong time that I can find.",
+      "createdAt": "2026-06-07T23:47:48Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46463246757133.json"
+    }
+  ],
+  "allComments": [
+    {
+      "ticketId": 405137182592,
+      "comment": "The warranty replacement SPARK \n1) WAS NOT WHITE,IT WAS BLACK\n2) IS A FAULTY UNIT. IT TURNS ON, YES BUT DOESNOT FUNCTION AS A AMPLIFIER. JUST LOUND NOISE COMES OUT OF IT. \n\nPLEASE SEND A NEW-NON FURBISHED WHITE SPARK 2 TO MY ADDRESSS.\n571-242-0042\nshaz.javed.usmc@gmail.com",
+      "createdAt": "2026-05-18T22:47:03Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Since the Spark 2 has output and the Spark Live has input I was under the impression that I could use the two together to have a two amp configuration.",
+      "createdAt": "2026-05-19T14:06:59Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Customer service to terrible.  You don't listen to your customer and you show no sense of urgency.  I would not buy another product nor recommend your products to friends. ",
+      "createdAt": "2026-05-19T15:21:14Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 18494102380685,
+      "comment": "AI responses don't necessarily solve anything.  They only apologized for the delay....",
+      "createdAt": "2026-05-19T22:35:12Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I was just wanting the 10% off for signing up with my email. This doesn\u2019t impact my desire to buy PG products. I just thought it would be easy to apply the 10% to my order with a code or link. Maybe there was a time restriction? Anyway, nothing against the person who helped me, it is just the information I was seeking didn\u2019t get conveyed. It is almost as if the responsibility and blame for not knowing how to access the 10% discount was my fault and my problem. My ADHD/Dyslexic brain couldn\u2019t figure it out and my own so I was seeking help. Did I get the help I requested? No. Shalom \u05e9\u05dc\u05d5\u05dd ",
+      "createdAt": "2026-05-19T23:19:37Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "I had only just opened the box of my brand new Cab  and now 19 emails later I\u2019m still waiting for the missing part. I had to jump through hoops to prove that I\u2019d bought it when you could have just checked my account with you. ",
+      "createdAt": "2026-05-20T06:13:34Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Do better guys. Do way better than this.",
+      "createdAt": "2026-05-23T18:40:20Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I got a response in style, everything is as it should be, everything is working correctly. Well, I would like to solve my problem with the lack of high and medium frequencies of sound.",
+      "createdAt": "2026-05-24T10:52:31Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Even though it is nice to give me 20 euros voucher, the final price is still almost 50 euros higher than what I found on Amazon...",
+      "createdAt": "2026-05-27T00:02:27Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Little bit hardline given I\u2019ve been a PG customer for years and I wasn\u2019t able to extend the Bias x trial wanted due to hardware incompatibility at my end, (I only had an ageing MacBook Air and a cheap interface) - I fully intended to purchase Bias X within a couple of months now I probably won\u2019t. Shame really but maybe one day funds allowing and I\u2019m still a Positive Grid fan.",
+      "createdAt": "2026-05-27T07:01:55Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "The step by step troubleshooting response was nice, but it didn\u2019t resolve my issue. I\u2019m so so so so so so soooooo fed up with my spark control causing audio skipping that it\u2019s not even enjoyable playing guitar right now. It would have been nice at the end of the email to have some sort of follow up contact, but instead it told me to not use my spark control and audio playback together which is one their features. I\u2019m so unbelievably frustrated",
+      "createdAt": "2026-05-28T04:52:46Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I received an AI response to a question about using wah pedals without the Jimi Hendrix mod. I am attaching the response below.\n\nThe Experience Jimi Hendrix\u2122 expansion was officially discontinued on April 30, 2026 and is no longer available for purchase. I'm not able to share information about future product plans, but any announcements would come through Positive Grid's official channels \u2014 subscribing to the newsletter at positivegrid.com is the easiest way to stay in the loop.\n\nFor wah on Spark 2: the J.H. Legendary Wah from that pack was the only built-in wah option in the Spark app, so that route isn't currently available if you missed the April 30 cutoff.\n\nThe good news is that a traditional hardware wah pedal works perfectly in your signal chain \u2014 just connect guitar \u2192 wah pedal \u2192 Spark 2 input. You get full wah control right in the middle of your pedalboard with no app dependency needed.\n\nI would like someone to tell me a good model of wah to use with the Spark control X and any limitations it may have as far as mixing, as well as if a similar expansion to the Hendrix mod will be released?",
+      "createdAt": "2026-05-28T14:06:08Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Ai slop",
+      "createdAt": "2026-05-29T21:07:33Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "My purchases are still linked to my old email address that will soon be closing",
+      "createdAt": "2026-06-01T08:50:19Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Dear Sales/Support Team,\n\nI hope this message finds you well.\n\nI recently purchased a Spark GO unit from your Amazon store. The product was successfully delivered, but due to a bug/glitch in Amazon\u2019s system, the delivery system was not properly recognized and the payment and order was cancelled.\n\nI contacted one of your team members (Amazon chat), who kindly advised me to reach out through your official website support to arrange payment directly with you.\n\nI would like to keep the unit I received and pay you for it in full.\n\nCould you please create a new order / invoice under my name (Dalton Miyabara) for the Spark GO?\n\nI do not need a new unit to be shipped \u2014 I only need an official invoice and record of purchase from you. \n\nThis will allow me to complete the payment and have proper documentation for warranty or future support if needed.\n\nThank you in advance for your help. Please let me know if you need any additional information (order number, delivery address, etc.) to process this.\n\nBest regards,\nDalton Miyabara  ",
+      "createdAt": "2026-06-01T14:57:16Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The product had not shipped but I was told that they could not cancel the order before it ships. That I would have to wait for it to arrive and then return the item. What a waste. ",
+      "createdAt": "2026-06-02T12:49:11Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "This was the answer: \u611f\u8b1d\u4f60\u7684\u4f86\u4fe1\u3002\u53ef\u4ee5\u7684\uff0c\u5efa\u8b70\u4f60\u70ba Spark 40 \u66f4\u63db\u6b63\u78ba\u898f\u683c\u7684\u96fb\u6e90\u9069\u914d\u5668\uff1b\u898f\u683c\u5982\u4e0b\uff1a\n\n\u8f38\u5165\uff1a100\u2013240V / 50\u201360Hz\n\u8f38\u51fa\uff1a19V / 2.5A\n\u63d2\u982d\u5c3a\u5bf8\uff1a\u5167\u5f91 2.1mm / \u5916\u5f91 5.5mm\n\u6975\u6027\uff1a\u4e2d\u5fc3\u6b63\u6975\uff08center positive\uff09\n\u53c3\u8003\u4f86\u6e90\uff1aTechnical Specification for Spark (40)'s Power Supply\n\n\u81f3\u65bc\u300c\u80fd\u5426\u8cfc\u8cb7\u66ff\u63db\u96fb\u6e90\u7dda\uff0f\u9069\u914d\u5668\u300d\uff1a\u6211\u9019\u908a\u7684\u6587\u4ef6\u672a\u986f\u793a\u53ef\u76f4\u63a5\u8cfc\u8cb7\u7684\u66ff\u63db\u5546\u54c1\u6e05\u55ae\u3002\u4f60\u53ef\u4ee5\u63d0\u4f9b\u4f60\u60f3\u8cfc\u8cb7\u7684\u5730\u5340\uff08\u52a0\u62ff\u5927\uff09\u4ee5\u53ca\u76ee\u524d\u4f60\u8981\u66ff\u63db\u7684\u662f\u300c\u6574\u7d44\u96fb\u6e90\u8b8a\u58d3\u5668\u300d\u9084\u662f\u300c\u50c5\u96fb\u6e90\u7dda\uff08\u63d2\u5ea7\u5074\uff09\u300d\uff1b\u6211\u518d\u5354\u52a9\u4f60\u5c0d\u7167\u5b98\u65b9\u53ef\u66ff\u63db\u9805\u76ee\u8207\u6b63\u78ba\u578b\u865f\u3002",
+      "createdAt": "2026-06-02T13:34:01Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "My original complaint was that the Positive Grid Neo wireless transmitter does not fit the Ibanez S series guitars. This is a known issue. \n\nYou recommend an extension on your site, but the site does not point to sources where we can purchase them. (Also, I have the angle jack and it definitely is NOT a good workaround because it places the entire contraption in the way of the whammy bar. )\n\nCan you point customers to the straight extension you have a picture of on your website. My attempts to source a suitable female-make 1/4 Jack extension have been unsuccessful.\n\nCheers",
+      "createdAt": "2026-06-02T23:29:19Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "1st: AI is not supportive. AI is just a cheap solution for you not having to pay real humans. Shame on you!\n\n2nd: when I buy a Pedal that cost aprox. 400\u20ac on the Street I do not understand how you can not Provider a solution to fully use it, even if an other customer allready used the redeem Code.\nThere are companies offering better software-support than you guys do.\nI am disappointed. This is 2026 and you act like IT is something Completely new.",
+      "createdAt": "2026-06-03T12:19:05Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Only wanted a simple answer to a question. I have purchased a lot of your products. But not buying no more. Do not want to speak to an AI bot. That cannot answer my question.",
+      "createdAt": "2026-06-03T17:25:49Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I gave golden feedback for the spark smart jam system, and all I received was AI reply. Lame",
+      "createdAt": "2026-06-04T02:10:12Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I haven't received an answer",
+      "createdAt": "2026-06-04T13:34:45Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "No answer yet ",
+      "createdAt": "2026-06-04T19:03:56Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "cannot hear the effects. need a diagram to show how to connect to pc monitors",
+      "createdAt": "2026-06-05T13:53:07Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I requested to cancel the order and was told it was too late even though it had not shipped. I have now requested a return label and received this email instead of the label. ",
+      "createdAt": "2026-06-06T20:53:58Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Case/Issue 590117, on 5 June, was \"transferred to a human agent\" by AI for assistance. No further communication from Positive Grid, incld. any \"human agent\" since ...... only this survey asking how it went!??",
+      "createdAt": "2026-06-07T05:27:32Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I have a Spark, it's a great little amp\u2026but I would have hoped using Ai that the Reactor would have multi tap delay or maybe the possibility of using two delays in the chain, to get the Hank Marvin sound I would like (and a lot of others)\u2026..same for the omission at the moment of a pitch shifter etc, for a classic 12 string sound from the 60s\u2026.I have a pedal made by Digitech for a lovely 12 string sound, so it can be done, but would rather have a preset on the Reactor for ease of use\u2026.maybe these can be future updates ( maybe model a Meazzi valve echo unit for the Hank sound) and maybe model a Rickenbacker 12 string\u2026\u2026At the moment, without these features, I doubt if I will buy over my Spark\u2026..There are more to amps than hundreds of overdrive and distorted Rock and Metal tones. ",
+      "createdAt": "2026-06-07T07:22:46Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "It was a meaningless AIi response. Didn\u2019t address the issue at all. ",
+      "createdAt": "2026-06-07T15:31:23Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I dont like it, that I get an AI answer.\nThat didnt answer my question.",
+      "createdAt": "2026-06-07T16:57:33Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Need to figure out how to use looper, right now I got about 10 sec. Watch looper videos several times no explanation on how to extend times. Your support answers didn\u2019t explain how to get to the actions to make changes, either that or I\u2019m too stupid to understand. Basic metronome nor grove looper have menu options to prolong time that I can find.",
+      "createdAt": "2026-06-07T23:47:48Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "An AI Bot did not answer my specific question. It just spit out the marketing specs which is not wa=hat I asked.",
+      "createdAt": "2026-06-08T01:12:15Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I got a response from AI about my suggestions. Sad to see that. I hope there is a more thought out form factor and features for the next generation of Reactor.",
+      "createdAt": "2026-06-09T14:03:15Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I did receive the requested information but would have preferred to have spoken to a person. ",
+      "createdAt": "2026-06-10T06:31:21Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I opened a case and was asked to provide additional details on proof of purchase, receipts, etc. I did and was told that my case was being handed off to a human support staff to be fulfilled. I never heard back. I had to open another case and after many more emails I was once again told that my product would be shipped. I provided all my contact information and mailing address but then I had to go in with a discount code and order the product myself instead of someone just sending it out the first time, to the address I was asked to provide. This was one of the most frustrating customer service experiences I've encountered. I have purchased a lot of your products, but your customer service makes me question if I will continue to do so.",
+      "createdAt": "2026-06-10T11:30:53Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Would like a human",
+      "createdAt": "2026-06-11T03:10:29Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Would like a human",
+      "createdAt": "2026-06-11T08:25:27Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Horror. Complicated and useless. ",
+      "createdAt": "2026-06-11T22:31:35Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Very supportive but unable to diagnose the exact issue. It took way too  long to resolve a very simple issue. Firmware updater is buggy. \nBluetooth connectivity is a core feature and should never be compromised. ",
+      "createdAt": "2026-06-13T10:52:42Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "The support was useless. The solutions proposed was unrealistic. I bought your product I can\u2019t use because that are incompatible with my iPhone IOS version. Ticket was closed without solving the issue.  ",
+      "createdAt": "2026-06-13T11:00:50Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Ai support tool closed out my ticket before agent even looked at it",
+      "createdAt": "2026-06-14T16:46:06Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Eventhough I provided all the information regarding the problem and explained the steps I had already followed, different agents or bots kept asking me for information I'd already given",
+      "createdAt": "2026-06-15T01:45:22Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I contacted the team quickly after ordering to request cancellation. Although the item had not shipped I was told it was too late as it was already with the warehouse team. I waited for the item to arrive and immediately requested a refund. It took three attempts and escalating the request to receive the return slip.  I then had to take a $35 hit to ship the item back for a refund. My main feedback is that I don\u2019t think your AI chatbot is working well enough and it feels really inefficient to get answers. \n",
+      "createdAt": "2026-06-15T11:45:41Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Carry strap completely fell apart, never really used it. Want to charge me $30 for a new one. I should have offered a no cost replacement or some form of discount",
+      "createdAt": "2026-06-15T23:34:14Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I would prefer a response from an actual human not an AI. I would appreciate an indication of when your products will likely go on sale so I can make an informed decision. \n\n\nI'm sure you have a good idea when your products will go on sale. I am not in a position to afford them at full price and if I knew when they are going on sale I could save and plan around that. ",
+      "createdAt": "2026-06-16T00:40:30Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "As I received only answer from AI I'm not sure it's true and related to the last version (Spark 2) of the product.\nIn the doubt, I won't purchase the product I was expecting.\nKind regards ",
+      "createdAt": "2026-06-16T04:30:51Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Positive Grid gave me a AI bot answer.",
+      "createdAt": "2026-06-16T05:18:54Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Positive Grid gave me an AI bot answer.",
+      "createdAt": "2026-06-16T05:19:12Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Wish I could get the older version of the product.",
+      "createdAt": "2026-06-16T21:12:56Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "What are you doing? Just words, nothing really happens.",
+      "createdAt": "2026-06-17T09:50:22Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Still no fix for the Dropbox back up ,been going on far too long",
+      "createdAt": "2026-06-17T13:33:16Z",
+      "isAiNegative": false
+    }
+  ]
+}
