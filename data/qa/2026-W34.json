@@ -1,0 +1,428 @@
+{
+  "period": "Week of 08/17 - 08/23",
+  "bcrWindow": "2026-05-25 ~ 2026-08-23",
+  "startDate": "2026-08-17",
+  "endDate": "2026-08-23",
+  "daysCount": 90,
+  "reportDate": "2026-08-23",
+  "bcr": {
+    "overall": 0.0,
+    "status": "below_target",
+    "target": 80,
+    "qaCount": 0,
+    "customerCount": 0
+  },
+  "bcrByProduct": [
+    {
+      "product": "Spark",
+      "qaBugs": 0,
+      "customerBugs": 0,
+      "total": 0,
+      "rate": 0.0
+    },
+    {
+      "product": "BIAS X",
+      "qaBugs": 0,
+      "customerBugs": 0,
+      "total": 0,
+      "rate": 0.0
+    }
+  ],
+  "bcrWeeklyTrend": [],
+  "testExecution": {
+    "Spark": {
+      "completedRuns": 5,
+      "totalRuns": 8,
+      "totalCases": 1216,
+      "totalPassed": 1139,
+      "totalFailed": 29,
+      "totalBlocked": 0,
+      "totalSkipped": 29,
+      "passRate": 93.7,
+      "avgVelocity": 29.9,
+      "blockedRate": 2.4
+    },
+    "BIAS X": {
+      "completedRuns": 11,
+      "totalRuns": 11,
+      "totalCases": 2572,
+      "totalPassed": 2436,
+      "totalFailed": 25,
+      "totalBlocked": 2,
+      "totalSkipped": 109,
+      "passRate": 94.7,
+      "avgVelocity": 62.4,
+      "blockedRate": 4.3
+    },
+    "Reactor": {
+      "completedRuns": 13,
+      "totalRuns": 22,
+      "totalCases": 1483,
+      "totalPassed": 1249,
+      "totalFailed": 89,
+      "totalBlocked": 55,
+      "totalSkipped": 60,
+      "passRate": 84.2,
+      "avgVelocity": 132.9,
+      "blockedRate": 7.8
+    }
+  },
+  "regressionTrend": {
+    "Spark": [
+      {
+        "title": "QA-294 [Android] Spark 4.5.3 build 7981 \u2014 SA-2966 Gen1 A2DP \u4fee\u6b63\u9a57\u8b49 + \u9023\u7dda Regression",
+        "date": "2026-06-26",
+        "passed": 16,
+        "failed": 2,
+        "skipped": 0,
+        "blocked": 0,
+        "total": 19,
+        "rate": 84.2,
+        "delta": 0
+      },
+      {
+        "title": "Spark Pedal 2.9.1.120 Full Regression",
+        "date": "2026-07-10",
+        "passed": 204,
+        "failed": 5,
+        "skipped": 8,
+        "blocked": 0,
+        "total": 229,
+        "rate": 89.1,
+        "delta": 4.9
+      },
+      {
+        "title": "20260806 Spark Go MCU v1.18.0.215 Regression Test (Copy)",
+        "date": "2026-08-06",
+        "passed": 109,
+        "failed": 2,
+        "skipped": 13,
+        "blocked": 0,
+        "total": 124,
+        "rate": 87.9,
+        "delta": -1.2
+      }
+    ],
+    "BIAS X": [
+      {
+        "title": "1.2.4.13994 Full Regression (Win11 Standalone)",
+        "date": "2026-05-26",
+        "passed": 245,
+        "failed": 3,
+        "skipped": 13,
+        "blocked": 1,
+        "total": 262,
+        "rate": 93.5,
+        "delta": 0
+      },
+      {
+        "title": "1.2.4.13994 Full Regression (Win10 22H2, Reaper 6)",
+        "date": "2026-05-28",
+        "passed": 270,
+        "failed": 3,
+        "skipped": 11,
+        "blocked": 0,
+        "total": 284,
+        "rate": 95.1,
+        "delta": 1.6
+      },
+      {
+        "title": "1.2.4.13994 Full Regression (macOS26, Logic Pro 12)",
+        "date": "2026-06-02",
+        "passed": 268,
+        "failed": 2,
+        "skipped": 13,
+        "blocked": 1,
+        "total": 284,
+        "rate": 94.4,
+        "delta": -0.7
+      },
+      {
+        "title": "1.2.4.13456 Full Regression (Win11, Studio One 7)",
+        "date": "2026-06-08",
+        "passed": 266,
+        "failed": 3,
+        "skipped": 13,
+        "blocked": 0,
+        "total": 282,
+        "rate": 94.3,
+        "delta": -0.0
+      },
+      {
+        "title": "1.2.4.13456 Full Regression (Win10 22H2, Cubase 15)",
+        "date": "2026-06-10",
+        "passed": 268,
+        "failed": 3,
+        "skipped": 11,
+        "blocked": 0,
+        "total": 282,
+        "rate": 95.0,
+        "delta": 0.7
+      },
+      {
+        "title": "1.2.4.13994 Full Regression (macOS 15,  Ableton Live 12)",
+        "date": "2026-06-16",
+        "passed": 268,
+        "failed": 3,
+        "skipped": 11,
+        "blocked": 0,
+        "total": 282,
+        "rate": 95.0,
+        "delta": 0.0
+      },
+      {
+        "title": "1.2.4.13994 Full Regression (macOS 15,  Reason 13)",
+        "date": "2026-06-23",
+        "passed": 250,
+        "failed": 2,
+        "skipped": 10,
+        "blocked": 0,
+        "total": 262,
+        "rate": 95.4,
+        "delta": 0.4
+      },
+      {
+        "title": "1.2.4.13456 Full Regression (Win11, Pro Tools)",
+        "date": "2026-07-28",
+        "passed": 268,
+        "failed": 3,
+        "skipped": 11,
+        "blocked": 0,
+        "total": 282,
+        "rate": 95.0,
+        "delta": -0.4
+      },
+      {
+        "title": "1.2.4.13994 Full Regression (macOS 15,  Pro Tools)",
+        "date": "2026-08-03",
+        "passed": 267,
+        "failed": 3,
+        "skipped": 12,
+        "blocked": 0,
+        "total": 282,
+        "rate": 94.7,
+        "delta": -0.4
+      }
+    ],
+    "Reactor": [
+      {
+        "title": "Reactor 100w MCU 0.1.4.170 / ESP32 rev685 Full Regression Test",
+        "date": "2026-07-20",
+        "passed": 172,
+        "failed": 10,
+        "skipped": 16,
+        "blocked": 0,
+        "total": 212,
+        "rate": 81.1,
+        "delta": 0
+      },
+      {
+        "title": "QA-318 Reactor Android 1.1.5 (1434) \u2014 Core Function Regression",
+        "date": "2026-08-04",
+        "passed": 224,
+        "failed": 25,
+        "skipped": 7,
+        "blocked": 0,
+        "total": 263,
+        "rate": 85.2,
+        "delta": 4.0
+      },
+      {
+        "title": "QA-317 Reactor iOS 1.1.5 (112) \u2014 Core Function Regression",
+        "date": "2026-08-04",
+        "passed": 239,
+        "failed": 8,
+        "skipped": 11,
+        "blocked": 0,
+        "total": 262,
+        "rate": 91.2,
+        "delta": 6.1
+      }
+    ]
+  },
+  "latestFunctionTest": [
+    {
+      "product": "Spark",
+      "title": "Spark App 4.5.3.78 core function test",
+      "projectCode": "SA",
+      "status": "completed",
+      "startDate": "2026-06-09",
+      "passed": 159,
+      "failed": 11,
+      "blocked": 0,
+      "skipped": 7,
+      "untested": 0,
+      "total": 178
+    },
+    {
+      "product": "BIAS X",
+      "title": "1.2.4.60810 Release Candidate Change Driven Test (Win11, Reaper 7)",
+      "projectCode": "BX",
+      "status": "completed",
+      "startDate": "2026-08-12",
+      "passed": 32,
+      "failed": 0,
+      "blocked": 0,
+      "skipped": 3,
+      "untested": 0,
+      "total": 35
+    },
+    {
+      "product": "Reactor",
+      "title": "Reactor 50w MCU 0.1.4.170 / ESP32 rev685 OTA/FW Update Test",
+      "projectCode": "RA",
+      "status": "completed",
+      "startDate": "2026-07-20",
+      "passed": 7,
+      "failed": 0,
+      "blocked": 0,
+      "skipped": 2,
+      "untested": 0,
+      "total": 9
+    }
+  ],
+  "effortSignals": [
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "Full AGENT Regression - 2026-06-21 - Android (SA): in progress for 63 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Spark",
+      "message": "Full AGENT Regression - 2026-06-21 - Android (SA): 100% untested (260/260)"
+    },
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "20260729 Spark Go MCU v1.18.0.215 Regression Test (SG): 22% blocked/skipped (27/124)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "20260729 Spark Go MCU v1.18.0.215 Regression Test (SG): in progress for 25 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Spark",
+      "message": "Spark Pedal Pre-GA Full Regression 2026/08/19 (SP): 100% untested (226/226)"
+    },
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "Reactor 50w MCU 0.1.4.170 / ESP32 rev685 OTA/FW Update Test (RA): 22% blocked/skipped (2/9)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[iOS]20260525 Reactor GA Production Regression Test (RAPP): in progress for 90 days"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[iOS]Reactor App 1.1.0.93 Core Function Test (RAPP): in progress for 90 days"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[Android]Reactor App [Version number] Core Function Test (RAPP): in progress for 90 days"
+    },
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "Reactor App iOS v1.1.2(102) smoke test (RAPP): 44% blocked/skipped (12/27)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "Reactor App iOS v1.1.2(102) smoke test (RAPP): in progress for 67 days"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "Reactor APP iOS v1.1.2(102) RAD-1445, RAD-1447, RAD-1449 Function Test (RAPP): in progress for 67 days"
+    },
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "Maestro Agent \u2014 Core Function FULL (iOS sim) \u2014 2026-06-22 (RAPP): 54% blocked/skipped (30/56)"
+    },
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "Appium+WDA Agent \u2014 Core Function (REAL DEVICE iPhone SE / iOS 26.5, TestFlight Reactor 1.1.1 b100) \u2014 2026-06-23 (RAPP): 41% blocked/skipped (23/56)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[Android] Hotfix 1.1.2 \u2014 build 1347 (RAD-1514 Bug Fix Verification) (RAPP): in progress for 55 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Reactor",
+      "message": "[Android] Hotfix 1.1.2 \u2014 build 1347 (RAD-1514 Bug Fix Verification) (RAPP): 100% untested (2/2)"
+    },
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "Core Function Regression \u2014 Maestro Auto \u2014 v1.1.2 (master) (RAPP): 19% blocked/skipped (29/154)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "Core Function Regression \u2014 Maestro Auto \u2014 v1.1.2 (master) (RAPP): in progress for 48 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Reactor",
+      "message": "Core Function Regression \u2014 Maestro Auto \u2014 v1.1.2 (master) (RAPP): 40% untested (61/154)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "QA-298 Reactor Android 1.1.3 \u2014 Story \u529f\u80fd\u9a57\u8b49\uff08RAD-1473/1475/1478/1480/1482/1486\uff09 (RAPP): in progress for 47 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Reactor",
+      "message": "QA-298 Reactor Android 1.1.3 \u2014 Story \u529f\u80fd\u9a57\u8b49\uff08RAD-1473/1475/1478/1480/1482/1486\uff09 (RAPP): 100% untested (34/34)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "QA-317 Reactor iOS 1.1.5 (112) \u2014 Full Regression + Bug Fix Verification (RAPP): in progress for 20 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Reactor",
+      "message": "QA-317 Reactor iOS 1.1.5 (112) \u2014 Full Regression + Bug Fix Verification (RAPP): 93% untested (528/566)"
+    }
+  ],
+  "recentBugs": {
+    "qa": [],
+    "customer": []
+  }
+}
