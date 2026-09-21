@@ -1,0 +1,433 @@
+{
+  "period": "2026-06-22 ~ 2026-09-20",
+  "daysCount": 90,
+  "totalBadRatings": 185,
+  "withComments": 159,
+  "aiNegative": 88,
+  "aiNegativeRateOfComments": 55.35,
+  "aiNegativeRateOfAll": 47.57,
+  "samples": [
+    {
+      "ticketId": 16243939216525,
+      "comment": "None of my questions were answered, \u2018Devin\u2019.",
+      "createdAt": "2026-06-23T08:25:13Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46854068152845.json"
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "I thought positive grid would be more supportive about accidental resumption reward points. In particular, the page where you process the redeeming of points, it is not detailed or cautioned about not being able to reverse points. Also the inability to combine cash and reward points is stifling.",
+      "createdAt": "2026-06-24T04:31:32Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46882007410573.json"
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I have emailed 3 times over the last month to get my email address changed, and nobody has replied.",
+      "createdAt": "2026-06-24T11:39:58Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46887295501965.json"
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "You have refused to perform warranty service on a product that is less than two years old, because I'm unable to get a proof of purchase due to it being a gift bought as a cash sale.  Should have gone with a company with a longstanding reputation like Boss. I won't be making that mistake again.",
+      "createdAt": "2026-06-24T15:40:14Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46894713058317.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Unhappy about having to communicate with an AI chat bot which struggled to understand my problem.\n\nI feel that the customer experience would have been noticeably smoother and faster if I could communicate with a person.",
+      "createdAt": "2026-06-25T08:00:26Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46914644630413.json"
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Within one minute of placing my order I realized I had the wrong delivery address. I get it that your company basically runs on AI and it\u2019s probably why the gear is so inexpensive, but this was such a simple request\u2026 ",
+      "createdAt": "2026-06-27T00:13:48Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46965891253901.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I was very upset with the purchase process. I ordered a product on Monday, June 22. On Tuesday I received a message through your app that said my product was on sale. I asked for a price adjustment, but was told I would not receive one. It had been less than 24 hours since I ordered the product. It had not shipped yet. I was told that I could refuse delivery and then order a new product in order to receive the sale price. This simply created more work for your company and an inconvenience for me as a customer.  I don\u2019t feel I was treated fairly, and I returned the product.",
+      "createdAt": "2026-06-29T01:54:57Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/46993918602637.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I got most of the information i needed, but I would prefer to talk to actual humans instead of automated AI Agents",
+      "createdAt": "2026-06-30T17:48:09Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47038626097549.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I only got a response from an AI generated email.",
+      "createdAt": "2026-06-30T21:56:22Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47047184746765.json"
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "It is inconvenient that there is no information available in Japanese. I\u2019m using the Spark Live as well, but it\u2019s had so many issues that I haven\u2019t really been able to use it in earnest yet.",
+      "createdAt": "2026-07-01T02:02:54Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47051212678029.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I really wanted the Hendrix add on pack and would have purchased the amp earlier if I knew it was going to be cut discontinued.  I purchased this amp because it appeared the software and sound devices were upgradeble.  The tone cloud is great and it satisfies some of this for me but having a  tested and company endorsed pack takes the trial and error out of the process which the Hendrix add on represented.  \n\nMaybe get a Steve Vai wah and sustainiact pedal maybe a pitch shifter added, as a new alternative to the Hendrix pack. I would be there to pay for that in a heartbeat.  I love the idea of software upgrades to make my Spark better and always improving.  Cheers!",
+      "createdAt": "2026-07-02T21:02:15Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47104760107661.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Explaination was clear. A sorry for not able to help.\nMaybe in the future functionality returns",
+      "createdAt": "2026-07-03T05:20:36Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47112589753613.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I tried 3 times to cancel my order, as I found one new at my local store, but Devin kept stalling, saying he couldn\u2019t find my order number until after it was too late to stop the shipment! It was intentional so he would not have to cancel my order. ",
+      "createdAt": "2026-07-07T13:56:56Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47196644492557.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Have not heard back yet for one of the two enquiries i made yesterday. The question i am waiting for a reply for involves me needing assistance placing an order with you, so i am surprised no one has offered to help yet",
+      "createdAt": "2026-07-08T07:00:38Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47219775644557.json"
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Ordered Spark. Got it after waiting 3 weeks. It\u2019s was thrown over the fence despite having a parcel box. Open it and the power cord is for the wrong country. Got in touch with support and they said they\u2019d send the right one out asap. They mucked up my mailing address, despite me providing a pic the mailing address on the box it was originally delivered in. So the cord was returned to sender. I chased up was promised they turn it around quickly. It\u2019s been 11 days and counting to get the right power cord that should\u2019ve been delivered in the first place. I\u2019ve now lost my excitement to use it. Don\u2019t really care when the cord arrives now. Oh forgot to mention, I was offered a 5% off voucher for any future purchases. Wow. So generous. Whatever",
+      "createdAt": "2026-07-09T10:05:58Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47249854008333.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I'm really torn on giving a neutral rating here (I'd go a smidge higher if there was a more granular option). Michael was thorough and thoughtful and he advocated for me since we ultimately were able to find a resolution without having to get the third-party reseller (GearTree) involved. The primary reasons for my rating are these: the speed and frequency of replies from Michael and the lack of important policy information early on in the process. \n\nI only received a single response from Michael daily regardless of how promptly I replied to him. My expectation was for a more active engagement when I'm being asked to provide answers and information back to a support representative. I'm not sure where Positive Grid is based and given that I'd usually get my responses from Michael in the 6AM EDT hour, I'd assume somewhere not in the US. Either way, it felt slow.\n\nThe speed of the interaction was made more troublesome for me because I couldn't understand why I was being asked repeatedly to get support through Amazon. I came directly to Positive Grid because Amazon's only available option to me was to reach out to the brand. Amazon didn't even suggest going to the third-party reseller. I would have experienced significantly less frustration had I known early on that Michael was facing a policy issue with warranties and returns since my product was purchased through a reseller's Amazon storefront.\n\nAs a result of these two things, we wasted several days that I could've tried contacting GearTree (since I haven't been able to get through to anyone there that probably wouldn't have helped and the point is somewhat moot) or at least understood why we were still chasing after some other option in Amazon.\n\nAll that said, Michael was polite and professional and did help me get the resolution I sought for my product. I genuinely appreciate his assistance.",
+      "createdAt": "2026-07-09T13:35:50Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47253395015181.json"
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "Customer service is the only commodity that a company really sells. Their product can only be as good as their attention to customer service.  The problem I had was completely my fault; however, there were significant time gaps between communiques which, had this been a serious issue, would have significantly affected my decision to buy from you again and to remain a customer.",
+      "createdAt": "2026-07-10T06:01:01Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47275141538189.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I was told that offers cannot be stacked, meaning that I wouldn't be able to apply a coupon on an already discounted product. So I waited for the rewards system to be up and running again, generated the coupon and then I applied it on the already discounted product. This process worked without issues. ",
+      "createdAt": "2026-07-11T16:28:17Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47307951333133.json"
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "In away I do understand you explanation but as a consumer this is not what you expected or what you was looking after. Maybe I was lucky that the purchase didn\u2019t succeed because I think Spark 2 is much more for the money however I have not get my purchase yet so let\u2019s see. It\u2019s on the way.\n\nI\u2019m very happy and satisfied with Spark NEO and that was the only reason for this new purchase of Spark 2. A discount of 5% is a nice gesture yes but could easily be 15-20% to keep a member satisfied and for a good reputation. However I think cases like mine is less than one in a thousand. Just let you know.\n\nUsually I don\u2019t bother to get feedback as every company and every purchase now a days follows a feedback request. I do it because I think you have the right attitude and will and that your products seem good and innovative :)\n\nRegads\nKaj\n",
+      "createdAt": "2026-07-13T05:03:15Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47327450781197.json"
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I waited a significantly longer time than I would have thought to have had to wait just for an AI response. That's... dirty butt cheeks, dude.\n\nAfter asking for an actual human, all I got was legitimately just a person reciting an AI overview. None of my concerns were actually addressed and I wrote an extremely lengthy and detailed feature request that included the desire to be in the loop and maybe even speak to accountable parties like engineers, devs ect. as I am myself a software dev.\nAll I want is a looper that actually functions like any other looper. Give me numerator and denominator control, bro. Keep it separate from your stupid groove looper that is jank as hell. Boom, you don't even have to worry about training your AI on different time signatures anymore. \n",
+      "createdAt": "2026-07-16T19:54:52Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47435653919885.json"
+    }
+  ],
+  "allComments": [
+    {
+      "ticketId": 16243939216525,
+      "comment": "I still haven\u2019t received my amp and the tracking doesn\u2019t seem to be working.",
+      "createdAt": "2026-06-22T00:46:30Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "None of my questions were answered, \u2018Devin\u2019.",
+      "createdAt": "2026-06-23T08:25:13Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "I thought positive grid would be more supportive about accidental resumption reward points. In particular, the page where you process the redeeming of points, it is not detailed or cautioned about not being able to reverse points. Also the inability to combine cash and reward points is stifling.",
+      "createdAt": "2026-06-24T04:31:32Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "I have emailed 3 times over the last month to get my email address changed, and nobody has replied.",
+      "createdAt": "2026-06-24T11:39:58Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "You have refused to perform warranty service on a product that is less than two years old, because I'm unable to get a proof of purchase due to it being a gift bought as a cash sale.  Should have gone with a company with a longstanding reputation like Boss. I won't be making that mistake again.",
+      "createdAt": "2026-06-24T15:40:14Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Unhappy about having to communicate with an AI chat bot which struggled to understand my problem.\n\nI feel that the customer experience would have been noticeably smoother and faster if I could communicate with a person.",
+      "createdAt": "2026-06-25T08:00:26Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "It sucks that the JH experience has been removed and there are no other options for wah pedals",
+      "createdAt": "2026-06-25T22:16:19Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "its been 2 days since ups started checking the package so i may just request a refund if it nothing changes in the next couple days",
+      "createdAt": "2026-06-26T23:33:57Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Within one minute of placing my order I realized I had the wrong delivery address. I get it that your company basically runs on AI and it\u2019s probably why the gear is so inexpensive, but this was such a simple request\u2026 ",
+      "createdAt": "2026-06-27T00:13:48Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "There was not even a reply to my response to your first reply .cusustomer service managing order mistakes is shamefully poor",
+      "createdAt": "2026-06-27T15:05:51Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I was very upset with the purchase process. I ordered a product on Monday, June 22. On Tuesday I received a message through your app that said my product was on sale. I asked for a price adjustment, but was told I would not receive one. It had been less than 24 hours since I ordered the product. It had not shipped yet. I was told that I could refuse delivery and then order a new product in order to receive the sale price. This simply created more work for your company and an inconvenience for me as a customer.  I don\u2019t feel I was treated fairly, and I returned the product.",
+      "createdAt": "2026-06-29T01:54:57Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I was told no one could help me in the 48 time frame I needed to meet a deadline for a quote. For a guaranteed sale. And still haven\u2019t heard back from anyone. And was told it was a priority. Weird. ",
+      "createdAt": "2026-06-29T02:33:02Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I have no reason to buy the spark control X if I don't know if another wah pedal is coming.",
+      "createdAt": "2026-06-30T06:17:52Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I got most of the information i needed, but I would prefer to talk to actual humans instead of automated AI Agents",
+      "createdAt": "2026-06-30T17:48:09Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I informed you that the delivery address was wrong the day I bought the products. Nothing was done to remedy and the package was delivered in a town I do not live in anymore at an office building I do not work in for 5 years. Have I just lost more than 700$ ? Tell me!",
+      "createdAt": "2026-06-30T19:22:39Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "Extremely frustrated with the product, which worked for only one month, and reporting the issue to Positive Grid did not resolve the problem.",
+      "createdAt": "2026-06-30T20:56:18Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I only got a response from an AI generated email.",
+      "createdAt": "2026-06-30T21:56:22Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "It is inconvenient that there is no information available in Japanese. I\u2019m using the Spark Live as well, but it\u2019s had so many issues that I haven\u2019t really been able to use it in earnest yet.",
+      "createdAt": "2026-07-01T02:02:54Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I deeply regret the rejection because I am not an official dealer. I don't think I will purchase it in the future. ",
+      "createdAt": "2026-07-01T06:33:36Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I really wanted the Hendrix add on pack and would have purchased the amp earlier if I knew it was going to be cut discontinued.  I purchased this amp because it appeared the software and sound devices were upgradeble.  The tone cloud is great and it satisfies some of this for me but having a  tested and company endorsed pack takes the trial and error out of the process which the Hendrix add on represented.  \n\nMaybe get a Steve Vai wah and sustainiact pedal maybe a pitch shifter added, as a new alternative to the Hendrix pack. I would be there to pay for that in a heartbeat.  I love the idea of software upgrades to make my Spark better and always improving.  Cheers!",
+      "createdAt": "2026-07-02T21:02:15Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Explaination was clear. A sorry for not able to help.\nMaybe in the future functionality returns",
+      "createdAt": "2026-07-03T05:20:36Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Although it worked out in the end, it took a about 2 weeks to get in contact with a human. After that it was about a week for resolution.\nI was never told the what the problem was. My time was wasted by being told repeatedly to do the same thing over and over. ",
+      "createdAt": "2026-07-03T14:53:44Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Think like a 5 year old regarding your website user interface.. my granddaughters can web page circles around ya'll ",
+      "createdAt": "2026-07-05T11:04:41Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I tried 3 times to cancel my order, as I found one new at my local store, but Devin kept stalling, saying he couldn\u2019t find my order number until after it was too late to stop the shipment! It was intentional so he would not have to cancel my order. ",
+      "createdAt": "2026-07-07T13:56:56Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Have not heard back yet for one of the two enquiries i made yesterday. The question i am waiting for a reply for involves me needing assistance placing an order with you, so i am surprised no one has offered to help yet",
+      "createdAt": "2026-07-08T07:00:38Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "Ordered Spark. Got it after waiting 3 weeks. It\u2019s was thrown over the fence despite having a parcel box. Open it and the power cord is for the wrong country. Got in touch with support and they said they\u2019d send the right one out asap. They mucked up my mailing address, despite me providing a pic the mailing address on the box it was originally delivered in. So the cord was returned to sender. I chased up was promised they turn it around quickly. It\u2019s been 11 days and counting to get the right power cord that should\u2019ve been delivered in the first place. I\u2019ve now lost my excitement to use it. Don\u2019t really care when the cord arrives now. Oh forgot to mention, I was offered a 5% off voucher for any future purchases. Wow. So generous. Whatever",
+      "createdAt": "2026-07-09T10:05:58Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I'm really torn on giving a neutral rating here (I'd go a smidge higher if there was a more granular option). Michael was thorough and thoughtful and he advocated for me since we ultimately were able to find a resolution without having to get the third-party reseller (GearTree) involved. The primary reasons for my rating are these: the speed and frequency of replies from Michael and the lack of important policy information early on in the process. \n\nI only received a single response from Michael daily regardless of how promptly I replied to him. My expectation was for a more active engagement when I'm being asked to provide answers and information back to a support representative. I'm not sure where Positive Grid is based and given that I'd usually get my responses from Michael in the 6AM EDT hour, I'd assume somewhere not in the US. Either way, it felt slow.\n\nThe speed of the interaction was made more troublesome for me because I couldn't understand why I was being asked repeatedly to get support through Amazon. I came directly to Positive Grid because Amazon's only available option to me was to reach out to the brand. Amazon didn't even suggest going to the third-party reseller. I would have experienced significantly less frustration had I known early on that Michael was facing a policy issue with warranties and returns since my product was purchased through a reseller's Amazon storefront.\n\nAs a result of these two things, we wasted several days that I could've tried contacting GearTree (since I haven't been able to get through to anyone there that probably wouldn't have helped and the point is somewhat moot) or at least understood why we were still chasing after some other option in Amazon.\n\nAll that said, Michael was polite and professional and did help me get the resolution I sought for my product. I genuinely appreciate his assistance.",
+      "createdAt": "2026-07-09T13:35:50Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "you want feedback now after you tell me that you wont supply a guitar plug part for my spark 40,you tell me i have to pay $150 to plus shipping to send it somewhere to replace it when the part is a $20 part at best,if thats how you look after your customers that has bought 3 products of you and was thinking about another but not now,if you cant supply after sales support for your products im not buying more, ridiculous ",
+      "createdAt": "2026-07-10T02:09:21Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "Customer service is the only commodity that a company really sells. Their product can only be as good as their attention to customer service.  The problem I had was completely my fault; however, there were significant time gaps between communiques which, had this been a serious issue, would have significantly affected my decision to buy from you again and to remain a customer.",
+      "createdAt": "2026-07-10T06:01:01Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I was told that offers cannot be stacked, meaning that I wouldn't be able to apply a coupon on an already discounted product. So I waited for the rewards system to be up and running again, generated the coupon and then I applied it on the already discounted product. This process worked without issues. ",
+      "createdAt": "2026-07-11T16:28:17Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Bluetooth kept cutting out...",
+      "createdAt": "2026-07-11T22:35:29Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "It turns out that fender bought out Presonus and I had to go to their website and sign in and then access the products tab. I was instructed to go to Presonus to do that. Which I had already tried as well as Positive Grid. Once I figured that out, it was easy. Thanks for steering me towards the solution. ",
+      "createdAt": "2026-07-12T00:43:19Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 405137182592,
+      "comment": "My order apparently got lost and although I texted several times  no one was offering any answers.  I asked twice to talk to a supervisor and my requests were ignored.  I have previously purchased a Spark, Spark 2, Spark Live and Spark Neo.  I just feel someone should have been a lot more responsive to my situation.",
+      "createdAt": "2026-07-12T02:45:54Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "In away I do understand you explanation but as a consumer this is not what you expected or what you was looking after. Maybe I was lucky that the purchase didn\u2019t succeed because I think Spark 2 is much more for the money however I have not get my purchase yet so let\u2019s see. It\u2019s on the way.\n\nI\u2019m very happy and satisfied with Spark NEO and that was the only reason for this new purchase of Spark 2. A discount of 5% is a nice gesture yes but could easily be 15-20% to keep a member satisfied and for a good reputation. However I think cases like mine is less than one in a thousand. Just let you know.\n\nUsually I don\u2019t bother to get feedback as every company and every purchase now a days follows a feedback request. I do it because I think you have the right attitude and will and that your products seem good and innovative :)\n\nRegads\nKaj\n",
+      "createdAt": "2026-07-13T05:03:15Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "The support l recieved via staff was good but the outcome was unsatisfactory\n\n1) To identify that my Spark 2 had an hardware issue eventually became clear with troubleshooting, communication and video sharing; took 4 weeks\n\n2) After hardware issue was identified we asked if we could upgrade from Spark 2 to Reactor 50 and pay additional monies to facilitate in which was refused; we thought that was a simple do and my son was very disappointed \n\n3) Overall your staff were friendly/informative and once fault was identified and verified were happy to provide a new Spark 2 replacement.",
+      "createdAt": "2026-07-13T08:12:48Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I think it's crappy that I can't upgrade my current product. I get that it's just your way of getting us to buy the new version instead, but I love what I have now and want to own the complete version of it.",
+      "createdAt": "2026-07-14T03:49:55Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "support just passed thisnheadache to somebody else",
+      "createdAt": "2026-07-14T04:46:52Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I asked a simple question, and never got an accurate answer.",
+      "createdAt": "2026-07-14T12:25:14Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "support just passed thisn headache to somebody else",
+      "createdAt": "2026-07-15T14:21:06Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "You guys are fucking shit. You motherfucking assholes take 2 DAYS TO SEND ME A LINK. THEN YOU \u201cALLOW ME\u201d the cunting privilege of spending FIFTEEN DOLLARS FOR A FUCKING POWER CORD. Thanks Positive Grid. You guys blow animals. I hate you. ",
+      "createdAt": "2026-07-16T17:35:44Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I waited a significantly longer time than I would have thought to have had to wait just for an AI response. That's... dirty butt cheeks, dude.\n\nAfter asking for an actual human, all I got was legitimately just a person reciting an AI overview. None of my concerns were actually addressed and I wrote an extremely lengthy and detailed feature request that included the desire to be in the loop and maybe even speak to accountable parties like engineers, devs ect. as I am myself a software dev.\nAll I want is a looper that actually functions like any other looper. Give me numerator and denominator control, bro. Keep it separate from your stupid groove looper that is jank as hell. Boom, you don't even have to worry about training your AI on different time signatures anymore. \n",
+      "createdAt": "2026-07-16T19:54:52Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I was asked to create a new account under a new email, michaeljhanson80@gmail.com so that my existing account could be migrated.  It didn\u2019t happen on your end.  Old account mhanson14@tx.rr.com",
+      "createdAt": "2026-07-17T22:08:16Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I inquired about issues with the app on my cell phone and never really got any answers, not happy with that at all.There was glitches with the app",
+      "createdAt": "2026-07-19T15:07:29Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "Immediate cancel after purchase and they haven't managed to cancel shippment",
+      "createdAt": "2026-07-20T00:29:00Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "It was frustrating to be unable to interact with a human being for 2+ days.  You should have a customer service phone number.  If you refuse to do that, then your chat or email function should connect me to a human being.  The problem arose unpredictably and then went away, all without any real explanation.  It became clear that the problem was connectivity on your end, not mine, so that other users must have experienced the same thing.  At the very least, you could have sent an email auto-response acknowledging that you were having a known problem and were working on it, and expected service to be restored within __ number of hours or days.  ",
+      "createdAt": "2026-07-21T04:08:24Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The support info was helpful, but I was asking if there are plans to add a Spark Live extension speaker that is similar in size to the Spark Live that could be pole mounted. ",
+      "createdAt": "2026-07-21T19:06:21Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "The link I was sent to the registration portal did not work.",
+      "createdAt": "2026-07-22T00:33:21Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "All I was asking for was an estimated shipping cost to Hawaii for a Spark 2. I just got the runaround, with the response that it would be determined at checkout. I want to know the cost before checking out. Have you never shipped a Spark 2 to Hawaii? You\u2019d think I was asking the impossible. Not a good start to a customer service experience. The result made me think twice and pause my order with the company.  ",
+      "createdAt": "2026-07-22T02:20:41Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Had to change my e-mail to acces my product,not at all ok",
+      "createdAt": "2026-07-22T07:06:33Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I send a message right after I submitted my order and received the response after two days only ",
+      "createdAt": "2026-07-23T04:06:27Z",
+      "isAiNegative": false
+    }
+  ]
+}
