@@ -1,0 +1,749 @@
+{
+  "period": "Week of 10/05 - 10/11",
+  "reportType": "weekly",
+  "startDate": "2026-10-05",
+  "endDate": "2026-10-11",
+  "alerts": [
+    {
+      "severity": "high",
+      "message": "REACTOR 100 \u91cf\u80fd +250%\uff082 \u2192 7\uff09",
+      "type": "volume_spike"
+    },
+    {
+      "severity": "high",
+      "message": "SPARK CONTROL X \u91cf\u80fd +45%\uff0811 \u2192 16\uff09",
+      "type": "volume_spike"
+    },
+    {
+      "severity": "high",
+      "message": "PERSONALIZATION \u91cf\u80fd +60%\uff085 \u2192 8\uff09",
+      "type": "volume_spike"
+    },
+    {
+      "severity": "high",
+      "message": "SPARK MINI \u91cf\u80fd +69%\uff0813 \u2192 22\uff09",
+      "type": "volume_spike"
+    },
+    {
+      "severity": "high",
+      "message": "SPARK NEO CORE \u91cf\u80fd +100%\uff083 \u2192 6\uff09",
+      "type": "volume_spike"
+    },
+    {
+      "severity": "high",
+      "message": "SPARK CONTROL \u91cf\u80fd +100%\uff081 \u2192 2\uff09",
+      "type": "volume_spike"
+    },
+    {
+      "severity": "high",
+      "message": "SPARK GO / Warranty  Warranty  Warranty Service Followup\uff1a1 \u2192 5",
+      "type": "tally_surge"
+    },
+    {
+      "severity": "high",
+      "message": "SPARK GO / Jev Tally Needs Confirmation\uff1a1 \u2192 6",
+      "type": "tally_surge"
+    },
+    {
+      "severity": "high",
+      "message": "SPARK PEDAL / Jev Tally Needs Confirmation\uff1a0 \u2192 13",
+      "type": "tally_surge"
+    },
+    {
+      "severity": "high",
+      "message": "SPARK / Jev Tally Needs Confirmation\uff1a1 \u2192 10",
+      "type": "tally_surge"
+    },
+    {
+      "severity": "high",
+      "message": "SPARK CONTROL X / Jev Tally Needs Confirmation\uff1a0 \u2192 5",
+      "type": "tally_surge"
+    }
+  ],
+  "kpi": {
+    "totalTickets": 442,
+    "topProduct": "SPARK PEDAL",
+    "refunds": 54,
+    "productCount": 32
+  },
+  "dailyTrend": [
+    {
+      "date": "2026-10-04",
+      "day": "Sun",
+      "count": 20
+    },
+    {
+      "date": "2026-10-05",
+      "day": "Mon",
+      "count": 58
+    },
+    {
+      "date": "2026-10-06",
+      "day": "Tue",
+      "count": 82
+    },
+    {
+      "date": "2026-10-07",
+      "day": "Wed",
+      "count": 68
+    },
+    {
+      "date": "2026-10-08",
+      "day": "Thu",
+      "count": 71
+    },
+    {
+      "date": "2026-10-09",
+      "day": "Fri",
+      "count": 55
+    },
+    {
+      "date": "2026-10-10",
+      "day": "Sat",
+      "count": 60
+    },
+    {
+      "date": "2026-10-11",
+      "day": "Sun",
+      "count": 28
+    }
+  ],
+  "productBreakdown": [
+    {
+      "product": "SPARK PEDAL",
+      "count": 59,
+      "pct": 13.3,
+      "delta": 11.320754716981133,
+      "direction": "up",
+      "topIssues": [
+        {
+          "tally": "Jev Tally Needs Confirmation",
+          "count": 13,
+          "tickets": [
+            {
+              "id": "600022"
+            },
+            {
+              "id": "600093"
+            },
+            {
+              "id": "600132"
+            },
+            {
+              "id": "600187"
+            },
+            {
+              "id": "600153"
+            }
+          ]
+        },
+        {
+          "tally": "Warranty  Warranty  Warranty Service Followup",
+          "count": 9,
+          "tickets": [
+            {
+              "id": "599964"
+            },
+            {
+              "id": "600030"
+            },
+            {
+              "id": "600025"
+            },
+            {
+              "id": "600055"
+            },
+            {
+              "id": "600206"
+            }
+          ]
+        },
+        {
+          "tally": "Purchase Inquiry  Order   Shipping  Track For Order Status And Eta",
+          "count": 4,
+          "tickets": [
+            {
+              "id": "599987"
+            },
+            {
+              "id": "600130"
+            },
+            {
+              "id": "600192"
+            },
+            {
+              "id": "600267"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK",
+      "count": 52,
+      "pct": 11.8,
+      "delta": 1.9607843137254901,
+      "direction": "up",
+      "topIssues": [
+        {
+          "tally": "Jev Tally Needs Confirmation",
+          "count": 10,
+          "tickets": [
+            {
+              "id": "600042"
+            },
+            {
+              "id": "600115"
+            },
+            {
+              "id": "600198"
+            },
+            {
+              "id": "600161"
+            },
+            {
+              "id": "600143"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Hardware  Firmware Update Failed",
+          "count": 4,
+          "tickets": [
+            {
+              "id": "600139"
+            },
+            {
+              "id": "600106"
+            },
+            {
+              "id": "600170"
+            },
+            {
+              "id": "600331"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Sound  Cut In / Out",
+          "count": 4,
+          "tickets": [
+            {
+              "id": "600136"
+            },
+            {
+              "id": "600235"
+            },
+            {
+              "id": "600296"
+            },
+            {
+              "id": "600280"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK 2",
+      "count": 42,
+      "pct": 9.5,
+      "delta": -47.5,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Power / Battery  Not Powering On",
+          "count": 6,
+          "tickets": [
+            {
+              "id": "599928"
+            },
+            {
+              "id": "599922"
+            },
+            {
+              "id": "600071"
+            },
+            {
+              "id": "600057"
+            },
+            {
+              "id": "600262"
+            }
+          ]
+        },
+        {
+          "tally": "Warranty  Warranty  Warranty Service Followup",
+          "count": 4,
+          "tickets": [
+            {
+              "id": "600018"
+            },
+            {
+              "id": "600017"
+            },
+            {
+              "id": "600014"
+            },
+            {
+              "id": "600212"
+            }
+          ]
+        },
+        {
+          "tally": "Post-Sales  Promotion Follow Up  Price Match",
+          "count": 4,
+          "tickets": [
+            {
+              "id": "600058"
+            },
+            {
+              "id": "600046"
+            },
+            {
+              "id": "600043"
+            },
+            {
+              "id": "600142"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK LINK",
+      "count": 33,
+      "pct": 7.5,
+      "delta": 32.0,
+      "direction": "up",
+      "topIssues": [
+        {
+          "tally": "Jev Tally Needs Confirmation",
+          "count": 8,
+          "tickets": [
+            {
+              "id": "599967"
+            },
+            {
+              "id": "600117"
+            },
+            {
+              "id": "600204"
+            },
+            {
+              "id": "600256"
+            },
+            {
+              "id": "600243"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Power / Battery  Not Powering On",
+          "count": 4,
+          "tickets": [
+            {
+              "id": "600035"
+            },
+            {
+              "id": "600065"
+            },
+            {
+              "id": "600364"
+            },
+            {
+              "id": "600357"
+            }
+          ]
+        },
+        {
+          "tally": "Warranty  Warranty  Warranty Service Followup",
+          "count": 4,
+          "tickets": [
+            {
+              "id": "600157"
+            },
+            {
+              "id": "600156"
+            },
+            {
+              "id": "600150"
+            },
+            {
+              "id": "600304"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK NEO",
+      "count": 29,
+      "pct": 6.6,
+      "delta": 20.833333333333336,
+      "direction": "up",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Hardware  Physical Controls / Parts",
+          "count": 4,
+          "tickets": [
+            {
+              "id": "600073"
+            },
+            {
+              "id": "600207"
+            },
+            {
+              "id": "600189"
+            },
+            {
+              "id": "600333"
+            }
+          ]
+        },
+        {
+          "tally": "Post-Sales  Service Parts Request  Others",
+          "count": 3,
+          "tickets": [
+            {
+              "id": "600003"
+            },
+            {
+              "id": "600051"
+            },
+            {
+              "id": "600172"
+            }
+          ]
+        },
+        {
+          "tally": "Post-Sales  Promotion Follow Up  Price Match",
+          "count": 3,
+          "tickets": [
+            {
+              "id": "599974"
+            },
+            {
+              "id": "600145"
+            },
+            {
+              "id": "600362"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK GO",
+      "count": 28,
+      "pct": 6.3,
+      "delta": -12.5,
+      "direction": "down",
+      "topIssues": [
+        {
+          "tally": "Jev Tally Needs Confirmation",
+          "count": 6,
+          "tickets": [
+            {
+              "id": "600097"
+            },
+            {
+              "id": "600209"
+            },
+            {
+              "id": "600228"
+            },
+            {
+              "id": "600222"
+            },
+            {
+              "id": "600325"
+            }
+          ]
+        },
+        {
+          "tally": "Warranty  Warranty  Warranty Service Followup",
+          "count": 5,
+          "tickets": [
+            {
+              "id": "599947"
+            },
+            {
+              "id": "600045"
+            },
+            {
+              "id": "600144"
+            },
+            {
+              "id": "600205"
+            },
+            {
+              "id": "600146"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Sound  No Sound Output",
+          "count": 5,
+          "tickets": [
+            {
+              "id": "599933"
+            },
+            {
+              "id": "599921"
+            },
+            {
+              "id": "600077"
+            },
+            {
+              "id": "600202"
+            },
+            {
+              "id": "600312"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK MINI",
+      "count": 22,
+      "pct": 5.0,
+      "delta": 69.23076923076923,
+      "direction": "up",
+      "topIssues": [
+        {
+          "tally": "Troubleshooting  Power / Battery  Won T Charge Or Charges Slowly",
+          "count": 4,
+          "tickets": [
+            {
+              "id": "600054"
+            },
+            {
+              "id": "600175"
+            },
+            {
+              "id": "600151"
+            },
+            {
+              "id": "600326"
+            }
+          ]
+        },
+        {
+          "tally": "Jev Tally Needs Confirmation",
+          "count": 3,
+          "tickets": [
+            {
+              "id": "599976"
+            },
+            {
+              "id": "600313"
+            },
+            {
+              "id": "600310"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Hardware  Usb Cannot Be Detected",
+          "count": 1,
+          "tickets": [
+            {
+              "id": "600016"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "SPARK CONTROL X",
+      "count": 16,
+      "pct": 3.6,
+      "delta": 45.45454545454545,
+      "direction": "up",
+      "topIssues": [
+        {
+          "tally": "Jev Tally Needs Confirmation",
+          "count": 5,
+          "tickets": [
+            {
+              "id": "600116"
+            },
+            {
+              "id": "600070"
+            },
+            {
+              "id": "600188"
+            },
+            {
+              "id": "600237"
+            },
+            {
+              "id": "600319"
+            }
+          ]
+        },
+        {
+          "tally": "Product Inquiry  How To  How To   Configuration",
+          "count": 3,
+          "tickets": [
+            {
+              "id": "599953"
+            },
+            {
+              "id": "600009"
+            },
+            {
+              "id": "600001"
+            }
+          ]
+        },
+        {
+          "tally": "Troubleshooting  Power / Battery  Not Powering On",
+          "count": 2,
+          "tickets": [
+            {
+              "id": "600038"
+            },
+            {
+              "id": "600335"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "product": "Other (24 products)",
+      "count": 88,
+      "pct": 19.9,
+      "delta": 0,
+      "direction": "same",
+      "topIssues": []
+    }
+  ],
+  "ticketTypes": [
+    {
+      "type": "Troubleshooting",
+      "count": 165,
+      "pct": 37.3,
+      "delta": -4.624277456647398,
+      "direction": "down"
+    },
+    {
+      "type": "Request For Refund/Replacement",
+      "count": 54,
+      "pct": 12.2,
+      "delta": -8.47457627118644,
+      "direction": "down"
+    },
+    {
+      "type": "License Related",
+      "count": 24,
+      "pct": 5.4,
+      "delta": 41.17647058823529,
+      "direction": "up"
+    },
+    {
+      "type": "How To Use",
+      "count": 23,
+      "pct": 5.2,
+      "delta": 4.545454545454546,
+      "direction": "up"
+    },
+    {
+      "type": "Product Spec",
+      "count": 19,
+      "pct": 4.3,
+      "delta": -40.625,
+      "direction": "down"
+    },
+    {
+      "type": "Pricing   Availability",
+      "count": 16,
+      "pct": 3.6,
+      "delta": 60.0,
+      "direction": "up"
+    },
+    {
+      "type": "Cancel Order",
+      "count": 15,
+      "pct": 3.4,
+      "delta": 150.0,
+      "direction": "up"
+    },
+    {
+      "type": "Shipping Related",
+      "count": 15,
+      "pct": 3.4,
+      "delta": -31.818181818181817,
+      "direction": "down"
+    }
+  ],
+  "stfs": [
+    {
+      "key": "STFS-491",
+      "summary": "Spark 40 / MINI / GO / NEO \u2013 Firmware Update Failure \u2013 Updater Does Not Start",
+      "status": "In Progress",
+      "product": "Hardware/Firmware",
+      "ticketCount": 198,
+      "followUp": false
+    },
+    {
+      "key": "STFS-338",
+      "summary": "Spark NEO - TX Doesn't Automatically Connect to the RX",
+      "status": "In Progress",
+      "product": "Hardware",
+      "ticketCount": 52,
+      "followUp": false
+    },
+    {
+      "key": "STFS-358",
+      "summary": "Spark app - Groove Looper Will be Out of Sync Gradually (Spark 2)",
+      "status": "In Progress",
+      "product": "Spark App",
+      "ticketCount": 38,
+      "followUp": false
+    },
+    {
+      "key": "STFS-390",
+      "summary": "Spark Control X - Choppy Audio",
+      "status": "To Do",
+      "product": "Hardware",
+      "ticketCount": 23,
+      "followUp": true
+    },
+    {
+      "key": "STFS-209",
+      "summary": "Spark App (Android) - Saved Song Loading Issue",
+      "status": "To Do",
+      "product": "",
+      "ticketCount": 22,
+      "followUp": true
+    },
+    {
+      "key": "STFS-492",
+      "summary": "Spark 40 - Old Firmware Version Can't Update to the Latest Version",
+      "status": "To Do",
+      "product": "",
+      "ticketCount": 21,
+      "followUp": true
+    },
+    {
+      "key": "STFS-404",
+      "summary": "Spark 2 \u2013 Serial Number Detection Issue (ML IN Manufactured Units)",
+      "status": "To Do",
+      "product": "Hardware/Firmware",
+      "ticketCount": 18,
+      "followUp": true
+    },
+    {
+      "key": "STFS-532",
+      "summary": "REACTOR Amp - BLE Connection Distance Issue",
+      "status": "In Progress",
+      "product": "Hardware",
+      "ticketCount": 18,
+      "followUp": false
+    }
+  ]
+}
