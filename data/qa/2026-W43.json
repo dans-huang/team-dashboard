@@ -1,0 +1,363 @@
+{
+  "period": "Week of 10/19 - 10/25",
+  "bcrWindow": "2026-07-27 ~ 2026-10-25",
+  "startDate": "2026-10-19",
+  "endDate": "2026-10-25",
+  "daysCount": 90,
+  "reportDate": "2026-10-25",
+  "bcr": {
+    "overall": 0.0,
+    "status": "below_target",
+    "target": 80,
+    "qaCount": 0,
+    "customerCount": 0
+  },
+  "bcrByProduct": [
+    {
+      "product": "Spark",
+      "qaBugs": 0,
+      "customerBugs": 0,
+      "total": 0,
+      "rate": 0.0
+    },
+    {
+      "product": "BIAS X",
+      "qaBugs": 0,
+      "customerBugs": 0,
+      "total": 0,
+      "rate": 0.0
+    }
+  ],
+  "bcrWeeklyTrend": [],
+  "testExecution": {
+    "Spark": {
+      "completedRuns": 4,
+      "totalRuns": 7,
+      "totalCases": 609,
+      "totalPassed": 550,
+      "totalFailed": 13,
+      "totalBlocked": 1,
+      "totalSkipped": 26,
+      "passRate": 90.3,
+      "avgVelocity": 57.0,
+      "blockedRate": 4.4
+    },
+    "BIAS X": {
+      "completedRuns": 10,
+      "totalRuns": 10,
+      "totalCases": 2218,
+      "totalPassed": 1853,
+      "totalFailed": 166,
+      "totalBlocked": 50,
+      "totalSkipped": 129,
+      "passRate": 83.5,
+      "avgVelocity": 41.2,
+      "blockedRate": 8.1
+    },
+    "Reactor": {
+      "completedRuns": 6,
+      "totalRuns": 13,
+      "totalCases": 1468,
+      "totalPassed": 1239,
+      "totalFailed": 89,
+      "totalBlocked": 4,
+      "totalSkipped": 51,
+      "passRate": 84.4,
+      "avgVelocity": 57.7,
+      "blockedRate": 3.7
+    }
+  },
+  "regressionTrend": {
+    "Spark": [
+      {
+        "title": "20260806 Spark Go MCU v1.18.0.215 Regression Test (Copy)",
+        "date": "2026-08-06",
+        "passed": 109,
+        "failed": 2,
+        "skipped": 13,
+        "blocked": 0,
+        "total": 124,
+        "rate": 87.9,
+        "delta": 0
+      },
+      {
+        "title": "Spark Pedal Pre-GA Full Regression 2026/08/24",
+        "date": "2026-08-19",
+        "passed": 202,
+        "failed": 6,
+        "skipped": 3,
+        "blocked": 1,
+        "total": 228,
+        "rate": 88.6,
+        "delta": 0.7
+      }
+    ],
+    "BIAS X": [
+      {
+        "title": "1.2.4.13456 Full Regression (Win11, Pro Tools)",
+        "date": "2026-07-28",
+        "passed": 268,
+        "failed": 3,
+        "skipped": 11,
+        "blocked": 0,
+        "total": 282,
+        "rate": 95.0,
+        "delta": 0
+      },
+      {
+        "title": "1.2.4.13994 Full Regression (macOS 15,  Pro Tools)",
+        "date": "2026-08-03",
+        "passed": 267,
+        "failed": 3,
+        "skipped": 12,
+        "blocked": 0,
+        "total": 282,
+        "rate": 94.7,
+        "delta": -0.4
+      },
+      {
+        "title": "1.3.0.60821 Full Regression (macOS 15,  Standalone)",
+        "date": "2026-08-31",
+        "passed": 137,
+        "failed": 69,
+        "skipped": 22,
+        "blocked": 28,
+        "total": 256,
+        "rate": 53.5,
+        "delta": -41.2
+      },
+      {
+        "title": "1.3.0.14016 Full Regression (macOS 26,  Logic Pro 12)",
+        "date": "2026-09-07",
+        "passed": 251,
+        "failed": 43,
+        "skipped": 34,
+        "blocked": 14,
+        "total": 342,
+        "rate": 73.4,
+        "delta": 19.9
+      },
+      {
+        "title": "1.3.0.14124 Full Regression (Win10 22H2,  Standalone)",
+        "date": "2026-09-11",
+        "passed": 259,
+        "failed": 19,
+        "skipped": 14,
+        "blocked": 1,
+        "total": 293,
+        "rate": 88.4,
+        "delta": 15.0
+      },
+      {
+        "title": "1.3.0.14124 Full Regression (Win11, Reaper7)",
+        "date": "2026-09-14",
+        "passed": 281,
+        "failed": 22,
+        "skipped": 12,
+        "blocked": 4,
+        "total": 319,
+        "rate": 88.1,
+        "delta": -0.3
+      },
+      {
+        "title": "1.3.0.14347 Full Regression (macOS 15, Pro Tools)",
+        "date": "2026-10-14",
+        "passed": 304,
+        "failed": 3,
+        "skipped": 12,
+        "blocked": 0,
+        "total": 319,
+        "rate": 95.3,
+        "delta": 7.2
+      }
+    ],
+    "Reactor": [
+      {
+        "title": "QA-318 Reactor Android 1.1.5 (1434) \u2014 Core Function Regression",
+        "date": "2026-08-04",
+        "passed": 224,
+        "failed": 25,
+        "skipped": 7,
+        "blocked": 0,
+        "total": 263,
+        "rate": 85.2,
+        "delta": 0
+      },
+      {
+        "title": "QA-317 Reactor iOS 1.1.5 (112) \u2014 Core Function Regression",
+        "date": "2026-08-04",
+        "passed": 239,
+        "failed": 8,
+        "skipped": 11,
+        "blocked": 0,
+        "total": 262,
+        "rate": 91.2,
+        "delta": 6.1
+      },
+      {
+        "title": "Reactor FW 0.2.4.217 / ESP32 rev697 Full Regression Test",
+        "date": "2026-09-14",
+        "passed": 171,
+        "failed": 2,
+        "skipped": 16,
+        "blocked": 0,
+        "total": 232,
+        "rate": 73.7,
+        "delta": -17.5
+      },
+      {
+        "title": "[Android] Reactor App 1.2.0.1529 Full Regression",
+        "date": "2026-09-17",
+        "passed": 535,
+        "failed": 52,
+        "skipped": 15,
+        "blocked": 4,
+        "total": 635,
+        "rate": 84.3,
+        "delta": 10.5
+      },
+      {
+        "title": "Reactor FW 0.2.5.9 / ESP32 rev697 Bug Fix Verification + Partial Regression Test",
+        "date": "2026-10-12",
+        "passed": 44,
+        "failed": 2,
+        "skipped": 2,
+        "blocked": 0,
+        "total": 50,
+        "rate": 88.0,
+        "delta": 3.7
+      }
+    ]
+  },
+  "latestFunctionTest": [
+    {
+      "product": "Spark",
+      "title": "QA-377 Spark Pedal FW 2.10.1.189 \u2014 Control X / Preset / Looper",
+      "projectCode": "SP",
+      "status": "in_progress",
+      "startDate": "2026-10-20",
+      "passed": 18,
+      "failed": 0,
+      "blocked": 0,
+      "skipped": 0,
+      "untested": 7,
+      "total": 25
+    },
+    {
+      "product": "BIAS X",
+      "title": "1.3.0.60821 NAM Loader Function Test (macOS 15, Standalone)",
+      "projectCode": "BX",
+      "status": "completed",
+      "startDate": "2026-08-24",
+      "passed": 20,
+      "failed": 4,
+      "blocked": 3,
+      "skipped": 8,
+      "untested": 9,
+      "total": 55
+    },
+    {
+      "product": "Reactor",
+      "title": "RAD-1754 Reactor iOS 1.2.1 \u2014 Amp / FX \u540d\u7a31\u66f4\u65b0\u8207 graphics \u66f4\u63db",
+      "projectCode": "RAPP",
+      "status": "completed",
+      "startDate": "2026-10-22",
+      "passed": 26,
+      "failed": 0,
+      "blocked": 0,
+      "skipped": 0,
+      "untested": 0,
+      "total": 26
+    }
+  ],
+  "effortSignals": [
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "QA-361 PSRAM\u66ff\u4ee3\u6599\u56de\u6b78\u6e2c\u8a66 - Preset/BT\u00b7USB Audio/Tuner/DSP (S40): in progress for 26 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Spark",
+      "message": "QA-361 PSRAM\u66ff\u4ee3\u6599\u56de\u6b78\u6e2c\u8a66 - Preset/BT\u00b7USB Audio/Tuner/DSP (S40): 90% untested (165/184)"
+    },
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "20260729 Spark Go MCU v1.18.0.215 Regression Test (SG): 22% blocked/skipped (27/124)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Spark",
+      "message": "20260729 Spark Go MCU v1.18.0.215 Regression Test (SG): in progress for 88 days"
+    },
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "BIAS X",
+      "message": "1.3.0.60821 NAM Loader Function Test (macOS 15, Standalone) (BX): 20% blocked/skipped (11/55)"
+    },
+    {
+      "type": "blocked",
+      "severity": "warning",
+      "product": "BIAS X",
+      "message": "1.3.0.60821 Full Regression (macOS 15,  Standalone) (BX): 20% blocked/skipped (50/256)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "Reactor Amp PSRAM Test Run (RA): in progress for 26 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Reactor",
+      "message": "Reactor Amp PSRAM Test Run (RA): 69% untested (81/117)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "Reactor FW 0.2.5.41 / ESP32 rev698 Regression Test (RA): in progress for 9 days"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "QA-317 Reactor iOS 1.1.5 (112) \u2014 Full Regression + Bug Fix Verification (RAPP): in progress for 84 days"
+    },
+    {
+      "type": "untested",
+      "severity": "info",
+      "product": "Reactor",
+      "message": "QA-317 Reactor iOS 1.1.5 (112) \u2014 Full Regression + Bug Fix Verification (RAPP): 93% untested (528/566)"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "[iOS] Reactor App 1.2.0 (122) Full Regression (RAPP): in progress for 38 days"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "QA-375 Reactor iOS 1.2.0 (126) \u2014 Bug Fix Verification (RAPP): in progress for 20 days"
+    },
+    {
+      "type": "stale",
+      "severity": "warning",
+      "product": "Reactor",
+      "message": "QA-375 Reactor Android 1.2.0.1562 \u2014 Bug Fix Verification (RAPP): in progress for 20 days"
+    }
+  ],
+  "recentBugs": {
+    "qa": [],
+    "customer": []
+  }
+}
