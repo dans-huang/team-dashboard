@@ -1,0 +1,177 @@
+{
+  "period": "2026-10-28 (Wed)",
+  "startDate": "2026-10-28",
+  "endDate": "2026-10-28",
+  "kpi": {
+    "totalTickets": 103,
+    "topProduct": "SPARK 2",
+    "refunds": 9,
+    "productCount": 25
+  },
+  "productBreakdown": [
+    {
+      "product": "SPARK 2",
+      "count": 16,
+      "pct": 15.5
+    },
+    {
+      "product": "SPARK",
+      "count": 12,
+      "pct": 11.7
+    },
+    {
+      "product": "SPARK PEDAL",
+      "count": 9,
+      "pct": 8.7
+    },
+    {
+      "product": "SPARK CAB 2",
+      "count": 6,
+      "pct": 5.8
+    },
+    {
+      "product": "REACTOR 100",
+      "count": 6,
+      "pct": 5.8
+    },
+    {
+      "product": "REACTOR 50",
+      "count": 5,
+      "pct": 4.9
+    },
+    {
+      "product": "SPARK CAB",
+      "count": 4,
+      "pct": 3.9
+    },
+    {
+      "product": "SPARK GO",
+      "count": 2,
+      "pct": 1.9
+    },
+    {
+      "product": "SPARK APP",
+      "count": 2,
+      "pct": 1.9
+    },
+    {
+      "product": "SPARK MINI",
+      "count": 2,
+      "pct": 1.9
+    },
+    {
+      "product": "Other (15 products)",
+      "count": 19,
+      "pct": 18.4
+    }
+  ],
+  "ticketTypes": [
+    {
+      "type": "Troubleshooting",
+      "count": 28,
+      "pct": 27.2
+    },
+    {
+      "type": "Request For Refund/Replacement",
+      "count": 9,
+      "pct": 8.7
+    },
+    {
+      "type": "Cancel Order",
+      "count": 8,
+      "pct": 7.8
+    },
+    {
+      "type": "Product Spec",
+      "count": 6,
+      "pct": 5.8
+    },
+    {
+      "type": "Shipping Related",
+      "count": 5,
+      "pct": 4.9
+    },
+    {
+      "type": "Purchase Related",
+      "count": 5,
+      "pct": 4.9
+    },
+    {
+      "type": "Manage My Account",
+      "count": 5,
+      "pct": 4.9
+    },
+    {
+      "type": "Promotion Details",
+      "count": 4,
+      "pct": 3.9
+    },
+    {
+      "type": "Other (10 types)",
+      "count": 23,
+      "pct": 22.3
+    }
+  ],
+  "agentActivity": [
+    {
+      "name": "Devin (AI)",
+      "assigned": 66,
+      "replies": 88
+    },
+    {
+      "name": "Eleanor",
+      "assigned": 12,
+      "replies": 3
+    },
+    {
+      "name": "Chris Hsu",
+      "assigned": 11,
+      "replies": 4
+    },
+    {
+      "name": "Ryan",
+      "assigned": 5,
+      "replies": 4
+    },
+    {
+      "name": "Jim",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Michael",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Ernie",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "WT",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Vix",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Dans",
+      "assigned": 0,
+      "replies": 1
+    },
+    {
+      "name": "Robert",
+      "assigned": 0,
+      "replies": 0
+    },
+    {
+      "name": "Rob",
+      "assigned": 0,
+      "replies": 0
+    }
+  ]
+}
