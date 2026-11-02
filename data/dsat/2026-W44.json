@@ -1,0 +1,433 @@
+{
+  "period": "2026-08-03 ~ 2026-11-01",
+  "daysCount": 90,
+  "totalBadRatings": 188,
+  "withComments": 162,
+  "aiNegative": 87,
+  "aiNegativeRateOfComments": 53.7,
+  "aiNegativeRateOfAll": 46.28,
+  "samples": [
+    {
+      "ticketId": 19052105490189,
+      "comment": "Too much AI, no phone number, delay in AI generated responses. I just want help from a live person over the phone to fix the connection issue",
+      "createdAt": "2026-08-03T00:18:32Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47837048629517.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Passed from. One AI bot to another\n Very frustrating PLUS 2 days between each exchange of emails",
+      "createdAt": "2026-08-03T05:23:42Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47840414412301.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I am waiting the demand, thanks",
+      "createdAt": "2026-08-03T11:03:49Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47842914831245.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "It would nice to get a response from a person not a trite AI that simply plays back what I said. \n\nI won\u2019t be buying any more of your products, you don\u2019t support them and request for improvement is met with indifference. ",
+      "createdAt": "2026-08-04T05:08:41Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47870299141517.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I am disappointed with the support I received. I contacted Positive Grid to ask whether full Spanish support for the Spark app and Spark AI is planned. Instead of addressing my question, I only received a response stating that the feature is currently available in English.\n\nThat does not answer my question or provide any useful information about future plans. Spanish is one of the most widely spoken languages in the world, and I expected a more informative and customer-focused response.\n\nI hope Positive Grid improves both its customer support and its commitment to multilingual use",
+      "createdAt": "2026-08-05T12:48:47Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47906003479309.json"
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "You guys - or I mean you bots - are...what's the word for beyond lame? Let's go with ragingly pathetic ",
+      "createdAt": "2026-08-07T02:07:50Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47956449691277.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Very inefficient.  I\u2019ve twice sent emails about my order only to be replied that my order can\u2019t be found even though I\u2019ve sent a screenshot of my order.  Need real people instead of bots. ",
+      "createdAt": "2026-08-08T02:40:48Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/47985621617293.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "In particular I am still not convinced that I can hold a button on the back, press and hold a button on the front, plug a cable without releasing both and take a photo of the process all by myself :-)",
+      "createdAt": "2026-08-11T10:03:55Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/48046767602957.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I have been sent two replacement units for my faulty Spark Go, which I had to pay for, and both have been dead on arrival. I am considering taking legal action.",
+      "createdAt": "2026-08-11T17:46:03Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/48059823195661.json"
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I was trying to buy Spark NEO from the website and the price was showing as $249. When I tried to checkout the price keeps changing to $419. I have tried to contact your customer support and they didn\u2019t resolve the issue for me as they said the correct price is $419. ",
+      "createdAt": "2026-08-12T03:44:32Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/48074073544717.json"
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "The response did not fully address the issue I described.\n\nI had already explained that BIAS MINI BASS does not appear as an option under \u201cRegister Your Product,\u201d which prevents me from following the standard registration procedure. However, I was only referred to the general registration guide, without any explanation of how to resolve this specific issue.\n\nI would appreciate it if support could review the details of my case, including my previous deactivation request under ticket #457658, and provide instructions for re-registering the device.",
+      "createdAt": "2026-08-15T14:01:32Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/48167658403213.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I have asked about a possibility to directly set the volume of the loop on my spark 2 without using the app. The advise was basically to rather adjust the volume of my guitar to have a proper balance. This does not so if the problem of setting an overall volume which may be necessary example given enclosed rooms in a rented flat with neighbors are playing at night or on the other hand on the street where I only have my amp and not my phone and want to raise the volume of the loop to have an overall good loudness. I think this is a real design flaw to require the app to set this volume on the device. Please correct this",
+      "createdAt": "2026-08-15T14:28:36Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/48168058842637.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I had been trying to resolve weird tones and sounds on my Spark 2 since 30/08/26. Stupid requests from support for videos of how my headphones sound and do they sound like the loudspeakers. It\u2019s very hard to play electric guitar when all the tones are awful and to show on video. I started out with Devin, your AI rep and after about a week got put through to Ryan, not sure if he\u2019s AI or human. I am so disappointed with you, Positive Grid that I have now deregistered all my gear and closed my account as the warranty is non existent no matter what you do to get help. I am now using my old Line 6 amp with no problems so it is not my equipment that was at fault. I can\u2019t do anything with my Spark 2 except recycle it and bite the bullet that I have got a dud unit that you won\u2019t or can\u2019t help me with. You have lost a customer and I will let my friends and colleagues know what it\u2019s like dealing with you.",
+      "createdAt": "2026-08-16T11:19:39Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/48178935716109.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Hi, Ray Lanigan here. \nAlthough I absolutely love the positive grid products, and especially that I have already purchased different products from positive grid  also, I find it quite frustrating, that when I enquired about an artist endorsement, it's taken me quite a long time to hear anything back about my enquiry,  so much so, that I have had to resend my request on numerous occasions with still no response or answer. Because I am complaining somewhat about this,  I expect that if I do hear back now. It will probably be a negative response on my request,  and if that's the case, we'll so be it. I thought I would have been an idea candidate to promote the new 100-watt Reactor amplifier's because of the many Visions Of Floyd shows I do and are so active on social media to promote the positive grid brand. I hope to hear back from you soon with your decision, \nYours kindly, \nRay Lanigan.  (Visions Of Floyd)",
+      "createdAt": "2026-08-19T10:35:47Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/48251498430349.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Hi, Ray Lanigan here. \nAlthough I absolutely love the positive grid products, and especially that I have already purchased different products from positive grid  also, I find it quite frustrating, that when I enquired about an artist endorsement, it's taken me quite a long time to hear anything back about my enquiry,  so much so, that I have had to resend my request on numerous occasions with still no response or answer. Because I am complaining somewhat about this,  I expect that if I do hear back now. It will probably be a negative response on my request,  and if that's the case, we'll so be it. I thought I would have been an ideal candidate to promote the new 100-watt Reactor amplifier's because of the many Visions Of Floyd shows I do and are so active on social media to promote the positive grid brand. I hope to hear back from you soon with your decision, \nYours kindly, \nRay Lanigan.  (Visions Of Floyd)",
+      "createdAt": "2026-08-19T10:37:13Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/48251516957325.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Hi, Ray Lanigan here. \nAlthough I absolutely love the positive grid products, and especially that I have already purchased different products from positive grid  also, I find it quite frustrating, that when I enquired about an artist endorsement, it's taken me quite a long time to hear anything back about my enquiry,  so much so, that I have had to resend my request on numerous occasions with still no response or answer. Because I am complaining somewhat about this,  I expect that if I do hear back now. It will probably be a negative response on my request,  and if that's the case, we'll so be it. I thought I would have been an ideal candidate to promote the new 100-watt Reactor amplifier's because of the many Visions Of Floyd shows I do and are so active on social media to promote the positive grid brand. I hope to hear back from you soon with your decision, \nYours kindly, \nRay Lanigan.  (Visions Of Floyd).",
+      "createdAt": "2026-08-19T10:37:40Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/48251511742093.json"
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I am not sure I have gotten what I want. I rank there is a solution with your products. The responses seem to be ai generated and I think may be right but I think a live person would have done better at least on my follow up. Regardless I made a purchase and will be trying your product out which I am excited for! ",
+      "createdAt": "2026-08-19T15:19:49Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/48258763423501.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Devin, your AI agent, behaves reasonably human and for the first exchanges I was unaware I was working with AI.   HOWEVER, there were volleys for additional information that were unnecessary and the hand off to human support was clumsy, to the point where I was expecting an RMA and shipping label but the processes dropped back a step and I had to force re-engagement.  Those cost time and lost confidence.  Elanaor was fine once she was directly engaged.  I'd suggest revewing the history here and seeing what you can do to smooth out the support process.",
+      "createdAt": "2026-08-20T12:54:17Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/48281564660365.json"
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Would prefer to communicate with a real person instead of Ai.\nRegistration of the product should be all that is needed to prove purchase/ownership.",
+      "createdAt": "2026-08-21T03:47:46Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/48304066752269.json"
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I am now running my Spark 2 from a dedicated IPad as it was making odd noises on my main iPad. I have been trying to get some kind of warranty return for my equipment but it\u2019s non existent in real terms. Registering your gear is a waste of time, so much so so that I have registered all of it and closed my account with you. It must be 3 months now that I have been messing about with spark 2. Checking  guitar wiring and leads. I lost all my Dropbox tones and had to start again. It bad enough trying to play a guitar without all this nonsense! You should release an update that will iron out all these bugs. I updated the firmware using a usb cable rather that OTA. That seemed to help. I won\u2019t be buying anything else from PG. ",
+      "createdAt": "2026-08-21T07:50:11Z",
+      "url": "https://positivegrid.zendesk.com/api/v2/satisfaction_ratings/48306334475789.json"
+    }
+  ],
+  "allComments": [
+    {
+      "ticketId": 19052105490189,
+      "comment": "Too much AI, no phone number, delay in AI generated responses. I just want help from a live person over the phone to fix the connection issue",
+      "createdAt": "2026-08-03T00:18:32Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Passed from. One AI bot to another\n Very frustrating PLUS 2 days between each exchange of emails",
+      "createdAt": "2026-08-03T05:23:42Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I am waiting the demand, thanks",
+      "createdAt": "2026-08-03T11:03:49Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "It would nice to get a response from a person not a trite AI that simply plays back what I said. \n\nI won\u2019t be buying any more of your products, you don\u2019t support them and request for improvement is met with indifference. ",
+      "createdAt": "2026-08-04T05:08:41Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I tried to cancel my order just  a couple of hours after placing it and was told it was too late and yet still no notification it had been shipped one day later. ",
+      "createdAt": "2026-08-04T12:20:11Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I am disappointed with the support I received. I contacted Positive Grid to ask whether full Spanish support for the Spark app and Spark AI is planned. Instead of addressing my question, I only received a response stating that the feature is currently available in English.\n\nThat does not answer my question or provide any useful information about future plans. Spanish is one of the most widely spoken languages in the world, and I expected a more informative and customer-focused response.\n\nI hope Positive Grid improves both its customer support and its commitment to multilingual use",
+      "createdAt": "2026-08-05T12:48:47Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "You guys - or I mean you bots - are...what's the word for beyond lame? Let's go with ragingly pathetic ",
+      "createdAt": "2026-08-07T02:07:50Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I was specifically asking for USB and if it communicate with the spark. \nHelas not",
+      "createdAt": "2026-08-07T06:45:30Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "It's not cool that PG advertises the whole experience when there is no wah. I bought the sparkx controller solely for the expression pedal wah input and it's been discontinued without provided at least a generic wah. I like my spark 2 but I dont like holding out hope for a generic wah. Ill likey return the sparkx con troller. ",
+      "createdAt": "2026-08-07T11:36:42Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Very inefficient.  I\u2019ve twice sent emails about my order only to be replied that my order can\u2019t be found even though I\u2019ve sent a screenshot of my order.  Need real people instead of bots. ",
+      "createdAt": "2026-08-08T02:40:48Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I like something that works and won't break ",
+      "createdAt": "2026-08-10T21:50:36Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "In particular I am still not convinced that I can hold a button on the back, press and hold a button on the front, plug a cable without releasing both and take a photo of the process all by myself :-)",
+      "createdAt": "2026-08-11T10:03:55Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I have NOT yet received support! ",
+      "createdAt": "2026-08-11T14:23:17Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I have been sent two replacement units for my faulty Spark Go, which I had to pay for, and both have been dead on arrival. I am considering taking legal action.",
+      "createdAt": "2026-08-11T17:46:03Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I was trying to buy Spark NEO from the website and the price was showing as $249. When I tried to checkout the price keeps changing to $419. I have tried to contact your customer support and they didn\u2019t resolve the issue for me as they said the correct price is $419. ",
+      "createdAt": "2026-08-12T03:44:32Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I wish to know wether you can supply a reactor amplifier to play my stereo guitar through\nThank you",
+      "createdAt": "2026-08-12T09:06:05Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "Bummer",
+      "createdAt": "2026-08-13T02:35:37Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "The ticket was closed without my response and without fixing my issue.",
+      "createdAt": "2026-08-13T04:39:58Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Look I got it for my e-drum my bass and keyboard ",
+      "createdAt": "2026-08-14T14:47:21Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 21491403881485,
+      "comment": "The response did not fully address the issue I described.\n\nI had already explained that BIAS MINI BASS does not appear as an option under \u201cRegister Your Product,\u201d which prevents me from following the standard registration procedure. However, I was only referred to the general registration guide, without any explanation of how to resolve this specific issue.\n\nI would appreciate it if support could review the details of my case, including my previous deactivation request under ticket #457658, and provide instructions for re-registering the device.",
+      "createdAt": "2026-08-15T14:01:32Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I have asked about a possibility to directly set the volume of the loop on my spark 2 without using the app. The advise was basically to rather adjust the volume of my guitar to have a proper balance. This does not so if the problem of setting an overall volume which may be necessary example given enclosed rooms in a rented flat with neighbors are playing at night or on the other hand on the street where I only have my amp and not my phone and want to raise the volume of the loop to have an overall good loudness. I think this is a real design flaw to require the app to set this volume on the device. Please correct this",
+      "createdAt": "2026-08-15T14:28:36Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I had been trying to resolve weird tones and sounds on my Spark 2 since 30/08/26. Stupid requests from support for videos of how my headphones sound and do they sound like the loudspeakers. It\u2019s very hard to play electric guitar when all the tones are awful and to show on video. I started out with Devin, your AI rep and after about a week got put through to Ryan, not sure if he\u2019s AI or human. I am so disappointed with you, Positive Grid that I have now deregistered all my gear and closed my account as the warranty is non existent no matter what you do to get help. I am now using my old Line 6 amp with no problems so it is not my equipment that was at fault. I can\u2019t do anything with my Spark 2 except recycle it and bite the bullet that I have got a dud unit that you won\u2019t or can\u2019t help me with. You have lost a customer and I will let my friends and colleagues know what it\u2019s like dealing with you.",
+      "createdAt": "2026-08-16T11:19:39Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Takes too long",
+      "createdAt": "2026-08-18T18:53:43Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I am looking for a s solution for recording good guitar tone true guitar tone or as close as possible not amplified. I am unclear of I were to use the Spark Go would I be able to simulate a guitar tone and record it to my MacBook DAW with the same tone. In other words can the Spark use the tone building and send at 0\nvolume to the MacBook DAW",
+      "createdAt": "2026-08-18T19:31:45Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Tech was helpful and kind, as well as responsive.  In The end I had to figure the issue out myself.  ",
+      "createdAt": "2026-08-18T21:12:25Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I don\u2019t understand why I can\u2019t have or buy a wah pedal",
+      "createdAt": "2026-08-19T03:08:56Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Hi, Ray Lanigan here. \nAlthough I absolutely love the positive grid products, and especially that I have already purchased different products from positive grid  also, I find it quite frustrating, that when I enquired about an artist endorsement, it's taken me quite a long time to hear anything back about my enquiry,  so much so, that I have had to resend my request on numerous occasions with still no response or answer. Because I am complaining somewhat about this,  I expect that if I do hear back now. It will probably be a negative response on my request,  and if that's the case, we'll so be it. I thought I would have been an idea candidate to promote the new 100-watt Reactor amplifier's because of the many Visions Of Floyd shows I do and are so active on social media to promote the positive grid brand. I hope to hear back from you soon with your decision, \nYours kindly, \nRay Lanigan.  (Visions Of Floyd)",
+      "createdAt": "2026-08-19T10:35:47Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Hi, Ray Lanigan here. \nAlthough I absolutely love the positive grid products, and especially that I have already purchased different products from positive grid  also, I find it quite frustrating, that when I enquired about an artist endorsement, it's taken me quite a long time to hear anything back about my enquiry,  so much so, that I have had to resend my request on numerous occasions with still no response or answer. Because I am complaining somewhat about this,  I expect that if I do hear back now. It will probably be a negative response on my request,  and if that's the case, we'll so be it. I thought I would have been an ideal candidate to promote the new 100-watt Reactor amplifier's because of the many Visions Of Floyd shows I do and are so active on social media to promote the positive grid brand. I hope to hear back from you soon with your decision, \nYours kindly, \nRay Lanigan.  (Visions Of Floyd)",
+      "createdAt": "2026-08-19T10:37:13Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Hi, Ray Lanigan here. \nAlthough I absolutely love the positive grid products, and especially that I have already purchased different products from positive grid  also, I find it quite frustrating, that when I enquired about an artist endorsement, it's taken me quite a long time to hear anything back about my enquiry,  so much so, that I have had to resend my request on numerous occasions with still no response or answer. Because I am complaining somewhat about this,  I expect that if I do hear back now. It will probably be a negative response on my request,  and if that's the case, we'll so be it. I thought I would have been an ideal candidate to promote the new 100-watt Reactor amplifier's because of the many Visions Of Floyd shows I do and are so active on social media to promote the positive grid brand. I hope to hear back from you soon with your decision, \nYours kindly, \nRay Lanigan.  (Visions Of Floyd).",
+      "createdAt": "2026-08-19T10:37:40Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "I have received my spark40\nReplacement and it is faulty ",
+      "createdAt": "2026-08-19T11:50:28Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I am not sure I have gotten what I want. I rank there is a solution with your products. The responses seem to be ai generated and I think may be right but I think a live person would have done better at least on my follow up. Regardless I made a purchase and will be trying your product out which I am excited for! ",
+      "createdAt": "2026-08-19T15:19:49Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "U didn\u2019t even try to see the pictures that I\u2019ve send u and u just changed my password on whole different account that I\u2019ve made cause I can\u2019t enter in my previous account cause it was crated with Facebook ",
+      "createdAt": "2026-08-19T16:29:26Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Devin, your AI agent, behaves reasonably human and for the first exchanges I was unaware I was working with AI.   HOWEVER, there were volleys for additional information that were unnecessary and the hand off to human support was clumsy, to the point where I was expecting an RMA and shipping label but the processes dropped back a step and I had to force re-engagement.  Those cost time and lost confidence.  Elanaor was fine once she was directly engaged.  I'd suggest revewing the history here and seeing what you can do to smooth out the support process.",
+      "createdAt": "2026-08-20T12:54:17Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Would prefer to communicate with a real person instead of Ai.\nRegistration of the product should be all that is needed to prove purchase/ownership.",
+      "createdAt": "2026-08-21T03:47:46Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "I am now running my Spark 2 from a dedicated IPad as it was making odd noises on my main iPad. I have been trying to get some kind of warranty return for my equipment but it\u2019s non existent in real terms. Registering your gear is a waste of time, so much so so that I have registered all of it and closed my account with you. It must be 3 months now that I have been messing about with spark 2. Checking  guitar wiring and leads. I lost all my Dropbox tones and had to start again. It bad enough trying to play a guitar without all this nonsense! You should release an update that will iron out all these bugs. I updated the firmware using a usb cable rather that OTA. That seemed to help. I won\u2019t be buying anything else from PG. ",
+      "createdAt": "2026-08-21T07:50:11Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Still haven\u2019t had a resolution regarding a faulty product. Keep getting automated responses rather than a genuine solution",
+      "createdAt": "2026-08-22T19:38:42Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Devin customer service was fantastic !! Finding out that the Spark live unit no longer has a \u2018Wah\u2019 and the control x pedal has 2 expression input but cannot handle a \u2018Wah\u2019 sucks. Please change the name of Exp 1 and 2 to Penis 1 and Penis 2 so we can jerk off in them. ",
+      "createdAt": "2026-08-22T20:14:25Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "Your bot didn't know as much as I did and I only had the product (Spark Go) for two hours. It told me that I was wrong and when I supplied screenshots proving that I was right, was forced to concede.",
+      "createdAt": "2026-08-22T20:30:06Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I was asking may many questions regarding the shipping and product questions no answer at all\n",
+      "createdAt": "2026-08-22T22:52:04Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 41099952294541,
+      "comment": "Love that you provide a 2 year warranty and also that you stand behind your great product. Very frustrating dealing with AI and trying to send a video. Way too complicated and frustrating. ",
+      "createdAt": "2026-08-23T23:28:30Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I bounced between positive grid support, and Amazon support each entity, blaming the other for the unfulfillment of my order. In the end, the order was cancelled with no notification or explanation.",
+      "createdAt": "2026-08-23T23:46:52Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "Bad product. Defect after only 3 months. Horrible process asking customer to make videos and try to troubleshoot rather than standing behind your product. I was simply asking for a replacement of the same item. Only a few months old for a product claiming 2 year warranty. You should have simply replaced it. I\u2019ll never buy one of your products again. ",
+      "createdAt": "2026-08-23T23:48:30Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "Defective product",
+      "createdAt": "2026-08-25T22:09:45Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "No clear answer from the support about my improvement request. No date.",
+      "createdAt": "2026-08-26T06:56:55Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "Missing power adapter in the box. Taking way too long to get it. Can\u2019t use my stuff. ",
+      "createdAt": "2026-08-27T23:51:30Z",
+      "isAiNegative": false
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "got no response on my last mail",
+      "createdAt": "2026-08-28T14:15:03Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I have a friend who had issues with the trial version bugging and was able to get his extended. When I asked for myself, I was told it\u2019s \u201cagainst policy\u201d. It\u2019s a shame because I would like to have a bit more time to trial before buying, unsure if I want to purchase now.",
+      "createdAt": "2026-08-31T23:20:13Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "My claim sat dormant for much longer than the 1-2 days that is shown when submitting a claim for warranty to receive a response. I then get contacted by a BOT \u201cDevin\u201d to go through the claim process. Almost a week later, and after several attempts to get customer service to respond, I get an apology. That\u2019s it. ",
+      "createdAt": "2026-09-01T15:44:57Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 16243939216525,
+      "comment": "I had to search for a way to change my email since there was no simple way to do so after logging into my account.  After finally finding out that I had to create a NEW account I had to notify positive grid of my need to transfer my account info.  This complicated, time consuming process, should be changed.  There should be a simple way to change an email when it's necessary.  ",
+      "createdAt": "2026-09-01T17:37:06Z",
+      "isAiNegative": true
+    },
+    {
+      "ticketId": 19052105490189,
+      "comment": "The Neo arrived with a transmitter in which the power button was stuck. I couldn't fill out your online support forms because they required serial # and firmware# neither of which was labeled on the packaging! Talk about wasting time jumping through hoops. Finally found an email address for PG and got a quick, nice reply from AI agent. I tried everything that your AI agent suggested, nothing worked, it's just plain stuck. AI told me since it had arrived DOA, the situation would be turned over to a human agent and you'd be sending a replacement transmitter . . .Great! Except then the human said sorry, can't do that, deal with Amazon . .  so I did, sent it back. I wasted between 3- 4 hours of my time on this. I would have waited for and accepted a replacement transmitter, but at this point I'm done.  ",
+      "createdAt": "2026-09-01T17:55:55Z",
+      "isAiNegative": true
+    }
+  ]
+}
